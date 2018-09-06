@@ -209,10 +209,11 @@ footer
 .box
 {
 	width: 300px;
-	height: 400px;
+	height: 350px;
 	background-color: #4285F4;
 	border: 3px solid white;
 	border-radius: 5px;
+	text-align: justify;
 }
 
 .box h2
@@ -237,7 +238,7 @@ footer
     
 #container
 {
-	height: 70%;
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -325,6 +326,6 @@ footer
 	}
     .box
 	{
-		margin: 80 auto;
+		margin: 70 auto;
 	}
 } 
