@@ -73,6 +73,7 @@ body
  display: inline-block;
  margin: 4;
  background-color: transparent;
+    position: relative;
 }
 
 .content{
