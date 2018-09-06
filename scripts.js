@@ -29,6 +29,12 @@ $("#btn-go").on("click", function()
         'slow');
 		});
 
+$("#btn-p").on("click", function() 
+	{
+    $('html,body').animate({
+        scrollTop: $("#contact").offset().top},
+        'slow');
+		});
 
 $(document).ready(function() {
     $('#btn-home').click(function(event) {
