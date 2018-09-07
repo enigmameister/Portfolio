@@ -9,125 +9,6 @@ body
 	background-image: cover;
 }
 
-#container
-{
-	height: 100%;
-	width: 90%;
-	margin: 10% auto;
-}
-
-#portfolio
-{
-	height: 100%;
-	width: 100%;
-	background-color: #333; 
-}
-
-.box-portfolio
-{
-  
-    width: 80%;
- 
-    margin: 0 auto;
-}
-
-.box-portfolio button
-{
-    width: 180px;
-	height: 60px;
-	background-color: #4285F4;
-    border: 1px solid #4285F4;
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.3rem;
-    margin: 0 auto;
-    cursor: pointer;
-	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
-}
-
-.box-portfolio h1
-{
-    color: white;
-    font-family: 'Jua', sans-serif;
-}
-
-.projects-box
-{
-    margin: 0 auto;
-	width: 80%;
-	background-color: transparent;
-	padding: 0;
-}
-
-.project 
-{
- width: 200px;
- height: 200px;
- border: 1px solid gray;
- display: inline-block;
- margin: 4;
- background-color: transparent;
-    position: relative;
-}
-
-.content{
-position: absolute;
-top: 45%;
-left: 45%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-color: #fff;
-text-transform: uppercase;
-font-size:20px;
-white-space: nowrap;
-overflow: hidden;
-}
-
-.content span{
-font-size:12px;
-display: block;
-}
-.overlay{
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background: #4285F4;
-width: 100%;
-height: 0;
-transition: 0.4s ease;
-overflow: hidden;
-}
-
-.project:hover .overlay{
-height: 100%
-}
-
-.fab, .fas
-{
-    font-size: 2rem;    
-}
-
-.fab.fa-html5 {color: orangered;}
-.fab.fa-css3-alt {color:darkblue;}
-.fab.fa-js-square {color: yellow;}
-.fab.fa-php {color: darkgrey;}
-.fas.fa-database {color: forestgreen;}
-
-
-#contact
-{
-height: 100%;
-width: 100%;
-background-color: darkblue;	
-}
-
 header
 {
     margin: 0;
@@ -139,6 +20,7 @@ header
      width:100%;
 	 box-sizing: border-box;
 }
+
 
 .logo
 {
@@ -162,7 +44,7 @@ header
 {
 	background-color: transparent;
 	color: #4285F4;
-	background-color 1000ms ease;
+	background-color: 1000ms ease;
     border: 1px dashed #4285F4;
     cursor: pointer;
     -webkit-transform: skew(15deg);
@@ -194,10 +76,10 @@ header nav ul li a
 	text-decoration: none;
 	font-family: 'Jua', sans-serif;
 	text-shadow: 2px 6px 4px #000000;
-    padding: 0 20px;
+    padding: 0px 12px;
     height: 50px;
     line-height: 50px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     display: block;
 }
 
@@ -257,7 +139,7 @@ margin: 8% auto;
 	-o-transform: skew(-20deg);
 }
 
-.section button:hover
+.section button:hover, #contact button:hover, #portfolio button:hover
 {
 	background-color: transparent;
 	transition: 0.6s;
@@ -273,6 +155,71 @@ margin: 8% auto;
     margin: 12;
 }
 
+#container
+{
+	height: 100vh;
+	width: 90%;
+	margin: 10% auto;
+}
+
+#portfolio
+{
+	height: 100vh;
+	width: 100%;
+	background-color: #333; 
+}
+
+#portfolio button
+{
+	width: 180px;
+	height: 70px;
+	background-color: #4285F4;
+    border: 1px solid #4285F4;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    margin: 10 auto;
+    cursor: pointer;
+	text-shadow: 1px 0px 1px gray;
+	-webkit-transform: skew(-20deg); 
+	-moz-transform: skew(-20deg); 
+	-o-transform: skew(-20deg);
+}
+
+.portfolio-box, .contact-box
+{
+	width: 80%;
+	height: 85%;
+}
+#contact
+{
+height: 100vh;
+width: 100%;
+background-color: darkblue;	
+}
+
+#contact button
+{
+	width: 180px;
+	height: 70px;
+	background-color: #4285F4;
+    border: 1px solid #4285F4;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    margin: 10 auto;
+    cursor: pointer;
+	text-shadow: 1px 0px 1px gray;
+	-webkit-transform: skew(-20deg); 
+	-moz-transform: skew(-20deg); 
+	-o-transform: skew(-20deg);
+}
 footer
 {
 	background-color: transparent;
@@ -341,7 +288,7 @@ footer
 	margin: 0 auto;
 }
     
-.section button
+.section button, #portfolio button, #contact button
 {
     width: 260px;
     height: 60px;
@@ -411,7 +358,7 @@ footer
         top: 0; 
         display: block;
     }
-     header nav ul 
+    header nav ul 
     {
     display: block;
     text-align: center;
@@ -431,24 +378,5 @@ footer
 	{
 		margin: 70 auto;
 	}
-    
-    .projects-box
-    {
-        margin: 0 auto;
-	    width: 90%;
-        height: 70%;
-	    background-color: transparent;
-    }
-
-.project 
-{
- width: 110px;
- height: 120px;
- border: 1px solid gray;
- display: block-inline;
- margin: 5;
- background-color: transparent;
-position: relative;
-}
 
 } 

@@ -14,7 +14,7 @@ $("#c-nav").on("click", function()
 		});
 
 
-$("#h-nav").on("click", function() 
+$("#h-nav, #btn-c").on("click", function() 
 	{
     $('html,body').animate({
         scrollTop: $('html').offset().top},
