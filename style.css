@@ -6,7 +6,14 @@ body
 	box-sizing: border-box;
 	font-size: 12px;
 	background-image: url("img.gif");
-	background-image: cover;
+	
+}
+
+#container
+{
+	height: 85vh;
+	width: 90%;
+	margin: 0 auto;
 }
 
 header
@@ -153,16 +160,10 @@ margin: 8% auto;
     margin: 12;
 }
 
-#container
-{
-	height: 90%;
-	width: 90%;
-	margin: 10% auto;
-}
 
 #portfolio
 {
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	background-image: url("img.gif");
 	background-image: cover;
@@ -195,7 +196,7 @@ margin: 8% auto;
 }
 #contact
 {
-height: 90%;
+height: 100%;
 width: 100%;
 background-image: url("img.gif");
 	background-image: cover;
