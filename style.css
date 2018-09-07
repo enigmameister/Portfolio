@@ -32,7 +32,7 @@ header
 {
 	border: 1px solid #4285F4;
 	background-color: #4285F4;
-	padding: 10;
+	padding: 10px;
 	border-radius: 5spx;
 	-webkit-transform: skew(-10deg); 
 	-moz-transform: skew(-10deg); 
@@ -66,8 +66,8 @@ header nav
 
 header nav ul
 {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
     display: flex;
 }
 
@@ -156,14 +156,14 @@ margin: 8% auto;
 {
     color: white;
     font-size: 1.5rem;
-    padding: 0;
-    margin: 12;
+    padding: 0px;
+    margin: 12px;
 }
 
 
 #portfolio
 {
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	background-image: url("img.gif");
 	background-image: cover;
@@ -181,7 +181,7 @@ margin: 8% auto;
     text-decoration: none;
     display: block;
     font-size: 1.3rem;
-    margin: 10 auto;
+    margin: 10px auto;
     cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
 	-webkit-transform: skew(-20deg); 
@@ -196,10 +196,10 @@ margin: 8% auto;
 }
 #contact
 {
-height: 100%;
+height: 100vh;
 width: 100%;
 background-image: url("img.gif");
-	background-image: cover;
+background-image: cover;
 }
 
 #contact button
@@ -214,7 +214,7 @@ background-image: url("img.gif");
     text-decoration: none;
     display: block;
     font-size: 1.3rem;
-    margin: 10 auto;
+    margin: 10px auto;
     cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
 	-webkit-transform: skew(-20deg); 
@@ -241,7 +241,7 @@ footer
     font-size: 2.5rem;
     cursor: pointer;
     display: none;
-    padding: 10;
+    padding: 10px;
     color: #4285F4;
 }
 .about
@@ -295,7 +295,7 @@ footer
 	background-color: #4285F4;
     border: 1px solid #4285F4;
     color: white;
-    margin: 8 auto;
+    margin: 8px auto;
     padding: 12px 18px;
     text-decoration: none;
     display: block;
@@ -322,7 +322,7 @@ footer
 	}
 	header
     {
-        padding: 0;
+        padding: 0px;
     }
     
     .toggle-menu
@@ -341,7 +341,6 @@ footer
         height: 500px;
         background-image: url("img.gif");
         top: -800%;
-
         transition: 0.4s;
         margin: 0 auto;
         z-index: -1;
