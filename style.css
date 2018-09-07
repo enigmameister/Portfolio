@@ -98,7 +98,6 @@ header nav ul li a.active
 .section
 {
 width: 85%;
-height: 100%;
 margin: 8% auto;
 }
 
@@ -282,13 +281,12 @@ footer
 @media (max-width: 720px)
 {
     
-#container
-{
-	height: 100vh;
-	width: 100%;
-	margin: 0 auto;
-}
+#portfolio, #contact, #container
+    {
+        height: 100vh;
+    }
     
+
 .section button, #portfolio button, #contact button
 {
     width: 260px;
