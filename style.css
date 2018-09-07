@@ -156,14 +156,14 @@ margin: 8% auto;
 
 #container
 {
-	height: 100vh;
+	height: 90%;
 	width: 90%;
 	margin: 10% auto;
 }
 
 #portfolio
 {
-	height: 100vh;
+	height: 90%;
 	width: 100%;
 	background-image: url("img.gif");
 	background-image: cover;
@@ -196,7 +196,7 @@ margin: 8% auto;
 }
 #contact
 {
-height: 100vh;
+height: 90%;
 width: 100%;
 background-image: url("img.gif");
 	background-image: cover;
