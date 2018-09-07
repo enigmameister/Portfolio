@@ -253,19 +253,14 @@ footer
     padding: 0px;
 }
 
-.about button
-{
-    margin-top: 50px;
-    margin-left: 40%;
-}
 .box
 {
     padding: 0px;
-	width: 400px;
-	height: 340px;
+	width: 100%;
+	height: 70%;
 	background-color: #4285F4;
 	border: 3px solid white;
-	border-radius: 5px;
+	border-radius: 10px;
     margin: 0 auto;
 }
 
@@ -396,8 +391,14 @@ footer
 		font-size: 2rem;
 	}
     .box
-	{
-		margin: 70px auto;
-	}
+{
+    padding: 0px;
+	width: 100%;
+	height: 70%;
+	background-color: #4285F4;
+	border: 3px solid white;
+	border-radius: 12px;
+    margin: 0 auto;
+}
 
 } 
