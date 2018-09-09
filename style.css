@@ -180,12 +180,11 @@ main h5
 }
 
 
-.portfolio
+.portfolio, .contact
 {
 	height: 100vh;
 	width: 100%;
 	background-image: url("img.gif");
-	background-size: cover;
 }
 
 .about-content
@@ -252,13 +251,6 @@ main h5
 {
 	width: 80%;
 	height: 85%;
-}
-.contact
-{
-height: 100vh;
-width: 100%;
-background-image: url("img.gif");
-background-size: cover;
 }
 
 .contact button
