@@ -51,10 +51,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#btn-about').click(function(event) {
-        $(".section").animate({'opacity': 0}, 50);
+        $("main").animate({'opacity': 0}, 50);
         event.preventDefault();
         var url = $(this).attr("about.html");
-        $(".section").load("about.html", function() {
+        $("main").load("about.html", function() {
             $(this).animate({'opacity': 1}, 1000);
         });
     });
@@ -62,10 +62,10 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $("#btn-hire").click(function(event){
-        $(".section").animate({'opacity':0}, 50);
+        $("main").animate({'opacity':0}, 50);
         event.preventDefault();
         var url = $(this).attr("hire.html");
-        $(".section").load("hire.html", function(){
+        $("main").load("hire.html", function(){
             $(this).animate({'opacity':1},1000);
        });
     });
