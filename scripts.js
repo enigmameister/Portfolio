@@ -82,7 +82,7 @@ $(document).ready(function(){
                     $('nav').removeClass('active')
                   })
         })
-
+		
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -95,3 +95,9 @@ $(document).ready(function(){
       }
   })
 })
+
+// https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle //
+$('.toggle-theme').click(function() {
+    $('.theme-picker').toggle('1000');
+    $("i", this).toggleClass(".theme-picker");
+});

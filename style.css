@@ -53,6 +53,61 @@ body
 	-o-transform: skew(15deg);
     transition: 1000ms;
 }
+/* http://jsfiddle.net/9EFNK/1622/ */
+.toggle-theme
+{
+	width: 36px;
+	height: 36px; 
+	border-radius: 5px;
+	float: left;
+	widht: 55px;
+	margin: 10px;
+	color: #4285F4;
+	font-size: 2rem;
+}
+.theme-picker
+{
+	width: 36px;
+	height: 36px;
+	margin: 15px;
+	background-color: gold;
+	display: inline;
+	-webkit-transform: skew(-10deg); 
+	-moz-transform: skew(-10deg); 
+	-o-transform: skew(-10deg);
+	border-radius: 5px;
+}
+
+.theme-red, .theme-lime, .theme-white, .theme-default
+{
+		/* display: none; */
+margin: 2px;
+padding: 5px 5px; 
+border: 2px solid white;
+float: left;
+border-radius: 20%;
+}
+
+.theme-red
+{
+	background-color: red;
+}
+
+.theme-lime
+{
+	background-color: lime;
+}
+
+.theme-white
+{
+	background-color: white;
+
+}
+
+.theme-default
+{
+	background-color: #4285F4;
+}
 
 .toggle-menu
 {
