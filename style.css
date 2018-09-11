@@ -45,7 +45,7 @@ body
 .container-logo:hover
 {
 	background-color: transparent;
-	color: #00b4db;
+	color: white;
     border: 1px dashed #00b4db;
     cursor: pointer;
     -webkit-transform: skew(15deg);
@@ -107,7 +107,6 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 	background-color: #00b4db;
 }
 
-
 .toggle-menu
 {
     float: right;
@@ -164,7 +163,7 @@ header nav ul li a
 header nav ul li a:hover
 {
 	text-decoration: none;
-	color: #4285F4;
+	color: #00b4db;
 	transition: 0.3s;
 	text-shadow: 2px 4px 6px #000000;
 }
@@ -173,7 +172,6 @@ header nav ul li a.active
 {
     color: #00b4db;
 }
-
 
 main
 {
@@ -219,7 +217,7 @@ main button
 
 main button:hover, #contact button:hover, #portfolio button:hover
 {
-	background-color: transparent;
+	background: transparent;
 	transition: 0.6s;
 	color: white;
 	border:1px dashed #00b4db;
@@ -339,7 +337,6 @@ footer
 	background-size: cover;
 }
 
-
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
@@ -357,12 +354,12 @@ main button, .portfolio button, .contact button
 {
     width: 260px;
     height: 70px;
-    margin: 18px auto;
+    margin: 10px auto;
     padding: 12px 18px;
     display: block;
 	font-family: 'Jua', sans-serif;
     font-size: 15px;  
-border-radius: 5%;	
+	border-radius: 5%;	
     -webkit-transform: none;
 	-moz-transform: none;
 	-o-transform: none;
@@ -397,9 +394,8 @@ border-radius: 5%;
     {
         position:absolute;
         width: 100%;
-        height: 100%;
         background: #111;
-        height: 600px;
+        height: 580px;
         background-image: url("img.gif");
         top: -900%;
         transition: 0.5s;

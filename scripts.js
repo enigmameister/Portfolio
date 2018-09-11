@@ -83,7 +83,7 @@ $(document).ready(function(){
                   })
         })
 		
-$(document).ready(function(){
+/* $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
       if ($(window).width() > 720 && scroll > 54) {
@@ -91,10 +91,11 @@ $(document).ready(function(){
       }
 
       else{
-          $("header").css({"width":"85%"});   
+          $("header").css({"width":"90%"});   
       }
   })
 })
+*/
 
 $('.theme-picker').hide();
 $('.toggle-theme, .theme-picker').on('click', function()
@@ -102,3 +103,58 @@ $('.toggle-theme, .theme-picker').on('click', function()
     $('.toggle-theme, .theme-picker').toggle('1000')
   }
 );
+
+$('.theme-red').click(function() 
+{
+    $('main button, .container-logo, .portfolio button, .contact button').css({
+        'background': '#ed213a',
+				'border':'0px',
+    });
+	$('.toggle-theme, header nav ul li a.active, .toggle-menu').css({
+		'color': '#ed213a',
+	});
+	$('body, .portfolio, .contact, footer, header nav').css({
+		'background-image': 'url("img2.jpg")',
+	});
+});
+
+$('.theme-lime').click(function() 
+{
+    $('main button, .container-logo, .portfolio button, .contact button').css({
+        'background': '#ed213a',
+				'border':'0px',
+    });
+	$('.toggle-theme, header nav ul li a.active, .toggle-menu').css({
+		'color': '#ed213a',
+	});
+	$('body, .portfolio, .contact, footer, header nav').css({
+		'background-image': 'url("img2.jpg")',
+	});
+});
+
+$('.theme-white').click(function() 
+{
+    $('main button, .container-logo, .portfolio button, .contact button').css({
+        'background': '#ed213a',
+				'border':'0px',
+    });
+	$('.toggle-theme, header nav ul li a.active, .toggle-menu').css({
+		'color': '#ed213a',
+	});
+	$('body, .portfolio, .contact, footer, header nav').css({
+		'background-image': 'url("img2.jpg")',
+	});
+});
+
+$('.theme-default').click(function() 
+{
+    $('main button, .container-logo, .portfolio button, .contact button').css({
+        'background': '#00b4db',
+    });
+	$('.toggle-theme, header nav ul li a.active, .toggle-menu').css({
+		'color': '#00b4db;',
+	});
+	$('body, .portfolio, .contact, footer, header nav').css({
+		'background-image': 'url("img.gif")',
+	});
+});
