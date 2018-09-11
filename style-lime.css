@@ -189,7 +189,7 @@ margin: 10% auto;
 main h1, h4
 {
 	font-family: 'Jua', sans-serif;
-	color: #00b4db;	
+	color: ghostwhite;	
     text-shadow: 2px 3px 4px #000000;
 }
 main button
@@ -216,13 +216,13 @@ main button:hover, #contact button:hover, #portfolio button:hover
 {
 	background-color: transparent;
 	transition: 0.6s;
-	color: white;
+	color: whitesmoke;
 	border:1px dashed #00b4db;
 }
 
 main h5
 {
-    color: #00b4db;
+    color: ghostwhite;
     text-shadow: 2px 0px 1px #000000;
     font-size: 1.2rem;
     padding: 0px;
