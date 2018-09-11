@@ -27,7 +27,7 @@ body
 .container-logo
 {
 	border: 1px solid #4285F4;
-	background-color: #4285F4;
+	background-color: #00b4db;
 	padding: 10px;
 	border-radius: 5px;
 	-webkit-transform: skew(-10deg); 
@@ -45,33 +45,30 @@ body
 .container-logo:hover
 {
 	background-color: transparent;
-	color: #4285F4;
-    border: 1px dashed #4285F4;
+	color: #00b4db;
+    border: 1px dashed #00b4db;
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
 	-o-transform: skew(15deg);
     transition: 1000ms;
 }
-/* http://jsfiddle.net/9EFNK/1622/ */
+
 .toggle-theme
 {
-	width: 36px;
-	height: 36px; 
-	border-radius: 5px;
+	margin-top: 10px;
 	float: left;
-	widht: 55px;
-	margin: 10px;
-	color: #4285F4;
-	font-size: 2rem;
+	color: #00b4db;
+	font-size: 2.4rem;
 }
+
 .theme-picker
 {
-	width: 36px;
-	height: 36px;
-	margin: 15px;
-	background-color: gold;
-	display: inline;
+	display: none;
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin-top: 8px;
 	-webkit-transform: skew(-10deg); 
 	-moz-transform: skew(-10deg); 
 	-o-transform: skew(-10deg);
@@ -80,34 +77,36 @@ body
 
 .theme-red, .theme-lime, .theme-white, .theme-default
 {
-		/* display: none; */
-margin: 2px;
-padding: 5px 5px; 
-border: 2px solid white;
+margin: 3px 1px;
+padding: 10px 10px; 
 float: left;
 border-radius: 20%;
 }
 
 .theme-red
 {
-	background-color: red;
+ background: #ed213a; 
+ background: -webkit-linear-gradient(to right, #ed213a, #93291e); 
+ background: linear-gradient(to right, #ed213a, #93291e);
 }
-
 .theme-lime
 {
-	background-color: lime;
-}
+background: #a8ff78;
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+background: linear-gradient(to right, #78ffd6, #a8ff78);
 
-.theme-white
+}
+.theme-white 
 {
-	background-color: white;
-
+background: #FFEFBA;
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
-
 .theme-default
 {
-	background-color: #4285F4;
+	background-color: #00b4db;
 }
+
 
 .toggle-menu
 {
@@ -117,7 +116,7 @@ border-radius: 20%;
     cursor: pointer;
     display: none;
     padding: 10px;
-    color: #4285F4;
+    color: #00b4db;
 }
 
 header
@@ -172,7 +171,7 @@ header nav ul li a:hover
 
 header nav ul li a.active
 {
-    color: #4285F4;
+    color: #00b4db;
 }
 
 
@@ -202,8 +201,8 @@ main button
 {
 	width: 180px;
 	height: 70px;
-	background-color: #4285F4;
-    border: 1px solid #4285F4;
+	background-color: #00b4db;
+    border: 1px solid #00b4db;
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -223,7 +222,7 @@ main button:hover, #contact button:hover, #portfolio button:hover
 	background-color: transparent;
 	transition: 0.6s;
 	color: white;
-	border:1px dashed #4285F4;
+	border:1px dashed #00b4db;
 }
 
 main h5
@@ -246,7 +245,7 @@ main h5
 {
     padding: 0px;
 	width: 30%;
-	background-color: #4285F4;
+	background-color: #00b4db;
 	border: 3px solid white;
 	border-radius: 10px;
     color: white;
@@ -286,8 +285,8 @@ main h5
 {
 	width: 180px;
 	height: 70px;
-	background-color: #4285F4;
-    border: 1px solid #4285F4;
+	background-color: #00b4db;
+    border: 1px solid #00b4db;
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -312,8 +311,8 @@ main h5
 {
 	width: 180px;
 	height: 70px;
-	background-color: #4285F4;
-    border: 1px solid #4285F4;
+	background-color: #00b4db;
+    border: 1px solid #00b4db;
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -357,34 +356,32 @@ footer
 main button, .portfolio button, .contact button
 {
     width: 260px;
-    height: 60px;
-	background-color: #4285F4;
-    border: 1px solid #4285F4;
-    color: white;
-    margin: 10px auto;
+    height: 70px;
+    margin: 18px auto;
     padding: 12px 18px;
-    text-decoration: none;
     display: block;
-    font-size: 12px;    
+	font-family: 'Jua', sans-serif;
+    font-size: 15px;  
+border-radius: 5%;	
     -webkit-transform: none;
 	-moz-transform: none;
 	-o-transform: none;
 	}
     main
     {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 	main h1
 	{
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		text-align: center;
 	}
 	main h4
 	{
 		text-align: left;
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 		text-align: center;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	header
     {

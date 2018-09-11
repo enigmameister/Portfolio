@@ -96,8 +96,9 @@ $(document).ready(function(){
   })
 })
 
-// https://stackoverflow.com/questions/15345784/change-icon-on-click-toggle //
-$('.toggle-theme').click(function() {
-    $('.theme-picker').toggle('1000');
-    $("i", this).toggleClass(".theme-picker");
-});
+$('.theme-picker').hide();
+$('.toggle-theme, .theme-picker').on('click', function()
+ {
+    $('.toggle-theme, .theme-picker').toggle('1000')
+  }
+);
