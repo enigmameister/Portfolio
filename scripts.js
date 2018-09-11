@@ -82,7 +82,7 @@ $(document).ready(function(){
                     $('nav').removeClass('active')
                   })
         })
-		
+/*		
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -95,6 +95,7 @@ $(document).ready(function(){
       }
   })
 })
+*/
 
 $('.theme-picker').hide();
 $('.toggle-theme, .theme-picker').on('click', function()
@@ -105,6 +106,14 @@ $('.toggle-theme, .theme-picker').on('click', function()
 
 document.getElementById('theme-red').onclick = function () { 
     document.getElementById('theme_css').href = 'style-red.css';
+};
+
+document.getElementById('theme-lime').onclick = function() {
+    document.getElementById('theme_css').href = 'style-lime.css';
+};
+
+document.getElementById('theme-white').onclick = function() {
+    document.getElementById('theme_css').href = 'style-white.css';
 };
 
 document.getElementById('theme-default').onclick = function() {

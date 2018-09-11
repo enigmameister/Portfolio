@@ -35,7 +35,7 @@ body
 	-moz-transform: skew(-10deg); 
 	-o-transform: skew(-10deg);
     float: left;
-    color: white;
+    color: cornsilk;
 	text-decoration: none;
 	margin: 10px;
 	font-family: 'Jua', sans-serif;
@@ -47,7 +47,7 @@ body
 {
 	background-color: transparent;
 	color: #ed213a;
-    border: 1px dashed white;
+    border: 1px dashed cornsilk;
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
@@ -59,7 +59,7 @@ body
 {
 	margin-top: 10px;
 	float: left;
-	color: #ed213a;
+	color: cornsilk;
 	font-size: 2.4rem;
 }
 
@@ -151,7 +151,7 @@ header nav ul li
 
 header nav ul li a
 {
-	color: white;
+	color: cornsilk;
 	text-decoration: none;
 	font-family: 'Jua', sans-serif;
 	text-shadow: 2px 6px 4px #000000;
@@ -175,7 +175,6 @@ header nav ul li a.active
     color: #ed213a;
 }
 
-
 main
 {
 width: 85%;
@@ -185,7 +184,7 @@ margin: 10% auto;
 main h1, h4
 {
 	font-family: 'Jua', sans-serif;
-	color: white;	
+	color: cornsilk;	
 }
 
 main h1 
@@ -204,7 +203,7 @@ main button
 	height: 70px;
 	background-color: transparent;
     border: 5px solid #ed213a;
-    color: white;
+    color: cornsilk;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -228,7 +227,7 @@ main button:hover, .contact button:hover, .portfolio button:hover
 
 main h5
 {
-    color: white;
+    color: cornsilk;
     font-size: 1.5rem;
     padding: 0px;
     margin: 12px;
@@ -248,7 +247,7 @@ main h5
 	background-color: #00b4db;
 	border: 3px solid white;
 	border-radius: 10px;
-    color: white;
+    color: cornsilk;
 }
 
 .about-content h2
@@ -287,7 +286,7 @@ main h5
 	height: 70px;
 	background-color: transparent;
     border: 5px solid #ed213a;
-    color: white;
+    color: cornsilk;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -313,7 +312,7 @@ main h5
 	height: 70px;
 	background-color: transparent;
     border: 5px solid #ed213a;
-    color: white;
+    color: cornsilk;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -330,12 +329,12 @@ footer
 {
 	background-color: transparent;
 	padding: 16px 12px;
-	color: white;
+	color: cornsilk;
 	text-align: center;
 	font-family: 'Jua', sans-serif;
 	font-size: 1.3rem;
 	text-shadow: 2px 6px 4px #000000;
-	background-image: url("img.gif");
+	background-image: url("img2.jpg");
 	background-size: cover;
 }
 
