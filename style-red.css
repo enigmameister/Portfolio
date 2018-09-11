@@ -233,14 +233,19 @@ main h5
 	width: 100%;
 }
 
+ .about
+{
+width: 85%;
+height: 100vh;
+margin: 10% auto;
+display: none;
+}
+
 .about-content
 {
     padding: 0px;
-	width: 30%;
-	background-color: ghostwhite;
-	border: 3px solid white;
-	border-radius: 10px;
-    color: cornsilk;
+	width: 50%;
+    color: white;
 }
 
 .about-content h2
@@ -299,7 +304,7 @@ main h5
 	height: 85%;
 }
 
-.contact button
+.contact button, .about button
 {
 	width: 180px;
 	height: 70px;
@@ -459,6 +464,13 @@ background: linear-gradient(to right, #e73827, #f85032);
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
+}
+.about
+{
+width: 85%;
+height: 100vh;
+margin: 20% auto;
+display: none;
 }
 
 } 

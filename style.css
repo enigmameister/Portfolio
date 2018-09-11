@@ -20,7 +20,7 @@ body
 .container
 {
 	width: 80%;
-    height: 80vh;
+    height: 85vh;
 	margin: 0 auto;
 }
 
@@ -233,21 +233,24 @@ main h5
     margin: 12px;
 }
 
-
 .portfolio, .contact
 {
 	height: 100vh;
 	width: 100%;
 	background-image: url("img.gif");
 }
+ .about
+{
+width: 85%;
+height: 100vh;
+margin: 10% auto;
+display: none;
+}
 
 .about-content
 {
     padding: 0px;
-	width: 30%;
-	background-color: #00b4db;
-	border: 3px solid white;
-	border-radius: 10px;
+	width: 50%;
     color: white;
 }
 
@@ -306,7 +309,7 @@ main h5
 	height: 85%;
 }
 
-.contact button
+.contact button, .about button
 {
 	width: 180px;
 	height: 70px;
@@ -468,5 +471,12 @@ border-radius: 5%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
 }
-
+     .about
+{
+width: 85%;
+height: 100vh;
+margin: 20% auto;
+display: none;
+}
+    
 } 

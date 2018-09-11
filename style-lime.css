@@ -62,7 +62,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, F
 {
 	margin-top: 10px;
 	float: left;
-	color: #00b4db;
+	color: ghostwhite;
     text-shadow: 2px 3px 4px #000000;
 	font-size: 2.4rem;
 }
@@ -120,7 +120,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
     cursor: pointer;
     display: none;
     padding: 10px;
-    color: #00b4db;
+    color: ghostwhite;
     text-shadow: 2px 3px 4px #000000;
 }
 
@@ -236,13 +236,18 @@ main h5
 	width: 100%;
 }
 
+ .about
+{
+width: 85%;
+height: 100vh;
+margin: 10% auto;
+display: none;
+}
+
 .about-content
 {
     padding: 0px;
-	width: 30%;
-	background-color: #00b4db;
-	border: 3px solid white;
-	border-radius: 10px;
+	width: 50%;
     color: white;
 }
 
@@ -281,8 +286,8 @@ main h5
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid #00b4db;
-    color:  #00b4db;
+    border: 5px solid ghostwhite;
+    color:  ghostwhite;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -302,13 +307,13 @@ main h5
 	height: 85%;
 }
 
-.contact button
+.contact button, .about button
 {
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid #00b4db;
-    color:  #00b4db;
+    border: 5px solid ghostwhite;
+    color:  ghostwhite;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -325,13 +330,12 @@ footer
 {
 	background-color: transparent;
 	padding: 16px 12px;
-    color:  #00b4db;
+    color:  ghostwhite;
 	text-align: center;
 	font-family: 'Jua', sans-serif;
 	font-size: 1.3rem;
 	text-shadow: 1px 2px 2px #000000;
 }
-
 
 /*************** MOBILE ***************/
 @media (max-width: 720px)
@@ -465,5 +469,8 @@ background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, F
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
 }
-
+.about
+    {
+        margin: 20% auto;
+    }
 } 
