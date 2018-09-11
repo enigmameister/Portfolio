@@ -11,11 +11,11 @@ outline: 0;
 
 body
 {
-	font-family: sans-serif;
-	box-sizing: border-box;
-	font-size: 12px;
-	background-image: url("img2.jpg");
-    
+font-family: sans-serif;
+box-sizing: border-box;
+font-size: 12px;
+background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+background: linear-gradient(to right, #e73827, #f85032); 
 }
 
 .container
@@ -27,7 +27,7 @@ body
 
 .container-logo
 {
-	border: 1px solid #ed213a;
+	border: 2px solid cornsilk;
 	background-color: transparent;
 	padding: 10px;
 	border-radius: 5px;
@@ -47,12 +47,13 @@ body
 {
 	background-color: transparent;
 	color: #ed213a;
-    border: 1px dashed cornsilk;
+    border: 2px dashed cornsilk;
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
 	-o-transform: skew(15deg);
     transition: 1000ms;
+    text-shadow: 1px 3px 6px #000000;
 }
 
 .toggle-theme
@@ -65,10 +66,10 @@ body
 
 .theme-picker
 {
-    
 	float: left;
-	width: 45px;
-	height: 45px;
+	width: 50px;
+    padding: 2px;
+	height: 47px;
 	margin-top: 8px;
 	-webkit-transform: skew(-10deg); 
 	-moz-transform: skew(-10deg); 
@@ -78,17 +79,16 @@ body
 
 #theme-red, #theme-lime, #theme-white, #theme-default
 {
-margin: 3px 1px;
-padding: 10px 10px; 
+width: 20px;
+height: 20px;
+margin: 2px 2px;
 float: left;
-border-radius: 20%;
+border-radius: 30%;
 }
 
 #theme-red
 {
- background: #ed213a; 
- background: -webkit-linear-gradient(to right, #ed213a, #93291e); 
- background: linear-gradient(to right, #ed213a, #93291e);
+background: crimson;
 }
 #theme-lime
 {
@@ -105,9 +105,8 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
 #theme-default
 {
-	background-color: #00b4db;
+	background-color: ghostwhite;
 }
-
 
 .toggle-menu
 {
@@ -117,7 +116,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
     cursor: pointer;
     display: none;
     padding: 10px;
-    color: #ed213a;
+    color: cornsilk;
 }
 
 header
@@ -170,11 +169,6 @@ header nav ul li a:hover
 	text-shadow: 2px 4px 6px #000000;
 }
 
-header nav ul li a.active
-{
-    color: #ed213a;
-}
-
 main
 {
 width: 85%;
@@ -202,7 +196,7 @@ main button
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid #ed213a;
+    border: 5px solid cornsilk;
     color: cornsilk;
     padding: 14px 20px;
     text-align: center;
@@ -221,8 +215,8 @@ main button:hover, .contact button:hover, .portfolio button:hover
 {
 	background-color: transparent;
 	transition: 0.6s;
-	color: #ed213a;
-	border:1px dashed #ed213a;
+	color: cornsilk;
+	border:2px dashed cornsilk;
 }
 
 main h5
@@ -237,14 +231,13 @@ main h5
 {
 	height: 100vh;
 	width: 100%;
-	background-image: url("img2.jpg");
 }
 
 .about-content
 {
     padding: 0px;
 	width: 30%;
-	background-color: #00b4db;
+	background-color: ghostwhite;
 	border: 3px solid white;
 	border-radius: 10px;
     color: cornsilk;
@@ -274,18 +267,18 @@ main h5
     font-family: 'Jua', sans-serif;
 }
 
-.fab.fa-html5 {color: #e34f26;}
+.fab.fa-html5 {color: orange;}
 .fab.fa-css3-alt {color:mediumblue;}
 .fab.fa-js-square {color: #f7df1e;}
 .fab.fa-facebook-square {color: #3B5998;}
-.fab.fa-github {color: #6e5494;}
+.fab.fa-github {color: blueviolet}
 
 .portfolio button
 {
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid #ed213a;
+    border: 5px solid cornsilk;
     color: cornsilk;
     padding: 14px 20px;
     text-align: center;
@@ -311,7 +304,7 @@ main h5
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid #ed213a;
+    border: 5px solid cornsilk;
     color: cornsilk;
     padding: 14px 20px;
     text-align: center;
@@ -334,8 +327,6 @@ footer
 	font-family: 'Jua', sans-serif;
 	font-size: 1.3rem;
 	text-shadow: 2px 6px 4px #000000;
-	background-image: url("img2.jpg");
-	background-size: cover;
 }
 
 
@@ -399,7 +390,8 @@ border-radius: 5%;
         height: 100%;
         background: #111;
         height: 600px;
-        background-image: url("img2.jpg");
+        background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+background: linear-gradient(to right, #e73827, #f85032); 
         top: -900%;
         transition: 0.5s;
         margin: 0 auto;
