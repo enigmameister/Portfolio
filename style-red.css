@@ -1,0 +1,473 @@
+*
+{
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+}
+
+body
+{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	font-size: 12px;
+	background-image: url("img2.jpg");
+    
+}
+
+.container
+{
+	width: 80%;
+    height: 80vh;
+	margin: 0 auto;
+}
+
+.container-logo
+{
+	border: 1px solid #ed213a;
+	background-color: transparent;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-transform: skew(-10deg); 
+	-moz-transform: skew(-10deg); 
+	-o-transform: skew(-10deg);
+    float: left;
+    color: white;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 1px 3px 6px #000000;
+    font-size: 1.2rem;
+}
+
+.container-logo:hover
+{
+	background-color: transparent;
+	color: #ed213a;
+    border: 1px dashed white;
+    cursor: pointer;
+    -webkit-transform: skew(15deg);
+	-moz-transform: skew(15deg) ;
+	-o-transform: skew(15deg);
+    transition: 1000ms;
+}
+
+.toggle-theme
+{
+	margin-top: 10px;
+	float: left;
+	color: #ed213a;
+	font-size: 2.4rem;
+}
+
+.theme-picker
+{
+    
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin-top: 8px;
+	-webkit-transform: skew(-10deg); 
+	-moz-transform: skew(-10deg); 
+	-o-transform: skew(-10deg);
+	border-radius: 5px;
+}
+
+#theme-red, #theme-lime, #theme-white, #theme-default
+{
+margin: 3px 1px;
+padding: 10px 10px; 
+float: left;
+border-radius: 20%;
+}
+
+#theme-red
+{
+ background: #ed213a; 
+ background: -webkit-linear-gradient(to right, #ed213a, #93291e); 
+ background: linear-gradient(to right, #ed213a, #93291e);
+}
+#theme-lime
+{
+background: #a8ff78;
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+background: linear-gradient(to right, #78ffd6, #a8ff78);
+
+}
+#theme-white 
+{
+background: #FFEFBA;
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+#theme-default
+{
+	background-color: #00b4db;
+}
+
+
+.toggle-menu
+{
+    float: right;
+    line-height: 50px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    color: #ed213a;
+}
+
+header
+{
+	 position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     width: 85%;
+     margin: 0 auto;
+    -webkit-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+}
+
+header nav
+{
+    float: right;
+}
+
+header nav ul
+{
+	display: flex;
+}
+
+header nav ul li 
+{
+    list-style: none;
+}
+
+header nav ul li a
+{
+	color: white;
+	text-decoration: none;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 2px 6px 4px #000000;
+    padding: 10px 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6rem;
+    display: block;
+}
+
+header nav ul li a:hover
+{
+	text-decoration: none;
+	color: #ed213a;
+	transition: 0.5s;
+	text-shadow: 2px 4px 6px #000000;
+}
+
+header nav ul li a.active
+{
+    color: #ed213a;
+}
+
+
+main
+{
+width: 85%;
+margin: 10% auto;
+}
+
+main h1, h4
+{
+	font-family: 'Jua', sans-serif;
+	color: white;	
+}
+
+main h1 
+{
+    font-size: 4rem;
+}
+
+main h4
+{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+main button
+{
+	width: 180px;
+	height: 70px;
+	background-color: transparent;
+    border: 5px solid #ed213a;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 10px auto;
+    cursor: pointer;
+	text-shadow: 1px 0px 1px gray;
+	-webkit-transform: skew(-20deg); 
+	-moz-transform: skew(-20deg); 
+	-o-transform: skew(-20deg);
+}
+
+main button:hover, .contact button:hover, .portfolio button:hover
+{
+	background-color: transparent;
+	transition: 0.6s;
+	color: #ed213a;
+	border:1px dashed #ed213a;
+}
+
+main h5
+{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 12px;
+}
+
+.portfolio, .contact
+{
+	height: 100vh;
+	width: 100%;
+	background-image: url("img2.jpg");
+}
+
+.about-content
+{
+    padding: 0px;
+	width: 30%;
+	background-color: #00b4db;
+	border: 3px solid white;
+	border-radius: 10px;
+    color: white;
+}
+
+.about-content h2
+{
+	text-align: center;	
+	font-size: 1.4rem;
+}
+
+.about-content p
+{
+    text-align: justify;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    word-wrap: break-word;
+    letter-spacing: 0.9px;
+}
+.box-info
+{
+    font-size: 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Jua', sans-serif;
+}
+
+.fab.fa-html5 {color: #e34f26;}
+.fab.fa-css3-alt {color:mediumblue;}
+.fab.fa-js-square {color: #f7df1e;}
+.fab.fa-facebook-square {color: #3B5998;}
+.fab.fa-github {color: #6e5494;}
+
+.portfolio button
+{
+	width: 180px;
+	height: 70px;
+	background-color: transparent;
+    border: 5px solid #ed213a;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px auto;
+    cursor: pointer;
+	text-shadow: 1px 0px 1px gray;
+	-webkit-transform: skew(-20deg); 
+	-moz-transform: skew(-20deg); 
+	-o-transform: skew(-20deg);
+}
+
+.portfolio-content, .contact-content
+{
+	width: 80%;
+	height: 85%;
+}
+
+.contact button
+{
+	width: 180px;
+	height: 70px;
+	background-color: transparent;
+    border: 5px solid #ed213a;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px auto;
+    cursor: pointer;
+	text-shadow: 1px 0px 1px gray;
+	-webkit-transform: skew(-20deg); 
+	-moz-transform: skew(-20deg); 
+	-o-transform: skew(-20deg);
+}
+footer
+{
+	background-color: transparent;
+	padding: 16px 12px;
+	color: white;
+	text-align: center;
+	font-family: 'Jua', sans-serif;
+	font-size: 1.3rem;
+	text-shadow: 2px 6px 4px #000000;
+	background-image: url("img.gif");
+	background-size: cover;
+}
+
+
+/*************** MOBILE ***************/
+@media (max-width: 720px)
+{
+    .portfolio-content, .contact-content
+{
+	height: 80%;
+}
+
+    .container
+    {
+        height: 90vh;
+        width: 100%;
+    }
+main button, .portfolio button, .contact button
+{
+    width: 260px;
+    height: 70px;
+    margin: 18px auto;
+    padding: 12px 18px;
+    display: block;
+	font-family: 'Jua', sans-serif;
+    font-size: 15px;  
+border-radius: 5%;	
+    -webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	}
+    main
+    {
+        margin-top: 80px;
+    }
+	main h1
+	{
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	main h4
+	{
+		text-align: left;
+		font-size: 1.4rem;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	header
+    {
+        width: 100%;
+    }
+    
+    .toggle-menu
+    {
+        display: block;
+    }
+    
+    header nav
+    {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        height: 600px;
+        background-image: url("img2.jpg");
+        top: -900%;
+        transition: 0.5s;
+        margin: 0 auto;
+        z-index: -1;
+        text-align: center;
+    }
+    header nav ul li a
+    {
+        font-size: 2.7rem;
+        text-transform: uppercase;
+        margin: 14px auto;
+    }
+    header nav.active
+    {
+        top: 0%; 
+        display: block;
+    }
+    header nav ul 
+    {
+    display: block;
+    text-align: center;
+	margin-top: 70px;
+    }
+    main h5
+    {
+        font-size: 1rem;
+		text-align: center;
+        letter-spacing: -1px;
+    }
+	main h1
+	{
+		font-size: 2rem;
+	}
+    
+    .about-content
+    {
+    padding: 0px;
+	width: 100%;
+	height: 70vh;
+	background-color: transparent;
+	border: none;
+	border-radius: 12px;
+    margin: 0 auto;
+    }
+    .about-content h2
+{
+	text-align: center;	
+	font-size: 1.4rem;
+}
+
+.about-content p
+{
+    text-align: justify;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    word-wrap: break-word;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+}
+.box-info
+{
+    font-size: 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Jua', sans-serif;
+}
+
+} 

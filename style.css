@@ -75,7 +75,7 @@ body
 	border-radius: 5px;
 }
 
-.theme-red, .theme-lime, .theme-white, .theme-default
+#theme-red, #theme-lime, #theme-white, #theme-default
 {
 margin: 3px 1px;
 padding: 10px 10px; 
@@ -83,26 +83,26 @@ float: left;
 border-radius: 20%;
 }
 
-.theme-red
+#theme-red
 {
  background: #ed213a; 
  background: -webkit-linear-gradient(to right, #ed213a, #93291e); 
  background: linear-gradient(to right, #ed213a, #93291e);
 }
-.theme-lime
+#theme-lime
 {
 background: #a8ff78;
 background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
 background: linear-gradient(to right, #78ffd6, #a8ff78);
 
 }
-.theme-white 
+#theme-white 
 {
 background: #FFEFBA;
 background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
 background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
-.theme-default
+#theme-default
 {
 	background-color: #00b4db;
 }
@@ -164,7 +164,7 @@ header nav ul li a
 header nav ul li a:hover
 {
 	text-decoration: none;
-	color: #4285F4;
+	color: #00b4db;
 	transition: 0.3s;
 	text-shadow: 2px 4px 6px #000000;
 }
