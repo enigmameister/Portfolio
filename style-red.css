@@ -45,15 +45,15 @@ background: linear-gradient(to right, #e73827, #f85032);
 
 .container-logo:hover
 {
-	background-color: transparent;
-	color: #ed213a;
-    border: 2px dashed cornsilk;
+	background-color: cornsilk;
+	color: #f85032;
+    border: 0px dashed cornsilk;
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
 	-o-transform: skew(15deg);
     transition: 1000ms;
-    text-shadow: 1px 3px 6px #000000;
+	text-shadow: 1px 3px 6px cornsilk;
 }
 
 .toggle-theme
@@ -105,7 +105,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
 #theme-default
 {
-	background-color: ghostwhite;
+	background-color: #00b4db;
 }
 
 .toggle-menu
@@ -196,7 +196,7 @@ main button
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 5px solid cornsilk;
+    border: 2px solid cornsilk;
     color: cornsilk;
     padding: 14px 20px;
     text-align: center;
@@ -213,10 +213,10 @@ main button
 
 main button:hover, .contact button:hover, .portfolio button:hover
 {
-	background-color: transparent;
+	background-color: cornsilk;
 	transition: 0.6s;
-	color: cornsilk;
-	border:2px dashed cornsilk;
+	color: #f85032;
+	border:1px dashed cornsilk;
 }
 
 main h5
@@ -233,19 +233,14 @@ main h5
 	width: 100%;
 }
 
- .about
-{
-width: 85%;
-height: 100vh;
-margin: 10% auto;
-display: none;
-}
-
 .about-content
 {
     padding: 0px;
-	width: 50%;
-    color: white;
+	width: 30%;
+	background-color: ghostwhite;
+	border: 3px solid white;
+	border-radius: 10px;
+    color: cornsilk;
 }
 
 .about-content h2
@@ -304,7 +299,7 @@ display: none;
 	height: 85%;
 }
 
-.contact button, .about button
+.contact button
 {
 	width: 180px;
 	height: 70px;
@@ -464,13 +459,6 @@ background: linear-gradient(to right, #e73827, #f85032);
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
-}
-.about
-{
-width: 85%;
-height: 100vh;
-margin: 20% auto;
-display: none;
 }
 
 } 

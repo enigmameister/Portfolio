@@ -59,7 +59,7 @@ $(document).ready(function() {
         });
     });
 });
-/*
+
 $(document).ready(function(){
     $("#btn-hire").click(function(event){
         $("main").animate({'opacity':0}, 50);
@@ -70,7 +70,7 @@ $(document).ready(function(){
        });
     });
 });
-*/
+
 $(document).ready(function(){
                   $('.toggle-menu').click(function(){
                     $('nav').toggleClass('active')
@@ -104,7 +104,6 @@ $('.toggle-theme, .theme-picker').on('click', function()
   }
 );
 
-
 document.getElementById('theme-red').onclick = function () { 
     document.getElementById('theme_css').href = 'style-red.css';
 };
@@ -120,8 +119,3 @@ document.getElementById('theme-white').onclick = function() {
 document.getElementById('theme-default').onclick = function() {
     document.getElementById('theme_css').href = 'style.css';
 };
-
-$('#btn-about').click(function() {
-  $('main').css('display', 'none');
-    $('.about').css('display', 'block');
-});
