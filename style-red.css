@@ -237,7 +237,7 @@ main h5
 {
     padding: 0px;
 	width: 30%;
-	background-color: ghostwhite;
+	background-color: transparent;
 	border: 3px solid white;
 	border-radius: 10px;
     color: cornsilk;
@@ -426,12 +426,13 @@ background: linear-gradient(to right, #e73827, #f85032);
 		font-size: 2rem;
 	}
     
+	
     .about-content
     {
     padding: 0px;
 	width: 100%;
 	height: 70vh;
-	background-color: transparent;
+	background
 	border: none;
 	border-radius: 12px;
     margin: 0 auto;
