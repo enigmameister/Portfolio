@@ -29,22 +29,7 @@
 					<button id="theme-white" onclick="swapStyleSheet('style-white.css')"></button>
 					<button id="theme-default" onclick="swapStyleSheet('style.css')"></button>
 				</div>
-           <script>
-    var swapStyleSheet = function (sheet) {
-        document.getElementById('theme_css').setAttribute('href', sheet);
-        storebackground(sheet);
-    }
 
-    var storebackground = function (swapstylesheet) {
-        localStorage.setItem("sheetKey", swapstylesheet); //you need to give a key and value
-    }
-
-    var loadbackground = function () {
-        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
-    }
-
-    window.onload = loadbackground();
-</script>
             <nav><ul>	
 				<li><a href="#" class="active" id="h-nav">Home</a>
 				<li><a href="#" id="p-nav">Portfolio</a>

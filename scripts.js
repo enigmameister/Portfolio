@@ -102,3 +102,18 @@ $('.toggle-theme, .theme-picker').on('click', function()
     $('.toggle-theme, .theme-picker').toggle('1000')
   }
 );
+
+  var swapStyleSheet = function (sheet) {
+        document.getElementById('theme_css').setAttribute('href', sheet);
+        storebackground(sheet);
+    }
+
+    var storebackground = function (swapstylesheet) {
+        localStorage.setItem("sheetKey", swapstylesheet); //you need to give a key and value
+    }
+
+    var loadbackground = function () {
+        document.getElementById('theme_css').setAttribute('style.css', localStorage.getItem('sheetKey'));
+    }
+
+    window.onload = loadbackground();
