@@ -24,11 +24,27 @@
 		</div>
 			<div class="toggle-theme"><i class="fas fa-fill-drip"></i></div>
 				<div class="theme-picker">
-					<span id="theme-red"></span>
-					<span id="theme-lime"></span>
-					<span id="theme-white"></span>
-					<span id="theme-default"></span>
+                    <span id="theme-red" onclick="swapStyleSheet('style-red.css')"></span>
+                    <span id="theme-lime" onclick="swapStyleSheet('style-lime.css')"></span>
+					<span id="theme-white" onclick="swapStyleSheet('style-white.css')">></span>
+					<span id="theme-default" onclick="swapStyleSheet('style-default.css')">></span>
 				</div>
+           <script>
+    var swapStyleSheet = function (sheet) {
+        document.getElementById('theme_css').setAttribute('href', sheet);
+        storebackground(sheet);
+    }
+
+    var storebackground = function (swapstylesheet) {
+        localStorage.setItem("sheetKey", swapstylesheet); //you need to give a key and value
+    }
+
+    var loadbackground = function () {
+        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
+    }
+
+    window.onload = loadbackground();
+</script>
             <nav><ul>	
 				<li><a href="#" class="active" id="h-nav">Home</a>
 				<li><a href="#" id="p-nav">Portfolio</a>
@@ -45,7 +61,7 @@
 		    <button type="button" id="btn-hire"><i class="fas fa-file-signature"></i> Hire Me</button>
 		    <button type="button" id="btn-go"><i class="fas fa-arrow-circle-down"></i> Let's start!</button>
 	    </main>	
-</div>
+</div>1
 <div class="portfolio">
 	<div class="portfolio-content">
 	    <div class="projects-box">

@@ -102,7 +102,7 @@ $('.toggle-theme, .theme-picker').on('click', function()
     $('.toggle-theme, .theme-picker').toggle('1000')
   }
 );
-
+/*
 document.getElementById('theme-red').onclick = function () { 
     document.getElementById('theme_css').href = 'style-red.css';
 };
@@ -118,3 +118,4 @@ document.getElementById('theme-white').onclick = function() {
 document.getElementById('theme-default').onclick = function() {
     document.getElementById('theme_css').href = 'style.css';
 };
+*/
