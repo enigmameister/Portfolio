@@ -24,14 +24,14 @@
 		</div>
 			<div class="toggle-theme"><i class="fas fa-fill-drip"></i></div>
 				<div class="theme-picker">
-                    <span id="theme-red" onclick="swapStyleSheet('style-red.css')"></span>
-                    <span id="theme-lime" onclick="swapStyleSheet('style-lime.css')"></span>
-					<span id="theme-white" onclick="swapStyleSheet('style-white.css')">></span>
-					<span id="theme-default" onclick="swapStyleSheet('style-default.css')">></span>
+                    <button id="theme-red" onclick="swapStyleSheet('style-red.css')"></button>
+                    <button id="theme-lime" onclick="swapStyleSheet('style-lime.css')"></button>
+					<button id="theme-white" onclick="swapStyleSheet('style-white.css')"></button>
+					<button id="theme-default" onclick="swapStyleSheet('style-default.css')"></button>
 				</div>
            <script>
     var swapStyleSheet = function (sheet) {
-        document.getElementById('theme_css').setAttribute('href', sheet);
+        document.getElementById('theme_css').setAttribute('style.css', sheet);
         storebackground(sheet);
     }
 
@@ -40,7 +40,7 @@
     }
 
     var loadbackground = function () {
-        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
+        document.getElementById('theme_css').setAttribute('style.css', localStorage.getItem('sheetKey'));
     }
 
     window.onload = loadbackground();
