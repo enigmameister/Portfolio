@@ -9,8 +9,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="" id="theme_css">
+<link rel="stylesheet" type="text/css" href="style" id="theme_css">
 <link rel="stylesheet" type="text/css" href="projects.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -30,7 +29,7 @@
                     <button id="theme-lime" onclick="swapStyleSheet('style-white.css')"></button>
 					<button id="theme-default" onclick="swapStyleSheet('style.css')"></button>
 				</div>
-           <script>
+           <script type="application/javascript">>
     var swapStyleSheet = function (sheet) {
         document.getElementById('theme_css').setAttribute('href', sheet);
         storebackground(sheet);
