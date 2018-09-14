@@ -7,7 +7,6 @@ line-height: 1.4em;
 text-decoration: none;
 outline: 0;
 }
-
 body
 {
 	font-family: sans-serif;
@@ -15,14 +14,12 @@ body
 	font-size: 12px;
 	background-image: url("img.gif");	
 }
-
 .container
 {
 	width: 80%;
     height: 90vh;
 	margin: 0 auto;
 }
-
 .container-logo
 {
 	border: 1px solid #00b4db;
@@ -40,7 +37,6 @@ body
 	text-shadow: 1px 3px 6px #000000;
     font-size: 1.2rem;
 }
-
 .container-logo:hover
 {
 	background-color: transparent;
@@ -52,7 +48,6 @@ body
 	-o-transform: skew(15deg);
     transition: 1000ms;
 }
-
 .toggle-theme
 {
 	margin-top: 10px;
@@ -60,7 +55,6 @@ body
 	color: #00b4db;
 	font-size: 2.4rem;
 }
-
 .theme-picker
 {
 	display: none;
@@ -73,7 +67,6 @@ body
 	-o-transform: skew(-10deg);
 	border-radius: 5px;
 }
-
 #theme-red, #theme-lime, #theme-white, #theme-default
 {
 margin: 3px 1px;
@@ -81,7 +74,6 @@ padding: 10px 10px;
 float: left;
 border-radius: 20%;
 }
-
 #theme-red
 {
  background: #ed213a; 
@@ -93,7 +85,6 @@ border-radius: 20%;
 background: #a8ff78;
 background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
 background: linear-gradient(to right, #78ffd6, #a8ff78);
-
 }
 #theme-white 
 {
@@ -101,10 +92,7 @@ background: #FFEFBA;
 background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
 background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
-#theme-default
-{
-	background-color: #00b4db;
-}
+#theme-default {background-color: #00b4db;}
 
 .toggle-menu
 {
@@ -116,7 +104,6 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
     padding: 10px;
     color: #00b4db;
 }
-
 header
 {
 	 position:fixed;
@@ -130,22 +117,18 @@ header
     -o-transition: width 0.4s ease;
     transition: width 0.4s ease;
 }
-
 header nav
 {
     float: right;
 }
-
 header nav ul
 {
 	display: flex;
 }
-
 header nav ul li 
 {
     list-style: none;
 }
-
 header nav ul li a
 {
 	color: white;
@@ -158,7 +141,6 @@ header nav ul li a
     font-size: 1.6rem;
     display: block;
 }
-
 header nav ul li a:hover
 {
 	text-decoration: none;
@@ -166,24 +148,20 @@ header nav ul li a:hover
 	transition: 0.3s;
 	text-shadow: 2px 4px 6px #000000;
 }
-
 header nav ul li a.active
 {
     color: #00b4db;
 }
-
 main
 {
 width: 85%;
 margin: 10% auto;
 }
-
 main h1, h4
 {
 	font-family: 'Jua', sans-serif;
 	color: white;	
 }
-
 main h1 
 {
     font-size: 4rem;
@@ -191,10 +169,9 @@ main h1
 
 main h4
 {
-    text-align: justify;
     font-size: 1.4rem;
 }
-main button
+main button, .portfolio button, .contact button
 {
 	width: 180px;
 	height: 70px;
@@ -214,7 +191,6 @@ main button
 	-moz-transform: skew(-20deg); 
 	-o-transform: skew(-20deg);
 }
-
 main button:hover, .contact button:hover, .portfolio button:hover
 {
 	background-color: transparent;
@@ -222,7 +198,6 @@ main button:hover, .contact button:hover, .portfolio button:hover
 	color: white;
 	border:1px dashed #00b4db;
 }
-
 main h5
 {
     color: white;
@@ -230,15 +205,84 @@ main h5
     padding: 0px;
     margin: 12px;
 }
-
-/***********************************************/
 .portfolio, .contact
 {
 	height: 100vh;
 	width: 100%;
+	display: inline-block;
 	background-image: url("img.gif");
 }
-
+.portfolio-content, .contact-content
+{
+	width: 85%;
+	height: 80%;
+	margin: 80px auto;
+	
+}
+.portfolio button, .contact button
+{
+	display: block;
+}
+.contact-box
+{
+	width: 95%;
+	height: 80%;
+	margin: 0 auto;
+	border-radius: 15px;
+	border: 5px inset #00b4db;
+	background-color: #00b4db;
+}
+.contact-box form
+{
+	height: 70%;
+	width: 100%;
+	text-align: center;
+}
+.contact-box h1, p
+{
+	color: ghostwhite;
+	font-size: 1.5rem;
+	font-family: 'Jua', sans-serif;
+}
+input[type=email], textarea
+{
+	width: 80%;
+	color: #00b4db;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: left;
+	
+	border: 2px inset #00b4db;
+	padding: 0px;
+	 resize: none;
+}
+textarea
+{
+height: 240px;
+text-align: justify;
+}
+input[type=submit]
+{
+	background-color: transparent;
+	color: whitesmoke;
+	border: 2px inset #00b4db;
+	padding: 10px;
+	margin: 15px;
+	width: 120px;
+}
+input[type=submit]:active
+{
+	border: 4px outset #00b4db;
+	transition: 1s;
+	background-color: ghostwhite;
+	color: #00b4db;
+}
+.about
+{
+	width: 100%;
+	display: block-inline;
+}
 .about-content
 {
     padding: 0px;
@@ -248,13 +292,11 @@ main h5
 	border-radius: 10px;
     color: white;
 }
-
 .about-content h2
 {
 	text-align: center;	
 	font-size: 1.4rem;
 }
-
 .about-content p
 {
     text-align: justify;
@@ -279,50 +321,6 @@ main h5
 .fab.fa-facebook-square {color: #3B5998;}
 .fab.fa-github {color: #6e5494;}
 
-.portfolio button
-{
-	width: 180px;
-	height: 70px;
-	background-color: #00b4db;
-    border: 1px solid #00b4db;
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1.3rem;
-    margin: 10px auto;
-    cursor: pointer;
-	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
-}
-.portfolio-content, .contact-content
-{
-	width: 80%;
-	height: 85%;
-}
-
-.contact button
-{
-	width: 180px;
-	height: 70px;
-	background-color: #00b4db;
-    border: 1px solid #00b4db;
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1.3rem;
-    margin: 10px auto;
-    cursor: pointer;
-	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
-}
 footer
 {
 	background-color: transparent;
@@ -335,23 +333,20 @@ footer
 	background-image: url("img.gif");
 	background-size: cover;
 }
-
-
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-    .portfolio-content, .contact-content
-{
+.portfolio-content, .contact-content
+	{
 	height: 80%;
-}
-
-    .container
+	}
+.container
     {
-        height: 90vh;
-        width: 100%;
+     height: 90vh;
+     width: 100%;
     }
 main button, .portfolio button, .contact button
-{
+	{
     width: 260px;
     height: 70px;
     margin: 18px auto;
@@ -359,80 +354,74 @@ main button, .portfolio button, .contact button
     display: block;
 	font-family: 'Jua', sans-serif;
     font-size: 15px;  
-border-radius: 5%;	
+	border-radius: 5%;	
     -webkit-transform: none;
 	-moz-transform: none;
 	-o-transform: none;
 	}
-    main
-    {
-        margin-top: 80px;
-    }
-	main h1
+main{margin-top: 80px;}
+main h1
 	{
-		font-size: 1.4rem;
-		text-align: center;
+	font-size: 1.4rem;
+	text-align: center;
 	}
-	main h4
+main h4
 	{
-		text-align: left;
-		font-size: 1.4rem;
-		text-align: center;
-		margin-bottom: 20px;
+	text-align: left;
+	font-size: 1.4rem;
+	text-align: center;
+	margin-bottom: 20px;
 	}
-	header
+header
     {
-        width: 100%;
+    width: 100%;
     }
-    
-    .toggle-menu
+.toggle-menu
     {
-        display: block;
-    }
-    
-    header nav
+    display: block;
+    }  
+header nav
     {
-        position:absolute;
-        width: 100%;
-        height: 100%;
-        background: #111;
-        height: 600px;
-        background-image: url("img.gif");
-        top: -900%;
-        transition: 0.5s;
-        margin: 0 auto;
-        z-index: -1;
-        text-align: center;
-    }
-    header nav ul li a
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    height: 600px;
+    background-image: url("img.gif");
+    top: -900%;
+    transition: 0.5s;
+    margin: 0 auto;
+    z-index: -1;
+    text-align: center;
+	}
+header nav ul li a
     {
-        font-size: 2.7rem;
-        text-transform: uppercase;
-        margin: 14px auto;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    margin: 14px auto;
     }
-    header nav.active
+header nav.active
     {
-        top: 0%; 
-        display: block;
+    top: 0%; 
+    display: block;
     }
-    header nav ul 
+header nav ul 
     {
     display: block;
     text-align: center;
 	margin-top: 70px;
     }
-    main h5
+main h5
     {
-        font-size: 1rem;
-		text-align: center;
-        letter-spacing: -1px;
+    font-size: 1rem;
+	text-align: center;
+    letter-spacing: -1px;
     }
-	main h1
+main h1
 	{
-		font-size: 2rem;
+	font-size: 2rem;
 	}
-    
-    .about-content
+.about-content
     {
     padding: 0px;
 	width: 100%;
@@ -442,14 +431,13 @@ border-radius: 5%;
 	border-radius: 12px;
     margin: 0 auto;
     }
-    .about-content h2
-{
+.about-content h2
+	{
 	text-align: center;	
 	font-size: 1.4rem;
-}
-
+	}
 .about-content p
-{
+	{
     text-align: justify;
     font-size: 1rem;
     width: 90%;
@@ -458,13 +446,12 @@ border-radius: 5%;
     word-wrap: break-word;
     letter-spacing: 0.9px;
     text-decoration: none;
-}
+	}
 .box-info
-{
+	{
     font-size: 2.5rem;
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
-}
-
+	}
 } 
