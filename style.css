@@ -215,7 +215,7 @@ main h5
 .portfolio-content, .contact-content
 {
 	width: 85%;
-	height: 80%;
+	height: 90%;
 	margin: 80px auto;
 	
 }
@@ -252,14 +252,13 @@ input[type=email], textarea
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: left;
-	
 	border: 2px inset #00b4db;
 	padding: 0px;
 	 resize: none;
 }
 textarea
 {
-height: 240px;
+height: 60%;
 text-align: justify;
 }
 input[type=submit]
