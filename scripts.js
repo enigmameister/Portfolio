@@ -82,20 +82,19 @@ $(document).ready(function(){
                     $('nav').removeClass('active')
                   })
         })
-/*		
+	
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-      if ($(window).width() > 720 && scroll > 54) {
-        $("header").css({"width":"95%"});
+      if ($(window).width() < 720 && scroll > 654) {
+        $("header").css({"display":"none"});
       }
-
       else{
-          $("header").css({"width":"85%"});   
+          $("header").css({"display":"block"});   
       }
   })
 })
-*/
+
 
 $('.theme-picker').hide();
 $('.toggle-theme, .theme-picker').on('click', function()

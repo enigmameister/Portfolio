@@ -227,7 +227,7 @@ main h5
 }
 .contact-box
 {
-	width: 95%;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	border-radius: 15px;
@@ -269,7 +269,7 @@ input[type=submit]
 	background-color: transparent;
 	color: whitesmoke;
 	border: 2px solid ghostwhite;
-	padding: 10px;
+	padding: 14px 18px;
 	margin: 10px;
 	width: 100px;
 }
@@ -279,6 +279,11 @@ input[type=submit]:active
 	transition: 1s;
 	background-color: ghostwhite;
 	color: #00b4db;
+}
+input[type=number]
+{
+    width: 50px;
+    margin-left: 10px;
 }
 .about
 {
@@ -326,21 +331,25 @@ input[type=submit]:active
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-.portfolio-content, .contact-content
-	{
-	
-	}
-.container
+    
+.contact-content, .portfolio-content
+{
+	width: 85%;
+	height: 66%;
+	margin: 80px auto;
+}
+    
+.container, .portfolio, .contact
     {
-     height: 90vh;
+     height: 100vh;
      width: 100%;
     }
+    
 main button, .portfolio button, .contact button
 	{
-    width: 260px;
-    height: 70px;
-    margin: 18px auto;
-    padding: 12px 18px;
+    width: 85%;
+    height: 80px;
+    margin: 15px auto;
     display: block;
 	font-family: 'Jua', sans-serif;
     font-size: 15px;  
@@ -381,7 +390,7 @@ header nav
     top: -900%;
     transition: 0.5s;
     margin: 0 auto;
-    z-index: -1;
+    z-index: -2;
     text-align: center;
 	}
 header nav ul li a
