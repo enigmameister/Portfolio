@@ -119,6 +119,3 @@ document.getElementById('theme-white').onclick = function() {
 document.getElementById('theme-default').onclick = function() {
     document.getElementById('theme_css').href = 'style.css';
 };
-
-$.jStorage.set("#theme_css", "#btn-back");  //Set "value" in "foo"
-var txt = $.jStorage.get("theme_css");
