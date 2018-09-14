@@ -4,7 +4,6 @@ margin: 0;
 padding: 0;
 border: 0;
 line-height: 1.4em;
-vertical-align: baseline;
 text-decoration: none;
 outline: 0;
 }
@@ -20,7 +19,7 @@ body
 .container
 {
 	width: 80%;
-    height: 80vh;
+    height: 90vh;
 	margin: 0 auto;
 }
 
@@ -107,7 +106,6 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 	background-color: #00b4db;
 }
 
-
 .toggle-menu
 {
     float: right;
@@ -174,7 +172,6 @@ header nav ul li a.active
     color: #00b4db;
 }
 
-
 main
 {
 width: 85%;
@@ -202,14 +199,15 @@ main button
 	width: 180px;
 	height: 70px;
 	background-color: #00b4db;
-    border: 1px solid #00b4db;
+    border: 3px solid ghostwhite;
     color: white;
-    padding: 14px 20px;
+    padding: 14px 14px;
+	font-family: 'Jua', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.3rem;
-    margin: 10px auto;
+    margin: 12px auto;
     cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
 	-webkit-transform: skew(-20deg); 
@@ -233,7 +231,7 @@ main h5
     margin: 12px;
 }
 
-
+/***********************************************/
 .portfolio, .contact
 {
 	height: 100vh;

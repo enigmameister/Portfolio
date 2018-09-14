@@ -47,7 +47,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 {
 	background-color: cornsilk;
 	color: #f85032;
-    border: 0px dashed cornsilk;
+
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
@@ -165,7 +165,7 @@ header nav ul li a:hover
 {
 	text-decoration: none;
 	color: #ed213a;
-	transition: 0.5s;
+	transition: 0.3s;
 	text-shadow: 2px 4px 6px #000000;
 }
 
@@ -196,9 +196,10 @@ main button
 	width: 180px;
 	height: 70px;
 	background-color: transparent;
-    border: 2px solid cornsilk;
+    border: 3px solid cornsilk;
     color: cornsilk;
-    padding: 14px 20px;
+	    padding: 14px 14px;
+	font-family: 'Jua', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;

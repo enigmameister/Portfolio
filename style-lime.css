@@ -191,6 +191,17 @@ main h1, h4
 	color: ghostwhite;	
     text-shadow: 2px 3px 4px #000000;
 }
+
+main h1 
+{
+    font-size: 4rem;
+}
+
+main h4
+{
+    text-align: justify;
+    font-size: 1.4rem;
+}
 main button
 {
 	width: 180px;
@@ -198,7 +209,8 @@ main button
 	background-color: transparent;
     border: 3px solid ghostwhite;
     color:  ghostwhite;
-    padding: 14px 20px;
+    padding: 14px 14px;
+	font-family: 'Jua', sans-serif;
     text-align: center;
     text-decoration: none;
     display: inline-block;
