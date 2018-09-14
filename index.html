@@ -9,7 +9,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="style.css" id="theme_css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="" id="theme_css">
 <link rel="stylesheet" type="text/css" href="projects.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -26,8 +27,8 @@
 				<div class="theme-picker">
                     <button id="theme-red" onclick="swapStyleSheet('style-red.css')"></button>
                     <button id="theme-lime" onclick="swapStyleSheet('style-lime.css')"></button>
-					<button id="theme-white" onclick="swapStyleSheet('style-white.css')"></button>
-					<button id="theme-default" onclick="swapStyleSheet('style-default.css')"></button>
+                    <button id="theme-lime" onclick="swapStyleSheet('style-white.css')"></button>
+					<button id="theme-default" onclick="swapStyleSheet('style.css')"></button>
 				</div>
            <script>
     var swapStyleSheet = function (sheet) {
@@ -40,7 +41,7 @@
     }
 
     var loadbackground = function () {
-        document.getElementById('theme_css').setAttribute('style.css', localStorage.getItem('sheetKey'));
+        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
     }
 
     window.onload = loadbackground();
@@ -61,7 +62,7 @@
 		    <button type="button" id="btn-hire"><i class="fas fa-file-signature"></i> Hire Me</button>
 		    <button type="button" id="btn-go"><i class="fas fa-arrow-circle-down"></i> Let's start!</button>
 	    </main>	
-</div>1
+</div>
 <div class="portfolio">
 	<div class="portfolio-content">
 	    <div class="projects-box">
@@ -116,7 +117,6 @@ Project.5 <span>Icons</span>
 </div>
 </div>
 </div>               <!-- project5-->
-
 
 <div class="project"> <!--project6-->
 <div class="overlay">
