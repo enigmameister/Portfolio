@@ -113,7 +113,7 @@ $('.toggle-theme, .theme-picker').on('click', function()
     }
 
     var loadbackground = function () {
-        document.getElementById('theme_css').setAttribute('style.css', localStorage.getItem('sheetKey'));
+        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
     }
 
     window.onload = loadbackground();
