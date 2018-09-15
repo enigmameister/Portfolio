@@ -109,11 +109,11 @@ $('.toggle-theme, .theme-picker').on('click', function()
     }
 
     var storebackground = function (swapstylesheet) {
-        localStorage.setItem("sheetKey", swapstylesheet); //you need to give a key and value
+        localStorage.setItem("href", swapstylesheet); //you need to give a key and value
     }
 
     var loadbackground = function () {
-        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('sheetKey'));
+        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('href'));
     }
 
     window.onload = loadbackground();
