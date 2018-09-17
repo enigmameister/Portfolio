@@ -53,15 +53,15 @@ body
 {
 	margin-top: 10px;
 	float: left;
-	color:  #005C97;
+	color: #005C97;
 	font-size: 2.4rem;
 }
 .theme-picker
 {
 	display: none;
 	float: left;
-	width: 45px;
-	height: 45px;
+	width: 60px;
+	height: 40px;
 	margin-top: 8px;
 	-webkit-transform: skew(-10deg); 
 	-moz-transform: skew(-10deg); 
