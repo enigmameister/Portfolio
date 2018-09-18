@@ -86,7 +86,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-      if ($(window).width() < 720 && scroll > 654) {
+      if ($(window).width() < 720 && scroll > 600) {
         $("header").css({"display":"none"});
       }
       else{

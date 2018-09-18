@@ -256,7 +256,7 @@ position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
-background: rgba(49, 209, 129, 0.6);
+background: rgba(49, 109, 120, 0.8);
 width: 100%;
 height: 0;
 transition: 0.4s ease;
@@ -271,11 +271,12 @@ height: 100%
 .fab.fa-js-square {color: yellow;}
 .fab.fa-php {color: darkgrey;}
 .fas.fa-database {color: forestgreen;}
+
 .contact-content, .portfolio-content
 {
 	width: 85%;
-	height: 69%;
-	margin: 80px auto;
+	height: 70%;
+	margin: 40px auto;
 }
 .portfolio button, .contact button
 {
@@ -288,15 +289,13 @@ height: 100%
 	margin: 0 auto;
 	border-radius: 15px;
 	border: 2px solid whitesmoke;
-	background: #005C97;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: #005C97;
+background: -webkit-linear-gradient(to right, #363795, #005C97);
+background: linear-gradient(to right, #363795, #005C97);
 }
-
 .contact-box form
 {
-	height: 70%;
+	height: 60%;
 	width: 100%;
 	text-align: center;
 }
@@ -336,11 +335,14 @@ input[type=submit]:active
 	background-color: ghostwhite;
 	color: #00b4db;
 }
-input[type=number]
+#number
 {
     width: 50px;
+     -moz-appearance: textfield;
+    margin: 0;
     margin-left: 10px;
 }
+
 .about
 {
 	width: 100%;
@@ -403,9 +405,10 @@ input[type=number]
     
 main button, .portfolio button, .contact button
 	{
-    width: 85%;
+    width: 75%;
     height: 80px;
-    margin: 15px auto;
+    margin: 10px auto;
+        padding: 0px;
     display: block;
 	font-family: 'Jua', sans-serif;
     font-size: 15px;  
