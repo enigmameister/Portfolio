@@ -51,7 +51,7 @@ border: 1px solid #333;
 header nav ul li a
 {
 	color: cornsilk;
-	text-shadow: 2px 6px 4px #000000;
+	text-shadow: 0px 0px 0px #000000;
 }
 
 header nav ul li a:hover
@@ -62,7 +62,7 @@ header nav ul li a:hover
 
 header nav ul li a.active
 {
-    color: #00b4db;
+    color: yellow;
 }
 
 main h1, h4
