@@ -1,29 +1,11 @@
-*
-{
-margin: 0;
-padding: 0;
-border: 0;
-line-height: 1.4em;
-vertical-align: baseline;
-text-decoration: none;
-outline: 0;
-}
 
 body
 {
-font-family: sans-serif;
-box-sizing: border-box;
-font-size: 12px;
+
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032); 
 }
 
-.container
-{
-	width: 80%;
-    height: 80vh;
-	margin: 0 auto;
-}
 
 .container-logo
 {
@@ -47,7 +29,6 @@ background: linear-gradient(to right, #e73827, #f85032);
 {
 	background-color: cornsilk;
 	color: #f85032;
-
     cursor: pointer;
     -webkit-transform: skew(15deg);
 	-moz-transform: skew(15deg) ;
@@ -58,164 +39,60 @@ background: linear-gradient(to right, #e73827, #f85032);
 
 .toggle-theme
 {
-	margin-top: 10px;
-	float: left;
 	color: cornsilk;
-	font-size: 2.4rem;
-}
-
-.theme-picker
-{
-	float: left;
-	width: 50px;
-    padding: 2px;
-	height: 47px;
-	margin-top: 8px;
-	-webkit-transform: skew(-10deg); 
-	-moz-transform: skew(-10deg); 
-	-o-transform: skew(-10deg);
-	border-radius: 5px;
-}
-
-#theme-red, #theme-lime, #theme-white, #theme-default
-{
-width: 20px;
-height: 20px;
-margin: 2px 2px;
-float: left;
-border-radius: 30%;
 }
 
 #theme-red
 {
 background: crimson;
-}
-#theme-lime
-{
-background: #a8ff78;
-background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-background: linear-gradient(to right, #78ffd6, #a8ff78);
 
 }
-#theme-white 
-{
-background: #FFEFBA;
-background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-}
+
 #theme-default
 {
-	background-color: #00b4db;
+    border: none;
 }
-
 .toggle-menu
 {
-    float: right;
-    line-height: 50px;
-    font-size: 2.5rem;
-    cursor: pointer;
-    display: none;
-    padding: 10px;
     color: cornsilk;
 }
 
-header
-{
-	 position:fixed;
-     top:0;
-     left:0;
-     right:0;
-     width: 85%;
-     margin: 0 auto;
-    -webkit-transition: width 0.4s ease;
-    -moz-transition: width 0.4s ease;
-    -o-transition: width 0.4s ease;
-    transition: width 0.4s ease;
-}
-
-header nav
-{
-    float: right;
-}
-
-header nav ul
-{
-	display: flex;
-}
-
-header nav ul li 
-{
-    list-style: none;
-}
 
 header nav ul li a
 {
 	color: cornsilk;
-	text-decoration: none;
-	font-family: 'Jua', sans-serif;
 	text-shadow: 2px 6px 4px #000000;
-    padding: 10px 10px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.6rem;
-    display: block;
 }
 
 header nav ul li a:hover
 {
 	text-decoration: none;
 	color: #ed213a;
-	transition: 0.3s;
 	text-shadow: 2px 4px 6px #000000;
 }
 
-main
+header nav ul li a.active
 {
-width: 85%;
-margin: 10% auto;
+    color: lightyellow;
 }
-
 main h1, h4
 {
-	font-family: 'Jua', sans-serif;
 	color: cornsilk;	
 }
 
-main h1 
-{
-    font-size: 4rem;
-}
-
-main h4
-{
-    text-align: justify;
-    font-size: 1.4rem;
-}
 main button
 {
-	width: 180px;
-	height: 70px;
+	
 	background-color: transparent;
     border: 3px solid cornsilk;
     color: cornsilk;
-    padding: 14px 14px;
-	font-family: 'Jua', sans-serif;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.3rem;
-    margin: 10px auto;
-    cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
 }
 
 main button:hover, .contact button:hover, .portfolio button:hover
 {
 	background-color: cornsilk;
-	transition: 0.6s;
 	color: #f85032;
 	border:1px dashed cornsilk;
 }
@@ -223,81 +100,22 @@ main button:hover, .contact button:hover, .portfolio button:hover
 main h5
 {
     color: cornsilk;
-    font-size: 1.5rem;
-    padding: 0px;
-    margin: 12px;
 }
 
-.portfolio, .contact
+.portfolio, .contact, .project
 {
-	height: 100vh;
-	width: 100%;
-    display: inline-block;
-}
-
-.projects-box
-{
-	width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: inline-block;
-}
-.project 
-{
- width: 40%;
- height: 23%;
- border: 2px solid ghostwhite;
- display: inline-block;
- background: #005C97;
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032); 
- position: relative;
-left: 15%;
-    top: 5%;
-transform: translate(-15%, -10%);
-}
-.content{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-color: #fff;
-text-transform: uppercase;
-font-size:0.8rem;
-white-space: nowrap;
-}
-.content span{
-font-size:1.4rem;
-display: block;
-}
-.overlay{
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background: crimson;
-width: 100%;
-height: 0;
-transition: 0.4s ease;
-overflow: hidden;
-}
-.project:hover .overlay{
-height: 100%
 }
 
-.fab.fa-html5 {color: orangered;}
-.fab.fa-css3-alt {color:darkblue;}
-.fab.fa-js-square {color: yellow;}
-.fab.fa-php {color: darkgrey;}
-.fas.fa-database {color: forestgreen;}
+.overlay{background: crimson;
+}
+
+
 .about-content
 {
-    padding: 0px;
-	width: 30%;
 	background-color: transparent;
 	border: 3px solid white;
-	border-radius: 10px;
     color: cornsilk;
 }
 
@@ -325,57 +143,21 @@ height: 100%
     font-family: 'Jua', sans-serif;
 }
 
-.fab.fa-html5 {color: orange;}
-.fab.fa-css3-alt {color:mediumblue;}
-.fab.fa-js-square {color: #f7df1e;}
-.fab.fa-facebook-square {color: #3B5998;}
-.fab.fa-github {color: blueviolet}
-
 .portfolio button
 {
-	width: 180px;
-	height: 70px;
+
 	background-color: transparent;
     border: 5px solid cornsilk;
     color: cornsilk;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1.3rem;
-    margin: 10px auto;
-    cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
-}
-
-.portfolio-content, .contact-content
-{
-	width: 80%;
-	height: 85%;
-    margin: 0 auto;
 }
 
 .contact button
 {
-	width: 180px;
-	height: 70px;
 	background-color: transparent;
     border: 5px solid cornsilk;
     color: cornsilk;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1.3rem;
-    margin: 10px auto;
-    cursor: pointer;
 	text-shadow: 1px 0px 1px gray;
-	-webkit-transform: skew(-20deg); 
-	-moz-transform: skew(-20deg); 
-	-o-transform: skew(-20deg);
 }
 
 .contact-box
@@ -385,45 +167,25 @@ height: 100%
 	margin: 0 auto;
 	border-radius: 15px;
 	border: 2px solid whitesmoke;
-background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032); 
-
+    background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+   background: linear-gradient(to right, #e73827, #f85032); 
 }
 
-.contact-box form
-{
-	height: 70%;
-	width: 100%;
-	text-align: center;
-}
 .contact-box h1, p
 {
 	color: ghostwhite;
-	font-size: 1.5rem;
-	font-family: 'Jua', sans-serif;
 }
 input[type=email], textarea
 {
-	width: 80%;
-	font-weight: 700;
-	text-align: left;
 	border: 2px inset crimson;
-	padding: 2px;
-    resize: none;
 }
-textarea
-{
-height: 60%;
-text-align: justify;
-}
+
 input[type=submit]
 {
 	background-color: transparent;
 	color: whitesmoke;
 	border: 2px solid ghostwhite;
-	padding: 14px 18px;
-	margin: 10px;
-	width: 100px;
+
 }
 input[type=submit]:active
 {
@@ -442,133 +204,14 @@ input[type=number]
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-    .portfolio-content, .contact-content
-{
-	height: 80%;
-}
-
-    .container
-    {
-        height: 90vh;
-        width: 100%;
-    }
-main button, .portfolio button, .contact button
-{
-    width: 260px;
-    height: 70px;
-    margin: 18px auto;
-    padding: 12px 18px;
-    display: block;
-	font-family: 'Jua', sans-serif;
-    font-size: 15px;  
-border-radius: 5%;	
-    -webkit-transform: none;
-	-moz-transform: none;
-	-o-transform: none;
-	}
-    main
-    {
-        margin-top: 80px;
-    }
-	main h1
-	{
-		font-size: 1.4rem;
-		text-align: center;
-	}
-	main h4
-	{
-		text-align: left;
-		font-size: 1.4rem;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-	header
-    {
-        width: 100%;
-    }
-    
-    .toggle-menu
-    {
-        display: block;
-    }
-    
+   
     header nav
     {
-        position:absolute;
-        width: 100%;
-        height: 100%;
-        background: #111;
-        height: 600px;
-        background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032); 
-        top: -900%;
-        transition: 0.5s;
-        margin: 0 auto;
-        z-index: -1;
-        text-align: center;
+    background: #111;
+    background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+    background: linear-gradient(to right, #e73827, #f85032); 
     }
-    header nav ul li a
-    {
-        font-size: 2.7rem;
-        text-transform: uppercase;
-        margin: 14px auto;
-    }
-    header nav.active
-    {
-        top: 0%; 
-        display: block;
-    }
-    header nav ul 
-    {
-    display: block;
-    text-align: center;
-	margin-top: 70px;
-    }
-    main h5
-    {
-        font-size: 1rem;
-		text-align: center;
-        letter-spacing: -1px;
-    }
-	main h1
-	{
-		font-size: 2rem;
-	}
-    
-	
-    .about-content
-    {
-    padding: 0px;
-	width: 100%;
-	height: 70vh;
-	background
-	border: none;
-	border-radius: 12px;
-    margin: 0 auto;
-    }
-    .about-content h2
-{
-	text-align: center;	
-	font-size: 1.4rem;
-}
-
-.about-content p
-{
-    text-align: justify;
-    font-size: 1rem;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    word-wrap: break-word;
-    letter-spacing: 0.9px;
-    text-decoration: none;
-}
-.box-info
-{
-    font-size: 2.5rem;
-    width: 90%;
-    margin: 0 auto;
-    font-family: 'Jua', sans-serif;
+   
 }
 
 } 
