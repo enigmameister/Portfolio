@@ -133,7 +133,7 @@ overflow: hidden;
 
 .contact-box
 {
-    border: 2px solid whitesmoke;
+    border: 4px solid whitesmoke;
 	background: #FDFC47;  
     background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
     background: linear-gradient(to right, #24FE41, #FDFC47); 

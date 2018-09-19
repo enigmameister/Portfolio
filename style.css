@@ -226,17 +226,15 @@ main h5
 }
 .project 
 {
- width: 40%;
- height: 23%;
+ width: 45%;
+ height: 25%;
  border: 2px solid ghostwhite;
  display: inline-block;
  background: #005C97;
 background: -webkit-linear-gradient(to right, #363795, #005C97); 
 background: linear-gradient(to right, #363795, #005C97);
  position: relative;
- left: 15%;
-    top: -10%;
-transform: translate(-15%, -10%);
+left: 3%;
 }
 .content{
 position: absolute;
@@ -283,9 +281,9 @@ height: 100%
 
 .contact-content
 {
-	width: 85%;
+	width: 100%;
 	height: 80%;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 .portfolio button, .contact button
 {
@@ -293,17 +291,14 @@ height: 100%
 }
 .contact-box
 {
-	width: 90%;
-	height: 100%;
+	width: 100%;
+	height: 90%;
 	margin: 0 auto;
-	border-radius: 15px;
-	border: 2px solid whitesmoke;
-	background: #005C97;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #005C97; 
+background: -webkit-linear-gradient(to right, #363795, #005C97);  
+background: linear-gradient(to right, #363795, #005C97);
 
 }
-
 .contact-box form
 {
 	height: 80%;
@@ -321,13 +316,13 @@ input[type=email], textarea
 	width: 80%;
 	font-weight: 700;
 	text-align: left;
-	border: 2px inset #00b4db;
+	border: 2px inset ghostwhite;
 	padding: 2px;
     resize: none;
 }
 textarea
 {
-height: 60%;
+height: 50%;
 text-align: justify;
 }
 input[type=submit]
@@ -351,6 +346,14 @@ input[type=number]
     width: 50px;
     margin-left: 10px;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
 .about
 {
 	width: 100%;
@@ -400,16 +403,16 @@ input[type=number]
     
 .portfolio-content
 {
-	width: 85%;
-	height: 60%;
-	margin: 120px auto;
+	width: 100%;
+	height: 70%;
+	margin: 10px auto;
 }
 
 .contact-content
 {
 	width: 95%;
 	height: 80%;
-	margin: 20px auto;
+	margin: 2% auto;
 }
     
 .container, .portfolio, .contact
@@ -430,6 +433,11 @@ main button, .portfolio button, .contact button
 	-moz-transform: none;
 	-o-transform: none;
 	}
+    
+    .contact button, .portfolio button
+    {
+        width: 60%;
+    }
 main
 	{
 	margin-top: 80px;
@@ -497,33 +505,30 @@ main h1
 	}
 .about-content
     {
-    padding: 0px;
-	width: 100%;
-	height: 70vh;
+	width: 95%;
+	height: 65vh;
 	background-color: transparent;
 	border: none;
-	border-radius: 12px;
     margin: 0 auto;
     }
 .about-content h2
 	{
 	text-align: center;	
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	}
 .about-content p
 	{
     text-align: justify;
     font-size: 1rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 10px;
     word-wrap: break-word;
-    letter-spacing: 0.9px;
-    text-decoration: none;
+    letter-spacing: 0.5px;
 	}
 .box-info
 	{
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;

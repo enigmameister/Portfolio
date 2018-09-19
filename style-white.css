@@ -108,7 +108,7 @@ background: rgba(0, 0, 0, 0.6);
 }
 input[type=email], textarea
 {
-	border: 2px inset #00b4db;
+	border: none;
 }
 
 input[type=submit]
@@ -126,9 +126,13 @@ input[type=submit]:active
 
 .about-content
 {
-	background-color: ghostwhite;
-	border: 3px solid white;
-    color: #333;
+	background-color: #333;
+	border: none;
+    color: ghostwhite;
+}
+.about p, h2
+{
+    color: ghostwhite;
 }
 
 .fab.fa-html5 {color: #e34f26;}
