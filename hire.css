@@ -6,17 +6,54 @@ body
 	box-sizing: border-box;
 	font-size: 12px;
 }
-
-.about
+.hire
 {
-	color: white;
-	font-size: 2rem;
-    width: 100%;
-    height: 100%;
+	width: 85%;
+	height: 100vh;
 }
 
-}
 @media (max-width:768px)
 {
 	
+.hire
+{
+	width: 100%;
+	text-align: center;
+} 
+
+.hire p
+{
+	text-align: justify;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+select
+{
+	text-align: center;
+	border: none;
+	width: 200px;
+	height: 50px;
+	margin: 5px;
+	border: 2px solid ghostwhite;
+}
+.hire input[type=text]
+{
+		margin: 0 auto;
+		width: 100px;
+		
+}
+select:focus
+{
+	font-weight: bold;
+}
+.hire input[type=submit]
+{
+	margin: 0 auto;
+}	
+
+.hire p:nth-child(5)
+ {
+    text-align: center;
+	margin: 5px;
+}
 }
