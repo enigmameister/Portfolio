@@ -31,10 +31,17 @@ select
 {
 	text-align: center;
 	border: none;
-	width: 200px;
+	width: 65%;
 	height: 50px;
 	margin: 5px;
 	border: 2px solid ghostwhite;
+    color: ghostwhite;
+    background-color: #005C97;
+}
+
+option
+{
+background-color: #005C97;
 }
 .hire input[type=text]
 {
@@ -48,12 +55,20 @@ select:focus
 }
 .hire input[type=submit]
 {
-	margin: 0 auto;
+    width: 75px;
 }	
 
 .hire p:nth-child(5)
  {
     text-align: center;
-	margin: 5px;
+	margin: 0 auto;
+     width: 65%;
 }
+.hire input[type=text]
+    {
+        background-color: #005C97;
+        border: 2px solid ghostwhite;
+        float:right;
+        color: white;
+    }
 }
