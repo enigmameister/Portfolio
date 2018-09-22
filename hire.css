@@ -43,12 +43,13 @@ option
 {
 background-color: #005C97;
 }
+    
 .hire input[type=text]
 {
 		margin: 0 auto;
-		width: 100px;
-		
+		width: 100px;		
 }
+    
 select:focus
 {
 	font-weight: bold;
@@ -62,7 +63,7 @@ select:focus
  {
     text-align: center;
 	margin: 0 auto;
-     width: 65%;
+    width: 65%;
 }
 .hire input[type=text]
     {

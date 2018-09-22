@@ -106,9 +106,15 @@ main h5
 {
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032); 
+    
 }
-
-.overlay{background: crimson;
+.project
+{
+     border: 2px solid ghostwhite;
+}
+.overlay
+{
+    background: crimson;
 }
 
 
@@ -205,5 +211,4 @@ input[type=number]
     }
    
 }
-
 } 
