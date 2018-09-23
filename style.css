@@ -165,7 +165,7 @@ background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
 background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
 #theme-default {background-color: #005C97;
-				border: 1px solid white;
+			
 }
 
 header
@@ -650,7 +650,7 @@ height: 100%
 {
 	width: 85%;
 	height: 69%;
-	margin: 40px auto;
+	margin: 15% auto;
 }
 
 .contact-content
@@ -668,9 +668,7 @@ height: 100%
 	width: 90%;
 	height: 100%;
 	margin: 0 auto;
-background: #005C97; 
-background: -webkit-linear-gradient(to right, #363795, #005C97);  
-background: linear-gradient(to right, #363795, #005C97);
+background: transparent;
 border-radius: 10px;
 }
 .contact-box form
@@ -683,35 +681,37 @@ border-radius: 10px;
 {
 	color: ghostwhite;
 	font-size: 2rem;
+    padding: 25px;
 	font-family: 'Jua', sans-serif;
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	width: 80%;
-	font-weight: 700;
+    padding: 10px;
 	text-align: left;
-    font-size: 1.7rem;
 	border: none;
-    border-bottom: 1px solid ghostwhite;
     resize: none;
     margin: 5px;
     color: white;
-    background-color: transparent;
+    background: #005C97; 
+background: -webkit-linear-gradient(to right, #363795, #005C97);  
+background: linear-gradient(to right, #363795, #005C97);
 }
 .contact ::placeholder
     {
-        color: white;
+        color: silver;
+        font-size: 1rem
     }
 .contact textarea
 {
-height: 65%;
+height: 55%;
 }
 .contact input[type=submit]
 {
 	background-color: transparent;
 	color: whitesmoke;
 	border: 2px solid ghostwhite;
-    padding: 7px;
+    padding: 10px;
 	text-align: center;
 	width: 75px;
 }
@@ -801,7 +801,7 @@ select:focus
         color: white;
         margin: 5px;
     }
-}
+
     
 
     

@@ -32,16 +32,6 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 	font-size: 2.4rem;
 }
 
-#theme-lime
-{
-border: 1px solid #333;
-}
-
-#theme-default
-{
-    border: none;
-}
-
 .toggle-menu span
 {
    background: ghostwhite;
@@ -195,4 +185,60 @@ background: #FDFC47;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+       .contact-box
+{
+background: transparent;
+}
+
+.contact input[type=email], .contact textarea, .contact input[type=text]
+{
+	border-bottom: 1px solid silver;
+    color: white;
+    background: transparent;
+}
+.contact ::placeholder
+    {
+        color: silver;
+    }
+.contact textarea
+{
+    border: none;
+}
+.contact input[type=submit]
+{
+	background-color: transparent;
+	color: whitesmoke;
+	border: 2px solid ghostwhite;
+}
+.contact input[type=submit]:active
+{
+	border-color: transparent;
+	background-color: ghostwhite;
+	color: #005C97;
+
+}
+
+@media (max-width:768px)
+{
+
+select, option
+{
+    	background: #FDFC47;  
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+    background: linear-gradient(to right, #24FE41, #FDFC47); 
+    background-color: lime;   
+}
+ 
+
+.hire input[type=text]
+    {
+        background-color: transparent;
+        border: 2px solid ghostwhite;
+        color: white;
+       
+    }
+
+    
+    
+}
 } 

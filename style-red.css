@@ -48,10 +48,6 @@ background: crimson;
 
 }
 
-#theme-default
-{
-    border: none;
-}
 .toggle-menu span
 {
     background: cornsilk;
@@ -182,6 +178,59 @@ input[type=number]
     background: -webkit-linear-gradient(to right, #e73827, #f85032); 
     background: linear-gradient(to right, #e73827, #f85032); 
     }
-   
+
+    .contact-box
+{
+background: transparent;
 }
-} 
+
+.contact input[type=email], .contact textarea, .contact input[type=text]
+{
+	border-bottom: 1px solid silver;
+    color: white;
+    background: transparent;
+}
+.contact ::placeholder
+    {
+        color: silver;
+    }
+.contact textarea
+{
+    border: none;
+}
+.contact input[type=submit]
+{
+	background-color: transparent;
+	color: whitesmoke;
+	border: 2px solid ghostwhite;
+}
+.contact input[type=submit]:active
+{
+	border-color: transparent;
+	background-color: ghostwhite;
+	color: #005C97;
+
+}
+
+@media (max-width:768px)
+{
+
+select, option
+{
+    background: linear-gradient(to right, #e73827, #f85032); 
+    background-color: crimson;    
+}
+ 
+
+.hire input[type=text]
+    {
+        background-color: transparent;
+        border: 2px solid ghostwhite;
+        color: white;
+       
+    }
+
+    
+    
+}
+ 
