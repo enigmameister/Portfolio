@@ -52,9 +52,9 @@ background: crimson;
 {
     border: none;
 }
-.toggle-menu
+.toggle-menu span
 {
-    color: cornsilk;
+    background: cornsilk;
 }
 
 

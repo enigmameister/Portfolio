@@ -29,9 +29,9 @@ body
 border: 1px solid #333;
 }
 
-.toggle-menu
+.toggle-menu span
 {
-    color: #333;
+    background: #333;
 }
 
 header nav ul li a

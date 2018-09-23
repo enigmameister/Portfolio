@@ -82,6 +82,12 @@ $(document).ready(function(){
                     $('nav').removeClass('active')
                   })
         })
+
+$(document).ready(function(){
+	$('.toggle-menu').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 	
 $(document).ready(function(){
   $(window).scroll(function(){

@@ -42,10 +42,10 @@ border: 1px solid #333;
     border: none;
 }
 
-.toggle-menu
+.toggle-menu span
 {
-    color: ghostwhite;
-    text-shadow: 2px 3px 4px #000000;
+   background: ghostwhite;
+    text-shadow: 5px 3px 4px #000000;
 }
 
 header nav ul li a
