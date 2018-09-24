@@ -458,19 +458,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-    
-.portfolio-content
-{
-	width: 100%;
-	height: 70%;
-	margin: 10px auto;
-}
-
-.contact-content
-{
-	width: 100%;
-}
-    
+     
 .container, .portfolio, .contact
     {
      height: 100vh;
@@ -480,7 +468,7 @@ input[type=number]::-webkit-outer-spin-button {
 main button, .portfolio button, .contact button
 	{
     width: 75%;
-    height: 70px;
+    height: 4rem;
     margin: 10px auto;
     display: block;
 	font-family: 'Jua', sans-serif;
@@ -575,7 +563,7 @@ main h1
 .about-content p
 	{
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 95%;
     margin: 0 auto;
     padding: 10px;
@@ -589,6 +577,28 @@ main h1
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
 	}
+.about img 
+{
+	
+	border:0;
+	width:88px;
+	height:31px;
+}
+.about button.cv
+{
+	
+	width: 88px;
+	height: 31px;
+	line-height: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.about button.cv:hover
+{
+	background-color: transparent;
+	border: 1px solid #005C97;
+	transition: 0.1s;
+}
     .projects-box
 {
 	width: 95%;
@@ -637,7 +647,7 @@ height: 100%
 }
 
 .fab.fa-html5 {color: orangered;}
-.fab.fa-css3-alt {color:darkblue;}
+.fab.fa-css3-alt {color:#005C97;}
 .fab.fa-js-square {color: yellow;}
 .fab.fa-php {color: darkgrey;}
 .fas.fa-database {color: forestgreen;}
@@ -658,12 +668,13 @@ height: 100%
 {
 	width: 100%;
 	height: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 .portfolio button, .contact button
 {
 	display: block;
 }
+
 .contact-box
 {
 	width: 90%;
@@ -682,7 +693,6 @@ border-radius: 10px;
 {
 	color: ghostwhite;
 	font-size: 2rem;
-    padding: 25px;
 	font-family: 'Jua', sans-serif;
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
@@ -701,7 +711,7 @@ background: linear-gradient(to right, #363795, #005C97);
 .contact ::placeholder
     {
         color: silver;
-        font-size: 1rem
+		font-weight: bold;
     }
 .contact textarea
 {
@@ -712,9 +722,10 @@ height: 55%;
 	background-color: transparent;
 	color: whitesmoke;
 	border: 2px solid ghostwhite;
-    padding: 10px;
+    padding: 2%;
 	text-align: center;
-	width: 75px;
+	width: 6rem;
+	height: 3rem;
 }
 .contact input[type=submit]:active
 {
@@ -807,5 +818,4 @@ select:focus
     display: block;        
 }
 
-    
 } 
