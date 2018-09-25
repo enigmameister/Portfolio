@@ -12,7 +12,11 @@ body
 	font-family: sans-serif;
 	box-sizing: border-box;
 	font-size: 12px;
-	background-image: url("../img.gif");	
+	background: #000000; 
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000);
+
+	
 }
 .container
 {
