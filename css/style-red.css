@@ -1,154 +1,83 @@
-
 body
 {
-
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032); 
 }
-
-
 .container-logo
 {
 	border: 2px solid cornsilk;
 	background-color: transparent;
-	padding: 10px;
-	border-radius: 5px;
-	-webkit-transform: skew(-10deg); 
-	-moz-transform: skew(-10deg); 
-	-o-transform: skew(-10deg);
-    float: left;
     color: cornsilk;
 	text-decoration: none;
-	margin: 10px;
-	font-family: 'Jua', sans-serif;
-	text-shadow: 1px 3px 6px #000000;
-    font-size: 1.2rem;
 }
-
 .container-logo:hover
 {
 	background-color: cornsilk;
 	color: #f85032;
-    cursor: pointer;
-    -webkit-transform: skew(15deg);
-	-moz-transform: skew(15deg) ;
-	-o-transform: skew(15deg);
-    transition: 1000ms;
 	text-shadow: 1px 3px 6px cornsilk;
 }
-
-.toggle-theme
-{
-	color: cornsilk;
-}
-
-#theme-red
-{
-background: crimson;
-
-}
-
-.toggle-menu span
-{
-    background: cornsilk;
-}
-
+.toggle-theme {color: cornsilk;}
+#theme-red{background: crimson;}
+.toggle-menu span{background: cornsilk;}
 
 header nav ul li a
 {
 	color: cornsilk;
 	text-shadow: 2px 6px 4px #000000;
 }
-
 header nav ul li a:hover
 {
 	text-decoration: none;
 	color: #ed213a;
 	text-shadow: 2px 4px 6px #000000;
 }
-
-header nav ul li a.active
-{
-    color: lightyellow;
-}
-main h1, h4
-{
-	color: cornsilk;	
-}
+header nav ul li a.active{color: lightyellow;}
+main h1, main h4, main h5{color: cornsilk;}
 
 main button
 {
-	
 	background-color: transparent;
     border: 2px solid cornsilk;
     color: cornsilk;
     text-decoration: none;
 	text-shadow: 1px 1px 2px gray;
 }
-
 main button:hover, .contact button:hover, .portfolio button:hover
 {
 	background-color: cornsilk;
 	color: #f85032;
 	border-color: cornsilk;
 }
-
-main h5
-{
-    color: cornsilk;
-}
-
 .portfolio, .contact, .project
 {
-background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032); 
-    
+	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+	background: linear-gradient(to right, #e73827, #f85032);  
 }
-.project
-{
-     border: 2px solid ghostwhite;
-}
-.overlay
-{
-    background: crimson;
-}
-
+.project {border: 2px solid ghostwhite;}
+.overlay{background: crimson;}
 .about-content
 {
 	background-color: transparent;
 	border: 3px solid white;
     color: cornsilk;
 }
-
-
-.box-info
-{
-    font-size: 2.5rem;
-    font-family: 'Jua', sans-serif;
-}
-
 .portfolio button, .contact button
 {
-
 	background-color: transparent;
     border: 2px solid cornsilk;
     color: cornsilk;
 	text-shadow: 1px 0px 1px gray;
 }
-
 .contact-box
 {
 	border: 2px solid whitesmoke;
-    background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-   background: linear-gradient(to right, #e73827, #f85032); 
+	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+	background: linear-gradient(to right, #e73827, #f85032); 
 }
-
 .contact-box h1, p
 {
 	color: ghostwhite;
 }
-
-
 input[type=submit]
 {
 	background-color: transparent;
@@ -159,7 +88,6 @@ input[type=submit]
 input[type=submit]:active
 {
 	border: 4px solid #00b4db;
-	transition: 1s;
 	background-color: ghostwhite;
 	color: #00b4db;
 }
@@ -167,23 +95,19 @@ input[type=number]
 {
     border: 2px inset crimson;
 }
-
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-   
-    header nav
-    {
+header nav
+{
     background: #111;
     background: -webkit-linear-gradient(to right, #e73827, #f85032); 
     background: linear-gradient(to right, #e73827, #f85032); 
-    }
-
-    .contact-box
-{
-background: transparent;
 }
-
+.contact-box
+{
+	background: transparent;
+}
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	border-bottom: 1px solid silver;
@@ -191,9 +115,9 @@ background: transparent;
     background: transparent;
 }
 .contact ::placeholder
-    {
-        color: silver;
-    }
+{
+	color: silver;
+}
 .contact textarea
 {
     border: none;
@@ -209,28 +133,19 @@ background: transparent;
 	border-color: transparent;
 	background-color: ghostwhite;
 	color: #005C97;
-
 }
 
 @media (max-width:768px)
 {
-
 select, option
 {
     background: linear-gradient(to right, #e73827, #f85032); 
     background-color: crimson;    
 }
- 
-
 .hire input[type=text]
     {
         background-color: transparent;
         border: 2px solid ghostwhite;
         color: white;
-       
-    }
-
-    
-    
+    } 
 }
- 

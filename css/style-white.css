@@ -9,7 +9,6 @@ body
 	background-color: whitesmoke;
     color: #333;
 	text-decoration: none;
-	margin: 10px;
 	text-shadow: 0px 0px 1px #000000;
 }
 
@@ -56,10 +55,8 @@ main button, .portfolio button, .contact button
 {
 
 	background-color: ghostwhite;
-    border: 3px solid #333;
+    border-color: #333;
     color: #333;
-	font-family: 'Jua', sans-serif;
-    margin: 10px auto;
 	text-shadow: 1px 0px 1px gray;
 }
 
@@ -146,9 +143,7 @@ input[type=submit]:active
     }
     header nav ul li a
     {
-        font-size: 2rem;
         text-transform: uppercase;
-        margin: 14px auto;
         color: #333;
 		text-shadow: 0px 0px 0px #000000;
     }
@@ -202,7 +197,6 @@ select, option
     .hire p
     {
         color: #333;
-        font-size: 1.1rem;
     }
 
     
@@ -210,42 +204,19 @@ select, option
     {
         background-color: transparent;
         border: 2px solid #333;
-        color: #333;
-       
+        color: #333;   
     }
-.hire input[type=text]
-{
-		margin: 0 auto;
-		width: 100px;		
-}
-    
-select:focus
-{
-	font-weight: bold;
-}
+
 .hire input[type=submit]
 {
-    height: 30px;
-    vertical-align: center;
-    line-height: 1px;
     color: #333;
-    border: 2px solid #333;
+    border-color: #333;
 }	
 
-.hire p:nth-child(5)
- {
-    text-align: center;
-	margin: 5px auto;
-}
 .hire input[type=text]
     {
         background-color: ghostwhite;
-        border: 2px solid #333;
+        border-color: #333;
         color: #333;
-        margin: 5px;
     }
-
-    
-    
-}
 } 
