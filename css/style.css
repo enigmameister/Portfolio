@@ -13,10 +13,8 @@ body
 	box-sizing: border-box;
 	font-size: 12px;
 	background: #000000; 
-background: -webkit-linear-gradient(to right, #434343, #000000); 
-background: linear-gradient(to right, #434343, #000000);
-
-	
+	background: -webkit-linear-gradient(to right, #434343, #000000); 
+	background: linear-gradient(to right, #434343, #000000);
 }
 .container
 {
@@ -439,11 +437,16 @@ input[type=number]::-webkit-outer-spin-button
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-.container, .portfolio, .contact
+.container, .portfolio
     {
-     height: 610px;
+     height: 600px;
      width: 100%;
     }
+.contact
+{
+	width: 100%;
+	height: 580px;
+}
 main button, .portfolio button, .contact button
 {
     width: 75%;
@@ -646,7 +649,6 @@ white-space: nowrap;
 	height: 100%;
 	margin: 0 auto;
 	background: transparent;
-	
 }
 .contact-box form
 {
