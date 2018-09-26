@@ -763,3 +763,13 @@ select:focus {font-weight: bold;}
 }
 .toggle-menu{display: block;}
 } 
+
+/*************** MOBILE ***************/
+@media (max-height: 515px)
+{
+.contact button, .contact input[type=submit]
+{
+	display: none;
+}
+
+}
