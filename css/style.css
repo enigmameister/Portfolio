@@ -441,7 +441,7 @@ input[type=number]::-webkit-outer-spin-button
 {
 .container, .portfolio, .contact
     {
-     height: 650px;
+     height: 610px;
      width: 100%;
     }
 main button, .portfolio button, .contact button
@@ -646,7 +646,7 @@ white-space: nowrap;
 	height: 100%;
 	margin: 0 auto;
 	background: transparent;
-	border-radius: 10px;
+	
 }
 .contact-box form
 {
@@ -767,7 +767,7 @@ select:focus {font-weight: bold;}
 /*************** MOBILE ***************/
 @media (max-height: 515px)
 {
-.contact button, .contact input[type=submit]
+.contact button
 {
 	display: none;
 }
