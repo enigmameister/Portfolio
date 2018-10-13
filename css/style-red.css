@@ -5,7 +5,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 }
 .container-logo
 {
-	border: 2px solid cornsilk;
+	border-color: cornsilk;
 	background-color: transparent;
     color: cornsilk;
 	text-decoration: none;
@@ -14,6 +14,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 {
 	background-color: cornsilk;
 	color: #f85032;
+    border-color: cornsilk;
 	text-shadow: 1px 3px 6px cornsilk;
 }
 .toggle-theme {color: cornsilk;}
@@ -116,7 +117,7 @@ header nav
 }
 .contact ::placeholder
 {
-	color: silver;
+	color: ghostwhite;
 }
 .contact textarea
 {

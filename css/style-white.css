@@ -5,7 +5,7 @@ body
 
 .container-logo
 {
-	border: 1px solid #333;
+	border-color: #333;
 	background-color: whitesmoke;
     color: #333;
 	text-decoration: none;
@@ -16,6 +16,7 @@ body
 {
 	background-color: #333;
 	color: whitesmoke;
+    border-color: #333;
 }
 
 .toggle-theme
@@ -126,6 +127,16 @@ input[type=submit]:active
     color: ghostwhite;
 }
 
+.about button.cv a 
+{
+    color: #333;
+}
+
+.about button.cv:hover
+{
+    border-color: none;
+    background-color: ghostwhite;
+}
 .fab.fa-html5 {color: #e34f26;}
 .fab.fa-css3-alt {color:mediumblue;}
 .fab.fa-js-square {color: #f7df1e;}
@@ -149,6 +160,7 @@ input[type=submit]:active
 .contact-box
 {
 background: transparent;
+    border-color: #333;
 }
 .contact-box h1
     {
