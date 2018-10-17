@@ -48,7 +48,8 @@ header nav ul li a.active
 
 main h1, h4
 {
-	color: #333;	
+	color: #333;
+    border-color: #333;
 }
 
 main button, .portfolio button, .contact button
