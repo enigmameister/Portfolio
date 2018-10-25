@@ -17,7 +17,11 @@ background: linear-gradient(to right, #e73827, #f85032);
     border-color: cornsilk;
 	text-shadow: 1px 3px 6px cornsilk;
 }
-.toggle-theme {color: cornsilk;}
+.toggle-theme {
+    color: cornsilk;
+    -webkit-text-stroke-width: 0px;
+    text-shadow: 2px 2px 2px #000000;
+}
 #theme-red{background: crimson;}
 .toggle-menu span{background: cornsilk;}
 

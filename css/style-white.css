@@ -22,6 +22,8 @@ body
 .toggle-theme
 {
 	color: #333;
+    -webkit-text-stroke-width: 0px;
+    text-shadow: 0px 0px 0px #000000;
 }
 
 .toggle-menu span
@@ -52,7 +54,7 @@ main h1, h4
     border-color: #333;
 }
 
-main button, .portfolio button, .contact button
+main button, .portfolio button, .contact button, .about button, .skills button
 {
 
 	background-color: ghostwhite;
