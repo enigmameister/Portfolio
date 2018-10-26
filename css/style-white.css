@@ -55,6 +55,7 @@ main h1, h4
 }
 
 main button, .portfolio button, .contact button, .about button, .skills button
+
 {
 
 	background-color: ghostwhite;
@@ -63,13 +64,18 @@ main button, .portfolio button, .contact button, .about button, .skills button
 	text-shadow: 1px 0px 1px gray;
 }
 
-main button:hover, .contact button:hover, .portfolio button:hover
+main button:hover, .portfolio button:hover, .contact button:hover, .about button:hover, .skills button:hover
 {
 	background-color: #333;
 	color: white;
 	border: none;
 }
 
+.about button:hover
+{
+    border:3px solid white;
+    border-color: ghostwhite;
+}
 main h5
 {
     color: #333;

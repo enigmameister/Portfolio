@@ -118,16 +118,14 @@ $(document).ready(function(){
     var scroll = $(window).scrollTop();
       if (scroll > 600) {
         $("header").css({"display":"none"});
+          $(".scroll-up").css({"display":"block"});
       }
-      else{
-          $("header").css({"display":"block"});   
+      else
+     {
+          $("header").css({"display":"block"});  
+          $(".scroll-up").css({"display":"none"}); 
+          $(".scroll-down").css({"display":"none"});  
       }
-       if (scroll < 600) {
-        $(".scroll-up").css({"display":"none"});
-      }
-      else{
-          $(".scroll-up").css({"display":"block"});   
-      }  
        if (scroll > 2500) {
         $(".scroll-down").css({"display":"none"});
       }

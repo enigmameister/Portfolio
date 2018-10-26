@@ -53,6 +53,16 @@ main button:hover, .contact button:hover, .portfolio button:hover
 	color: #f85032;
 	border-color: cornsilk;
 }
+
+.about button.cv
+{
+    background-color: ghostwhite;
+    border: none;
+}
+.about button.cv a
+{
+    color: crimson;
+}
 .portfolio, .contact, .project
 {
 	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
@@ -66,7 +76,7 @@ main button:hover, .contact button:hover, .portfolio button:hover
 	border: 3px solid white;
     color: cornsilk;
 }
-.portfolio button, .contact button
+main button, .portfolio button, .contact button, .about button, .skills button
 {
 	background-color: transparent;
     border: 2px solid cornsilk;
