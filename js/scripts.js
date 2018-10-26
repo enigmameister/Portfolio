@@ -6,15 +6,12 @@ $("#a-nav").on("click", function()
      'slow');
 });
 
-
-
 $("#p-nav").on("click", function() 
 	{
     $('html,body').animate({
         scrollTop: $(".portfolio").offset().top},
         'slow');
 		});
-
 
 $("#c-nav").on("click", function() 
 	{
@@ -23,6 +20,12 @@ $("#c-nav").on("click", function()
         'slow');
 		});
 
+$("#s-nav").on("click", function() 
+	{
+    $('html,body').animate({
+        scrollTop: $(".skills").offset().top},
+        'slow');
+		});
 
 $("#h-nav, #btn-c").on("click", function() 
 	{
@@ -30,7 +33,6 @@ $("#h-nav, #btn-c").on("click", function()
         scrollTop: $('html').offset().top},
         'slow');
 		});
-
 
 $("#btn-go").on("click", function() 
 	{
@@ -53,7 +55,6 @@ $("#btn-a").on("click", function()
         'slow');
 		});
 
-
 $("#btn-s").on("click", function() 
 	{
     $('html,body').animate({
@@ -61,7 +62,19 @@ $("#btn-s").on("click", function()
         'slow');
 		});
 
+$(".scroll-down").on("click", function() 
+	{
+    $('html,body').animate({
+        scrollTop: $('.about').offset().top},
+        'slow');
+		});
 
+$(".scroll-up").on("click", function() 
+	{
+    $('html,body').animate({
+        scrollTop: $('html').offset().top},
+        'slow');
+		});
 
 $(document).ready(function() {
     $('#btn-home').click(function(event) {
@@ -108,6 +121,18 @@ $(document).ready(function(){
       }
       else{
           $("header").css({"display":"block"});   
+      }
+       if (scroll < 600) {
+        $(".scroll-up").css({"display":"none"});
+      }
+      else{
+          $(".scroll-up").css({"display":"block"});   
+      }  
+       if (scroll > 2500) {
+        $(".scroll-down").css({"display":"none"});
+      }
+      else{
+          $(".scroll-down").css({"display":"block"});   
       }
   })
 })

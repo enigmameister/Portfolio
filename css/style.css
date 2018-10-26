@@ -16,6 +16,26 @@ body
 	background: -webkit-linear-gradient(to right, #434343, #000000); 
 	background: linear-gradient(to right, #434343, #000000);
 }
+
+.scroll-up
+{
+display: block;
+color: whitesmoke;
+font-size: 2.5rem;
+position: fixed;
+left: 95%;
+top: 5%;
+}
+.scroll-down
+{
+display: block;
+color: whitesmoke;
+font-size: 2.5rem;
+position: fixed;
+left: 95%;
+top: 86%; 
+}
+
 .container
 {
 	width: 80%;
@@ -232,6 +252,20 @@ main h1
 main button, .portfolio button, .contact button, .about button, .skills button
 {
    display: none;
+}
+
+main button
+{
+    width: 12rem;
+    height: 4rem;
+    margin: 10px auto;
+    display: block;
+	font-family: 'Jua', sans-serif;
+    font-size: 15px;  
+	background-color:  #005C97;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 main h5
@@ -592,7 +626,7 @@ main h1
     }
 .projects-box
 {
-	width: 100%;
+	width: 97%;
     height: 100%;
     margin-left: 3%;
 }
@@ -712,7 +746,12 @@ white-space: nowrap;
     width: 50px;
     margin-left: 10px;
 }
-
+.scroll-up, .scroll-down
+{
+visibility: hidden;
+}
+    
+}
 /*************** MOBILE ***************/
 @media (max-height: 515px)
 {
