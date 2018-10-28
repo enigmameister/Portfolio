@@ -481,7 +481,7 @@ input[type=number]::-webkit-outer-spin-button
 {
 .container, .portfolio, .contact, .about, .skills
     {
-     height: 38rem;
+    
      width: 100%;
     }
 main button, .portfolio button, .contact button, .about button, .skills button
@@ -622,21 +622,23 @@ main h1
         height: 75vh;
         width: 85%;
     }
+    
 .projects-box
 {
-	width: 97%;
+	width: 100%;
     height: 100%;
-    margin-left: 3%;
+    padding: 0;
+    margin: 0;
 }
 .project 
 {
-width: 45%;
-height: 25%;
-display: inline-block;
+width: 370px;
+height: 250px;
+display: block;
 background: #005C97;
-background: -webkit-linear-gradient(to right, #363795, #005C97); 
-background: linear-gradient(to right, #363795, #005C97);
 position: relative;
+padding: 0;
+margin-bottom: 5px;
 }
 .content{
 position: absolute;

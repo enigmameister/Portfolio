@@ -62,20 +62,6 @@ $("#btn-s").on("click", function()
         'slow');
 		});
 
-$(".scroll-down").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $('.about').offset().top},
-        'slow');
-		});
-
-$(".scroll-up").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $('html').offset().top},
-        'slow');
-		});
-
 $(document).ready(function() {
     $('#btn-home').click(function(event) {
         $(".about").animate({'opacity': 0}, 50);
@@ -111,7 +97,6 @@ $(document).ready(function(){
 	});
 });
 
-
 	
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -135,6 +120,20 @@ $(document).ready(function(){
   })
 })
 
+
+$(document).ready(function() {
+    $(".scroll-down").click(function(event){
+        $('html, body').animate({scrollTop: '+=650px'}, 500);
+    });
+});
+
+
+$(".scroll-up").on("click", function() 
+	{
+    $('html,body').animate({
+        scrollTop: $('html').offset().top},
+        1000);
+		});
 
 $('.theme-picker').hide();
 $('.toggle-theme, .theme-picker').on('click', function()
