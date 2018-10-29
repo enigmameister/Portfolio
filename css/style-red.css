@@ -68,7 +68,7 @@ main button:hover, .contact button:hover, .portfolio button:hover
 	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 	background: linear-gradient(to right, #e73827, #f85032);  
 }
-.project {border: 2px solid ghostwhite;}
+.project {border-bottom: 2px solid ghostwhite;, border-top: 2px solid ghostwhite;}
 .overlay{background: crimson;}
 .about-content
 {

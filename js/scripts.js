@@ -123,7 +123,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $(".scroll-down").click(function(event){
-        $('html, body').animate({scrollTop: '+=650px'}, 500);
+        $('html, body').animate({scrollTop: '+=600px'}, 500);
     });
 });
 
