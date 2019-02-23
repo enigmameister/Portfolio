@@ -654,6 +654,8 @@ display: inline-block;
 background: #005C97;
 position: relative;
 left: 2.5px;
+    margin: 0 auto;
+    text-align: center;
 }
     
 .content{
@@ -669,7 +671,7 @@ white-space: nowrap;
 }
 .content span
 {
-	font-size:1.4rem;
+	font-size:1.2rem;
 	display: block;
 }
 .overlay
@@ -683,6 +685,7 @@ white-space: nowrap;
 	height: 0;
 	transition: 0.4s ease;
 	overflow: hidden;
+    margin: 0 auto;
 }
 .project:hover .overlay {height: 100%}
 .fab.fa-html5 {color: orangered;}
