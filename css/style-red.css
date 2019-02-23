@@ -1,7 +1,8 @@
 body
 {
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032); 
+background: #f85032; 
+    
 }
 .container-logo
 {
