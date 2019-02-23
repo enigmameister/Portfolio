@@ -137,6 +137,12 @@ main button, .portfolio button, .contact button, .about button, .skills button
 @media (max-width: 720px)
 {
   
+body
+{
+background: #FDFC47;  
+background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+background: linear-gradient(to right, #24FE41, #FDFC47); 
+}
     header nav
     {
 background: #FDFC47;  /* fallback for old browsers */

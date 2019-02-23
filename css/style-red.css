@@ -6,7 +6,8 @@ background: linear-gradient(to right, #e73827, #f85032);
 .container-logo
 {
 	border-color: cornsilk;
-	background-color: transparent;
+	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+background: linear-gradient(to right, #e73827, #f85032);  
     color: cornsilk;
 	text-decoration: none;
 }
@@ -104,6 +105,11 @@ input[type=number]
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
+    body
+{
+background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+background: linear-gradient(to right, #e73827, #f85032);     
+}
 header nav
 {
     background: #111;
@@ -112,7 +118,8 @@ header nav
 }
 .contact-box
 {
-	background: transparent;
+	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+background: linear-gradient(to right, #e73827, #f85032); 
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
@@ -121,7 +128,6 @@ header nav
      background: -webkit-linear-gradient(to right, #e73827, #f85032); 
     background: linear-gradient(to right, #e73827, #f85032); 
     }
-    5
 
 .contact ::placeholder
 {
