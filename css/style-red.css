@@ -6,8 +6,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 .container-logo
 {
 	border-color: cornsilk;
-	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032);  
+	background: transparent; 
     color: cornsilk;
 	text-decoration: none;
 }
@@ -60,10 +59,9 @@ main button:hover, .contact button:hover, .portfolio button:hover
 
 .portfolio, .project, .container
 {
-	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-	background: linear-gradient(to right, #e73827, #f85032);  
+	background: transparent;  
 }
-.project {border: 2px solid ghostwhite;, border-top: 2px solid ghostwhite; width: 48%; left: 4px;}
+.project {border: 2px solid ghostwhite;}
 .overlay{background: crimson;}
 .about-content
 {
@@ -118,15 +116,13 @@ header nav
 }
 .contact-box
 {
-	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032); 
+	transparent;
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	 color: white;
     border: 2px solid cornsilk;
-     background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-    background: linear-gradient(to right, #e73827, #f85032); 
+    background: transparent;
     }
 
 .contact ::placeholder
@@ -151,7 +147,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 {
 select, option
 {
-    background: linear-gradient(to right, #e73827, #f85032); 
+    background: transparent;
     background-color: crimson;    
 }
 .hire input[type=text]

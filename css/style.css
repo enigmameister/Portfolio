@@ -648,14 +648,13 @@ main h1
 }
 .project 
 {
-width: 49%;
+width: 45%;
+left: 3.5%;
 height: 100px;
 display: inline-block;
 background: #005C97;
 position: relative;
-left: 2.5px;
-    margin: 0 auto;
-    text-align: center;
+text-align: center;
 }
     
 .content{
