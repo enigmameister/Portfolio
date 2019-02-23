@@ -1,3 +1,10 @@
+$(".animation span:nth-child(1)").animate({ "left":"0%"}, 900 );
+$(".animation span:nth-child(2)").animate({ "left":"0%"}, 900 );
+$(".animation span:nth-child(4)").delay(1500).animate({ "left":"0%"}, 900 );
+$(".animation span:nth-child(5)").delay(1500).animate({ "left":"0%"}, 900 ); 
+$(".animation span:nth-child(7)").delay(3000).animate({ "left":"0%"}, 900 );
+$(".animation span:nth-child(8)").delay(3000).animate({ "left":"0%"}, 900 ); 
+
 
 $("#a-nav").on("click", function()
 {           
