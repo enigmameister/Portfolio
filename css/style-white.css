@@ -31,6 +31,10 @@ body
     background: #333;
 }
 
+.theme-closepicker button
+{
+    color: cornsilk;
+}
 header nav ul li a
 {
 	color: #333;

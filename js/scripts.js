@@ -135,8 +135,11 @@ $(".scroll-up").on("click", function()
         1000);
 		});
 
+
 $('.theme-picker').hide();
-$('.toggle-theme, .theme-picker').on('click', function()
+
+
+$('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').on('click', function()
  {
     $('.toggle-theme, .theme-picker').toggle('1000')
   }

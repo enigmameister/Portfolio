@@ -6,7 +6,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 }
 .container-logo
 {
-	border: 3px solid ghostwhite;
+	border: 1px solid ghostwhite;
 	background-color: transparent;
     color: ghostwhite;
 	text-decoration: none;
@@ -30,6 +30,10 @@ color: ghostwhite;
 {
    background: cornsilk;
    text-shadow: 5px 3px 4px #000000;
+}
+.theme-closepicker button
+{
+    color: #24FE41;
 }
 header nav ul li a
 {
