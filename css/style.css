@@ -255,7 +255,7 @@ header nav ul li a:hover
 header nav ul li a.active{color: #005C97; }
 main
 {
-    height: 65vh;
+    height: 50%;
 width: 85%;
 margin: 10% auto;
 }
@@ -503,11 +503,13 @@ input[type=number]::-webkit-outer-spin-button
 .animation
 {
     height: 270px;
+    width: 100%;
     position: relative;
     font-size: 1.4rem;
     color: whitesmoke;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: left;
 }
     .animation span
     {
@@ -519,7 +521,6 @@ input[type=number]::-webkit-outer-spin-button
 {
     color: #005C97;
     text-shadow: 2px 2px black;
-    text-align: justify;
 }
 
 .container, .portfolio, .contact, .about, .skills
