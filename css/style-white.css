@@ -3,6 +3,16 @@ body
 	background: ghostwhite;
 }
 
+.animation span:nth-child(3n+1) /* */
+{
+    color: silver;
+    text-shadow:0px 0px;
+}
+
+.animation
+{
+    color: black;
+}
 .container-logo
 {
 	border-color: #333;
@@ -31,7 +41,7 @@ body
     background: #333;
 }
 
-.theme-closepicker button
+.container .theme-closepicker button
 {
     color: cornsilk;
 }
@@ -58,7 +68,7 @@ main h1, h4
     border-color: #333;
 }
 
-main button, .portfolio button, .contact button, .about button, .skills button
+#btn-go, .portfolio button, .contact button, .about button, .skills button
 
 {
 
@@ -68,7 +78,7 @@ main button, .portfolio button, .contact button, .about button, .skills button
 	text-shadow: 1px 0px 1px gray;
 }
 
-main button:hover, .portfolio button:hover, .contact button:hover, .about button:hover, .skills button:hover
+#btn-go:hover, .portfolio button:hover, .contact button:hover, .about button:hover, .skills button:hover
 {
 	background-color: #333;
 	color: white;
@@ -128,7 +138,10 @@ input[type=submit]:active
 	background-color: ghostwhite;
 	color: #00b4db;
 }
-
+.box-info
+{
+    color: black;
+}
 .about-content
 {
 	background-color: #333;

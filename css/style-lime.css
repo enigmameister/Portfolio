@@ -4,6 +4,13 @@ background: #FDFC47;
 background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
 background: linear-gradient(to right, #24FE41, #FDFC47); 
 }
+
+.animation span:nth-child(3n+1) /* */
+{
+    color: gold;
+    text-shadow:0px 0px;
+}
+
 .container-logo
 {
 	border: 1px solid ghostwhite;
@@ -16,7 +23,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 {
 	background-color: ghostwhite;
 	color: #a8ff78;
-    border: 3px dashed ghostwhite;
+    border-color: ghostwhite;
     text-shadow: 2px 2px 2px #000000;
 }
 .toggle-theme
@@ -31,9 +38,16 @@ color: ghostwhite;
    background: cornsilk;
    text-shadow: 5px 3px 4px #000000;
 }
-.theme-closepicker button
+.container .theme-closepicker button
 {
     color: #24FE41;
+}
+
+header
+{
+    background: rgba(10, 10, 10, 0.2);
+   box-shadow: 0px 0.2px gold;
+}
 }
 header nav ul li a
 {
@@ -51,14 +65,14 @@ main h1, h4
 	color: ghostwhite;	
     text-shadow: 2px 3px 4px #000000;
 }
-main button
+#btn-go
 {
 	background-color: transparent;
     border: 3px solid cornsilk;
     color: cornsilk;
 	text-shadow: 2px 1px 1px #000000;
 }
-main button:hover, .contact button:hover, .portfolio button:hover
+#btn-go:hover, .contact button:hover, .portfolio button:hover, .skills button:hover, .about button:hover
 {
 	background-color: cornsilk;
 	color: #a8ff78;
@@ -123,7 +137,7 @@ input[type=submit]:active
     color: white;
 	border: 3px solid ghostwhite;
 }
-main button, .portfolio button, .contact button, .about button, .skills button
+#btn-go, .portfolio button, .contact button, .about button, .skills button
 
 {
 	background-color: transparent;
@@ -160,10 +174,7 @@ background: transparent;
     color: white;
     background: transparent;
 }
-.contact ::placeholder
-    {
-        color: silver;
-    }
+
 .contact textarea
 {
     border: none;
