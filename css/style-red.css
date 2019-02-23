@@ -1,8 +1,7 @@
 body
 {
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: #f85032; 
-    
+background: linear-gradient(to right, #e73827, #f85032);     
 }
 .container-logo
 {
@@ -23,7 +22,6 @@ background: #f85032;
     -webkit-text-stroke-width: 0px;
     text-shadow: 2px 2px 2px #000000;
 }
-
 .toggle-menu span{background: cornsilk;}
 
 .theme-closepicker button
@@ -59,21 +57,12 @@ main button:hover, .contact button:hover, .portfolio button:hover
 	border-color: cornsilk;
 }
 
-.about button.cv
-{
-    background-color: ghostwhite;
-    border: none;
-}
-.about button.cv a
-{
-    color: crimson;
-}
-.portfolio, .contact, .project
+.portfolio, .project, .container
 {
 	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 	background: linear-gradient(to right, #e73827, #f85032);  
 }
-.project {border-bottom: 2px solid ghostwhite;, border-top: 2px solid ghostwhite;}
+.project {border: 2px solid ghostwhite;, border-top: 2px solid ghostwhite; width: 48%; left: 4px;}
 .overlay{background: crimson;}
 .about-content
 {
@@ -86,17 +75,14 @@ main button, .portfolio button, .contact button, .about button, .skills button
 	background-color: transparent;
     border: 2px solid cornsilk;
     color: cornsilk;
+    margin-top: 30px;
 	text-shadow: 1px 0px 1px gray;
 }
-.contact-box
+
+.contact ::placeholder
 {
-	border: 2px solid whitesmoke;
-	background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-	background: linear-gradient(to right, #e73827, #f85032); 
-}
-.contact-box h1, p
-{
-	color: ghostwhite;
+	color: silver;
+	font-weight: bold;
 }
 input[type=submit]
 {
@@ -130,18 +116,18 @@ header nav
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
-	border-bottom: 1px solid silver;
-    color: white;
-    background: transparent;
-}
+	 color: white;
+    border: 2px solid cornsilk;
+     background: -webkit-linear-gradient(to right, #e73827, #f85032); 
+    background: linear-gradient(to right, #e73827, #f85032); 
+    }
+    5
+
 .contact ::placeholder
 {
 	color: ghostwhite;
 }
-.contact textarea
-{
-    border: none;
-}
+
 .contact input[type=submit]
 {
 	background-color: transparent;
