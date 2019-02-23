@@ -304,18 +304,18 @@ main h5
 {
 	width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
+
 .project 
 {
-	width: 24%;
+	width: 25%;
 	height: 50%;
-	display: inline-flex;
+	display: inline-block;
 	background: #005C97;
 	background: -webkit-linear-gradient(to right, #363795, #005C97); 
 	background: linear-gradient(to right, #363795, #005C97);
 	position: relative;
-	left: 1.5%;
 }
 .content{
 	position: absolute;
@@ -360,7 +360,7 @@ height: 100%
     height: 85%;
     margin: 0 auto;
 }
-.portfolio-content
+.content
 {
 	width: 85%;
 	height: 60%;
@@ -499,9 +499,9 @@ input[type=number]::-webkit-outer-spin-button
 {
 .container, .portfolio, .contact, .about, .skills
     {
-     width: 100%;
-        height: 600px;
-    }
+    width: 100%;
+    height: 600px;
+}
 main button, .portfolio button, .contact button, .about button, .skills button
 {
     width: 12rem;
@@ -613,6 +613,7 @@ main h1
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
+        color: cornsilk;
 	}
 .about img 
 {
@@ -647,14 +648,14 @@ main h1
 }
 .project 
 {
-width: 100%;
-height: 220px;
-display: block;
+width: 49%;
+height: 100px;
+display: inline-block;
 background: #005C97;
 position: relative;
-margin: 4px auto;
-left: 0;
+left: 2.5px;
 }
+    
 .content{
 position: absolute;
 top: 50%;
@@ -694,14 +695,12 @@ white-space: nowrap;
 {
 	width: 100%;
     height: 100%;
-    margin: 0 auto;
 }
     
 .contact-content
 {
 	width: 100%;
-	height: 70%;
-    margin-top: 10%;
+	height: 100%;
 }
 .contact-box
 {
