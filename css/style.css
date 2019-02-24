@@ -381,7 +381,6 @@ height: 100%
 input[type=email], textarea
 {
 	width: 80%;
-	font-weight: 700;
 	text-align: left;
 	border: 2px inset ghostwhite;
     resize: none;
@@ -436,12 +435,12 @@ input[type=number]::-webkit-outer-spin-button
 }
 .about-content h2
 {
-	text-align: center;	
-	font-size: 1.4rem;
+	color: ghostwhite;
+	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
 }
 .about-content p
 {
-    text-align: justify;
     font-size: 1rem;
     width: 90%;
     margin: 0 auto;
@@ -462,7 +461,7 @@ input[type=number]::-webkit-outer-spin-button
 .fab.fa-facebook-square {color: #3B5998;}
 .fab.fa-github {color: #6e5494;}
 
-/*************** MOBILE ***************/
+/*************** MOBILE ****************************************************************/
 @media (max-width: 720px)
 {
    
@@ -500,7 +499,14 @@ z-index: 1;
     color: #005C97;
     text-shadow: 2px 2px black;
 }
-
+    
+.contact-box h1, main h1
+{
+	color: ghostwhite;
+	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
+}
+    
 .container, .portfolio, .contact, .about, .skills
     {
     width: 100%;
@@ -531,17 +537,9 @@ main
 }
 main h1
 {
-	font-size: 1.4rem;
-	text-align: center;
     border: none;
 }
-main h4
-{
-	text-align: left;
-	font-size: 1.4rem;
-	text-align: center;
-	margin-bottom: 20px;
-}
+
 header
 {
     width: 100%;
@@ -556,14 +554,14 @@ header nav
     width: 100%;
     background: #111;
     height: 100vh;
-    top: -950%;
+    top: -800%;
     transition: 0.7s;
     z-index: -1;
     text-align: center;
 }
 header nav ul li a
 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0 auto;
 }
@@ -576,18 +574,9 @@ header nav ul
 {
     display: block;
     text-align: center;
-	margin-top: 3rem;
+	margin-top: 4rem;
 }
-main h5
-{
-    font-size: 1rem;
-	text-align: center;
-    letter-spacing: -1px;
-}
-main h1
-{
-	font-size: 2rem;
-}
+
 .about-content
     {
 	width: 80%;
@@ -599,7 +588,7 @@ main h1
 .about-content h2
 	{
 	text-align: center;	
-	font-size: 1.2rem;
+	font-size: 2rem;
 	}
 .about-content p
 	{
@@ -633,6 +622,13 @@ main h1
         height: 75vh;
         width: 85%;
         color: white;
+    }
+    
+.skills p
+    {
+    color: ghostwhite;
+	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
     }
 .projects-box
 {
@@ -716,12 +712,7 @@ white-space: nowrap;
 	width: 100%;
 	text-align: center;
 }
-.contact-box h1
-{
-	color: ghostwhite;
-	font-size: 2rem;
-	font-family: 'Jua', sans-serif;
-}
+
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	width: 80%;
@@ -734,6 +725,8 @@ white-space: nowrap;
     background: #005C97; 
 	background: -webkit-linear-gradient(to right, #363795, #005C97);  
 	background: linear-gradient(to right, #363795, #005C97);
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
 }
 .contact ::placeholder
 {
