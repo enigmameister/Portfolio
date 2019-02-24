@@ -554,7 +554,7 @@ header nav
     width: 100%;
     background: #111;
     height: 100vh;
-    top: -900%;
+    top: -950%;
     transition: 0.7s;
     z-index: -1;
     text-align: center;
