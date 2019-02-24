@@ -108,7 +108,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-      if (scroll > 400) {
+      if (scroll > 50) {
         $("header").css({"display":"none"});
           $(".scroll-up").css({"display":"block"});
       }
@@ -117,9 +117,7 @@ $(document).ready(function(){
           $("header").css({"display":"block"});  
           $(".scroll-up").css({"display":"none"}); 
           $(".scroll-down").css({"display":"none"});  
-      }
-       
-     
+      }  
   })
 })
 
@@ -131,10 +129,7 @@ $(".scroll-up").on("click", function()
         500);
 		});
 
-
 $('.theme-picker').hide();
-
-
 $('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').on('click', function()
  {
     $('.toggle-theme, .theme-picker').toggle('1000')
@@ -145,13 +140,10 @@ $('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #th
         document.getElementById('theme_css').setAttribute('href', sheet);
         storebackground(sheet);
     }
-
     var storebackground = function (swapstylesheet) {
-        localStorage.setItem("href", swapstylesheet); //you need to give a key and value
+        localStorage.setItem("href", swapstylesheet);
     }
-
     var loadbackground = function () {
         document.getElementById('theme_css').setAttribute('href', localStorage.getItem('href'));
     }
-
     window.onload = loadbackground();

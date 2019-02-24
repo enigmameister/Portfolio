@@ -613,7 +613,8 @@ main h1
 	}
 .box-info
 	{
-    font-size: 1.4rem;
+    text-align: center;
+    font-size: 5.0rem;
     width: 90%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
@@ -678,7 +679,14 @@ white-space: nowrap;
     margin: 0 auto;
 }
 .project:hover .overlay {height: 100%}
-.fab.fa-html5 {color: orangered;}
+    
+
+.skills-html, .skills-css, .skills-js, .skills-php, .skills-sql
+    {
+        font-size: 0.6rem;
+        color: gold;
+    }
+.fab.fa-html5{color: orangered;}
 .fab.fa-css3-alt {color:#005C97;}
 .fab.fa-js-square {color: yellow;}
 .fab.fa-php {color: darkgrey;}
