@@ -13,9 +13,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 .container-logo
 {
 	border: 1px solid ghostwhite;
-	background: #FDFC47;  
-background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-background: linear-gradient(to right, #24FE41, #FDFC47); 
+   background: transparent;
     color: ghostwhite;
 	text-decoration: none;
 	text-shadow: 1px 3px 6px #000000; 
@@ -84,17 +82,16 @@ main h5
     color: cornsilk;
     text-shadow: 2px 0px 1px #000000;
 }
-
-.portfolio, .project, .container, .skills
+.skills, .container, .portfolio,
 {
-	background: #FDFC47;  
-background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-background: linear-gradient(to right, #24FE41, #FDFC47); 
+    background: transparent;
 }
-
 .project 
 {
 border: 2px solid ghostwhite;
+background: #FDFC47;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .content{color: #fff;}
 .overlay{background: rgba(49, 209, 129, 0.6);}
@@ -107,7 +104,6 @@ border: 2px solid ghostwhite;
 
 .contact-box
 {
-    border: 4px solid whitesmoke;
 	background: transparent;
 }
 .contact-box h1, p
@@ -164,15 +160,11 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
-	border-bottom: 1px solid silver;
+	border: 2px solid ghostwhite;
     color: white;
     background: transparent;
 }
 
-.contact textarea
-{
-    border: none;
-}
 .contact input[type=submit]
 {
 	background-color: transparent;
