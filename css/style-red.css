@@ -36,7 +36,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 
 header
 {
-      background: rgba(10, 10, 10, 0.3);
+   background: rgba(10, 10, 10, 0.3);
    box-shadow: 0px 2px darkred;
 }
 header nav ul li a
@@ -114,11 +114,7 @@ input[type=number]
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-body
-{
-background: -webkit-linear-gradient(to right, #e73827, #f85032); 
-background: linear-gradient(to right, #e73827, #f85032);     
-}
+
 header nav
 {
     background: #111;
