@@ -1,6 +1,5 @@
 body
 {
-background: #FDFC47;  
 background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
 background: linear-gradient(to right, #24FE41, #FDFC47); 
 }
@@ -14,7 +13,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 .container-logo
 {
 	border: 1px solid ghostwhite;
-	background-color: transparent;
+	background: transparent;
     color: ghostwhite;
 	text-decoration: none;
 	text-shadow: 1px 3px 6px #000000; 
@@ -72,7 +71,7 @@ main h1, h4
     color: cornsilk;
 	text-shadow: 2px 1px 1px #000000;
 }
-#btn-go:hover, .contact button:hover, .portfolio button:hover, .skills button:hover, .about button:hover
+#btn-go:hover
 {
 	background-color: cornsilk;
 	color: #a8ff78;
@@ -83,18 +82,13 @@ main h5
     color: cornsilk;
     text-shadow: 2px 0px 1px #000000;
 }
-.portfolio, .contact
+.portfolio, .project, .container, .skills
 {
-background: #FDFC47;  
-background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-background: linear-gradient(to right, #24FE41, #FDFC47); 
+background: transparent;
 }
 .project 
 {
 border: 2px solid ghostwhite;
-background: #FDFC47;  
-background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-background: linear-gradient(to right, #24FE41, #FDFC47); 
 }
 .content{color: #fff;}
 .overlay{background: rgba(49, 209, 129, 0.6);}
@@ -108,9 +102,7 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
 .contact-box
 {
     border: 4px solid whitesmoke;
-	background: #FDFC47;  
-    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
-    background: linear-gradient(to right, #24FE41, #FDFC47); 
+	background: transparent;
 }
 .contact-box h1, p
 {
@@ -137,7 +129,7 @@ input[type=submit]:active
     color: white;
 	border: 3px solid ghostwhite;
 }
-#btn-go, .portfolio button, .contact button, .about button, .skills button
+#btn-go
 
 {
 	background-color: transparent;
@@ -165,7 +157,9 @@ background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, F
     }
 .contact-box
 {
-background: transparent;
+background: #FDFC47;  
+background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  
+background: linear-gradient(to right, #24FE41, #FDFC47); 
 }
 
 .contact input[type=email], .contact textarea, .contact input[type=text]
@@ -207,9 +201,6 @@ select, option
         border: 2px solid ghostwhite;
         color: white;
        
-    }
-
-    
-    
+    } 
 }
 } 

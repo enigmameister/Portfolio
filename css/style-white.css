@@ -172,7 +172,10 @@ input[type=submit]:active
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
- 
+ .scroll-up
+    {
+        color: #333;
+    }
     header nav
     {
         background: whitesmoke; 

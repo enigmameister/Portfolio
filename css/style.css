@@ -17,25 +17,6 @@ body
 	background: linear-gradient(to right, #434343, #000000);
 }
 
-.scroll-up
-{
-display: none;
-color: whitesmoke;
-font-size: 2.5rem;
-position: fixed;
-left: 95%;
-top: 5%;
-}
-.scroll-down
-{
-display: none;
-color: whitesmoke;
-font-size: 2.5rem;
-position: fixed;
-left: 95%;
-top: 86%; 
-}
-
 .container
 {
 	width: 80%;
@@ -269,7 +250,7 @@ main h1
     font-size: 3rem;
     text-align: center;
 }
-#btn-go, .portfolio button, .contact button, .about button, .skills button
+#btn-go
 {
    display: none;
 }
@@ -318,6 +299,7 @@ main h5
 	background: -webkit-linear-gradient(to right, #363795, #005C97); 
 	background: linear-gradient(to right, #363795, #005C97);
 	position: relative;
+    border: 2px solid ghostwhite;
 }
 .content{
 	position: absolute;
@@ -442,23 +424,7 @@ input[type=number]::-webkit-outer-spin-button
 	width: 100%;
 	display: block-inline;
 }
-.about button.cv
-{
-	width: 88px;
-	height: 33px;
-	padding: 0px;
-	margin: 0px;
-    display: block;
-    -webkit-transform: none;
-	-moz-transform: none;
-	-o-transform: none;
-}
 
-.about button.cv a
-{
-    text-decoration: none;
-    color: cornsilk;
-}
 .about-content
 {
     margin: 0 auto;
@@ -499,6 +465,17 @@ input[type=number]::-webkit-outer-spin-button
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
+   
+.scroll-up
+{
+display: none;
+color: whitesmoke;
+font-size: 3rem;
+position: fixed;
+left: 80%;
+top: 85%;
+z-index: 1;
+}
     
 .animation
 {
@@ -527,9 +504,8 @@ input[type=number]::-webkit-outer-spin-button
 .container, .portfolio, .contact, .about, .skills
     {
     width: 100%;
-    height: 600px;
 }
-#btn-go, .portfolio button, .contact button, .about button, .skills button
+#btn-go
 {
     width: 12rem;
     height: 4rem;
@@ -542,7 +518,7 @@ input[type=number]::-webkit-outer-spin-button
     text-decoration: none;
     cursor: pointer;
 }
-    #btn-go:hover, .contact button:hover, .portfolio button:hover, .about button:hover, .skills button:hover
+    #btn-go:hover
 {
 	background-color: transparent;
 	transition: 0.6s;
@@ -649,20 +625,7 @@ main h1
 	width:88px;
 	height:31px;
 }
-.about button.cv
-{
-	width: 88px;
-	height: 31px;
-	line-height: 0px;
-	padding: 0px;
-	margin: 0px;
-}
-.about button.cv:hover
-{
-	background-color: transparent;
-	border: 1px solid #005C97;
-	transition: 0.1s;
-}
+
 .skills-content
     {
         margin: 5% auto;
@@ -672,18 +635,17 @@ main h1
     }
 .projects-box
 {
-	width: 100%;
-    height: 100%;
+	width: 95%;
 }
 .project 
 {
 width: 45%;
-left: 3.5%;
 height: 100px;
-display: inline-block;
 background: #005C97;
-position: relative;
 text-align: center;
+display: inline-block;
+left: 3%;
+position: relative;
 }
     
 .content{
@@ -791,17 +753,5 @@ white-space: nowrap;
     width: 50px;
     margin-left: 10px;
 }
-.scroll-up, .scroll-down
-{
-visibility: hidden;
-}
     
-}
-/*************** MOBILE ***************/
-@media (max-height: 515px)
-{
-.contact button
-{
-	display: none;
-}
 }

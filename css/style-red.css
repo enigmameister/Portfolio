@@ -61,14 +61,14 @@ main h1, main h4, main h5{color: cornsilk;}
     text-decoration: none;
 	text-shadow: 1px 1px 2px gray;
 }
-#btn-go:hover, .contact button:hover, .portfolio button:hover, .about button:hover, .skills button:hover
+#btn-go:hover
 {
 	background-color: cornsilk;
 	color: #f85032;
 	border-color: cornsilk;
 }
 
-.portfolio, .project, .container
+.portfolio, .project, .container, .skills
 {
 	background: transparent;  
 }
@@ -80,7 +80,7 @@ main h1, main h4, main h5{color: cornsilk;}
 	border: 3px solid white;
     color: cornsilk;
 }
-#btn-go, .portfolio button, .contact button, .about button, .skills button
+#btn-go
 {
 	background-color: transparent;
     border: 2px solid cornsilk;
@@ -114,7 +114,7 @@ input[type=number]
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
-    body
+body
 {
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032);     
@@ -127,7 +127,7 @@ header nav
 }
 .contact-box
 {
-	transparent;
+	background: transparent;
 }
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
