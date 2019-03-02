@@ -507,10 +507,10 @@ z-index: 1;
 	font-family: 'Jua', sans-serif;
 }
     
-.container, .portfolio, .about, .skills
+.container, .portfolio, .about, .skills, .contact
     {
     width: 100vw;
-        height: 100vh;
+    height: 100vh;
 }
 #btn-go
 {
@@ -621,31 +621,31 @@ header nav ul
 
 .skills-content
     {
-        margin: 5% auto;
+        margin: 0 auto;
         height: 75vh;
-        width: 85%;
+        width: 100vw;
         color: white;
     }
     
 .skills p
     {
     color: ghostwhite;
-	font-size: 2rem;
+	font-size: 10vw;
 	font-family: 'Jua', sans-serif;
     }
 .projects-box
 {
-	width: 95%;
+	width: 100vw;
 }
 .project 
 {
-width: 45%;
-height: 100px;
+width: 45vw;
+height: 20vh;
 background: #005C97;
 text-align: center;
 display: inline-block;
-left: 3%;
 position: relative;
+left: 3.5vw;
 }
     
 .content{
@@ -693,20 +693,15 @@ white-space: nowrap;
 
 .portfolio-content
 {
-	width: 100%;
-    height: 100%;
+	width: 100vw;
+    height: 100vh;
 }
     
-.contact-content
-{
-	width: 100%;
-	height: 100%;
-}
 .contact-box
 {
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
+	width: 80vw;
+	height: 90vh;
+	margin: 5vh auto;
 	background: transparent;
 }
 .contact-box form
