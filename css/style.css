@@ -478,13 +478,13 @@ z-index: 1;
     
 .animation
 {
-    height: 270px;
+    height: 60%;
     width: 100%;
     position: relative;
     font-size: 1.4rem;
     color: whitesmoke;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 5vw;
     text-align: left;
     z-index: -1;
 }
@@ -509,18 +509,20 @@ z-index: 1;
     
 .container, .portfolio, .about, .skills
     {
-    width: 100%;
+    width: 100vw;
+        height: 100vh;
 }
 #btn-go
 {
-    width: 12rem;
-    height: 4rem;
+    width: 40vw;
+    height: 20vw;
     margin: 10px auto;
     display: block;
 	font-family: 'Jua', sans-serif;
-    font-size: 15px;  
+    font-size: 5vw;  
 	background-color:  #005C97;
     color: white;
+    border-radius: 2px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -538,6 +540,7 @@ main
 main h1
 {
     border: none;
+    font-size: 10vw;
 }
 
 header
@@ -554,7 +557,7 @@ header nav
     width: 100%;
     background: #111;
     height: 100vh;
-    top: -900%;
+    top: -100vh;
     transition: 0.7s;
     z-index: -1;
     text-align: center;
