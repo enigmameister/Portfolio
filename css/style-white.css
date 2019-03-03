@@ -68,7 +68,7 @@ main h1, h4
     border-color: #333;
 }
 
-#btn-go, .portfolio button, .contact button, .about button, .skills button
+#btn-go
 
 {
 
@@ -78,7 +78,7 @@ main h1, h4
 	text-shadow: 1px 0px 1px gray;
 }
 
-#btn-go:hover, .portfolio button:hover, .contact button:hover, .about button:hover, .skills button:hover
+#btn-go:hover
 {
 	background-color: #333;
 	color: white;
@@ -222,41 +222,3 @@ background: transparent;
 	color: ghostwhite;
 
 }
-
-@media (max-width:768px)
-{
-
-select, option
-{
-    color: #333;
-    background: ghostwhite;
-    background-color: ghostwhite;
-    border: 2px solid #333;
-}
-
-    .hire p
-    {
-        color: #333;
-    }
-
-    
-.hire input[type=text]
-    {
-        background-color: transparent;
-        border: 2px solid #333;
-        color: #333;   
-    }
-
-.hire input[type=submit]
-{
-    color: #333;
-    border-color: #333;
-}	
-
-.hire input[type=text]
-    {
-        background-color: ghostwhite;
-        border-color: #333;
-        color: #333;
-    }
-} 
