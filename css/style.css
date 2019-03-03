@@ -468,10 +468,10 @@ input[type=number]::-webkit-outer-spin-button
 {
 display: none;
 color: whitesmoke;
-font-size: 2.5rem;
+font-size: 3rem;
 position: fixed;
-left: 43.1vw;
-top: 90vh;
+left: 80%;
+top: 85%;
 z-index: 1;
 }
 .fa-arrow-circle-up:before
@@ -518,15 +518,14 @@ z-index: 1;
 }
 #btn-go
 {
-    width: 30vw;
-    height: 15vw;
-    margin: 10px auto;
+    width: 40vw;
+    height: 20vw;
+    margin: 0 auto;
     display: block;
 	font-family: 'Jua', sans-serif;
-    font-size: 4vw;  
-	background-color:  #005C97;
+    font-size: 5vw;  
+	background-color: #005C97;
     color: white;
-    border-radius: 2px;
     text-decoration: none;
     cursor: pointer;
 }
