@@ -471,7 +471,7 @@ color: whitesmoke;
 font-size: 2rem;
 position: fixed;
 left: 45%;
-top: 85%;
+top: 80%;
 z-index: 1;
 }
 .fa-arrow-circle-up:before
@@ -514,16 +514,16 @@ z-index: 1;
 .container, .portfolio, .about, .skills, .contact
     {
     width: 100vw;
-    height: 100vh;
+    height: 550px;
 }
 #btn-go
 {
-    width: 40vw;
-    height: 20vw;
+    width: 30vw;
+    height: 15vw;
     margin: 10px auto;
     display: block;
 	font-family: 'Jua', sans-serif;
-    font-size: 5vw;  
+    font-size: 4vw;  
 	background-color:  #005C97;
     color: white;
     border-radius: 2px;

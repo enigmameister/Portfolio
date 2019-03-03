@@ -1,7 +1,7 @@
 $(function(){
     $('.contact').each(function() {
-        if($(this).windowHeight() < 1.0) {
-           (".container, .portfolio, .skills, .about").css("display","none");
+        if($(this).height() < 550) {
+           (".contact, .contact-box").css("position","absolute");
         }    
     });
 });
