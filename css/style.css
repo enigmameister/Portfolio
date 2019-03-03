@@ -276,7 +276,6 @@ main h5
     padding: 0px;
     margin: 12px;
 }
-
 .contact, .portfolio, .about, .skills
 {
 	height: 100vh;
@@ -469,13 +468,18 @@ input[type=number]::-webkit-outer-spin-button
 {
 display: none;
 color: whitesmoke;
-font-size: 3rem;
+font-size: 2rem;
 position: fixed;
-left: 80%;
+left: 45%;
 top: 85%;
 z-index: 1;
 }
-    
+.fa-arrow-circle-up:before
+    {
+    border: 5px solid #333;
+        border-radius: 50%;
+    }
+
 .animation
 {
     height: 60%;

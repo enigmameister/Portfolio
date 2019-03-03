@@ -1,10 +1,17 @@
+$(function(){
+    $('.contact').each(function() {
+        if($(this).windowHeight() < 1.0) {
+           (".container, .portfolio, .skills, .about").css("display","none");
+        }    
+    });
+});
+
 $(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(2)").animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(4)").delay(800).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(5)").delay(800).animate({ "left":"0%"}, 700 ); 
 $(".animation span:nth-child(7)").delay(1600).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(8)").delay(1600).animate({ "left":"0%"}, 700 ); 
-
 
 $("#a-nav").on("click", function()
 {           
