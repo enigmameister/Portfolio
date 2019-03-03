@@ -1,11 +1,3 @@
-$(function(){
-    $('.contact').each(function() {
-        if($(this).height() < 550) {
-           (".contact, .contact-box").css("position","absolute");
-        }    
-    });
-});
-
 $(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(2)").animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(4)").delay(800).animate({ "left":"0%"}, 700 );
