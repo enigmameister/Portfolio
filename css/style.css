@@ -518,12 +518,12 @@ z-index: 1;
 }
 #btn-go
 {
-    width: 40vw;
-    height: 20vw;
+    width: 40%;
+    height: 15%;
     margin: 0 auto;
     display: block;
 	font-family: 'Jua', sans-serif;
-    font-size: 5vw;  
+    font-size: 4vw;  
 	background-color: #005C97;
     color: white;
     text-decoration: none;
@@ -626,7 +626,7 @@ header nav ul
     {
         margin: 0 auto;
         height: 75vh;
-        width: 100vw;
+        width: 100%;
         color: white;
     }
     
@@ -638,17 +638,17 @@ header nav ul
     }
 .projects-box
 {
-	width: 100vw;
+	width: 100%;
 }
 .project 
 {
-width: 45vw;
+width: 45%;
 height: 20vh;
 background: #005C97;
 text-align: center;
 display: inline-block;
 position: relative;
-left: 3.5vw;
+left: 3.5%;
 }
     
 .content{
@@ -659,7 +659,7 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 color: #fff;
 text-transform: uppercase;
-font-size:0.8rem;
+font-size: 0.8rem;
 white-space: nowrap;
 }
 .content span
