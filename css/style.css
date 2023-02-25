@@ -11,7 +11,7 @@ body
 {
 	font-family: sans-serif;
 	box-sizing: border-box;
-	font-size: 12px;
+	
 	background: #000000; 
 	background: -webkit-linear-gradient(to right, #434343, #000000); 
 	background: linear-gradient(to right, #434343, #000000);
@@ -25,7 +25,7 @@ display: none;
 .container
 {
 	width: 80vw;
-    height: 90vh;
+    height: 100vh;
 	margin: 0 auto;
 }
 .container-logo
@@ -238,9 +238,10 @@ header nav ul li a:hover
 	text-shadow: 2px 4px 6px #000000;
 }
 header nav ul li a.active{color: #005C97; }
+
 main
 {
-    height: 50%;
+height: 50%;
 width: 85%;
 margin: 10% auto;
 }
@@ -257,7 +258,6 @@ main h1
 {
    display: none;
 }
-
 
 main h5
 {
@@ -318,22 +318,12 @@ main h5
 	transition: 0.4s ease;
 	overflow: hidden;
 }
+
 .project:hover .overlay
 {
 height: 100%
 }
-.fab.fa-html5 {color: orangered;}
-.fab.fa-css3-alt {color:darkblue;}
-.fab.fa-js-square {color: yellow;}
-.fab.fa-php {color: darkgrey;}
-.fas.fa-database {color: forestgreen;}
 
-.skills-content
-{
-    width: 100%;
-    height: 85%;
-    margin: 0 auto;
-}
 .content
 {
 	width: 85%;
@@ -410,6 +400,7 @@ input[type=number]::-webkit-outer-spin-button
 }
 .about
 {
+    height: 100vh;
 	width: 100%;
 	display: block-inline;
 }
@@ -459,6 +450,7 @@ input[type=number]::-webkit-outer-spin-button
     {
     display: inherit;
     }
+
 .scroll-up
 {
 display: none;
@@ -509,7 +501,7 @@ z-index: 1;
 .container, .portfolio, .about, .skills, .contact
     {
     width: 100%;
-    height: 600px;
+    height: 100vh;
 }
     
 #btn-go
@@ -603,6 +595,14 @@ header nav ul
     word-wrap: break-word;
     letter-spacing: 0.5px;
 	}
+
+.portfolio-content h2
+{
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	font-family: 'Jua' , sans-serif;
+}
 .box-info
 	{
     text-align: center;
@@ -612,27 +612,7 @@ header nav ul
     font-family: 'Jua', sans-serif;
         color: cornsilk;
 	}
-.about img 
-{
-	border:0;
-	width:88px;
-	height:31px;
-}
 
-.skills-content
-    {
-        margin: 0 auto;
-        height: 75vh;
-        width: 100%;
-        color: white;
-    }
-    
-.skills p
-    {
-    color: ghostwhite;
-	font-size: 10vw;
-	font-family: 'Jua', sans-serif;
-    }
 .projects-box
 {
 	width: 100%;
@@ -679,26 +659,23 @@ white-space: nowrap;
 }
 .project:hover .overlay {height: 100%}
     
-
-.skills-html, .skills-css, .skills-js, .skills-php, .skills-sql
-    {
-        font-size: 0.6rem;
-        color: gold;
-    }
 .fab.fa-html5{color: orangered;}
 .fab.fa-css3-alt {color:#005C97;}
 .fab.fa-js-square {color: yellow;}
 .fab.fa-php {color: darkgrey;}
 .fas.fa-database {color: forestgreen;}
-
+.fab.fa-unity {color: black;}
+.fa-solid.fa-c {color:violet;}
 .portfolio-content
 {
 	width: 100%;
-    height: 100%;
+    height: 100vh;
+	margin-top: 3rem;
 }
     
 .contact-box
 {
+	margin-top: 7.5rem;
 	width: 80%;
 	background: transparent;
 }
