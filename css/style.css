@@ -16,6 +16,29 @@ body
 	background: -webkit-linear-gradient(to right, #434343, #000000); 
 	background: linear-gradient(to right, #434343, #000000);
 }
+.animation
+{
+    height: 60%;
+    width: 100%;
+    position: relative;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 4.5vw;
+    text-align: left;
+    z-index: -1;
+}
+    .animation span
+    {
+        position: relative;
+        left: -125%;
+        display: inline-block;
+    }
+.animation span:nth-child(3n+1) /* */
+{
+    color: #005C97;
+    text-shadow: 2px 2px black;
+}
+
 
 .scroll-up, .fas.fa-arrow-circle-up
 {
@@ -220,7 +243,6 @@ box-shadow: 2px 2px #333;
     background-color: #005C97;
 }
 
-
 header
 {
 	 position:fixed;
@@ -284,24 +306,38 @@ main h5
     padding: 0px;
     margin: 12px;
 }
-.contact, .portfolio, .about, .skills
+.contact, .about, .portfolio
 {
 	height: 600px;
 	width: 100%;
     margin: 5% auto;
 	display: inline-block;
 }
-.projects-box
+
+.portfolio-content
 {
-	width: 40%;
-    height: 300px;
-    margin: 0 auto;
+	width: 90vw;
+    height: 100vh;
+	margin: 0 auto;
 }
 
+.projects-box
+{
+	width: 90vw;
+    height: 20vh;
+	margin-left: 5%;
+}
+
+.portfolio h2
+{
+	color: cornsilk;
+	font-size: 5vw;
+	margin-left: 40vw;
+}
 .project 
 {
-	width: 30%;
-	height: 50%;
+	width: 10vw;
+	height: 20vh;
 	display: inline-block;
 	background: #005C97;
 	background: -webkit-linear-gradient(to right, #363795, #005C97); 
@@ -309,7 +345,9 @@ main h5
 	position: relative;
     border: 2px solid ghostwhite;
 }
-.content{
+
+.content
+{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -320,10 +358,13 @@ main h5
 	font-size: 0.8rem;
 	white-space: nowrap;
 }
-.content span{
-	font-size:1.4rem;
-	display: block;
+
+.content span
+{
+	font-size:1.2rem;
+	display: inline-block;
 }
+
 .overlay
 {
 	position: absolute;
@@ -462,15 +503,24 @@ input[type=number]::-webkit-outer-spin-button
 {
 	color: cornsilk;
 	font-size: 3.5rem;
-	margin-left: 42.5vw;
+	margin-left: 50vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 
 /*************** MOBILE ****************************************************************/
 @media (max-width: 720px)
 {
 
+	.fa-brands.fa-github 
+	{
+		color: cornsilk;
+		font-size: 3.5rem;
+		margin-left: 42.5vw;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 .fas.fa-arrow-circle-up
     {
     display: inherit;
