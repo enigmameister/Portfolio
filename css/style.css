@@ -332,7 +332,7 @@ main h5
 {
 	color: cornsilk;
 	font-size: 5vw;
-	margin-left: 40vw;
+	margin-left: 30vw;
 }
 .project 
 {
@@ -674,23 +674,24 @@ header nav ul
 .portfolio-content h2
 {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: white;
+	margin: 0 auto;
 	font-family: 'Jua' , sans-serif;
 }
 .box-info
 	{
     text-align: center;
     font-size: 5.0rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     font-family: 'Jua', sans-serif;
-        color: cornsilk;
+    color: cornsilk;
 	}
 
 .projects-box
 {
-	width: 100%;
+	width: 90%;
 }
 .project 
 {
@@ -703,7 +704,8 @@ position: relative;
 left: 3.5%;
 }
     
-.content{
+.content
+{
 position: absolute;
 top: 50%;
 left: 50%;
@@ -758,11 +760,11 @@ white-space: nowrap;
 }
 .portfolio-content
 {
-	width: 100%;
+	width: 90%;
     height: 100vh;
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
-    
+
 .contact-box
 {
 	margin-top: 7.5rem;
