@@ -26,13 +26,6 @@ $("#c-nav").on("click", function()
         'slow');
 		});
 
-$("#s-nav").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".skills").offset().top},
-        'slow');
-		});
-
 $("#h-nav, #btn-c").on("click", function() 
 	{
     $('html,body').animate({
@@ -79,6 +72,7 @@ $(document).ready(function() {
     });
 });
 
+
 $(document).ready(function(){
                   $('.toggle-menu').click(function(){
                     $('nav').toggleClass('active')
@@ -121,19 +115,30 @@ $(document).ready(function(){
 })
 
 
+
+
 $(".scroll-up").on("click", function() 
 	{
     $('html,body').animate({
         scrollTop: $('html').offset().top},
         500);
-		});
+	});
 
 $('.theme-picker').hide();
+
 $('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').on('click', function()
  {
     $('.toggle-theme, .theme-picker').toggle('1000')
-  }
-);
+  });
+
+
+ $('.lang-picker').hide();
+
+$('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').on('click', function()
+ {
+    $('.toggle-lang, .lang-picker').toggle('1000')
+  });
+
 
   var swapStyleSheet = function (sheet) {
         document.getElementById('theme_css').setAttribute('href', sheet);
