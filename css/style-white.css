@@ -29,12 +29,14 @@ body
     border-color: #333;
 }
 
-.toggle-theme
+.toggle-theme, .toggle-lang
 {
 	color: #333;
     -webkit-text-stroke-width: 0px;
     text-shadow: 0px 0px 0px #000000;
 }
+
+
 
 .toggle-menu span
 {
@@ -215,10 +217,11 @@ background: transparent;
 	color: #333;
 	border: 2px solid #333;
 }
+
 .contact input[type=submit]:active
 {
 	border-color: transparent;
 	background-color: #333;
 	color: ghostwhite;
-
+}
 }
