@@ -458,8 +458,14 @@ input[type=number]::-webkit-outer-spin-button
 .fab.fa-css3-alt {color:mediumblue;}
 .fab.fa-js-square {color: #f7df1e;}
 
-.fa-brands.fab.fa-github {color: cornsilk;}
-.fab.fa-github {color: #6e5494;}
+.fa-brands.fa-github 
+{
+	color: cornsilk;
+	font-size: 3.5rem;
+	margin-left: 42.5vw;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 /*************** MOBILE ****************************************************************/
 @media (max-width: 720px)
