@@ -44,18 +44,17 @@
 						<button id="lang-close">X</button>
 					</div>
 
-				<button id="lang-en"><img src="lang-en.png" alt="en" width="20" height="20"></button>
-				<button id="lang-pl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
-				<button id="lang-ua"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
-				<button id="lang-de"><img src="lang-de.png" alt="de" width="20" height="20"></button>
+				<button onclick="changeLanguage('en')" id="lang-en"><img src="lang-en.png" alt="en" width="20" height="20"></button>
+				<button onclick="changeLanguage('pl')" id="lang-pl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
+				<button onclick="changeLanguage('ua')" id="lang-ua"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
+				<button onclick="changeLanguage('de')" id="lang-de"><img src="lang-de.png" alt="de" width="20" height="20"></button>
 			</div>
 
-
             <nav><ul>	<!-- Main menu -->
-				<li><a href="#" class="active" id="h-nav">Home</a></li>
-				<li><a href="#" id="a-nav">About Me</a></li>
-				<li><a href="#" id="p-nav">Portfolio</a></li>
-				<li><a href="#" id="c-nav">Contact</a></li>
+				<li><a href="#" class="active" id="h_nav">Home</a></li>
+				<li><a href="#" id="a_nav">About Me</a></li>
+				<li><a href="#" id="p_nav">Portfolio</a></li>
+				<li><a href="#" id="c_nav">Contact</a></li>
             </ul></nav> <!-- Main menu ends -->  
 			
          <div class="toggle-menu">
@@ -66,15 +65,13 @@
 
     </header>  
 	 
-
 	    <main>
-		    <h1>Welcome</h1>
-<div class="animation">    
-    <span>Acuracy.</span><span>Always a clean code.</span><p></p>
-    <span>Passion.</span><span>Idea and unique projects.</span><p></p>
-    <span>Talk is cheap.</span><span>Show me the code.</span><p></p>
+		    <h1 id="welcomeText">Welcome</h1>
+<div class="animation">  
+		<span>Acuracy.</span><span>Always a clean code.</span><p></p>
+		<span>Passion.</span><span>Idea and unique projects.</span><p></p>
+		<span>Talk is cheap.</span><span>Show me the code.</span><p></p>
 </div>
-		  
 	    </main>
 		
 	     <button type="button" id="btn-go"><i class="fas fa-arrow-circle-down"></i> START</button>
@@ -84,8 +81,8 @@
 
 <div class="about">
 <div class="about-content">
-<h2>About Me</h2>
-<p>Hi, my name is Łukasz and I am 29 years old. 
+<h2 id="aboutText">About Me</h2>
+<p id="aboutText2">Hi, my name is Łukasz and I am 29 years old. 
 In my free time i like to program, its my passion and i think its a lot of fun to do.
 Im not horrible at computer related things and tend to pick it up fast.
 In addition to work I like to play sports in my free time and listen to "good" music.
@@ -95,11 +92,10 @@ Actually not hiring anywhere (in IT), just improving my skills and discover new 
 
 </div>
 
-
-
 <div class="portfolio"> <!-- porfolio-->
 	<div class="portfolio-content">
-	<h2>Projects</h2>
+		
+	<h2 id="portfolioText">Projects</h2>
 	<a href="https://github.com/enigmameister"><i class="fa-brands fa-github"></i></a>
 	    <div class="projects-box">
 						
@@ -185,7 +181,7 @@ Project.8 <span>Icons</span>
 <div class="contact">
 		<div class="contact-box">
 			 <form action="/action_page.php" method="get">
-				<h1> Contact</h1>
+				<h1 id="contactText">Contact</h1>
 				<input type="text" name="name" required placeholder="Your name" autocomplete="off">
 				<input type="email" name="mail" required placeholder="Your email" autocomplete="off">
 				<input type="text" name="subjest" reguired placeholder="Subject" autocomple="off">
