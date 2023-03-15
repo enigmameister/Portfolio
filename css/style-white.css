@@ -37,13 +37,12 @@ body
 }
 
 
-
 .toggle-menu span
 {
     background: #333;
 }
 
-.container .theme-closepicker button
+.theme-closepicker button, .lang-closepicker button
 {
     color: cornsilk;
 }
@@ -188,6 +187,19 @@ input[type=submit]:active
         color: #333;
 		text-shadow: 0px 0px 0px #000000;
     }
+
+    header nav
+{
+    position:absolute;
+    width: 100%;
+    background: #d8d3d3;
+    height: 100vh;
+    top: -100vh;
+    transition: 0.7s;
+    z-index: -1;
+    text-align: center;
+}
+
 .contact-box
 {
 background: transparent;

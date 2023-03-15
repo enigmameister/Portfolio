@@ -16,6 +16,7 @@ body
 	background: -webkit-linear-gradient(to right, #434343, #000000); 
 	background: linear-gradient(to right, #434343, #000000);
 }
+
 .animation
 {
     height: 60%;
@@ -27,7 +28,7 @@ body
     text-align: left;
     z-index: -1;
 }
-    .animation span
+.animation span
     {
         position: relative;
         left: -125%;
@@ -38,7 +39,6 @@ body
     color: #005C97;
     text-shadow: 2px 2px black;
 }
-
 
 .scroll-up, .fas.fa-arrow-circle-up
 {
@@ -200,16 +200,7 @@ display: none;
     background-color: #333;
 }
 
-#theme-red, #theme-lime, #theme-white, #theme-default
-{
-margin: 3px 1px;
-width: 20px; 
-height: 20px;
-float: left;
-border-radius: 20%;
-box-shadow: 2px 2px #333;
-}
-
+#theme-red, #theme-lime, #theme-white, #theme-default,
 #lang-en, #lang-pl, #lang-ua, #lang-de
 {
 margin: 3px 1px;
@@ -219,6 +210,8 @@ float: left;
 border-radius: 20%;
 box-shadow: 2px 2px #333;
 }
+
+
 
 #theme-red
 {
@@ -514,7 +507,7 @@ input[type=number]::-webkit-outer-spin-button
 	transition: 1s;
 }
 /*************** MOBILE ****************************************************************/
-@media (max-width: 720px)
+@media (max-width: 775px)
 {
 
 .fas.fa-arrow-circle-up
@@ -556,7 +549,7 @@ z-index: 1;
         left: -150%;
         display: inline-block;
     }
-.animation span:nth-child(3n+1) /* */
+.animation span:nth-child(3n+1)
 {
     color: #005C97;
     text-shadow: 2px 2px black;
@@ -613,6 +606,7 @@ header
 .toggle-menu
 {
     display: block;
+	
 }  
 header nav
 {
@@ -730,7 +724,7 @@ white-space: nowrap;
 	overflow: hidden;
     margin: 0 auto;
 }
-.project:hover .overlay{height: 100%}
+.project:hover .overlay{height: 100%} /* icons */
     
 .fab.fa-html5{color: orangered;}
 .fab.fa-css3-alt {color:#005C97;}
@@ -739,8 +733,6 @@ white-space: nowrap;
 .fas.fa-database {color: forestgreen;}
 .fab.fa-unity {color: black;}
 .fa-solid.fa-c {color:violet;}
-
-
 .fa-brands.fa-github
 {
 	margin-left: 45%;
@@ -748,12 +740,13 @@ white-space: nowrap;
 	font-size: 3.5rem;
 	margin-bottom: 20px;
 }
-
 .fa-brands.fa-github:hover
 {
 	color: darkviolet;
 	transition: 1s;
 }
+
+
 .portfolio-content
 {
 	display: block;
@@ -816,5 +809,5 @@ white-space: nowrap;
     width: 50px;
     margin-left: 10px;
 }
-    
+
 }

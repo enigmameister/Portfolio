@@ -37,7 +37,8 @@ background: linear-gradient(to right, #24FE41, #FDFC47);
    background: cornsilk;
    text-shadow: 5px 3px 4px #000000;
 }
-.container .theme-closepicker button
+
+.theme-closepicker button, .lang-closepicker button
 {
     color: #24FE41;
 }
@@ -187,6 +188,19 @@ select, option
     background: linear-gradient(to right, #24FE41, #FDFC47); 
     background-color: lime;   
 }
+
+header nav
+{
+    position:absolute;
+    width: 100%;
+    background: darkolivegreen;
+    height: 100vh;
+    top: -100vh;
+    transition: 0.7s;
+    z-index: -1;
+    text-align: center;
+}
+
 .hire input[type=text]
     {
         background-color: transparent;

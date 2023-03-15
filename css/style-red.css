@@ -30,7 +30,7 @@ background: linear-gradient(to right, #e73827, #f85032);
 }
 .toggle-menu span{background: cornsilk;}
 
-.container .theme-closepicker button
+.theme-closepicker button, .lang-closepicker button
 {
     color: #e73827;
 }
@@ -40,10 +40,12 @@ header
    background: rgba(10, 10, 10, 0.3);
    box-shadow: 0px 2px darkred;
 }
+
 header nav ul li a
 {
 	color: cornsilk;
 	text-shadow: 2px 6px 4px #000000;
+	
 }
 header nav ul li a:hover
 {
@@ -157,6 +159,18 @@ select, option
 {
     background: transparent;
     background-color: crimson;    
+}
+
+header nav
+{
+    position:absolute;
+    width: 100%;
+    background: rgb(114, 26, 44);
+    height: 100vh;
+    top: -100vh;
+    transition: 0.7s;
+    z-index: -1;
+    text-align: center;
 }
 
 .hire input[type=text]
