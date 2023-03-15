@@ -61,50 +61,65 @@ $("#btn-s").on("click", function()
         'slow');
 		});
 
-$(document).ready(function() {
-    $('#btn-home').click(function(event) {
+$(document).ready(function() 
+{
+    $('#btn-home').click(function(event)
+     {
         $(".about").animate({'opacity': 0}, 50);
         event.preventDefault();
         var url = $(this).attr("index.html .section");
-        $(".about").load("index.html .section", function() {
+        $(".about").load("index.html .section", function() 
+        {
             $(this).animate({'opacity': 1}, 1000);
         });
     });
 });
 
 
-$(document).ready(function(){
-                  $('.toggle-menu').click(function(){
+$(document).ready(function()
+{
+                  $('.toggle-menu').click(function()
+                  {
                     $('nav').toggleClass('active')
                   })
         })
 
-$(document).ready(function(){
-                  $('nav ul li a').click(function(){
+$(document).ready(function()
+{
+                  $('nav ul li a').click(function()
+                  {
                     $('nav').removeClass('active')
                   })
         })
 
-$(document).ready(function(){
-	$('.toggle-menu').click(function(){
+$(document).ready(function()
+{
+	$('.toggle-menu').click(function()
+    {
 		$(this).toggleClass('open');
 	});
 });
 
-$(document).ready(function(){
-	$('nav').click(function(){
+$(document).ready(function()
+{
+	$('nav').click(function()
+    {
 		$('.toggle-menu').removeClass('open');
 	});
 });
 
 	
-$(document).ready(function(){
-  $(window).scroll(function(){
+$(document).ready(function()
+{
+  $(window).scroll(function()
+  {
     var scroll = $(window).scrollTop();
-      if (scroll > 50) {
+      if (scroll > 50) 
+      {
         $("header").css({"display":"none"});
           $(".scroll-up").css({"display":"block"});
       }
+
       else
      {
           $("header").css({"display":"block"});  
@@ -156,10 +171,8 @@ $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').on(
     }
     window.onload = loadbackground();
 
-/* lang change 
-https://www.geeksforgeeks.org/how-to-switch-the-language-of-the-page-using-javascript/
+/* lang change */
 
-*/
 function changeLanguage(lang)
 {
     location.hash = lang;
@@ -167,6 +180,7 @@ function changeLanguage(lang)
 }
     var language = 
     {
+    
         en:
         {
             hnav: "Home",
@@ -198,7 +212,13 @@ function changeLanguage(lang)
          
             welcome1:"Dokładnośc.Zawsze przejrzysty kod",
             welcome2:"Pasja.Pomysły i unikalne projekty",
-            welcome3:"Rozmowa jest tania.Pokaż mi kod"
+            welcome3:"Rozmowa jest tania.Pokaż mi kod",
+
+            name: "Imie",
+            mail: "Adres e-mail",
+            subject: "Temat wiadomosci",
+            msg: "Tresc wiadomosci",
+            submit: "Wyslij",
         },
 
         ua:
@@ -209,6 +229,8 @@ function changeLanguage(lang)
             cnav: "контакт",
 
             h1: "Привіт",
+
+            start: " старт",
             h1about:"про мене",
             h1aboutText: 
             "Привіт, мене звуть Лукаш, мені 29 років."+
@@ -218,11 +240,17 @@ function changeLanguage(lang)
             "Насправді нікуди не найму (в ІТ), лише вдосконалюю свої навички та відкриваю нові технології, також люблю програмувати.",
 
             h2portfolio:"портфолі",
-            h1contact:"онтакт",
+            h1contact:"контакт",
 
             welcome: "Точність.Завжди чистий код"+
                     "пристрасть.Ідея та унікальні проекти"+
-                    "Розмова дешева.Покажіть мені код"
+                    "Розмова дешева.Покажіть мені код",
+
+            name: "твоє ім'я",
+            mail: "ваша пошта",
+            subject: "тема",
+            msg: "повідомлення",
+            submit: "відправити",
         },
 
         de:
@@ -245,7 +273,14 @@ function changeLanguage(lang)
 
             welcome: "Genauigkeit.Immer ein sauberer Code"+
                      "Leidenschaft.Idee und einzigartige Projekte"+
-                      "Reden ist billig.Zeig mir den Code"
+                      "Reden ist billig.Zeig mir den Code",
+
+            name: "Ihren Namen",
+            mail: "E-mail Adresse",
+            subject: "Betreff der Nachricht",
+            msg: "Nachrichteninhalt",
+            submit: "Schicken",
+
         }
     };
 
@@ -254,47 +289,66 @@ function changeLanguage(lang)
         if(window.location.hash=="#pl")
         {
         
-            welcomeText.textContent = language.pl.h1;
+            welcomeText.innerHTML = language.pl.h1;
 
-            h_nav.textContent = language.pl.hnav;
-            a_nav.textContent = language.pl.anav;
-            p_nav.textContent = language.pl.pnav;
-            c_nav.textContent = language.pl.cnav;
+            h_nav.innerHTML = language.pl.hnav;
+            a_nav.innerHTLML = language.pl.anav;
+            p_nav.innerHTML = language.pl.pnav;
+            c_nav.innerHTML = language.pl.cnav;
 
-            aboutText.textContent = language.pl.h1about;
-            portfolioText.textContent = language.pl.h2portfolio;
-            contactText.textContent = language.pl.h1contact;
+            aboutText.innerHTML = language.pl.h1about;
+            portfolioText.innerHTML = language.pl.h2portfolio;
+            contactText.innerHTML = language.pl.h1contact;
+
+            contactName.placeholder = language.pl.name;
+            contactMail.placeholder = language.pl.mail;
+            contactSubject.placeholder = language.pl.subject;
+            contactMsg.placeholder = language.pl.msg;
+            contactSubmit.value = language.pl.submit;
         }
 
         else if(window.location.hash == "#ua")
         {
-            welcomeText.textContent = language.ua.h1;
+            welcomeText.innerHTML = language.ua.h1;
 
-            h_nav.textContent = language.ua.hnav;
-            a_nav.textContent = language.ua.anav;
-            p_nav.textContent = language.ua.pnav;
-            c_nav.textContent = language.ua.cnav;
+            h_nav.innerHTML = language.ua.hnav;
+            a_nav.innerHTML = language.ua.anav;
+            p_nav.innerHTML = language.ua.pnav;
+            c_nav.innerHTML = language.ua.cnav;
+
+            goText.innerHTML = language.ua.start;
 
             aboutText.textContent = language.ua.h1about;
             aboutText2.textContent = language.ua.h1aboutText;
             portfolioText.textContent = language.ua.h2portfolio;
             contactText.textContent = language.ua.h1contact;
 
+            contactName.placeholder = language.ua.name;
+            contactMail.placeholder = language.ua.mail;
+            contactSubject.placeholder = language.ua.subject;
+            contactMsg.placeholder = language.ua.msg;
+            contactSubmit.value = language.ua.submit;
         }
 
         else if(window.location.hash == "#de")
         {
             
-            welcomeText.textContent = language.de.h1;
+            welcomeText.innerHTML = language.de.h1;
 
-            h_nav.textContent = language.de.hnav;
-            a_nav.textContent = language.de.anav;
-            p_nav.textContent = language.de.pnav;
-            c_nav.textContent = language.de.cnav;
+            h_nav.innerHTML = language.de.hnav;
+            a_nav.innerHTML = language.de.anav;
+            p_nav.innerHTML = language.de.pnav;
+            c_nav.innerHTML = language.de.cnav;
 
             aboutText.textContent = language.de.h1about;
             aboutText2.textContent = language.de.h1aboutText;
             portfolioText.textContent = language.de.h2portfolio;
             contactText.textContent = language.de.h1contact;
+
+            contactName.placeholder = language.de.name;
+            contactMail.placeholder = language.de.mail;
+            contactSubject.placeholder = language.de.subject;
+            contactMsg.placeholder = language.de.msg;
+            contactSubmit.value = language.de.submit;
         }
     }
