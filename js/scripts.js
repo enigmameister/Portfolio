@@ -180,7 +180,7 @@ function changeLanguage(lang)
 }
     var language = 
     {
-    
+
         en:
         {
             hnav: "Home",
@@ -292,7 +292,7 @@ function changeLanguage(lang)
             welcomeText.innerHTML = language.pl.h1;
 
             h_nav.innerHTML = language.pl.hnav;
-            a_nav.innerHTLML = language.pl.anav;
+            a_nav.innerHTML = language.pl.anav;
             p_nav.innerHTML = language.pl.pnav;
             c_nav.innerHTML = language.pl.cnav;
 
@@ -332,7 +332,6 @@ function changeLanguage(lang)
 
         else if(window.location.hash == "#de")
         {
-            
             welcomeText.innerHTML = language.de.h1;
 
             h_nav.innerHTML = language.de.hnav;
