@@ -214,6 +214,14 @@ function changeLanguage(lang)
             welcome2:"Pasja.Pomysły i unikalne projekty",
             welcome3:"Rozmowa jest tania.Pokaż mi kod",
 
+
+            h1aboutText:
+            "Cześć, nazywam sie Łukasz i mam 29lat. "+
+            "W wolnej chwili lubie programować, co jest moją pasją i sprawia mi dużo frajdy."+
+            "Tematy związane z komputerami nie są mi obce i mam tendecję do ich szybkiego przyswajania."+
+            "Pozatym lubie uprawiać sport i słuchać wartościowej muzyki"+
+            "Aktualnie nie jestem zatrudniony w IT, skupiając się na rozwoju swoich umiejętności i odkrywaniu nowych technologii",
+
             name: "Imie",
             mail: "Adres e-mail",
             subject: "Temat wiadomosci",
@@ -236,8 +244,8 @@ function changeLanguage(lang)
             "Привіт, мене звуть Лукаш, мені 29 років."+
             "У вільний час я люблю програмувати, це моя пристрасть, і я вважаю, що це дуже весело."+
             "Я не жахливо ставлюся до речей, пов’язаних з комп’ютером, і швидко це розумію."+
-            "Крім роботи у вільний час люблю займатися спортом і слухати «хорошу» музику."+
-            "Насправді нікуди не найму (в ІТ), лише вдосконалюю свої навички та відкриваю нові технології, також люблю програмувати.",
+            "Крім роботи у вільний час люблю займатися спортом і слухати хорошу музику."+
+            "Насправді нікуди не найму (в ІТ), лише вдосконалюю свої навички та відкриваю нові технології.",
 
             h2portfolio:"портфолі",
             h1contact:"контакт",
@@ -266,8 +274,8 @@ function changeLanguage(lang)
             "Hallo, mein Name ist Łukasz und ich bin 29 Jahre alt."+
             "In meiner Freizeit programmiere ich gerne, es ist meine Leidenschaft und ich denke, es macht viel Spaß."+
             "Ich bin nicht schrecklich in computerbezogenen Dingen und neige dazu, es schnell aufzuheben."+
-            "Neben der Arbeit treibe ich in meiner Freizeit gerne Sport und höre „gute“ Musik."+
-            "Ich stelle eigentlich nirgendwo ein (in der IT), sondern verbessere nur meine Fähigkeiten und entdecke neue Technologien. Programmiere auch gerne.",
+            "Neben der Arbeit treibe ich in meiner Freizeit gerne Sport und höre gute Musik."+
+            "Ich stelle eigentlich nirgendwo ein (in der IT), sondern verbessere nur meine Fähigkeiten und entdecke neue Technologien.",
             h2portfolio:"Portfolio",
             h1contact:"Kontakt",
 
@@ -280,7 +288,6 @@ function changeLanguage(lang)
             subject: "Betreff der Nachricht",
             msg: "Nachrichteninhalt",
             submit: "Schicken",
-
         }
     };
 
@@ -297,6 +304,7 @@ function changeLanguage(lang)
             c_nav.innerHTML = language.pl.cnav;
 
             aboutText.innerHTML = language.pl.h1about;
+            aboutText2.innerHTML = language.pl.h1aboutText;
             portfolioText.innerHTML = language.pl.h2portfolio;
             contactText.innerHTML = language.pl.h1contact;
 
@@ -318,10 +326,10 @@ function changeLanguage(lang)
 
             goText.innerHTML = language.ua.start;
 
-            aboutText.textContent = language.ua.h1about;
-            aboutText2.textContent = language.ua.h1aboutText;
-            portfolioText.textContent = language.ua.h2portfolio;
-            contactText.textContent = language.ua.h1contact;
+            aboutText.innerHTML = language.ua.h1about;
+            aboutText2.innerHTML = language.ua.h1aboutText;
+            portfolioText.innerHTML = language.ua.h2portfolio;
+            contactText.innerHTML = language.ua.h1contact;
 
             contactName.placeholder = language.ua.name;
             contactMail.placeholder = language.ua.mail;
@@ -339,10 +347,10 @@ function changeLanguage(lang)
             p_nav.innerHTML = language.de.pnav;
             c_nav.innerHTML = language.de.cnav;
 
-            aboutText.textContent = language.de.h1about;
-            aboutText2.textContent = language.de.h1aboutText;
-            portfolioText.textContent = language.de.h2portfolio;
-            contactText.textContent = language.de.h1contact;
+            aboutText.innerHTML = language.de.h1about;
+            aboutText2.innerHTML = language.de.h1aboutText;
+            portfolioText.innerHTML = language.de.h2portfolio;
+            contactText.innerHTML = language.de.h1contact;
 
             contactName.placeholder = language.de.name;
             contactMail.placeholder = language.de.mail;
