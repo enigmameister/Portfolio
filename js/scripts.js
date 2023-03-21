@@ -113,7 +113,7 @@ $(document).ready(function()
 {
   $(window).scroll(function()
   {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
       if (scroll > 50) 
       {
         $("header").css({"display":"none"});
@@ -154,18 +154,18 @@ $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').on(
   });
 
 /* theme change session */
-  var swapStyleSheet = function (sheet) 
+  let swapStyleSheet = function (sheet) 
     {
         document.getElementById('theme_css').setAttribute('href', sheet);
         storebackground(sheet);
     }
 
-    var storebackground = function (swapstylesheet) 
+    let storebackground = function (swapstylesheet) 
     {
         localStorage.setItem("href", swapstylesheet);
     }
 
-    var loadbackground = function () 
+    let loadbackground = function () 
     {
         document.getElementById('theme_css').setAttribute('href', localStorage.getItem('href'));
     }
@@ -178,7 +178,7 @@ function changeLanguage(lang)
     location.hash = lang;
     location.reload();
 }
-    var language = 
+    let language = 
     {
 
         en:
