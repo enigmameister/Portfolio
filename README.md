@@ -1,2 +1,1 @@
-Porfolio RWD version with jQuery features.
-Link: https://enigmameister.github.io/portfolio/
+My own porfolio project as RWD version with few jQuery animations and theme picker.

@@ -504,7 +504,8 @@ input[type=number]::-webkit-outer-spin-button
 	color: darkviolet;
 	transition: 1s;
 }
-/*************** MOBILE ****************************************************************/
+
+/*************** MOBILE ****************/
 @media (max-width: 775px)
 {
 
@@ -806,6 +807,26 @@ white-space: nowrap;
 {
     width: 50px;
     margin-left: 10px;
+}
+
+#contactInfo 
+{
+	text-align: center;
+	margin: 0 auto;
+	padding: 12px 10px;
+	width: 45vw;
+	height: 10vh;
+	border: 4px solid cornsilk;
+	border-radius: 10px;
+	background: #005C97; 
+	background: -webkit-linear-gradient(to right, #363795, #005C97);  
+	background: linear-gradient(to right, #363795, #005C97);
+}
+
+#contactInfo a 
+{
+	color: cornsilk;
+	text-decoration: none;
 }
 
 }

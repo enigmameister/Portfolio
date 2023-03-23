@@ -108,6 +108,10 @@ $(document).ready(function()
 	});
 });
 
+$(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
+
+let wel1 = document.getElementsByClassName('animation');
+console.log(wel1);
 	
 $(document).ready(function()
 {
@@ -193,9 +197,9 @@ function changeLanguage(lang)
             h2portfolio:"Projects",
             h1contact:"Contant",
 
-            welcome1: "Acuracy."+"Always a clean code",
+            welcome1: "Acuracy."+"Clean code",
             welcome2:"Passion."+"Idea and unique projects",
-            welcome3:"Talk is cheap.Show me the code"
+            welcome3:"Talk is cheap.Show me the code",
         },
 
         pl:
@@ -210,8 +214,8 @@ function changeLanguage(lang)
             h1contact: "Kontakt",
             h1: "Witaj",
          
-            welcome1:"Dokładnośc.Zawsze przejrzysty kod",
-            welcome2:"Pasja.Pomysły i unikalne projekty",
+            welcome1:"Dokładnośc."+"Przejrzysty kod",
+            welcome2:"Pasja."+"Pomysły i unikalne projekty",
             welcome3:"Rozmowa jest tania.Pokaż mi kod",
 
 
@@ -302,6 +306,7 @@ function changeLanguage(lang)
             a_nav.innerHTML = language.pl.anav;
             p_nav.innerHTML = language.pl.pnav;
             c_nav.innerHTML = language.pl.cnav;
+
 
             aboutText.innerHTML = language.pl.h1about;
             aboutText2.innerHTML = language.pl.h1aboutText;
