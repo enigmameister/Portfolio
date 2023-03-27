@@ -811,9 +811,10 @@ white-space: nowrap;
 
 #contactInfo 
 {	
+		resize: none;
 		text-align: center;
 		margin: 0 auto;
-		width: 50vw;
+		width: 60%;
 		height: 4vh;
 		background: #005C97;
 		background: -webkit-linear-gradient(to right, #363795, #005C97);
@@ -823,9 +824,9 @@ white-space: nowrap;
 }
 
 	#contactInfo p {
-		padding: 2%;
+		padding: 1vh;
 		font-family: sans-serif;
-		font-size: 1rem;
+		font-size: 0.7rem;
 		font-weight: normal;
 	}
 }
