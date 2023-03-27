@@ -102,6 +102,16 @@ main h5
 	background: ghostwhite;
 }
 
+.portfolio-content h2
+{
+    color: #333;
+}
+
+.fa-brands.fa-github
+{
+    color: #333;
+}
+
 .project 
 {
 border: 2px solid ghostwhite;
@@ -168,11 +178,25 @@ input[type=submit]:active
 .fab.fa-css3-alt {color:mediumblue;}
 .fab.fa-js-square {color: #f7df1e;}
 .fab.fa-facebook-square {color: #3B5998;}
-.fab.fa-github {color: #6e5494;}
+
+#contactInfo
+{
+    background: ghostwhite;
+    border-radius: 0px;
+    border: 2px solid black;
+    box-shadow: 0px 0px black;
+}
+
+#contactInfo p
+{
+    color: #333;
+}
+
 
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
+
  .scroll-up
     {
         color: #333;
@@ -209,31 +233,30 @@ background: transparent;
     {
         color: #333;
     }
-.contact input[type=email], .contact textarea, .contact input[type=text]
-{
-	border-bottom: 1px solid silver;
-    color: #333;
-    background: transparent;
-}
+    .contact input[type=email], .contact textarea, .contact input[type=text], .contact textarea , 
+    .contact input[type=submit]
+    {
+        border-bottom: 1px solid silver;
+        color: #333;
+        background: ghostwhite;
+        border-radius: 0px;
+        border: 2px solid black;
+        box-shadow: 0px 0px black;
+    }
 .contact ::placeholder
     {
         color: #333;
     }
-.contact textarea
-{
-    border: none;
-}
-.contact input[type=submit]
-{
-	background-color: transparent;
-	color: #333;
-	border: 2px solid #333;
-}
-
+   
 .contact input[type=submit]:active
 {
 	border-color: transparent;
 	background-color: #333;
 	color: ghostwhite;
 }
+.contact-box
+{
+    background: ghostwhite;
+}
+
 }

@@ -153,6 +153,19 @@ header nav
 	color: #005C97;
 }
 
+#contactInfo
+	{
+		background: transparent;
+		border: 2px solid ghostwhite;
+		box-shadow: 2px 2px black;
+	}
+
+#contactInfo p
+	{
+		color: ghostwhite;
+	}
+
+
 @media (max-width:768px)
 {
 select, option
