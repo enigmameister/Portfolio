@@ -3,6 +3,7 @@ body
 background: -webkit-linear-gradient(to right, #e73827, #f85032); 
 background: linear-gradient(to right, #e73827, #f85032);     
 }
+
 .animation span:nth-child(3n+1) /* */
 {
     color: navajowhite;
@@ -92,6 +93,13 @@ main h1, main h4, main h5{color: cornsilk;}
 	text-shadow: 1px 0px 1px gray;
 }
 
+.projects-box
+{
+	background: transparent;
+	border-radius: 5px;
+	border: 2px solid cornsilk;
+}
+
 .contact ::placeholder
 {
 	color: silver;
@@ -99,7 +107,7 @@ main h1, main h4, main h5{color: cornsilk;}
 }
 input[type=submit]
 {
-	background-color: transparent;
+	background-color: crimson;
 	color: whitesmoke;
 	border: 2px solid ghostwhite;
 
@@ -114,6 +122,18 @@ input[type=number]
 {
     border: 2px inset crimson;
 }
+
+footer 
+{
+	margin: 2.5rem auto;
+	border: 2px solid cornsilk;
+	border-radius: 10px;
+	background: transparent;
+	width: 75vw;
+	height: 5vh;
+	padding: 1rem;
+}
+
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
@@ -157,7 +177,7 @@ header nav
 	{
 		background: transparent;
 		border: 2px solid ghostwhite;
-		box-shadow: 2px 2px black;
+		box-shadow: 2px 2px ghostwhite;
 	}
 
 #contactInfo p
@@ -173,6 +193,7 @@ select, option
     background: transparent;
     background-color: crimson;    
 }
+
 
 header nav
 {
@@ -192,5 +213,5 @@ header nav
         border: 2px solid ghostwhite;
         color: white;
     } 
-    }
+}
 }

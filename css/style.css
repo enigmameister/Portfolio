@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   border: 0;
-  line-height: 1.4em;
-  text-decoration: none;
   outline: 0;
+  line-height: 1.4em;
+}
+.borderBox {
+  margin-top: 2rem;
+  background: #060625;
+  border-radius: 5px;
+  border: 1px solid #005C97;
 }
 body {
   font-family: sans-serif;
@@ -36,10 +41,14 @@ body {
 .fas.fa-arrow-circle-up {
   display: none;
 }
-.container {
-  width: 80vw;
+.container,
+.contact,
+.about,
+.portfolio {
+  width: 90vw;
   height: 100vh;
   margin: 0 auto;
+  display: inline-block;
 }
 .container-logo {
   border: 1px solid #005C97;
@@ -58,7 +67,6 @@ body {
 .container-logo:hover {
   background-color: transparent;
   text-shadow: 0px 0px 0px #000000;
-  border: 1px dashed #005C97;
   cursor: pointer;
   transition: 1000ms;
 }
@@ -263,13 +271,93 @@ main h5 {
   padding: 0px;
   margin: 12px;
 }
-.contact,
-.about,
-.portfolio {
-  height: 600px;
+.about {
+  height: 100vh;
   width: 100%;
-  margin: 5% auto;
-  display: inline-block;
+  display: block-inline;
+}
+.about .about-skills {
+  width: 100%;
+  margin: 0 auto;
+}
+.about .about-skills p {
+  text-align: center;
+  font-size: 2rem;
+}
+.about-skills {
+  display: flex;
+}
+#aboutText3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0px;
+}
+#skills-col1,
+#skills-col2,
+#skills-col3 {
+  width: 30%;
+  margin: 0 auto;
+}
+#skills-col1 p,
+#skills-col2 p,
+#skills-col3 p,
+#skills-col1 li,
+#skills-col2 li,
+#skills-col3 li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  color: ghostwhite;
+  font-size: 0.8rem;
+}
+.about-content {
+  margin: 0 auto;
+  padding: 0px;
+  width: 50%;
+  border: 3px solid ghostwhite;
+  border-radius: 10px;
+  color: ghostwhite;
+}
+.about-content h2 {
+  color: ghostwhite;
+  font-size: 2rem;
+  font-family: 'Jua', sans-serif;
+}
+.about-content p {
+  font-size: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  word-wrap: break-word;
+  letter-spacing: 0.9px;
+}
+.icon-container {
+  margin: 5px auto;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.icon-container a {
+  margin: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: ghostwhite;
+}
+.icon-container i:hover {
+  color: #005C97;
+  transition: 1s;
+}
+.box-info {
+  font-size: 2.5rem;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Jua', sans-serif;
 }
 .fab.fa-html5 {
   color: orangered;
@@ -302,24 +390,6 @@ main h5 {
   font-size: 5vw;
   text-align: center;
 }
-.icon-container {
-  font-size: 2.5rem;
-  display: block;
-  width: 32px;
-  height: 32px;
-  margin: 0 auto;
-}
-.icon-container a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: ghostwhite;
-}
-.icon-container i:hover {
-  color: #005C97;
-  transition: 1s;
-}
 .project {
   width: 20vw;
   height: 20vh;
@@ -349,7 +419,7 @@ main h5 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00bfff;
+  background: #060625;
   width: 100%;
   height: 0;
   transition: 0.4s ease;
@@ -422,39 +492,25 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
-.about {
-  height: 100vh;
-  width: 100%;
-  display: block-inline;
-}
-.about-content {
-  margin: 0 auto;
-  padding: 0px;
-  width: 50%;
-  border: 3px solid ghostwhite;
+footer {
+  margin: 2.5rem auto;
+  border: 1px solid #005C97;
   border-radius: 10px;
+  background: #060625;
+  width: 75vw;
+  height: 5vh;
+  padding: 1rem;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
   color: ghostwhite;
 }
-.about-content h2 {
-  color: ghostwhite;
-  font-size: 2rem;
-  font-family: 'Jua', sans-serif;
-}
-.about-content p {
-  font-size: 1rem;
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-  word-wrap: break-word;
-  letter-spacing: 0.9px;
-}
-.box-info {
-  font-size: 2.5rem;
-  width: 90%;
-  margin: 0 auto;
-  font-family: 'Jua', sans-serif;
-}
+/***************************************/
 /*************** MOBILE ****************/
+/***************************************/
 @media (max-width: 775px) {
   .fas.fa-arrow-circle-up {
     display: inherit;
@@ -563,28 +619,31 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .about-content {
     width: 80%;
-    height: 65vh;
-    background-color: transparent;
-    border: none;
-    margin: 5% auto;
+    height: 85vh;
+    margin-top: 2rem;
+    background: #060625;
+    border-radius: 5px;
+    border: 1px solid #005C97;
   }
   .about-content h2 {
     text-align: center;
     font-size: 2rem;
   }
   .about-content p {
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify;
+    text-justify: inter-word;
     font-size: 0.9rem;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding: 10px;
-    word-wrap: break-word;
-    letter-spacing: 0.5px;
   }
   #portfolioText {
-    margin-top: 5px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: ghostwhite;
     font-family: 'Jua', sans-serif;
   }
@@ -597,12 +656,12 @@ input[type=number]::-webkit-outer-spin-button {
     color: ghostwhite;
   }
   .projects-box {
-    margin-top: 2rem;
     width: 90vw;
     height: 90vh;
+    margin-top: 2rem;
     background: #060625;
-    border-radius: 10px;
-    box-shadow: 4px 4px black;
+    border-radius: 5px;
+    border: 1px solid #005C97;
   }
   .projectsConteiner {
     width: 100%;
@@ -635,7 +694,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #00bfff;
+    background: #005C97;
     width: 100%;
     height: 0;
     transition: 0.3s ease;
@@ -647,11 +706,12 @@ input[type=number]::-webkit-outer-spin-button {
   }
   /* icons */
   .contact-box {
-    margin-top: 5rem;
-    width: 90%;
-    height: 70%;
+    width: 75vw;
+    height: 75vh;
+    margin-top: 2rem;
     background: #060625;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid #005C97;
   }
   .contact-box form {
     height: 80%;
@@ -695,21 +755,5 @@ input[type=number]::-webkit-outer-spin-button {
   .contact input[type=number] {
     width: 50px;
     margin-left: 10px;
-  }
-  #contactInfo {
-    resize: none;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 1%;
-    width: 60%;
-    height: 4vh;
-    background: #005C97;
-    border-radius: 5px;
-  }
-  #contactInfo p {
-    padding: 2.5%;
-    font-family: sans-serif;
-    font-size: 0.7rem;
-    font-weight: normal;
   }
 }
