@@ -182,7 +182,6 @@ function changeLanguage(lang)
         $(`#${key}`).text(translations[key]);
     });
 }
-
     let language = 
     {
         en:
@@ -195,7 +194,18 @@ function changeLanguage(lang)
             welcomeText: "Welcome",
             aboutText:"About Me",
             portfolioText:"Projects",
-            contactText:"Contact",
+            contactText: "Contact",
+
+            aboutText2: "Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games."+
+                        "Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow."+
+                        "In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies."+
+                        "If you are interested in create your own project, you can go to contact section.",
+
+            aboutText3: "My skills",
+
+            skillsText1: "Technologies",
+            skillsText2: "Frameworks",
+            skillsText3: "Knowledge",
 
             contactName: "Your name",
             contactMail: "Your e-mail",
@@ -221,11 +231,11 @@ function changeLanguage(lang)
                          "W wolnym czasie czynnie trenuje sztuki walki i wszelkiego rodzaju aktywność fizyczną, a także poszerzam swoją wiedzę z algorytmiki i technologii."+
                          "Jeśli jesteś zaintersowany lub zainteresowana stworzeniem własnego projektu, zapraszam do kontaktu.",
 
-            aboutText3: "Co potrafie:",
+            aboutText3: "Co potrafie",
 
-            skillsText1: "Technologie:",
-            skillsText2: "Frameworki:",
-            skillsText3: "Wiedza:",
+            skillsText1: "Technologie",
+            skillsText2: "Frameworki",
+            skillsText3: "Wiedza",
             
             aboutSkillsKnowledge1: "Rozwiązywanie problemów",
             aboutSkillsKnowledge2: "Znajomośc algorytmów",
@@ -255,9 +265,9 @@ function changeLanguage(lang)
             
             aboutText3: "що я знаю:",
 
-            skillsText1: "Технології:",
-            skillsText2: "Каркаси:",
-            skillsText3: "знання:",
+            skillsText1: "Технології",
+            skillsText2: "Каркаси",
+            skillsText3: "знання",
             
             portfolioText:"портфолі",
             contactText:"контакт",
@@ -283,10 +293,10 @@ function changeLanguage(lang)
                          "In meiner Freizeit trainiere ich aktiv Kampfkünste und betreibe verschiedene körperliche Aktivitäten, sowie erweitere mein Wissen über Algorithmen und Technologie."+
                          "Wenn Sie an der Erstellung Ihres eigenen Projekts interessiert sind, lade ich Sie ein, mich zu kontaktieren.",
 
-            aboutText3: "Fähigkeiten:",
+            aboutText3: "Fähigkeiten",
 
             skillsText1: "Technologien",
-            skillsText2: "Framework:",
+            skillsText2: "Framework",
             skillsText3: "Wissen",
 
             portfolioText:"Portfolio",
