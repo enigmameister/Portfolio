@@ -82,52 +82,12 @@
 <div class="about">
 <div class="about-content">
 <h2 id="aboutText">About Me</h2>
-<p id="aboutText2">Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games.<br/>
-	Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow. 
-	In my free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies.</br></br>
-	If you are interested in create your own project, you can go to contact section.</p>
-	<p id="aboutText3">My skills:</p>
-		<div class="about-skills">
-			
-			<ul id="skills-col1">
-			<p id="skillsText1">Technologies:</p>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>C#</li> 
-			<li>PHP</li>
-			</ul>
-			
-			<ul id="skills-col2">
-			<p id="skillsText2">Frameworks:</p>
-			<li>LESS</li>
-			<li>jQuery</li>
-			</ul>
+<p id="aboutText2">My name is Łukasz and Im 29 years old. 
+In my free time i like to program, its my passion and i think its a lot of fun to do.
+Im not horrible at computer related things and tend to pick it up fast.
+In addition to work I like to play sports in my free time and listen to "good" music.
+Actually not hiring anywhere (in IT), just improving my skills and discover new technologies.</p>
 
-			<ul id="skills-col3">
-			<p id="skillsText3">Knowledge:</p>
-			<li>Troubleshooting</li>
-			<li>Algorithms</li>
-			</ul>
-		</div>
-
-		<div class="icon-container">          <!-- Icon + link-->
-			<a href="https://github.com/enigmameister" target="_blank"> 
-				<i class="fa-brands fa-github"></i>
-			</a>
-
-			<a href="https://steamcommunity.com/id/Enigmameister/" target="_blank"> 
-				<i class="fa-brands fa-steam"></i>
-			</a>
-			
-			<a href="https://discordapp.com/users/409332788102430720" target="_blank">
-				<i class="fa-brands fa-discord"></i>
-			</a>
-
-			<a href="https://www.youtube.com/channel/UConkqw2xpHLUkpDb8YB_AGg" >
-				<i class="fa-brands fa-youtube"></i>
-			</a>
-		</div>
 </div>
 
 </div>
@@ -136,7 +96,7 @@
 	<div class="projects-box">
 		<h2 id="portfolioText">Projects</h2>
 		<div class="projectsConteiner">
-
+	
 	<div class="project"> <!-- project1-->
 			<div class="overlay"><a href="www.lukaszjowik.pl">
 					<div class="content">
@@ -222,20 +182,38 @@
 
 
 <div class="contact">
+
 		<div class="contact-box">
 			<form action="send_email.php" method="get">
 				<h1 id="contactText">Contact</h1>
 
 				<input type="text" name="name" id="contactName" required placeholder="Your name" autocomplete="off">
 				<input type="email" name="mail" id="contactMail" required placeholder="Your email" autocomplete="off">
-				<input type="text" name="subject" id="contactSubject" required placeholder="Subject" autocomple="off">
+				<input type="text" name="subject" id="contactSubject" reguired placeholder="Subject" autocomple="off">
 				<textarea name="msg" id="contactMsg" placeholder="Your Messange" autocomplete="off"></textarea>
 				<p><input type="submit" id="contactSubmit" value="Submit"></p>
 			</form> 
 		</div> 
 	
 		<footer>
-			<p><a href="www.lukaszjowik.com">www.lukaszjowik.com</a></p>
+			<p> Website created by Lukasz Jowik (c)</p>
+				<div class="icon-container">          <!-- Icon + link-->
+					<a href="https://github.com/enigmameister" target="_blank"> 
+						<i class="fa-brands fa-github"></i>
+					</a>
+		
+					<a href="https://steamcommunity.com/id/Enigmameister/" target="_blank"> 
+						<i class="fa-brands fa-steam"></i>
+					</a>
+					
+					<a href="https://www.facebook.com/lukasz.jowik9/" target="_blank">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+		
+					<a href="https://www.youtube.com/channel/UConkqw2xpHLUkpDb8YB_AGg" >
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</div>
 		</footer>
 
 </div>

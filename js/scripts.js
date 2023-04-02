@@ -111,7 +111,6 @@ $(document).ready(function()
 $(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
 
 let wel1 = document.getElementsByClassName('animation');
-console.log(wel1);
 	
 $(document).ready(function()
 {
@@ -132,7 +131,6 @@ $(document).ready(function()
       }  
   })
 })
-
 
 $(".scroll-up").on("click", function() 
 	{
@@ -179,188 +177,135 @@ $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').on(
 
 function changeLanguage(lang)
 {
-    location.hash = lang;
-    location.reload();
+    let translations = language[lang];
+    Object.keys(translations).forEach((key) => {
+        $(`#${key}`).text(translations[key]);
+    });
 }
+
     let language = 
     {
-
         en:
         {
-            hnav: "Home",
-            anav: "About me",
-            pnav: "Portfolio",
-            cnav: "Contact",
+            h_nav: "Home",
+            a_nav: "About me",
+            p_nav: "Portfolio",
+            c_nav: "Contact",
 
-            h1: "Welcome",
-            h1about:"About Me",
-            h2portfolio:"Projects",
-            h1contact:"Contant",
+            welcomeText: "Welcome",
+            aboutText:"About Me",
+            portfolioText:"Projects",
+            contactText:"Contact",
 
-            welcome1: "Acuracy."+"Clean code",
-            welcome2:"Passion."+"Idea and unique projects",
-            welcome3:"Talk is cheap.Show me the code",
+            contactName: "Your name",
+            contactMail: "Your e-mail",
+            contactSubject: "Subject",
+            contactMsg: "Your Messange",
+            contactSubmit: "Submit",
         },
 
         pl:
         {
-            hnav: "Glowna",
-            anav: "O mnie",
-            pnav: "Projekty",
-            cnav: "Kontakt",
+            h_nav: "Glowna",
+            a_nav: "O mnie",
+            p_nav: "Projekty",
+            c_nav: "Kontakt",
 
-            h1about: "O mnie",
-            h2portfolio: "Projekty",
-            h1contact: "Kontakt",
-            h1: "Witaj",
-         
-            welcome1:"Dokładnośc."+"Przejrzysty kod",
-            welcome2:"Pasja."+"Pomysły i unikalne projekty",
-            welcome3:"Rozmowa jest tania.Pokaż mi kod",
+            aboutText: "O mnie",
+            portfolioText: "Projekty",
+            contactText: "Kontakt",
+            welcomeText: "Witaj",
 
+            aboutText2: "Cześć, mam na imię Łukasz i od paru lat interesuje się programowaniem webowym stron internetowych, a także gier komputerowych."+ 
+                         "Obecnie jestem studentem III roku Informatyki i Ekonometrii ze specjalizacją projektowanie gier i aplikacji VR, na Krakowskiej Akademii Im.Frycza Modrzewskiego w Krakowie."+
+                         "W wolnym czasie czynnie trenuje sztuki walki i wszelkiego rodzaju aktywność fizyczną, a także poszerzam swoją wiedzę z algorytmiki i technologii."+
+                         "Jeśli jesteś zaintersowany lub zainteresowana stworzeniem własnego projektu, zapraszam do kontaktu.",
 
-            h1aboutText:
-            "Cześć, nazywam sie Łukasz i mam 29lat. "+
-            "W wolnej chwili lubie programować, co jest moją pasją i sprawia mi dużo frajdy."+
-            "Tematy związane z komputerami nie są mi obce i mam tendecję do ich szybkiego przyswajania."+
-            "Pozatym lubie uprawiać sport i słuchać wartościowej muzyki"+
-            "Aktualnie nie jestem zatrudniony w IT, skupiając się na rozwoju swoich umiejętności i odkrywaniu nowych technologii",
+            aboutText3: "Co potrafie:",
 
-            name: "Imie",
-            mail: "Adres e-mail",
-            subject: "Temat wiadomosci",
-            msg: "Tresc wiadomosci",
-            submit: "Wyslij",
+            skillsText1: "Technologie:",
+            skillsText2: "Frameworki:",
+            skillsText3: "Wiedza:",
+            
+            aboutSkillsKnowledge1: "Rozwiązywanie problemów",
+            aboutSkillsKnowledge2: "Znajomośc algorytmów",
+
+            contactName: "Imie",
+            contactMail: "Adres e-mail",
+            contactSubject: "Temat wiadomosci",
+            contactMsg: "Tresc wiadomosci",
+            contactSubmit: "Wyslij",
         },
 
         ua:
         {
-            hnav: "додому",
-            anav: "про мене",
-            pnav: "портфоліо",
-            cnav: "контакт",
+            h_nav: "додому",
+            a_nav: "про мене",
+            p_nav: "портфоліо",
+            c_nav: "контакт",
 
-            h1: "Привіт",
+            welcomeText: "Привіт",
 
-            start: " старт",
-            h1about:"про мене",
-            h1aboutText: 
-            "Привіт, мене звуть Лукаш, мені 29 років."+
-            "У вільний час я люблю програмувати, це моя пристрасть, і я вважаю, що це дуже весело."+
-            "Я не жахливо ставлюся до речей, пов’язаних з комп’ютером, і швидко це розумію."+
-            "Крім роботи у вільний час люблю займатися спортом і слухати хорошу музику."+
-            "Насправді нікуди не найму (в ІТ), лише вдосконалюю свої навички та відкриваю нові технології.",
+            goText: " старт",
+            aboutText:"про мене",
+            aboutText2: "Привіт!, мене звати Лукаш і я вже декілька років захоплююся веб-програмуванням сторінок та комп'ютерних ігор."+ 
+                         "Наразі я є студентом третього курсу комп'ютерних наук та економіки зі спеціалізацією на розробці ігор та VR-додатків в Краківській Академії імені Анджей Фрич Моджевський в Кракові."+
+                         "У вільний час я активно займаюся бойовими мистецтвами та різними фізичними активностями, а також поглиблюю свої знання з алгоритміки та технологій."+
+                         "Якщо ви зацікавлені у створенні власного проекту, запрошую до контакту.",
+            
+            aboutText3: "що я знаю:",
 
-            h2portfolio:"портфолі",
-            h1contact:"контакт",
+            skillsText1: "Технології:",
+            skillsText2: "Каркаси:",
+            skillsText3: "знання:",
+            
+            portfolioText:"портфолі",
+            contactText:"контакт",
 
-            welcome: "Точність.Завжди чистий код"+
-                    "пристрасть.Ідея та унікальні проекти"+
-                    "Розмова дешева.Покажіть мені код",
-
-            name: "твоє ім'я",
-            mail: "ваша пошта",
-            subject: "тема",
-            msg: "повідомлення",
-            submit: "відправити",
+            contactName: "твоє ім'я",
+            contactMail: "ваша пошта",
+            contactSubject: "тема",
+            contactMsg: "повідомлення",
+            contactSubmit: "відправити",
         },
 
         de:
         {
-            hnav: "Heim",
-            anav: "Über mich",
-            pnav: "Portfolio",
-            cnav: "Kontakt",
+            h_nav: "Heim",
+            a_nav: "Über mich",
+            p_nav: "Portfolio",
+            c_nav: "Kontakt",
 
-            h1: "Hallo",
-            h1about:"Über mich",
-            h1aboutText:
-            "Hallo, mein Name ist Łukasz und ich bin 29 Jahre alt."+
-            "In meiner Freizeit programmiere ich gerne, es ist meine Leidenschaft und ich denke, es macht viel Spaß."+
-            "Ich bin nicht schrecklich in computerbezogenen Dingen und neige dazu, es schnell aufzuheben."+
-            "Neben der Arbeit treibe ich in meiner Freizeit gerne Sport und höre gute Musik."+
-            "Ich stelle eigentlich nirgendwo ein (in der IT), sondern verbessere nur meine Fähigkeiten und entdecke neue Technologien.",
-            h2portfolio:"Portfolio",
-            h1contact:"Kontakt",
+            welcomeText: "Hallo",
+            aboutText:"Über mich",
+            aboutText2: "Hallo, mein Name ist Lukasz und seit einigen Jahren interessiere ich mich für das Web-Programmieren von Websites sowie Computerspielen."+ 
+                         "Derzeit bin ich ein Student im dritten Jahr Informatik und Econometrics mit einer Spezialisierung auf die Gestaltung von Spielen und VR-Anwendungen an der Andrzej Frycz Modrzewski Akademie in Krakau."+
+                         "In meiner Freizeit trainiere ich aktiv Kampfkünste und betreibe verschiedene körperliche Aktivitäten, sowie erweitere mein Wissen über Algorithmen und Technologie."+
+                         "Wenn Sie an der Erstellung Ihres eigenen Projekts interessiert sind, lade ich Sie ein, mich zu kontaktieren.",
 
-            welcome: "Genauigkeit.Immer ein sauberer Code"+
-                     "Leidenschaft.Idee und einzigartige Projekte"+
-                      "Reden ist billig.Zeig mir den Code",
+            aboutText3: "Fähigkeiten:",
 
-            name: "Ihren Namen",
-            mail: "E-mail Adresse",
-            subject: "Betreff der Nachricht",
-            msg: "Nachrichteninhalt",
-            submit: "Schicken",
+            skillsText1: "Technologien",
+            skillsText2: "Framework:",
+            skillsText3: "Wissen",
+
+            portfolioText:"Portfolio",
+            contactText:"Kontakt",
+
+            contactName: "Ihren Namen",
+            contactMail: "E-mail Adresse",
+            contactSubject: "Betreff der Nachricht",
+            contactMsg: "Nachrichteninhalt",
+            contactSubmit: "Schicken",
         }
     };
 
-    if(window.location.hash)
-    {
-        if(window.location.hash=="#pl")
+        $(document).ready(function()
         {
-        
-            welcomeText.innerHTML = language.pl.h1;
+            changeLanguage("en");
+        });
 
-            h_nav.innerHTML = language.pl.hnav;
-            a_nav.innerHTML = language.pl.anav;
-            p_nav.innerHTML = language.pl.pnav;
-            c_nav.innerHTML = language.pl.cnav;
-
-
-            aboutText.innerHTML = language.pl.h1about;
-            aboutText2.innerHTML = language.pl.h1aboutText;
-            portfolioText.innerHTML = language.pl.h2portfolio;
-            contactText.innerHTML = language.pl.h1contact;
-
-            contactName.placeholder = language.pl.name;
-            contactMail.placeholder = language.pl.mail;
-            contactSubject.placeholder = language.pl.subject;
-            contactMsg.placeholder = language.pl.msg;
-            contactSubmit.value = language.pl.submit;
-        }
-
-        else if(window.location.hash == "#ua")
-        {
-            welcomeText.innerHTML = language.ua.h1;
-
-            h_nav.innerHTML = language.ua.hnav;
-            a_nav.innerHTML = language.ua.anav;
-            p_nav.innerHTML = language.ua.pnav;
-            c_nav.innerHTML = language.ua.cnav;
-
-            goText.innerHTML = language.ua.start;
-
-            aboutText.innerHTML = language.ua.h1about;
-            aboutText2.innerHTML = language.ua.h1aboutText;
-            portfolioText.innerHTML = language.ua.h2portfolio;
-            contactText.innerHTML = language.ua.h1contact;
-
-            contactName.placeholder = language.ua.name;
-            contactMail.placeholder = language.ua.mail;
-            contactSubject.placeholder = language.ua.subject;
-            contactMsg.placeholder = language.ua.msg;
-            contactSubmit.value = language.ua.submit;
-        }
-
-        else if(window.location.hash == "#de")
-        {
-            welcomeText.innerHTML = language.de.h1;
-
-            h_nav.innerHTML = language.de.hnav;
-            a_nav.innerHTML = language.de.anav;
-            p_nav.innerHTML = language.de.pnav;
-            c_nav.innerHTML = language.de.cnav;
-
-            aboutText.innerHTML = language.de.h1about;
-            aboutText2.innerHTML = language.de.h1aboutText;
-            portfolioText.innerHTML = language.de.h2portfolio;
-            contactText.innerHTML = language.de.h1contact;
-
-            contactName.placeholder = language.de.name;
-            contactMail.placeholder = language.de.mail;
-            contactSubject.placeholder = language.de.subject;
-            contactMsg.placeholder = language.de.msg;
-            contactSubmit.value = language.de.submit;
-        }
-    }
+        $("#en").click(() => changeLanguage("en"));
+        $("#pl").click(() => changeLanguage("pl"));
+        $("#ua").click(() => changeLanguage("ua"));
+        $("#de").click(() => changeLanguage("de"));
