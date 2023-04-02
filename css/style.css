@@ -271,20 +271,54 @@ main h5 {
   margin: 5% auto;
   display: inline-block;
 }
-.portfolio-content {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
+.fab.fa-html5 {
+  color: orangered;
+}
+.fab.fa-css3-alt {
+  color: #005C97;
+}
+.fab.fa-js-square {
+  color: yellow;
+}
+.fab.fa-php {
+  color: darkgrey;
+}
+.fas.fa-database {
+  color: forestgreen;
+}
+.fab.fa-unity {
+  color: black;
+}
+.fa-solid.fa-c {
+  color: violet;
 }
 .projects-box {
   width: 90vw;
   height: 20vh;
-  margin-left: 5%;
+  margin: 0 auto;
 }
 .portfolio h2 {
   color: ghostwhite;
   font-size: 5vw;
   text-align: center;
+}
+.icon-container {
+  font-size: 2.5rem;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+.icon-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: ghostwhite;
+}
+.icon-container i:hover {
+  color: #005C97;
+  transition: 1s;
 }
 .project {
   width: 20vw;
@@ -420,26 +454,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0 auto;
   font-family: 'Jua', sans-serif;
 }
-.fab.fa-html5 {
-  color: #e34f26;
-}
-.fab.fa-css3-alt {
-  color: mediumblue;
-}
-.fab.fa-js-square {
-  color: #f7df1e;
-}
-.fa-brands.fa-github {
-  color: ghostwhite;
-  font-size: 3.5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 48.6%;
-}
-.fa-brands.fa-github:hover {
-  color: darkviolet;
-  transition: 1s;
-}
 /*************** MOBILE ****************/
 @media (max-width: 775px) {
   .fas.fa-arrow-circle-up {
@@ -567,11 +581,11 @@ input[type=number]::-webkit-outer-spin-button {
     word-wrap: break-word;
     letter-spacing: 0.5px;
   }
-  .portfolio-content h2 {
+  #portfolioText {
+    margin-top: 5px;
     text-align: center;
     font-size: 1.5rem;
     color: ghostwhite;
-    margin: 0 auto;
     font-family: 'Jua', sans-serif;
   }
   .box-info {
@@ -583,23 +597,26 @@ input[type=number]::-webkit-outer-spin-button {
     color: ghostwhite;
   }
   .projects-box {
-    width: 90%;
-    height: 75%;
+    margin-top: 2rem;
+    width: 90vw;
+    height: 90vh;
     background: #060625;
     border-radius: 10px;
     box-shadow: 4px 4px black;
   }
+  .projectsConteiner {
+    width: 100%;
+    height: 80%;
+  }
   .project {
-    width: 30%;
-    height: 20vh;
-    background: #005C97;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    left: 2.5%;
-    top: 5vh;
+    width: 25%;
+    height: 25%;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
   }
   .content {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -621,7 +638,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #00bfff;
     width: 100%;
     height: 0;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -629,50 +646,12 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
   }
   /* icons */
-  .fab.fa-html5 {
-    color: orangered;
-  }
-  .fab.fa-css3-alt {
-    color: #005C97;
-  }
-  .fab.fa-js-square {
-    color: yellow;
-  }
-  .fab.fa-php {
-    color: darkgrey;
-  }
-  .fas.fa-database {
-    color: forestgreen;
-  }
-  .fab.fa-unity {
-    color: black;
-  }
-  .fa-solid.fa-c {
-    color: violet;
-  }
-  .fa-brands.fa-github {
-    margin-left: 45%;
-    color: ghostwhite;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-  }
-  .fa-brands.fa-github:hover {
-    color: darkviolet;
-    transition: 1s;
-  }
-  .portfolio-content {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    margin-top: 2rem;
-  }
   .contact-box {
     margin-top: 5rem;
     width: 90%;
     height: 70%;
     background: #060625;
     border-radius: 10px;
-    box-shadow: 4px 4px black;
   }
   .contact-box form {
     height: 80%;
@@ -691,7 +670,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: ghostwhite;
     background: #005C97;
     border-radius: 5px;
-    box-shadow: 2px 2px black;
+    box-shadow: 0 0 5px black;
   }
   .contact ::placeholder {
     color: ghostwhite;
@@ -726,7 +705,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 4vh;
     background: #005C97;
     border-radius: 5px;
-    box-shadow: 2px 2px black;
   }
   #contactInfo p {
     padding: 2.5%;
