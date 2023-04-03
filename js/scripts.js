@@ -5,76 +5,26 @@ $(".animation span:nth-child(5)").delay(800).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(7)").delay(1600).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(8)").delay(1600).animate({ "left":"0%"}, 700 ); 
 
-$("#a_nav").on("click", function()
-{           
- $('html,body').animate({
-     scrollTop: $(".about").offset().top},
-     'slow');
-});
-
-$("#p_nav").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".portfolio").offset().top},
-        'slow');
-		});
-
-$("#c_nav").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".contact").offset().top},
-        'slow');
-		});
-
-$("#h_nav, #btn-c").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $('html').offset().top},
-        'slow');
-		});
-
-$("#btn-go").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".about").offset().top},
-        'slow');
-		});
-
-$("#btn-p").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".contact").offset().top},
-        'slow');
-		});
-
-$("#btn-a").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".skills").offset().top},
-        'slow');
-		});
-
-$("#btn-s").on("click", function() 
-	{
-    $('html,body').animate({
-        scrollTop: $(".portfolio").offset().top},
-        'slow');
-		});
-
-$(document).ready(function() 
-{
-    $('#btn-home').click(function(event)
-     {
-        $(".about").animate({'opacity': 0}, 50);
-        event.preventDefault();
-        var url = $(this).attr("index.html .section");
-        $(".about").load("index.html .section", function() 
-        {
-            $(this).animate({'opacity': 1}, 1000);
-        });
+$('.scroll-btn').on('click', function(event) {
+    event.preventDefault();
+  
+    const scrollTo = $(this).data('scroll-to');
+    
+    $('html, body').animate({
+      scrollTop: $(scrollTo).offset().top
+    }, 'slow');
+  });
+  
+  $(document).ready(function() {
+    $('#btn-home').click(function(event) {
+      event.preventDefault();
+      
+      $(".about").fadeTo(50, 0, function() {
+        $('html, body').animate({ scrollTop: 0 }, 0);
+        $(this).fadeTo(1000, 1);
+      });
     });
-});
-
+  });
 
 $(document).ready(function()
 {
@@ -139,20 +89,19 @@ $(".scroll-up").on("click", function()
         500);
 	});
 
+
 /* toggle theme/lang */
 $('.theme-picker').hide();
-
-$('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').on('click', function()
+$('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').click(function()
  {
     $('.toggle-theme, .theme-picker').toggle('1000')
   });
 
 
- $('.lang-picker').hide();
-
-$('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').on('click', function()
- {
-    $('.toggle-lang, .lang-picker').toggle('1000')
+  $('.lang-picker').hide();
+  $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').click(function() 
+  {
+    $('.toggle-lang, .lang-picker').toggle(1000);
   });
 
 /* theme change session */
@@ -205,7 +154,7 @@ function changeLanguage(lang)
 
             skillsText1: "Technologies",
             skillsText2: "Frameworks",
-            skillsText3: "Knowledge",
+
 
             contactName: "Your name",
             contactMail: "Your e-mail",
@@ -235,8 +184,7 @@ function changeLanguage(lang)
 
             skillsText1: "Technologie",
             skillsText2: "Frameworki",
-            skillsText3: "Wiedza",
-            
+
             aboutSkillsKnowledge1: "Rozwiązywanie problemów",
             aboutSkillsKnowledge2: "Znajomośc algorytmów",
 
@@ -267,8 +215,7 @@ function changeLanguage(lang)
 
             skillsText1: "Технології",
             skillsText2: "Каркаси",
-            skillsText3: "знання",
-            
+
             portfolioText:"портфолі",
             contactText:"контакт",
 
@@ -297,7 +244,6 @@ function changeLanguage(lang)
 
             skillsText1: "Technologien",
             skillsText2: "Framework",
-            skillsText3: "Wissen",
 
             portfolioText:"Portfolio",
             contactText:"Kontakt",
