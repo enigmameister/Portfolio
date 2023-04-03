@@ -274,18 +274,16 @@ main h5 {
 .about {
   height: 100vh;
   width: 100%;
-  display: block-inline;
+  display: flex;
 }
 .about .about-skills {
+  display: flex;
   width: 100%;
   margin: 0 auto;
 }
 .about .about-skills p {
   text-align: center;
-  font-size: 2rem;
-}
-.about-skills {
-  display: flex;
+  font-size: 5rem;
 }
 #aboutText3 {
   text-align: center;
@@ -293,29 +291,32 @@ main h5 {
   padding: 0px;
 }
 #skills-col1,
-#skills-col2,
-#skills-col3 {
-  width: 30%;
+#skills-col2 {
+  width: 40%;
   margin: 0 auto;
 }
 #skills-col1 p,
-#skills-col2 p,
-#skills-col3 p,
-#skills-col1 li,
-#skills-col2 li,
-#skills-col3 li {
-  padding: 0;
+#skills-col2 p {
+  font-weight: bold;
+  padding: 5px;
   margin: 0;
-  list-style-type: none;
   text-align: center;
   color: ghostwhite;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
+}
+#skills-col1 li,
+#skills-col2 li {
+  font-size: 1rem;
+  list-style-type: disc;
+  text-align: left;
+  list-style-position: inside;
 }
 .about-content {
+  position: relative;
   margin: 0 auto;
   padding: 0px;
   width: 50%;
-  border: 3px solid ghostwhite;
+  border: 1px solid ghostwhite;
   border-radius: 10px;
   color: ghostwhite;
 }
@@ -325,7 +326,7 @@ main h5 {
   font-family: 'Jua', sans-serif;
 }
 .about-content p {
-  font-size: 1rem;
+  font-size: 2rem;
   width: 90%;
   margin: 0 auto;
   padding: 10px;
@@ -333,21 +334,21 @@ main h5 {
   letter-spacing: 0.9px;
 }
 .icon-container {
-  margin: 5px auto;
-  font-size: 2.5rem;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
 }
-.icon-container a {
-  margin: 10px;
-  display: block;
-  width: 100%;
-  height: 100%;
+.icon-container a,
+.icon-container i {
+  font-size: 3rem;
   text-decoration: none;
   color: ghostwhite;
+  margin-left: 10px;
 }
 .icon-container i:hover {
   color: #005C97;
@@ -619,7 +620,7 @@ footer a {
   }
   .about-content {
     width: 80%;
-    height: 85vh;
+    height: 90vh;
     margin-top: 2rem;
     background: #060625;
     border-radius: 5px;

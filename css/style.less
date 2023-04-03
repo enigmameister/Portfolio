@@ -315,25 +315,21 @@ main h5
 {
     height: 100vh;
 	width: 100%;
-	display: block-inline;
+	display: flex;
 
 	.about-skills
 	{
+		display: flex;
 		width: 100%;
 		margin: 0 auto;
 
 		p
 			{
 				text-align: center;
-				font-size: 2rem;
+				font-size: 5rem;
 			}
 
 	}
-}
-
-.about-skills
-{
-	display: flex;
 }
 
 #aboutText3
@@ -343,27 +339,35 @@ main h5
 	padding: 0px;
 }
 
-#skills-col1, #skills-col2, #skills-col3
+#skills-col1, #skills-col2
 {
-	width: 30%;
+	width: 40%;
 	margin: 0 auto;
-	p, li
+	p
 	{
-		padding: 0;
+		font-weight: bold;
+		padding: 5px;
 		margin: 0;
-		list-style-type: none;
 		text-align: center;
 		color: @text-color;
-		font-size: 0.8rem;
+		font-size: 1.5rem;
+	}
+	li
+	{
+		font-size: 1rem;
+		list-style-type: disc;
+		text-align: left;
+		list-style-position: inside;
 	}
 }
 
 .about-content
 {
+	position: relative;
     margin: 0 auto;
     padding: 0px;
 	width: 50%;
-	border: 3px solid @text-color;
+	border: 1px solid @text-color;
 	border-radius: 10px;
     color: @text-color;
 }
@@ -375,7 +379,7 @@ main h5
 }
 .about-content p
 {
-    font-size: 1rem;
+    font-size: 2rem;
     width: 90%;
     margin: 0 auto;
     padding: 10px;
@@ -385,23 +389,22 @@ main h5
 
 .icon-container
 {
-	margin: 5px auto;
-	font-size: 2.5rem;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2.5rem;
-	height: 2.5rem;
+	bottom: 0;
+	left: 50%;
+	width: 90%;
+	margin-left: -45%;
 }
 
-.icon-container a
+.icon-container a, .icon-container i
 {
-	margin: 10px;
-	display: block;
-	width: 100%;
-	height: 100%;
+	font-size: 3rem;
 	text-decoration: none;
 	color: @text-color;
+	margin-left: 10px;
 }
 
 .icon-container i:hover
@@ -722,7 +725,7 @@ header nav ul
 .about-content
     {
 	width: 80%;
-	height: 85vh;
+	height: 90vh;
 	.borderBox;
     }
 

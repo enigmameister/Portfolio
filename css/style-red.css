@@ -40,6 +40,7 @@ header
 {
    background: rgba(10, 10, 10, 0.3);
    box-shadow: 0px 2px darkred;
+
 }
 
 header nav ul li a
@@ -59,7 +60,7 @@ main h1, main h4, main h5{color: cornsilk;}
 
 #btn-go
 {
-	background-color: transparent;
+	background-color: rgb(114, 26, 44);
     border: 2px solid cornsilk;
     color: cornsilk;
     text-decoration: none;
@@ -84,20 +85,12 @@ main h1, main h4, main h5{color: cornsilk;}
 	border: 3px solid white;
     color: cornsilk;
 }
-#btn-go
-{
-	background-color: transparent;
-    border: 2px solid cornsilk;
-    color: cornsilk;
-    margin-top: 30px;
-	text-shadow: 1px 0px 1px gray;
-}
 
-.projects-box
+.projects-box, .about-content, .contact-box, footer
 {
-	background: transparent;
+	background-color: rgb(114, 26, 44);
 	border-radius: 5px;
-	border: 2px solid cornsilk;
+	border: 3px solid cornsilk;
 }
 
 .contact ::placeholder
@@ -123,17 +116,6 @@ input[type=number]
     border: 2px inset crimson;
 }
 
-footer 
-{
-	margin: 2.5rem auto;
-	border: 2px solid cornsilk;
-	border-radius: 10px;
-	background: transparent;
-	width: 75vw;
-	height: 5vh;
-	padding: 1rem;
-}
-
 /*************** MOBILE ***************/
 @media (max-width: 720px)
 {
@@ -144,10 +126,7 @@ header nav
     background: -webkit-linear-gradient(to right, #e73827, #f85032); 
     background: linear-gradient(to right, #e73827, #f85032); 
 }
-.contact-box
-{
-	background: transparent;
-}
+
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	 color: white;
