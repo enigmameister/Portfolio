@@ -147,9 +147,8 @@ function changeLanguage(lang)
 
             aboutText2: "Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games."+
                         "Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow."+
-                        "In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies."+
-                        "If you are interested in create your own project, you can go to contact section.",
-
+                        "In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies.",
+                        
             aboutText3: "My skills",
 
             skillsText1: "Technologies",
@@ -177,9 +176,8 @@ function changeLanguage(lang)
 
             aboutText2: "Cześć, mam na imię Łukasz i od paru lat interesuje się programowaniem webowym stron internetowych, a także gier komputerowych."+ 
                          "Obecnie jestem studentem III roku Informatyki i Ekonometrii ze specjalizacją projektowanie gier i aplikacji VR, na Krakowskiej Akademii Im.Frycza Modrzewskiego w Krakowie."+
-                         "W wolnym czasie czynnie trenuje sztuki walki i wszelkiego rodzaju aktywność fizyczną, a także poszerzam swoją wiedzę z algorytmiki i technologii."+
-                         "Jeśli jesteś zaintersowany lub zainteresowana stworzeniem własnego projektu, zapraszam do kontaktu.",
-
+                         "W wolnym czasie czynnie trenuje sztuki walki i wszelkiego rodzaju aktywność fizyczną, a także poszerzam swoją wiedzę z algorytmiki i technologii.",
+                        
             aboutText3: "Co potrafie",
 
             skillsText1: "Technologie",
@@ -208,9 +206,8 @@ function changeLanguage(lang)
             aboutText:"про мене",
             aboutText2: "Привіт!, мене звати Лукаш і я вже декілька років захоплююся веб-програмуванням сторінок та комп'ютерних ігор."+ 
                          "Наразі я є студентом третього курсу комп'ютерних наук та економіки зі спеціалізацією на розробці ігор та VR-додатків в Краківській Академії імені Анджей Фрич Моджевський в Кракові."+
-                         "У вільний час я активно займаюся бойовими мистецтвами та різними фізичними активностями, а також поглиблюю свої знання з алгоритміки та технологій."+
-                         "Якщо ви зацікавлені у створенні власного проекту, запрошую до контакту.",
-            
+                         "У вільний час я активно займаюся бойовими мистецтвами та різними фізичними активностями, а також поглиблюю свої знання з алгоритміки та технологій.",
+                        
             aboutText3: "що я знаю:",
 
             skillsText1: "Технології",
@@ -237,9 +234,8 @@ function changeLanguage(lang)
             aboutText:"Über mich",
             aboutText2: "Hallo, mein Name ist Lukasz und seit einigen Jahren interessiere ich mich für das Web-Programmieren von Websites sowie Computerspielen."+ 
                          "Derzeit bin ich ein Student im dritten Jahr Informatik und Econometrics mit einer Spezialisierung auf die Gestaltung von Spielen und VR-Anwendungen an der Andrzej Frycz Modrzewski Akademie in Krakau."+
-                         "In meiner Freizeit trainiere ich aktiv Kampfkünste und betreibe verschiedene körperliche Aktivitäten, sowie erweitere mein Wissen über Algorithmen und Technologie."+
-                         "Wenn Sie an der Erstellung Ihres eigenen Projekts interessiert sind, lade ich Sie ein, mich zu kontaktieren.",
-
+                         "In meiner Freizeit trainiere ich aktiv Kampfkünste und betreibe verschiedene körperliche Aktivitäten, sowie erweitere mein Wissen über Algorithmen und Technologie.",
+                         
             aboutText3: "Fähigkeiten",
 
             skillsText1: "Technologien",
