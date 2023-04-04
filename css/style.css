@@ -48,7 +48,6 @@ body {
   width: 90vw;
   height: 100vh;
   margin: 0 auto;
-  display: inline-block;
 }
 .container-logo {
   border: 1px solid #005C97;
@@ -274,7 +273,6 @@ main h5 {
 .about {
   height: 100vh;
   width: 100%;
-  display: flex;
 }
 .about .about-skills {
   display: flex;
@@ -283,7 +281,7 @@ main h5 {
 }
 .about .about-skills p {
   text-align: center;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 #aboutText3 {
   text-align: center;
@@ -302,11 +300,11 @@ main h5 {
   margin: 0;
   text-align: center;
   color: ghostwhite;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 #skills-col1 li,
 #skills-col2 li {
-  font-size: 1rem;
+  font-size: 0.7rem;
   list-style-type: disc;
   text-align: left;
   list-style-position: inside;
