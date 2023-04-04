@@ -101,7 +101,7 @@ $('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #th
   $('.lang-picker').hide();
   $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').click(function() 
   {
-    $('.toggle-lang, .lang-picker').toggle(1000);
+    $('.toggle-lang, .lang-picker').toggle('1000');
   });
 
 /* theme change session */
