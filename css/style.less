@@ -63,6 +63,7 @@ display: none;
 	width: 90vw;
     height: 100vh;
     margin: 0 auto;
+	display: inline-block;
 	
 }
 
@@ -317,7 +318,7 @@ main h5
 {
     height: 100vh;
 	width: 100%;
-
+	display: flex;
 
 	.about-skills
 	{
@@ -338,7 +339,8 @@ main h5
 {
 	text-align: center;
 	font-size: 1.2rem;
-	padding: 0px;
+	padding: 2px;
+	display: block;
 }
 
 #skills-col1, #skills-col2
@@ -349,18 +351,20 @@ main h5
 	font-size: 12px;
 	color: @text-color;
 	text-align: left;
+	display: inline-block;
 	p
 	{
 		width: 100%;
 		height: 20%;
-		padding: 0px;
+		padding: 2px;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 0.7rem;
 	}
 	li
 	{
 		list-style-type: disc;
 		list-style-position: inside;
+		text-align: left;
 	}
 }
 
@@ -468,7 +472,7 @@ main h5
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 0.8rem;
- @text-color-space: nowrap;
+	@text-color-space: nowrap;
 }
 
 .content span
@@ -654,6 +658,7 @@ z-index: 1;
     {
     width: 100%;
     height: 100vh;
+	margin-top: 2rem auto;
 }
 
 #btn-go
@@ -772,7 +777,7 @@ header nav ul
 .projects-box
 {
 	width: 90vw;
-    height: 90vh;
+    height: 80vh;
 	.borderBox;
 }
 
