@@ -18,31 +18,31 @@
 <div class="container">
 	<header>
 
-		<div class="container-logo">
+		<div class="containerLogo">
 			<a href="index.html"></a>Łukasz Jowik
 		</div>
 
-			<div class="toggle-theme">
+			<div class="toggleTheme">
 				<i class="fas fa-fill-drip"></i>
 			</div>
 
-				<div class="theme-picker">
-					<div class="theme-closepicker">
-						<button id="theme-close">X</button>
+				<div class="themePicker">
+					<div class="themeClosepicker">
+						<button id="themeCloseBtn">X</button>
                   </div>
-					<button id="theme-default" onclick="swapStyleSheet('css/style.css')"></button>
-                    <button id="theme-red" onclick="swapStyleSheet('css/style-red.css')"></button>
-                    <button id="theme-lime" onclick="swapStyleSheet('css/style-lime.css')"></button>
-					<button id="theme-white" onclick="swapStyleSheet('css/style-white.css')"></button>
+					<button id="themeDefault" onclick="swapStyleSheet('css/style.css')"></button>
+                    <button id="themeRed" onclick="swapStyleSheet('css/style-red.css')"></button>
+                    <button id="themeLime" onclick="swapStyleSheet('css/style-lime.css')"></button>
+					<button id="themeWhite" onclick="swapStyleSheet('css/style-white.css')"></button>
 				</div>
 
-				<div class="toggle-lang">
+				<div class="toggleLang">
 					<i class="fa-solid fa-language"></i>
 				</div>
 
-				<div class="lang-picker">
-					<div class="lang-closepicker">
-						<button id="lang-close">X</button>
+				<div class="langPicker">
+					<div class="langClosepicker">
+						<button id="langCloseBtn">X</button>
 					</div>
 
 				<button onclick="changeLanguage('en')" id="lang-en"><img src="lang-en.png" alt="en" width="20" height="20"></button>
@@ -53,12 +53,12 @@
 
             <nav><ul>	<!-- Main menu -->
 				<li><a class="active" id="h_nav">Home</a></li>
-				<li><a class="scroll-btn" data-scroll-to=".about" id="a_nav">About Me</a></li>
-				<li><a class="scroll-btn" data-scroll-to=".portfolio" id="p_nav">Portfolio</a></li>
-				<li><a class="scroll-btn" data-scroll-to=".contact" id="c_nav">Contact</a></li>
+				<li><a class="scrollBtn" data-scroll-to=".about" id="a_nav">About Me</a></li>
+				<li><a class="scrollBtn" data-scroll-to=".portfolio" id="p_nav">Portfolio</a></li>
+				<li><a class="scrollBtn" data-scroll-to=".contact" id="c_nav">Contact</a></li>
             </ul></nav> <!-- Main menu ends -->  
 			
-         <div class="toggle-menu">
+         <div class="toggleMenu">
               <span></span>
               <span></span>
               <span></span>
@@ -74,22 +74,22 @@
 		<span>Talk is cheap.</span><span>Show me the code.</span><p></p>
 </div>
 	    </main>
-			<button type="button" class="scroll-btn" data-scroll-to=".about" id="btn-go"><i class="fas fa-arrow-circle-down"></i><span id="goText"> START </span></button>
+			<button type="button" class="scrollBtn" data-scroll-to=".about" id="btnGo"><i class="fas fa-arrow-circle-down"></i><span id="goText"> START </span></button>
 </div> <!-- conteiner ends-->
 
-<div class="scroll-up"><i class="fas fa-arrow-circle-up"></i></div> <!-- scrolling arrow-->
+<div class="scrollUp"><i class="fas fa-arrow-circle-up"></i></div> <!-- scrolling arrow-->
 
 <div class="about">
-<div class="about-content">
+<div class="aboutContent">
 <h2 id="aboutText">About Me</h2>
 <p id="aboutText2">Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games.<br/>
 	Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow. 
 	In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies.</br></br>
 	</p>
 	<p id="aboutText3">My skills</p>
-		<div class="about-skills">
+		<div class="aboutSkills">
 			
-			<ul id="skills-col1">
+			<ul id="skillsCol1">
 			<p id="skillsText1">Technologies</p>
 			<li>HTML</li>
 			<li>CSS</li>
@@ -98,7 +98,7 @@
 			<li>PHP</li>
 			</ul>
 			
-			<ul id="skills-col2">
+			<ul id="skillsCol2">
 			<p id="skillsText2">Frameworks</p>
 			<li>LESS</li>
 			<li>jQuery</li>
@@ -106,7 +106,7 @@
 
 		</div>
 
-		<div class="icon-container">          <!-- Icon + link-->
+		<div class="iconContainer">          <!-- Icon + link-->
 			<a href="https://github.com/enigmameister" target="_blank"> 
 				<i class="fa-brands fa-github"></i>
 			</a>
@@ -128,7 +128,7 @@
 </div>
 
 <div class="portfolio"> <!-- porfolio-->
-	<div class="projects-box">
+	<div class="projectsBox">
 		<h2 id="portfolioText">Projects</h2>
 		<div class="projectsConteiner">
 
@@ -217,7 +217,7 @@
 
 
 <div class="contact">
-		<div class="contact-box">
+		<div class="contactBox">
 			<form action="send_email.php" method="get">
 				<h1 id="contactText">Contact</h1>
 
