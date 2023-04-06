@@ -635,12 +635,13 @@ footer a {
     text-align: center;
     font-size: 2rem;
   }
-  .about-content p {
+  #aboutText2 {
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     width: 90%;
+    word-wrap: normal;
     margin: 0 auto;
     padding: 10px;
   }
@@ -663,7 +664,7 @@ footer a {
   }
   .projects-box {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     margin-top: 2rem;
     background: #060625;
     border-radius: 5px;
@@ -761,5 +762,21 @@ footer a {
   .contact input[type=number] {
     width: 50px;
     margin-left: 10px;
+  }
+  .contact textarea {
+    height: 40%;
+    text-align: justify;
+  }
+  footer {
+    margin: 1rem auto;
+    border: 1px solid #005C97;
+    border-radius: 10px;
+    background: #060625;
+    width: 75vw;
+    height: 5vh;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: ghostwhite;
   }
 }
