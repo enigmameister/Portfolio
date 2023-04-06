@@ -5,24 +5,21 @@
   outline: 0;
   line-height: 1.4em;
 }
-.borderBox {
-  margin-top: 2rem;
-  background: #060625;
-  border-radius: 5px;
-  border: 1px solid #005C97;
-}
-.sectionValues {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: inline-block;
-}
 body {
   font-family: sans-serif;
   box-sizing: border-box;
   background: #fff;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: -webkit-linear-gradient(to right, #e73827, #f85032);
+  background: linear-gradient(to right, #e73827, #f85032);
+}
+.borderBox {
+  margin-top: 2rem;
+  background: #721a2c;
+  border-radius: 5px;
+  border: 1px solid #005C97;
+}
+.borderBoxRed {
+  background: #ed213a;
 }
 .animation {
   height: 60%;
@@ -40,7 +37,7 @@ body {
   display: inline-block;
 }
 .animation span:nth-child(3n+1) {
-  color: #005C97;
+  color: #ed213a;
   text-shadow: 2px 2px black;
 }
 .scrollUp,
@@ -57,8 +54,8 @@ body {
   display: inline-block;
 }
 .containerLogo {
-  border: 1px solid #005C97;
-  background-color: #005C97;
+  border: 1px solid #ed213a;
+  background-color: #ed213a;
   padding: 10px;
   border-color: ghostwhite;
   border-radius: 5px;
@@ -83,7 +80,7 @@ body {
   margin-left: 1.5rem;
   margin-top: 10px;
   float: left;
-  color: #005C97;
+  color: #ed213a;
   font-size: 2rem;
   text-shadow: 0.5px 0.5px ghostwhite;
 }
@@ -108,7 +105,7 @@ body {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #005C97;
+  background: #ed213a;
   border-radius: 10px;
   opacity: 1;
   left: 0;
@@ -182,7 +179,7 @@ body {
   width: 20px;
   border-radius: 50%;
   border: 1.5px solid grey;
-  color: #005C97;
+  color: #ed213a;
   background-color: #333;
 }
 #themeRed,
@@ -216,7 +213,7 @@ body {
   background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
 #themeDefault {
-  background-color: #005C97;
+  background-color: #ed213a;
 }
 header {
   position: fixed;
@@ -254,7 +251,7 @@ header nav ul li a:hover {
   text-shadow: 2px 4px 6px #000000;
 }
 header nav ul li a.active {
-  color: #005C97;
+  color: #ed213a;
 }
 main {
   height: 50%;
@@ -361,7 +358,7 @@ main h5 {
   margin-left: 10px;
 }
 .iconContainer i:hover {
-  color: #005C97;
+  color: #ed213a;
   transition: 1s;
 }
 .boxInfo {
@@ -405,8 +402,8 @@ main h5 {
   width: 20vw;
   height: 20vh;
   display: inline-block;
-  background: #005C97;
-  background: -webkit-linear-gradient(to right, #363795, #005C97);
+  background: #ed213a;
+  background: -webkit-linear-gradient(to right, #363795, #ed213a);
   background: linear-gradient(to right, #363795, #005C97);
   position: relative;
   border: 2px solid ghostwhite;
@@ -448,9 +445,9 @@ main h5 {
   width: 40%;
   height: 70%;
   margin: 0 auto;
-  background: #005C97;
-  background: -webkit-linear-gradient(to right, #363795, #005C97);
-  background: linear-gradient(to right, #363795, #005C97);
+  background: #fff;
+  background: linear-gradient(to right, #e73827, #f85032);
+  background: -webkit-linear-gradient(to right, #e73827, #f85032);
 }
 .contactBox form {
   height: 80%;
@@ -485,7 +482,7 @@ input[type=submit] {
 input[type=submit]:active {
   border-color: transparent;
   background-color: ghostwhite;
-  color: #005C97;
+  color: #ed213a;
 }
 input[type=number] {
   width: 50px;
@@ -500,7 +497,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 footer {
   margin: 2.5rem auto;
-  border: 1px solid #005C97;
+  border: 1px solid #ed213a;
   border-radius: 10px;
   background: #060625;
   width: 75vw;
@@ -551,7 +548,7 @@ footer a {
     display: inline-block;
   }
   .animation span:nth-child(3n+1) {
-    color: #005C97;
+    color: #ed213a;
     text-shadow: 2px 2px black;
   }
   .contact-box h1,
@@ -576,7 +573,7 @@ footer a {
     display: block;
     font-family: 'Jua', sans-serif;
     font-size: 4vw;
-    background-color: #005C97;
+    background-color: #ed213a;
     color: ghostwhite;
     text-decoration: none;
     cursor: pointer;
@@ -628,7 +625,7 @@ footer a {
     width: 80%;
     height: 80vh;
     margin-top: 2rem;
-    background: #060625;
+    background: #721a2c;
     border-radius: 5px;
     border: 1px solid #005C97;
   }
@@ -667,7 +664,7 @@ footer a {
     width: 90vw;
     height: 90vh;
     margin-top: 2rem;
-    background: #060625;
+    background: #721a2c;
     border-radius: 5px;
     border: 1px solid #005C97;
   }
@@ -702,7 +699,7 @@ footer a {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #005C97;
+    background: #ed213a;
     width: 100%;
     height: 0;
     transition: 0.3s ease;
@@ -716,10 +713,7 @@ footer a {
   .contactBox {
     width: 75vw;
     height: 75vh;
-    margin-top: 2rem;
-    background: #060625;
-    border-radius: 5px;
-    border: 1px solid #005C97;
+    background: #ed213a;
   }
   .contactBox form {
     height: 80%;
@@ -736,7 +730,7 @@ footer a {
     resize: none;
     margin: 5px;
     color: ghostwhite;
-    background: #005C97;
+    background: #ed213a;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
   }
@@ -758,7 +752,7 @@ footer a {
   .contact input[type=submit]:active {
     border-color: transparent;
     background-color: ghostwhite;
-    color: #005C97;
+    color: #ed213a;
   }
   .contact input[type=number] {
     width: 50px;
@@ -769,10 +763,8 @@ footer a {
     text-align: justify;
   }
   footer {
-    position: relative;
-    left: 0;
     margin: 1rem auto;
-    border: 1px solid #005C97;
+    border: 1px solid #ed213a;
     border-radius: 10px;
     background: #060625;
     width: 75vw;
