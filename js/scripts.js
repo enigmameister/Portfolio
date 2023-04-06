@@ -5,7 +5,7 @@ $(".animation span:nth-child(5)").delay(800).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(7)").delay(1600).animate({ "left":"0%"}, 700 );
 $(".animation span:nth-child(8)").delay(1600).animate({ "left":"0%"}, 700 ); 
 
-$('.scroll-btn').on('click', function(event) {
+$('.scrollBtn').on('click', function(event) {
     event.preventDefault();
   
     const scrollTo = $(this).data('scroll-to');
@@ -28,7 +28,7 @@ $('.scroll-btn').on('click', function(event) {
 
 $(document).ready(function()
 {
-                  $('.toggle-menu').click(function()
+                  $('.toggleMenu').click(function()
                   {
                     $('nav').toggleClass('active')
                   })
@@ -44,7 +44,7 @@ $(document).ready(function()
 
 $(document).ready(function()
 {
-	$('.toggle-menu').click(function()
+	$('.toggleMenu').click(function()
     {
 		$(this).toggleClass('open');
 	});
@@ -54,7 +54,7 @@ $(document).ready(function()
 {
 	$('nav').click(function()
     {
-		$('.toggle-menu').removeClass('open');
+		$('.toggleMenu').removeClass('open');
 	});
 });
 
@@ -70,19 +70,19 @@ $(document).ready(function()
       if (scroll > 50) 
       {
         $("header").css({"display":"none"});
-          $(".scroll-up").css({"display":"block"});
+          $(".scrollUp").css({"display":"block"});
       }
 
       else
      {
           $("header").css({"display":"block"});  
-          $(".scroll-up").css({"display":"none"}); 
-          $(".scroll-down").css({"display":"none"});  
+          $(".scrollUp").css({"display":"none"}); 
+          $(".scrollDown").css({"display":"none"});  
       }  
   })
 })
 
-$(".scroll-up").on("click", function() 
+$(".scrollUp").on("click", function() 
 	{
     $('html,body').animate({
         scrollTop: $('html').offset().top},
@@ -91,17 +91,17 @@ $(".scroll-up").on("click", function()
 
 
 /* toggle theme/lang */
-$('.theme-picker').hide();
-$('.toggle-theme, .theme-closepicker, #theme-red, #theme-lime, #theme-white, #theme-default').click(function()
+$('.themePicker').hide();
+$('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDefault').click(function()
  {
-    $('.toggle-theme, .theme-picker').toggle('1000')
+    $('.toggleTheme, .themePicker').toggle('1000')
   });
 
 
-  $('.lang-picker').hide();
-  $('.toggle-lang, .lang-closepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').click(function() 
+  $('.langPicker').hide();
+  $('.toggleLang, .langClosepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').click(function() 
   {
-    $('.toggle-lang, .lang-picker').toggle('1000');
+    $('.toggleLang, .langPicker').toggle('1000');
   });
 
 /* theme change session */
