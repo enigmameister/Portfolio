@@ -771,6 +771,7 @@ footer a {
   footer {
     position: relative;
     left: 0;
+    bottom: -1rem;
     margin: 1rem auto;
     border: 1px solid #005C97;
     border-radius: 10px;
