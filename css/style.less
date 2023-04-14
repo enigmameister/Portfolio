@@ -14,9 +14,29 @@ line-height: 1.4em;
 @theme-color: #005C97;
 @text-color: ghostwhite;
 
+:root
+{
+	// StyleRed
+ 	--bgColor: -webkit-linear-gradient(to right, #e73827, #f85032); 
+	--bgColor-ie: linear-gradient(to right, #e73827, #f85032);  
+  	--textColor: rgb(224, 215, 178);
+	--blodyColor: rgb(114, 26, 44);
+  	--crimsonColor: crimson;
+
+	// StyleWhite
+	--bgColorWhite: ghostwhite;
+    --textColorWhite: #333;
+
+	// StyleGreen
+	--bgColorGreen: -webkit-linear-gradient(to left, #2C7744, #5A3F37); 
+	--bgColorGreen-ie: linear-gradient(to left, #2C7744, #5A3F37);   
+  --textColorGreen: rgb(224, 215, 178);
+	--greenColor: rgb(22, 39, 10);
+}
+
 .borderBox
 {
-	margin-top: 2rem;
+	margin-top: 4rem;
 	background: #060625;
     border-radius: 5px;
 	border: 1px solid @theme-color;
@@ -24,7 +44,7 @@ line-height: 1.4em;
 
 .sectionValues
 {
-	width: 90vw;
+	width: 80vw;
     height: 100vh;
     margin: 0 auto;
 	display: inline-block;
@@ -76,7 +96,7 @@ display: none;
 {
 	border: 1px solid @theme-color;
 	background-color: @theme-color;
-	padding: 10px;
+	padding: 8px;
     border-color: @text-color;
 	border-radius: 5px;
     float: left;
@@ -97,10 +117,8 @@ display: none;
 
 .toggleLang, .toggleTheme
 {
-	width: 60px;
-	height: 40px;
-	margin-left: 1.5rem;
-	margin-top: 10px;
+	padding: 8px;
+	margin: 0 auto;
 	float: left;
 	color: @theme-color;
 	font-size: 2.0rem;
@@ -412,7 +430,7 @@ main h5
 
 .iconContainer a, .iconContainer i
 {
-	font-size: 3rem;
+	font-size: 2.0rem;
 	text-decoration: none;
 	color: @text-color;
 	margin-left: 10px;
@@ -777,7 +795,7 @@ header nav ul
 .projectsBox
 {
 	width: 90vw;
-    height: 90vh;
+    height: 80vh;
 	.borderBox;
 }
 

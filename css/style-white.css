@@ -1,49 +1,25 @@
 :root
 {
-    --bgColor: ghostwhite;
-    --textColor: #333;
+    --bgColorWhite: ghostwhite;
+    --textColorWhite: #333;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  line-height: 1.4em;
-}
 .borderBox {
   margin-top: 2rem;
-  background: var(--textColor);
+  background: var(--textColorWhite);
   border-radius: 5px;
   border: none;
 }
-.sectionValues
- {
-  width: 90vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: inline-block;
-}
+
 body {
-  background: var(--bgColor);
+  background: var(--);
 }
 .animation {
-  height: 60%;
-  width: 100%;
-  position: relative;
-  color: var(--textColor);
-  display: inline-block;
-  font-size: 4.5vw;
-  text-align: left;
-  z-index: -1;
+  color: var(--textColorWhite);
 }
-.animation span {
-  position: relative;
-  left: -125%;
-  display: inline-block;
-}
+
 .animation span:nth-child(3n+1) {
-  color: var(--textColor);
+  color: var(--textColorWhite);
   text-shadow: 2px 2px black;
 }
 .scrollUp,
@@ -60,8 +36,8 @@ body {
   display: inline-block;
 }
 .containerLogo {
-  border: 1px solid var(--textColor);
-  background-color: var(--textColor);
+  border: 1px solid var(--textColorWhite);
+  background-color: var(--textColorWhite);
   color: ghostwhite;
   text-shadow: 1px 3px 6px #000000;
 }
@@ -71,19 +47,19 @@ body {
   text-shadow: 0px 0px 0px #000000;
   cursor: pointer;
   transition: 1000ms;
-  color: var(--textColor);
+  color: var(--textColorWhite);
 }
 
 .toggleLang,
 .toggleTheme
 {
-  color: var(--textColor);
+  color: var(--textColorWhite);
   text-shadow: 0.5px 0.5px ghostwhite;
 }
 
 .toggleMenu span
 {
-    background: var(--textColor);
+    background: var(--textColorWhite);
 }
 .themePicker,
 .langPicker {
@@ -108,7 +84,7 @@ body {
   width: 20px;
   border-radius: 50%;
   border: 1.5px solid grey;
-  color: var(--bgColor);
+  color: var(--);
   background-color: #333;
 }
 #themeRed,
@@ -189,7 +165,7 @@ main {
 }
 main h1 {
   font-family: 'Jua', sans-serif;
-  color: var(--bgColor);
+  color: var(--);
   padding: 15px;
   font-size: 3rem;
   text-align: center;
@@ -198,7 +174,7 @@ main h1 {
   display: none;
 }
 main h5 {
-  color: var(--bgColor);
+  color: var(--);
   font-size: 1.5rem;
   padding: 0px;
   margin: 12px;
@@ -254,12 +230,12 @@ main h5 {
   margin: 0 auto;
   padding: 0px;
   width: 50vw;
-  border: 1px solid var(--bgColor);
+  border: 1px solid var(--);
   border-radius: 10px;
-  color: var(--bgColor);
+  color: var(--);
 }
 .aboutContent h2 {
-  color: var(--bgColor);
+  color: var(--);
   font-size: 2rem;
   font-family: 'Jua', sans-serif;
 }
@@ -285,7 +261,7 @@ main h5 {
 .iconContainer i {
   font-size: 3rem;
   text-decoration: none;
-  color: var(--bgColor);
+  color: var(--);
   margin-left: 10px;
 }
 .iconContainer i:hover {
@@ -333,7 +309,7 @@ main h5 {
   width: 20vw;
   height: 20vh;
   display: inline-block;
-  background: var(--bgColor);
+  background: var(--);
   position: relative;
   border: 2px solid ghostwhite;
 }
@@ -431,13 +407,13 @@ footer
     left: 0;
     bottom: -1rem;
     margin: 1rem auto;
-    border: 2px solid var(--textColor);
+    border: 2px solid var(--textColorWhite);
     border-radius: 10px;
-    background: var(--textColor);
+    background: var(--textColorWhite);
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: var(--bgColor);
+    color: var(--);
 }
 footer p {
   text-align: center;
@@ -447,9 +423,19 @@ footer a {
   color: ghostwhite;
 }
 
+
 /***************************************/
 /*************** MOBILE ****************/
 /***************************************/
+
+
+
+
+
+
+
+
+
 @media (max-width: 775px) {
   .fas.fa-arrow-circle-up {
     display: inherit;
@@ -472,7 +458,7 @@ footer a {
     width: 100%;
     position: relative;
     font-size: 1.4rem;
-    color: var(--textColor);
+    color: var(--textColorWhite);
     display: inline-block;
     font-size: 5vw;
     text-align: left;
@@ -484,12 +470,12 @@ footer a {
     display: inline-block;
   }
   .animation span:nth-child(3n+1) {
-    color: var(--textColor);
+    color: var(--textColorWhite);
     text-shadow: 2px 2px black;
   }
   .contact-box h1,
   main h1 {
-    color: var(--bgColor);
+    color: var(--);
     font-size: 2rem;
     font-family: 'Jua', sans-serif;
   }
@@ -509,16 +495,16 @@ footer a {
     display: block;
     font-family: 'Jua', sans-serif;
     font-size: 4vw;
-    background-color: var(--textColor);
-    color: var(--bgColor);
+    background-color: var(--textColorWhite);
+    color: var(--);
     text-decoration: none;
     cursor: pointer;
   }
   #btnGo:hover {
-    background-color: var(--bgColor);
+    background-color: var(--);
     transition: 0.6s;
-    color: var(--textColor);
-    border: 5px solid var(--textColor);
+    color: var(--textColorWhite);
+    border: 5px solid var(--textColorWhite);
   }
   main {
     margin-top: 5rem;
@@ -561,7 +547,7 @@ footer a {
     width: 80%;
     height: 80vh;
     margin-top: 2rem;
-    background: var(--textColor);
+    background: var(--textColorWhite);
     border-radius: 5px;
     border: none;
   }
@@ -600,7 +586,7 @@ footer a {
     width: 90vw;
     height: 90vh;
     margin-top: 2rem;
-    background: var(--textColor);
+    background: var(--textColorWhite);
     border-radius: 5px;
     border: none;
   }
@@ -650,7 +636,7 @@ footer a {
     width: 75vw;
     height: 75vh;
     margin-top: 2rem;
-    background: var(--textColor);
+    background: var(--textColorWhite);
     border-radius: 5px;
     border: none;
   }
@@ -668,13 +654,13 @@ footer a {
     border: none;
     resize: none;
     margin: 5px;
-    color: var(--textColor);
-    background: var(--bgColor);
+    color: var(--textColorWhite);
+    background: var(--);
     border-radius: 5px;
     box-shadow: 0 0 5px black;
   }
   .contact ::placeholder {
-    color: var(--textColor);
+    color: var(--textColorWhite);
     font-weight: bolder;
   }
   .contact textarea {
@@ -692,7 +678,7 @@ footer a {
   .contact input[type=submit]:active {
     border-color: transparent;
     background-color: #111;
-    color: var(--bgColor);
+    color: var(--);
   }
   .contact input[type=number] {
     width: 50px;
@@ -702,18 +688,10 @@ footer a {
     height: 40%;
     text-align: justify;
   }
+
   footer {
-    width: 75vw;
-    position: relative;
-    left: 0;
-    bottom: -1rem;
-    margin: 1rem auto;
-    border: 2px solid var(--textColor);
-    border-radius: 10px;
-    background: var(--textColor);
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--bgColor);
+    border: 2px solid var(--textColorWhite);
+    background: var(--textColorWhite);
+    color: var(--);
   }
 }
