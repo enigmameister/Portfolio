@@ -14,7 +14,7 @@ function writtingText(text, index, time)
 let text = "Hello humans, this is my own portfolio website."+
            "If you want contact with me please move to About or Contact section."+
            "Thanks for visit :))"
-let time = 40;
+let time = 20;
 let index = 0;
 
 writtingText(text, index, time);
