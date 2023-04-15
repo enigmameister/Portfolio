@@ -37,24 +37,16 @@ body {
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
-.animation {
-  height: 60%;
-  width: 100%;
-  position: relative;
+#animText {
+  font-family: 'Jua', sans-serif;
   color: ghostwhite;
   display: inline-block;
   font-size: 4.5vw;
   text-align: left;
-  z-index: -1;
 }
-.animation span {
-  position: relative;
-  left: -125%;
-  display: inline-block;
-}
-.animation span:nth-child(3n+1) {
+#animTextSwitch {
   color: #005C97;
-  text-shadow: 2px 2px black;
+  transition: 2s;
 }
 .scrollUp,
 .fas.fa-arrow-circle-up {
@@ -91,6 +83,8 @@ body {
 }
 .toggleLang,
 .toggleTheme {
+  height: 35px;
+  width: 35px;
   padding: 8px;
   margin: 0 auto;
   float: left;
@@ -99,8 +93,9 @@ body {
   text-shadow: 0.5px 0.5px ghostwhite;
 }
 .toggleMenu {
+  position: absolute;
+  right: 0px;
   display: none;
-  float: right;
   width: 35px;
   height: 35px;
   margin: 16px;
@@ -545,26 +540,6 @@ footer a {
     border: 5px solid #333;
     border-radius: 50%;
   }
-  .animation {
-    height: 60%;
-    width: 100%;
-    position: relative;
-    font-size: 1.4rem;
-    color: ghostwhite;
-    display: inline-block;
-    font-size: 5vw;
-    text-align: left;
-    z-index: -1;
-  }
-  .animation span {
-    position: relative;
-    left: -150%;
-    display: inline-block;
-  }
-  .animation span:nth-child(3n+1) {
-    color: #005C97;
-    text-shadow: 2px 2px black;
-  }
   .contact-box h1,
   main h1 {
     color: ghostwhite;
@@ -736,6 +711,10 @@ footer a {
     height: 80%;
     width: 100%;
     text-align: center;
+  }
+  .contact h1#contactText {
+    padding: 10px;
+    font-size: 2rem;
   }
   .contact input[type=email],
   .contact textarea,

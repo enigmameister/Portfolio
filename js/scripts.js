@@ -1,9 +1,24 @@
-$(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
-$(".animation span:nth-child(2)").animate({ "left":"0%"}, 700 );
-$(".animation span:nth-child(4)").delay(800).animate({ "left":"0%"}, 700 );
-$(".animation span:nth-child(5)").delay(800).animate({ "left":"0%"}, 700 ); 
-$(".animation span:nth-child(7)").delay(1600).animate({ "left":"0%"}, 700 );
-$(".animation span:nth-child(8)").delay(1600).animate({ "left":"0%"}, 700 ); 
+function writtingText(text, index, time) 
+{
+  if (index < text.length) 
+  {
+    document.getElementById("animText").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(function() 
+    { 
+      writtingText(text, index, time); 
+    }, time);
+  }
+}
+
+let text = "Hello humans, this is my own portfolio website."+
+           "If you want contact with me please move to About or Contact section."+
+           "Thanks for visit :))"
+let time = 40;
+let index = 0;
+
+writtingText(text, index, time);
+
 
 $('.scrollBtn').on('click', function(event) {
     event.preventDefault();
@@ -31,14 +46,15 @@ $(document).ready(function()
                   $('.toggleMenu').click(function()
                   {
                     $('nav').toggleClass('active')
+                    $('.toggleTheme, .toggleLang').toggleClass('switch',2000);
                   })
         })
-
 $(document).ready(function()
 {
                   $('nav ul li a').click(function()
                   {
                     $('nav').removeClass('active')
+                    $('.toggleTheme, .toggleLang').removeClass('switch');
                   })
         })
 
@@ -122,7 +138,8 @@ $('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDe
     }
     window.onload = loadbackground();
 
-/* lang change */
+
+/* language change */
 
 function changeLanguage(lang)
 {
@@ -135,6 +152,11 @@ function changeLanguage(lang)
     {
         en:
         {
+            
+          animText: "Hello humans, this is my own portfolio website."+
+                  "If you want contact with me please move to About or Contact section."+
+                  "Thanks :))",
+
             h_nav: "Home",
             a_nav: "About me",
             p_nav: "Portfolio",
@@ -164,6 +186,10 @@ function changeLanguage(lang)
 
         pl:
         {
+          animText: "Witam człowieki, to moja strona portfolio."+
+                "Jeśli chcecie się skontaktować możecie przejśc do sekcji O mnie lub Kontakt."+
+                "Dzieki za wizyte :))",
+
             h_nav: "Glowna",
             a_nav: "O mnie",
             p_nav: "Projekty",
@@ -195,6 +221,10 @@ function changeLanguage(lang)
 
         ua:
         {
+          animText: "Привіт, люди, це мій веб-сайт із портфоліо."+ 
+                 "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти»."+
+                 "Дякую за візит ))",
+        
             h_nav: "додому",
             a_nav: "про мене",
             p_nav: "портфоліо",
@@ -225,6 +255,10 @@ function changeLanguage(lang)
 
         de:
         {
+
+          animText: "Hallo Menschen, dies ist meine eigene Portfolio-Website."+ 
+                  "Wenn Sie Kontakt mit mir wünschen, wechseln Sie bitte zum Bereich „Über mich“ oder „Kontakt“."+ 
+                  "Danke für Ihren Besuch :))",
             h_nav: "Heim",
             a_nav: "Über mich",
             p_nav: "Portfolio",

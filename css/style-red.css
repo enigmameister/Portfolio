@@ -12,6 +12,7 @@ background: var(--bgColor-ie);
 
 .animation {
   color: var(--textColor);
+
 }
 
 .animation span:nth-child(3n+1) {
@@ -166,10 +167,6 @@ footer {
   color: ghostwhite;
 }
 
-
-
-
-
 @media (max-width: 775px) {
 
   .scrollUp {
@@ -191,6 +188,4 @@ footer {
     color: var(--blodyColor);
     border: 3px solid var(--blodyColor);
   }
-
-  
 }

@@ -6,13 +6,18 @@ background: var(--bgColorGreen-ie);
 }
 
 .contact-box h1, main h1, #portfolioText, 
+.contact h1#contactText,
 .boxInfo, .animation, .scrollUp,
 .containerLogo, header nav ul li a, 
-header nav ul li a:hover,
+header nav ul li a:hover, .aboutContent,
 .portfolio h2, .aboutContent h2,
 main h1, main h5, #skillsCol1,
 #skillsCol2, .iconContainer a,
-.iconContainer i
+.iconContainer i, .contact ::placeholder,
+#btnGo, footer, .contact input[type=submit],
+.contact input[type=email],
+.contact textarea,
+.contact input[type=text]
 {
   color: var(--textColorGreen);
 }
@@ -57,7 +62,7 @@ main h1, main h5, #skillsCol1,
 }
 
 header {
-  box-shadow: 0px 1px var(--greenColor);
+  box-shadow: 0px 2px var(--textColorGreen);
 }
 
 header nav {
@@ -82,7 +87,6 @@ header nav ul li a.active {
 
 .aboutContent {
   background: var(--greenColor);
-  color: var(--textColorGreen);
   border: 3px solid var(--textColorGreen);
 }
 
@@ -91,14 +95,11 @@ header nav ul li a.active {
   transition: 1s;
 }
 
-.portfolio h2 {
-  color: var(--textColorGreen);
-}
-
 .projectsBox {
   background: var(--greenColor);
   border: 3px solid var(--textColorGreen);
 }
+
 
 .project {
   border: 3px solid var(--textColorGreen);
@@ -118,20 +119,16 @@ header nav ul li a.active {
   border: 3px solid var(--textColorGreen);
 }
 
-.contact input[type=email],
-.contact textarea,
-.contact input[type=text] {
-border: 2px solid var(--textColorGreen);
-  color: var(--textColorGreen);
+  .contact input[type=email],
+  .contact textarea,
+  .contact input[type=text] {
+  border: 2px solid var(--textColorGreen);
   background: var(--greenColor);
   box-shadow: 0 0 5px var(--textColorGreen);
 }
-.contact ::placeholder {
-  color: var(--textColorGreen);
-}
+
 .contact input[type=submit] {
   background-color: transparent;
-  color: var(--textColorGreen);
   border: 2px solid var(--textColorGreen);;
 }
 .contact input[type=submit]:active {
@@ -143,7 +140,7 @@ border: 2px solid var(--textColorGreen);
 footer {
   border: 3px solid var(--textColorGreen);
   background: var(--greenColor);
-  color: var(--textColorGreen);
+
 }
 
 /* Mobile version */
@@ -154,7 +151,6 @@ footer {
   #btnGo {
     background-color: var(--greenColor);
 	  border: 3px solid var(--textColorGreen);
-    color: var(--textColorGreen);
     display: block;
   }
 
