@@ -44,10 +44,6 @@ body {
   font-size: 4.5vw;
   text-align: left;
 }
-#animTextSwitch {
-  color: #005C97;
-  transition: 2s;
-}
 .scrollUp,
 .fas.fa-arrow-circle-up {
   display: none;
@@ -90,7 +86,7 @@ body {
   float: left;
   color: #005C97;
   font-size: 2rem;
-  text-shadow: 0.5px 0.5px ghostwhite;
+  text-shadow: 0px 1px ghostwhite;
 }
 .toggleMenu {
   position: absolute;
@@ -189,7 +185,7 @@ body {
   border-radius: 50%;
   border: 1.5px solid grey;
   color: #005C97;
-  background-color: #333;
+  background-color: #060625;
 }
 #themeRed,
 #themeLime,
@@ -510,15 +506,13 @@ footer {
   border-radius: 10px;
   background: #060625;
   width: 75vw;
-  height: 5vh;
-  padding: 1rem;
 }
-footer p {
-  text-align: center;
-}
+footer p,
 footer a {
   text-decoration: none;
   color: ghostwhite;
+  text-align: center;
+  vertical-align: middle;
 }
 /***************************************/
 /*************** MOBILE ****************/
@@ -562,7 +556,8 @@ footer a {
     display: block;
     font-family: 'Jua', sans-serif;
     font-size: 4vw;
-    background-color: #005C97;
+    border: 1px solid #005C97;
+    background-color: #060625;
     color: ghostwhite;
     text-decoration: none;
     cursor: pointer;
@@ -767,7 +762,6 @@ footer a {
     border-radius: 10px;
     background: #060625;
     width: 75vw;
-    height: 5vh;
     padding: 5px;
     text-align: center;
     text-decoration: none;

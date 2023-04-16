@@ -68,11 +68,6 @@ body
     text-align: left;
 }
 
-#animTextSwitch
-{
-	color: @theme-color;
-	transition: 2s;
-}
 .scrollUp, .fas.fa-arrow-circle-up
 {
 display: none;
@@ -115,7 +110,7 @@ display: none;
 	float: left;
 	color: @theme-color;
 	font-size: 2.0rem;
-    text-shadow: 0.5px 0.5px @text-color;
+    text-shadow: 0px 1px @text-color;
 }
 
 .toggleMenu
@@ -227,7 +222,7 @@ display: none;
     border-radius: 50%;
     border: 1.5px solid grey;
     color: @theme-color;
-    background-color: #333;
+    background-color: rgb(6, 6, 37);
 }
 
 #themeRed, #themeLime, #themeWhite, #themeDefault,
@@ -591,18 +586,15 @@ footer
 	border-radius: 10px;
 	background:rgb(6, 6, 37);
 	width: 75vw;
-	height: 5vh;
-	padding: 1rem;
 
-	p
+
+	p,a
 	{
 		text-align: center;
-	}
-
-	a
-	{
 		text-decoration: none;
 		color: @text-color;
+		text-align: center;
+		vertical-align: middle;
 	}
 }
 
@@ -656,7 +648,8 @@ z-index: 1;
     display: block;
 	font-family: 'Jua', sans-serif;
     font-size: 4vw;
-	background-color: @theme-color;
+	border: 1px solid @theme-color;
+	background-color:  #060625; 
     color: @text-color;
     text-decoration: none;
 	cursor: pointer;
@@ -896,7 +889,6 @@ footer
 	border-radius: 10px;
 	background:rgb(6, 6, 37);
 	width: 75vw;
-	height: 5vh;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;

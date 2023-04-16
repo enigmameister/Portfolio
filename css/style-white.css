@@ -1,8 +1,13 @@
-.borderBox {
+.borderBox, .aboutContent, .projectsBox, #btnGo,
+.containerLogo, .toggleMenu span, .contact-box, footer {
   background: var(--textColorWhite);
 }
 
-body {
+body, .project, .toggleMenu.open span,
+#btnGo:hover, 
+.contact input[type=email],
+.contact textarea,
+.contact input[type=text] {
   background: var(--bgColorWhite);
 }
 
@@ -11,15 +16,8 @@ body {
     color: var(--textColorWhite);
 }
 
-
-.animation span:nth-child(3n+1) {
-  color: var(--textColorWhite);
-  text-shadow: 2px 2px black;
-}
-
 .containerLogo {
   border: 1px solid var(--textColorWhite);
-  background-color: var(--textColorWhite);
   color: ghostwhite;
   text-shadow: 1px 3px 6px #000000;
 }
@@ -35,24 +33,12 @@ body {
 {
   color: var(--textColorWhite);
   text-shadow: 0.5px 0.5px var(--textColorWhite);
-  transition: 0.5s;
 }
 
 .toggleTheme.switch, .toggleLang.switch,
 .toggleMenu.open span
 {
   color: cornsilk;
-  transition: 0.3s;
-}
-
-.toggleMenu span
-{
-  background: var(--textColorWhite);
-}
-.toggleMenu.open span
-{
-    background: var(--bgColorWhite);
-    transition: 0.3s;
 }
 
 .themeClosepicker button,
@@ -104,7 +90,6 @@ main h1, .projectsBox,
 }
 
 .project {
-  background: var(--bgColorWhite);
   border-color: var(--bgColorWhite);
 }
 
@@ -121,7 +106,6 @@ p {
 .contact textarea,
 .contact input[type=text] {
   color: var(--textColorWhite);
-  background: var(--bgColorWhite);
   box-shadow: 0 0 5px black;
 }
 .contact ::placeholder {
@@ -129,7 +113,6 @@ p {
 }
 
 .contactBox {
-  background: var(--textColorWhite);
   border-color: var(--textColorWhite);
 }
 
@@ -148,7 +131,6 @@ p {
 footer
  {
     border: 2px solid var(--textColorWhite);
-    background: var(--textColorWhite);
     color: var(--textColorWhite);
 }
 
@@ -171,21 +153,13 @@ footer
 
   .aboutContent, .projectsBox
   {
-    background: var(--textColorWhite);
     color:var(--bgColorWhite);
   }
 
   #btnGo {
-    background-color: var(--textColorWhite);
     color: var(--bgColorWhite);
- 
   }
   #btnGo:hover {
-    background-color: var(--bgColorWhite);
     border: solid var(--textColorWhite);
-  }
-
-  header nav {
-    background: #111;
   }
 }

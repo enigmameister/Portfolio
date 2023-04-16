@@ -1,25 +1,3 @@
-function writtingText(text, index, time) 
-{
-  if (index < text.length) 
-  {
-    document.getElementById("animText").innerHTML += text.charAt(index);
-    index++;
-    setTimeout(function() 
-    { 
-      writtingText(text, index, time); 
-    }, time);
-  }
-}
-
-let text = "Hello humans, this is my own portfolio website."+
-           "If you want contact with me please move to About or Contact section."+
-           "Thanks for visit :))"
-let time = 20;
-let index = 0;
-
-writtingText(text, index, time);
-
-
 $('.scrollBtn').on('click', function(event) {
     event.preventDefault();
   
@@ -46,7 +24,7 @@ $(document).ready(function()
                   $('.toggleMenu').click(function()
                   {
                     $('nav').toggleClass('active')
-                    $('.toggleTheme, .toggleLang').toggleClass('switch',2000);
+                    $('.toggleTheme, .toggleLang').toggleClass('switch');
                   })
         })
 $(document).ready(function()
@@ -58,26 +36,16 @@ $(document).ready(function()
                   })
         })
 
-$(document).ready(function()
-{
-	$('.toggleMenu').click(function()
-    {
-		$(this).toggleClass('open');
-	});
-});
+        $(document).ready(function() {
+          $(document).click(function(e) {
+            if (!$(e.target).is('.toggleMenu') && !$(e.target).parents().is('.toggleMenu')) {
+              $('.toggleMenu').removeClass('open');
+            } else {
+              $('.toggleMenu').toggleClass('open');
+            }
+          });
+        });
 
-$(document).ready(function()
-{
-	$('nav').click(function()
-    {
-		$('.toggleMenu').removeClass('open');
-	});
-});
-
-$(".animation span:nth-child(1)").animate({ "left":"0%"}, 700 );
-
-let wel1 = document.getElementsByClassName('animation');
-	
 $(document).ready(function()
 {
   $(window).scroll(function()
@@ -139,8 +107,28 @@ $('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDe
     window.onload = loadbackground();
 
 
-/* language change */
+// animimate text
+function writtingText(text, index, time) 
+{
+  if (index < text.length) 
+  {
+    document.getElementById("animText").innerHTML = ""; // clear text from id for no duplicate
+    document.getElementById("animText").innerHTML += text.substring(0,index+1); 
+    index++;
+    setTimeout(function() 
+    { 
+      writtingText(text, index, time); 
+    }, time);
+  }
+}
 
+let text = document.getElementById('animText').textContent;
+let time = 20;
+let index = 0;
+
+writtingText(text, index, time);
+
+/* language change */
 function changeLanguage(lang)
 {
     let translations = language[lang];
@@ -148,11 +136,11 @@ function changeLanguage(lang)
         $(`#${key}`).text(translations[key]);
     });
 }
+
     let language = 
     {
-        en:
+        en: // english translation
         {
-            
           animText: "Hello humans, this is my own portfolio website."+
                   "If you want contact with me please move to About or Contact section."+
                   "Thanks :))",
@@ -184,7 +172,7 @@ function changeLanguage(lang)
             contactSubmit: "Submit",
         },
 
-        pl:
+        pl: // polish translation
         {
           animText: "Witam człowieki, to moja strona portfolio."+
                 "Jeśli chcecie się skontaktować możecie przejśc do sekcji O mnie lub Kontakt."+
@@ -219,7 +207,7 @@ function changeLanguage(lang)
             contactSubmit: "Wyslij",
         },
 
-        ua:
+        ua: // ukrainian translation
         {
           animText: "Привіт, люди, це мій веб-сайт із портфоліо."+ 
                  "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти»."+
@@ -253,7 +241,7 @@ function changeLanguage(lang)
             contactSubmit: "відправити",
         },
 
-        de:
+        de: // deutchland translation
         {
 
           animText: "Hallo Menschen, dies ist meine eigene Portfolio-Website."+ 
