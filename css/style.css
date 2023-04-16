@@ -231,6 +231,7 @@ header {
 }
 header nav {
   float: right;
+  background-color: transparent;
 }
 header nav ul {
   display: flex;
@@ -291,11 +292,11 @@ main h5 {
 }
 .about .aboutSkills p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 0.5rem;
 }
 #aboutText3 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 2px;
   display: block;
 }
@@ -304,7 +305,7 @@ main h5 {
   width: 30%;
   height: 20%;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 1.5rem;
   color: ghostwhite;
   text-align: left;
   display: inline-block;
@@ -325,25 +326,30 @@ main h5 {
 }
 .aboutContent {
   position: relative;
-  margin: 0 auto;
+  margin: 5% auto;
   padding: 0px;
-  width: 50vw;
+  height: 80vh;
+  width: 70vw;
   border: 1px solid ghostwhite;
   border-radius: 10px;
   color: ghostwhite;
+  background: #060625;
 }
 .aboutContent h2 {
   color: ghostwhite;
   font-size: 2rem;
+  text-align: center;
+  padding: 10px;
   font-family: 'Jua', sans-serif;
 }
 .aboutContent p {
-  font-size: 2rem;
+  font-size: 1rem;
   width: 90%;
   margin: 0 auto;
   padding: 10px;
   word-wrap: break-word;
   letter-spacing: 0.9px;
+  text-align: justify;
 }
 .iconContainer {
   position: absolute;
@@ -395,8 +401,9 @@ main h5 {
 }
 .projectsBox {
   width: 90vw;
-  height: 20vh;
+  height: 50vh;
   margin: 0 auto;
+  background-color: #060625;
 }
 .portfolio h2 {
   color: ghostwhite;
@@ -447,12 +454,15 @@ main h5 {
   margin: 5% auto;
 }
 .contactBox {
-  width: 40%;
-  height: 70%;
+  width: 75vh;
+  height: 75vh;
   margin: 0 auto;
-  background: #005C97;
-  background: -webkit-linear-gradient(to right, #363795, #005C97);
-  background: linear-gradient(to right, #363795, #005C97);
+  background: #060625;
+}
+.contactBox form {
+  height: 80%;
+  width: 100%;
+  text-align: center;
 }
 .contactBox form {
   height: 80%;
@@ -501,18 +511,20 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 footer {
-  margin: 2.5rem auto;
+  background: #060625;
   border: 1px solid #005C97;
   border-radius: 10px;
-  background: #060625;
-  width: 75vw;
+  padding: 10px;
+  position: relative;
+  top: 20%;
+  transform: translateX(10%);
+  width: 100%;
 }
 footer p,
 footer a {
-  text-decoration: none;
   color: ghostwhite;
   text-align: center;
-  vertical-align: middle;
+  text-decoration: none;
 }
 /***************************************/
 /*************** MOBILE ****************/
@@ -616,6 +628,10 @@ footer a {
   .aboutContent h2 {
     text-align: center;
     font-size: 2rem;
+  }
+  #skillsCol1,
+  #skillsCol2 {
+    font-size: 1rem;
   }
   #aboutText2 {
     font-family: 'Times New Roman', Times, serif;
@@ -754,17 +770,12 @@ footer a {
     text-align: justify;
   }
   footer {
-    position: relative;
-    left: 0;
-    bottom: -1rem;
-    margin: 1rem auto;
-    border: 1px solid #005C97;
     border-radius: 10px;
-    background: #060625;
-    width: 75vw;
+    left: 0;
+    margin: 1rem auto;
     padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: ghostwhite;
+    transform: none;
+    top: 0;
+    width: 75vw;
   }
 }

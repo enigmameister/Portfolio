@@ -51,7 +51,7 @@ header
 }
 
 header nav {
-  background: var(--blodyColor);
+  background: transparent;
 }
 
 header nav ul li a {
@@ -175,6 +175,11 @@ footer {
 
   .fa-arrow-circle-up:before {
     border: 5px solid #333;
+  }
+
+  header nav
+  {
+    background-color: var(--blodyColor);
   }
 
   #btnGo {

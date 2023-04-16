@@ -1,5 +1,5 @@
 .borderBox, .aboutContent, .projectsBox, #btnGo,
-.containerLogo, .toggleMenu span, .contact-box, footer {
+.containerLogo, .toggleMenu span, .contactBox, footer {
   background: var(--textColorWhite);
 }
 
@@ -158,6 +158,7 @@ footer
 
   #btnGo {
     color: var(--bgColorWhite);
+    border: 0px solid transparent;
   }
   #btnGo:hover {
     border: solid var(--textColorWhite);
