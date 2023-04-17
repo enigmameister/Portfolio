@@ -1,9 +1,20 @@
-My own porfolio project as Responsive Web Design (RWD) version with few jQuery animations and theme/lang picker. Full version for desktop in progress.<br/><br/>
+My own porfolio project as Responsive Web Design version with few jQuery animations and theme/lang picker.
+Full version for desktop in progress.
 
-Used Technologies: HTML,CSS,JavaScript.<br/>
-Used Frameworks/Libraries: LESS (CSS preprocesor), jQuery.<br/>
+## **0.Informations**
 
-Website build:<br/><br/>
+**Used Technologies:** HTML, CSS, JavaScript.
+**Used Frameworks/Libraries:** LESS, jQuery.
+
+## **1.Instalation**
+
+Open git terminal and write this command for close repository:
+
+    $git clone https://www.github.com/enigmameister/portfolio.git
+    
+  Github pages for preview: https://enigmameister.github.io/portfolio/
+
+## **2.Structure**
 
 <head><br />
 -charset UTF-8<br />
