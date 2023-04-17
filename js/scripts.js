@@ -164,12 +164,11 @@ function changeLanguage(lang)
             skillsText1: "Technologies",
             skillsText2: "Frameworks",
 
-
             contactName: "Your name",
             contactMail: "Your e-mail",
             contactSubject: "Subject",
-            contactMsg: "Your Messange",
-            contactSubmit: "Submit",
+           
+          // contactSubmit: "Submit",
         },
 
         pl: // polish translation
@@ -203,8 +202,8 @@ function changeLanguage(lang)
             contactName: "Imie",
             contactMail: "Adres e-mail",
             contactSubject: "Temat wiadomosci",
-            contactMsg: "Tresc wiadomosci",
-            contactSubmit: "Wyslij",
+            
+           // contactSubmit: "Wyslij",
         },
 
         ua: // ukrainian translation
@@ -237,8 +236,8 @@ function changeLanguage(lang)
             contactName: "твоє ім'я",
             contactMail: "ваша пошта",
             contactSubject: "тема",
-            contactMsg: "повідомлення",
-            contactSubmit: "відправити",
+            
+           // contactSubmit: "відправити",
         },
 
         de: // deutchland translation
@@ -269,8 +268,8 @@ function changeLanguage(lang)
             contactName: "Ihren Namen",
             contactMail: "E-mail Adresse",
             contactSubject: "Betreff der Nachricht",
-            contactMsg: "Nachrichteninhalt",
-            contactSubmit: "Schicken",
+            
+           // contactSubmit: "Schicken",
         }
     };
 
@@ -283,3 +282,4 @@ function changeLanguage(lang)
         $("#pl").click(() => changeLanguage("pl"));
         $("#ua").click(() => changeLanguage("ua"));
         $("#de").click(() => changeLanguage("de"));
+

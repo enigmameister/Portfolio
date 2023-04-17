@@ -1,14 +1,19 @@
-.borderBox, .aboutContent, .projectsBox, #btnGo,
+.borderBox, .aboutBox, .projectsBox, #btnGo,
 .containerLogo, .toggleMenu span, .contactBox, footer {
   background: var(--textColorWhite);
 }
 
 body, .project, .toggleMenu.open span,
-#btnGo:hover, 
+#btnGo:hover
+ {
+  background: var(--bgColorWhite);
+}
+
 .contact input[type=email],
 .contact textarea,
-.contact input[type=text] {
-  background: var(--bgColorWhite);
+.contact input[type=text]
+{
+  background: #333;
 }
 
 #animText
@@ -62,15 +67,16 @@ header nav ul li a:hover {
 }
 
 header nav ul li a.active, header nav ul li a:hover,
-.about .aboutSkills p, #skillsCol1, #skillsCol2 {
+.about, .aboutSkills p, #skillsCol1, #skillsCol2 {
   color: cornsilk;
 }
 
-.aboutContent {
+.aboutBox
+{
   border: 1px solid var(--bgColorWhite);
 }
 
-.aboutContent, .about content h2,
+.aboutBox, .aboutBox h2,
 .iconContainer a,
 .iconContainer i, .portfolio h2
 {
@@ -91,6 +97,7 @@ main h1, .projectsBox,
 
 .project {
   border-color: var(--bgColorWhite);
+  background: var(--textColorWhite);
 }
 
 #portfolioText, .boxInfo, .content, .contactBox h1,
@@ -151,10 +158,24 @@ footer
     text-shadow: 2px 2px black;
   }
 
-  .aboutContent, .projectsBox
+  .aboutBox, .projectsBox
   {
     color:var(--bgColorWhite);
   }
+
+  .aboutBox h2, #aboutText2, #aboutText3
+{
+  color: ghostwhite;
+  background: #333;
+  border: 3px solid transparent;
+  padding: 4px;
+}
+
+.aboutSkills, #skillsText3
+{
+  background: #333;
+  border: 3px solid transparent
+}
 
   #btnGo {
     color: var(--bgColorWhite);

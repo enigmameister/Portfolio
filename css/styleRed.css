@@ -2,7 +2,6 @@ body
 {
 background: #fff;
 background: var(--bgColor);
-background: var(--bgColor-ie);
 }
 
 .borderBox {
@@ -78,15 +77,24 @@ main h5 {
   color: ghostwhite;
 }
 
-.aboutContent {
+.aboutBox {
   background: var(--blodyColor);
   border: 3px solid var(--textColor);
 }
 
-.aboutContent h2 {
+.aboutBox h2, #aboutText2, #aboutText3
+{
   color: ghostwhite;
+  background: transparent;
+  border: 3px solid cornsilk;
+  padding: 4px;
 }
 
+.aboutSkills, #skillsText3
+{
+  background: transparent;
+  border: 3px solid cornsilk;
+}
 .iconContainer a,
 .iconContainer i {
   text-decoration: none;
@@ -106,7 +114,7 @@ main h5 {
 
 .project {
   border: 3px solid var(--textColor);
-  background: var(--bgColor-ie);
+  background: var(--bgColor);
 }
 
 .projectsBox {

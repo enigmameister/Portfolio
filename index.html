@@ -19,7 +19,7 @@
 	<header>
 
 		<div class="containerLogo">
-			<a href="index.html"></a>Łukasz Jowik
+			<a href="index.html" ></a>Łukasz Jowik
 		</div>
 
 			<div class="toggleTheme">
@@ -30,10 +30,10 @@
 					<div class="themeClosepicker">
 						<button id="themeCloseBtn">X</button>
                   </div>
-					<button id="themeDefault" onclick="swapStyleSheet('css/style.css')"></button>
-                    <button id="themeRed" onclick="swapStyleSheet('css/style-red.css')"></button>
-                    <button id="themeLime" onclick="swapStyleSheet('css/style-lime.css')"></button>
-					<button id="themeWhite" onclick="swapStyleSheet('css/style-white.css')"></button>
+						<button id="themeDefault" onclick="swapStyleSheet('css/style.css')"></button>
+						<button id="themeRed" onclick="swapStyleSheet('css/styleRed.css')"></button>
+						<button id="themeLime" onclick="swapStyleSheet('css/styleGreen.css')"></button>
+						<button id="themeWhite" onclick="swapStyleSheet('css/styleWhite.css')"></button>
 				</div>
 
 				<div class="toggleLang">
@@ -45,10 +45,10 @@
 						<button id="langCloseBtn">X</button>
 					</div>
 
-				<button onclick="changeLanguage('en')" id="lang-en"><img src="lang-en.png" alt="en" width="20" height="20"></button>
-				<button onclick="changeLanguage('pl')" id="lang-pl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
-				<button onclick="changeLanguage('ua')" id="lang-ua"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
-				<button onclick="changeLanguage('de')" id="lang-de"><img src="lang-de.png" alt="de" width="20" height="20"></button>
+				<button onclick="changeLanguage('en')" id="langEn"><img src="lang-en.png" alt="en" width="20" height="20"></button>
+				<button onclick="changeLanguage('pl')" id="langPl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
+				<button onclick="changeLanguage('ua')" id="langUa"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
+				<button onclick="changeLanguage('de')" id="langDe"><img src="lang-de.png" alt="de" width="20" height="20"></button>
 			</div>
 
             <nav><ul>	<!-- Main menu -->
@@ -78,7 +78,7 @@
 <div class="scrollUp"><i class="fas fa-arrow-circle-up"></i></div> <!-- scrolling arrow-->
 
 <div class="about">
-<div class="aboutContent">
+<div class="aboutBox">
 <h2 id="aboutText">About Me</h2>
 <p id="aboutText2">Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games.<br/>
 	Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow. 
@@ -101,25 +101,26 @@
 			<li>jQuery</li>
 			</ul>
 
-		</div>
+			</div>
 
-		<div class="iconContainer">          <!-- Icon + link-->
-			<a href="https://github.com/enigmameister" target="_blank"> 
-				<i class="fa-brands fa-github"></i>
-			</a>
-
-			<a href="https://steamcommunity.com/id/Enigmameister/" target="_blank"> 
-				<i class="fa-brands fa-steam"></i>
-			</a>
-			
-			<a href="https://discordapp.com/users/409332788102430720" target="_blank">
-				<i class="fa-brands fa-discord"></i>
-			</a>
-
-			<a href="https://www.youtube.com/channel/UConkqw2xpHLUkpDb8YB_AGg" >
-				<i class="fa-brands fa-youtube"></i>
-			</a>
-		</div>
+			<p id="skillsText3">Socials</p>
+			<div class="iconContainer">          <!-- Icon + link-->
+				<a href="https://github.com/enigmameister" target="_blank"> 
+					<i class="fa-brands fa-github"></i>
+				</a>
+	
+				<a href="https://steamcommunity.com/id/Enigmameister/" target="_blank"> 
+					<i class="fa-brands fa-steam"></i>
+				</a>
+				
+				<a href="https://discordapp.com/users/409332788102430720" target="_blank">
+					<i class="fa-brands fa-discord"></i>
+				</a>
+	
+				<a href="https://www.youtube.com/channel/UConkqw2xpHLUkpDb8YB_AGg" >
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
 </div>
 
 </div>
@@ -213,22 +214,24 @@
 
 <div class="contact">
 		<div class="contactBox">
-			<form action="send_email.php" method="get">
+			<form action="email_send.php" method="post">
 				<h1 id="contactText">Contact</h1>
 
 				<input type="text" name="name" id="contactName" required placeholder="Your name" autocomplete="off">
 				<input type="email" name="mail" id="contactMail" required placeholder="Your email" autocomplete="off">
 				<input type="text" name="subject" id="contactSubject" required placeholder="Subject" autocomple="off">
-				<textarea name="msg" id="contactMsg" placeholder="Your Messange" autocomplete="off"></textarea>
+				<textarea name="msg" id="contactMsg" placeholder="Your Messange" required autocomplete="off"></textarea>
 				<p><input type="submit" id="contactSubmit" value="Submit"></p>
 			</form> 
-		</div> 
+		</div>  <!-- contactBox end-->
 	
 		<footer>
 			<p><a href="index.html">www.lukaszjowik.com</a></p>
 		</footer>
 
-</div>
+</div> <!-- contact end-->
 <script src="js/jquery.js"></script><script src="js/scripts.js"></script>
+
+  
 </body>
 </html>
