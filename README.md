@@ -3,7 +3,7 @@ Full version for desktop in progress.
 
 ## **0.Informations**
 
-**Used Technologies:** HTML, CSS, JavaScript.
+**Used Technologies:** HTML, CSS, JavaScript.<br>
 **Used Frameworks/Libraries:** LESS, jQuery.
 
 ## **1.Instalation**
