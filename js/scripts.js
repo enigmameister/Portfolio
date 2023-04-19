@@ -83,7 +83,7 @@ $('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDe
 
 
   $('.langPicker').hide();
-  $('.toggleLang, .langClosepicker, #lang-en, #lang-pl, #lang-ua, #lang-de').click(function() 
+  $('.toggleLang, .langClosepicker, #langEn, #langPl, #langUa, #langDe').click(function() 
   {
     $('.toggleLang, .langPicker').toggle('1000');
   });
