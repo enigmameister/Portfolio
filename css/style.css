@@ -9,7 +9,7 @@
   --blodyColor: #721a2c;
   --crimsonColor: crimson;
   --textColor: #e0d7b2;
-  --bgColorWhite: ghostwhite;
+  --bgColorWhite: cornsilk;
   --textColorWhite: #1b1b1b;
   --bgColorGreen: linear-gradient(to left, #2C7744, #5A3F37);
   --greenColor: #16270a;
@@ -194,7 +194,7 @@ body {
   background: linear-gradient(to left, #2C7744, #5A3F37);
 }
 #themeWhite {
-  background: ghostwhite;
+  background: cornsilk;
 }
 #themeRed,
 #themeLime,

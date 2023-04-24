@@ -116,10 +116,12 @@ p {
 .contact input[type=email],
 .contact textarea,
 .contact input[type=text] {
-  color: var(--textColorWhite);
+  color: ghostwhite;
   box-shadow: 0 0 5px black;
 }
-.contact ::placeholder {
+
+
+.contact::placeholder {
   color: var(--textColorWhite);
 }
 
@@ -172,7 +174,6 @@ footer
   color: ghostwhite;
   background: #333;
   border: 3px solid transparent;
-  padding: 4px;
 }
 
 .aboutSkills, #skillsText3
