@@ -46,33 +46,47 @@ $(document).ready(function()
           });
         });
 
-$(document).ready(function()
-{
-  $(window).scroll(function()
-  {
-    let scroll = $(window).scrollTop();
-      if (scroll > 50) 
-      {
-        $("header").css({"display":"none"});
-          $(".scrollUp").css({"display":"block"});
-      }
-
-      else
-     {
-          $("header").css({"display":"block"});  
-          $(".scrollUp").css({"display":"none"}); 
-          $(".scrollDown").css({"display":"none"});  
-      }  
-  })
-})
-
+        $(document).ready(function()
+         {
+          $(window).scroll(function()
+           {
+            let scroll = $(window).scrollTop();
+            
+              if(screen.width)
+              if (scroll > 50 && screen.width > 776) // Desktop
+              { 
+                $("header").toggleClass("scroll");
+                $("header").css({"display": "block"});
+                $(".scrollUp").css({"display": "none"}); 
+              } 
+              else
+              { 
+                $("header").removeClass("scroll");
+                $("header").css({"background": "rgba(0, 0, 0, 0)", "display": "block"});
+                $(".scrollUp").css({"display": "none"});
+                
+              }
+          
+            if(scroll > 50 && screen.width<776) // Mobile
+            {
+              $("header").removeClass("scroll");
+              $("header").css({"display": "none"}); 
+              $(".scrollUp").css({"display": "block"}); 
+            }
+            else
+            {
+              $("header").css({"display": "block"});
+              $(".scrollUp").css({"display": "none"});  
+            }
+          });
+        });
+        
 $(".scrollUp").on("click", function() 
 	{
     $('html,body').animate({
         scrollTop: $('html').offset().top},
         500);
 	});
-
 
 /* toggle theme/lang */
 $('.themePicker').hide();
@@ -89,6 +103,8 @@ $('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDe
   });
 
 /* theme change session */
+
+
   let swapStyleSheet = function (sheet) 
     {
         document.getElementById('theme_css').setAttribute('href', sheet);
@@ -141,10 +157,9 @@ function changeLanguage(lang)
     {
         en: // english translation
         {
-          animText: "Hello humans, this is my own portfolio website."+
-                  "If you want contact with me please move to About or Contact section."+
-                  "Thanks :))",
-
+          animText: "This is my own portfolio website."+
+                  "If you want contact with me please move to About or Contact section.",
+ 
             h_nav: "Home",
             a_nav: "About me",
             p_nav: "Portfolio",
@@ -173,10 +188,9 @@ function changeLanguage(lang)
 
         pl: // polish translation
         {
-          animText: "Witam człowieki, to moja strona portfolio."+
-                "Jeśli chcecie się skontaktować możecie przejśc do sekcji O mnie lub Kontakt."+
-                "Dzieki za wizyte :))",
-
+          animText: "To moja strona portfolio."+
+                    "Jeśli chcecie się skontaktować możecie przejśc do sekcji O mnie lub Kontakt.",
+      
             h_nav: "Glowna",
             a_nav: "O mnie",
             p_nav: "Projekty",
@@ -208,10 +222,9 @@ function changeLanguage(lang)
 
         ua: // ukrainian translation
         {
-          animText: "Привіт, люди, це мій веб-сайт із портфоліо."+ 
-                 "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти»."+
-                 "Дякую за візит ))",
-        
+          animText: "це мій веб-сайт із портфоліо."+ 
+                 "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти».",
+                
             h_nav: "додому",
             a_nav: "про мене",
             p_nav: "портфоліо",
@@ -243,9 +256,8 @@ function changeLanguage(lang)
         de: // deutchland translation
         {
 
-          animText: "Hallo Menschen, dies ist meine eigene Portfolio-Website."+ 
-                  "Wenn Sie Kontakt mit mir wünschen, wechseln Sie bitte zum Bereich „Über mich“ oder „Kontakt“."+ 
-                  "Danke für Ihren Besuch :))",
+          animText: "Dies ist meine eigene Portfolio-Website."+ 
+                  "Wenn Sie Kontakt mit mir wünschen, wechseln Sie bitte zum Bereich „Über mich“ oder „Kontakt“.",
             h_nav: "Heim",
             a_nav: "Über mich",
             p_nav: "Portfolio",
@@ -282,4 +294,3 @@ function changeLanguage(lang)
         $("#pl").click(() => changeLanguage("pl"));
         $("#ua").click(() => changeLanguage("ua"));
         $("#de").click(() => changeLanguage("de"));
-
