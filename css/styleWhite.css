@@ -1,4 +1,4 @@
-.borderBox, .aboutBox, .projectsBox, #btnGo,
+.borderBox, .aboutBox, .portfolioBox, #btnGo,
 .containerLogo, .toggleMenu span, .contactBox, footer {
   background: var(--textColorWhite);
 }
@@ -87,6 +87,13 @@ header nav ul li a.active, header nav ul li a:hover,
   color: var(--bgColorWhite);
 }
 
+.aboutSkills, #skillsText3,
+.aboutBox h2, #aboutText2, #aboutText3
+{
+  color: ghostwhite;
+  background: #333;
+  border: 3px solid transparent;
+}
 .animation,
 .contact-box h1,
 main h1, .projectsBox,
