@@ -59,7 +59,7 @@ padding: 0;
 	display: inline-block;
     height: 100vh;
     margin: 0 auto;
-	width: 80vw;
+	width: 100vw;
 }
 
 body
@@ -69,7 +69,7 @@ body
 	font-family: sans-serif;
 }
 
-#animText
+.animText
 {
 	color: @text-color;
     display: inline-block;
@@ -237,28 +237,28 @@ body
     width: 20px;
 }
 
-#themeDefault
+.themeDefault
 {
     background-color: @theme-color;
 }
 
-#themeRed
+.themeRed
 {
 	background: @gradientRed;
 }
 
-#themeLime
+.themeLime
 {
 	background: @gradientGreen;
 }
 
-#themeWhite
+.themeWhite
 {
 	background: @bgColorWhite;
 }
 
-#themeRed, #themeLime, #themeWhite, #themeDefault,
-#langEn, #langPl, #langUa, #langDe
+.themeRed, .themeLime, .themeWhite, .themeDefault,
+.langEn, .langPl, .langUa, .langDe
 {	
 	border-radius: 20%;
 	box-shadow: 2px 2px #333;
@@ -487,7 +487,7 @@ main h5
 .fab.fa-unity {color: black;}
 .fa-solid.fa-c {color:violet;}
 
-.projectsBox
+.portfolioBox
 {
 	background-color: @darkBlue;
     height: 50vh;
@@ -651,6 +651,13 @@ footer
 /***************************************/
 @media (max-width: 775px)
 {
+.sectionValues
+{
+	display: inline-block;
+    height: 100vh;
+    margin: 0 auto;
+	width: 80vw;
+}
 
 .fas.fa-arrow-circle-up
     {
@@ -834,7 +841,7 @@ header nav ul
     width: 70%;
 }
 
-.projectsBox
+.portfolioBox
 {
 	.borderBox;
     height: 80vh;

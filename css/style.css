@@ -25,14 +25,14 @@
   display: inline-block;
   height: 100vh;
   margin: 0 auto;
-  width: 80vw;
+  width: 100vw;
 }
 body {
   background: linear-gradient(to right, #434343, #000000);
   box-sizing: border-box;
   font-family: sans-serif;
 }
-#animText {
+.animText {
   color: ghostwhite;
   display: inline-block;
   font-family: 'Jua', sans-serif;
@@ -50,7 +50,7 @@ body {
   display: inline-block;
   height: 100vh;
   margin: 0 auto;
-  width: 80vw;
+  width: 100vw;
 }
 .containerLogo {
   background-color: #005C97;
@@ -184,26 +184,26 @@ body {
   height: 20px;
   width: 20px;
 }
-#themeDefault {
+.themeDefault {
   background-color: #005C97;
 }
-#themeRed {
+.themeRed {
   background: linear-gradient(to right, #e73827, #f85032);
 }
-#themeLime {
+.themeLime {
   background: linear-gradient(to left, #2C7744, #5A3F37);
 }
-#themeWhite {
+.themeWhite {
   background: cornsilk;
 }
-#themeRed,
-#themeLime,
-#themeWhite,
-#themeDefault,
-#langEn,
-#langPl,
-#langUa,
-#langDe {
+.themeRed,
+.themeLime,
+.themeWhite,
+.themeDefault,
+.langEn,
+.langPl,
+.langUa,
+.langDe {
   border-radius: 20%;
   box-shadow: 2px 2px #333;
   float: left;
@@ -405,7 +405,7 @@ main h5 {
 .fa-solid.fa-c {
   color: violet;
 }
-.projectsBox {
+.portfolioBox {
   background-color: #060625;
   height: 50vh;
   margin: 0 auto;
@@ -533,6 +533,12 @@ footer a {
 /*************** MOBILE ****************/
 /***************************************/
 @media (max-width: 775px) {
+  .sectionValues {
+    display: inline-block;
+    height: 100vh;
+    margin: 0 auto;
+    width: 80vw;
+  }
   .fas.fa-arrow-circle-up {
     display: inherit;
   }
@@ -680,7 +686,7 @@ footer a {
     text-align: center;
     width: 70%;
   }
-  .projectsBox {
+  .portfolioBox {
     background: #060625;
     border-radius: 5px;
     border: 1px solid #005C97;

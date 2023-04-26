@@ -52,7 +52,6 @@ $(document).ready(function()
            {
             let scroll = $(window).scrollTop();
             
-              if(screen.width)
               if (scroll > 50 && screen.width > 776) // Desktop
               { 
                 $("header").toggleClass("scroll");
@@ -64,10 +63,9 @@ $(document).ready(function()
                 $("header").removeClass("scroll");
                 $("header").css({"background": "rgba(0, 0, 0, 0)", "display": "block"});
                 $(".scrollUp").css({"display": "none"});
-                
               }
           
-            if(scroll > 50 && screen.width<776) // Mobile
+            if(scroll > 50 && screen.width < 776) // Mobile
             {
               $("header").removeClass("scroll");
               $("header").css({"display": "none"}); 
@@ -81,6 +79,9 @@ $(document).ready(function()
           });
         });
         
+
+
+
 $(".scrollUp").on("click", function() 
 	{
     $('html,body').animate({
@@ -90,14 +91,14 @@ $(".scrollUp").on("click", function()
 
 /* toggle theme/lang */
 $('.themePicker').hide();
-$('.toggleTheme, .themeClosepicker, #themeRed, #themeLime, #themeWhite, #themeDefault').click(function()
+$('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDefault').click(function()
  {
     $('.toggleTheme, .themePicker').toggle('1000')
   });
 
 
   $('.langPicker').hide();
-  $('.toggleLang, .langClosepicker, #langEn, #langPl, #langUa, #langDe').click(function() 
+  $('.toggleLang, .langClosepicker, .langEn, .langPl, .langUa, .langDe').click(function() 
   {
     $('.toggleLang, .langPicker').toggle('1000');
   });
@@ -128,8 +129,8 @@ function writtingText(text, index, time)
 {
   if (index < text.length) 
   {
-    document.getElementById("animText").innerHTML = ""; // clear text from id for no duplicate
-    document.getElementById("animText").innerHTML += text.substring(0,index+1); 
+    document.getElementsByClassName("animText")[0].innerHTML = ""; // clear text from id for no duplicate
+    document.getElementsByClassName("animText")[0].innerHTML += text.substring(0,index+1); 
     index++;
     setTimeout(function() 
     { 
@@ -138,7 +139,7 @@ function writtingText(text, index, time)
   }
 }
 
-let text = document.getElementById('animText').textContent;
+let text = document.getElementsByClassName('animText')[0].textContent;
 let time = 20;
 let index = 0;
 
@@ -149,7 +150,7 @@ function changeLanguage(lang)
 {
     let translations = language[lang];
     Object.keys(translations).forEach((key) => {
-        $(`#${key}`).text(translations[key]);
+        $(`.${key}`).text(translations[key]);
     });
 }
 
@@ -290,7 +291,7 @@ function changeLanguage(lang)
             changeLanguage("en");
         });
 
-        $("#en").click(() => changeLanguage("en"));
-        $("#pl").click(() => changeLanguage("pl"));
-        $("#ua").click(() => changeLanguage("ua"));
-        $("#de").click(() => changeLanguage("de"));
+        $(".en").click(() => changeLanguage("en"));
+        $(".pl").click(() => changeLanguage("pl"));
+        $(".ua").click(() => changeLanguage("ua"));
+        $(".de").click(() => changeLanguage("de"));

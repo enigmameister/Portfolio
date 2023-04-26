@@ -30,10 +30,10 @@
 					<div class="themeClosepicker">
 						<button id="themeCloseBtn">X</button>
                   </div>
-						<button id="themeDefault" onclick="swapStyleSheet('css/style.css')"></button>
-						<button id="themeRed" onclick="swapStyleSheet('css/styleRed.css')"></button>
-						<button id="themeLime" onclick="swapStyleSheet('css/styleGreen.css')"></button>
-						<button id="themeWhite" onclick="swapStyleSheet('css/styleWhite.css')"></button>
+						<button class="themeDefault" onclick="swapStyleSheet('css/style.css')"></button>
+						<button class="themeRed" onclick="swapStyleSheet('css/styleRed.css')"></button>
+						<button class="themeLime" onclick="swapStyleSheet('css/styleGreen.css')"></button>
+						<button class="themeWhite" onclick="swapStyleSheet('css/styleWhite.css')"></button>
 				</div>
 
 				<div class="toggleLang">
@@ -45,10 +45,10 @@
 						<button id="langCloseBtn">X</button>
 					</div>
 
-				<button onclick="changeLanguage('en')" id="langEn"><img src="lang-en.png" alt="en" width="20" height="20"></button>
-				<button onclick="changeLanguage('pl')" id="langPl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
-				<button onclick="changeLanguage('ua')" id="langUa"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
-				<button onclick="changeLanguage('de')" id="langDe"><img src="lang-de.png" alt="de" width="20" height="20"></button>
+				<button onclick="changeLanguage('en')" class="langEn"><img src="lang-en.png" alt="en" width="20" height="20"></button>
+				<button onclick="changeLanguage('pl')" class="langPl"><img src="lang-pl.png" alt="pl" width="20" height="20"></button>
+				<button onclick="changeLanguage('ua')" class="langUa"><img src="lang-ua.png" alt="ua" width="20" height="20"></button>
+				<button onclick="changeLanguage('de')" class="langDe"><img src="lang-de.png" alt="de" width="20" height="20"></button>
 			</div>
 
             <nav><ul>	<!-- Main menu -->
@@ -67,8 +67,8 @@
     </header>
 	 
 	    <main>
-		    <h1 id="welcomeText">Welcome</h1>
-<div id="animText">This is my portfolio website.
+		    <h1 class="welcomeText">Welcome</h1>
+<div class="animText">This is my portfolio website.
 	If you want contact with me please move to About or Contact section.</div>
 	    </main>
 			<button type="button" class="scrollBtn" data-scroll-to=".about" id="btnGo"><i class="fas fa-arrow-circle-down"></i><span id="goText"> START </span></button>
@@ -125,7 +125,7 @@
 </div>
 
 <div class="portfolio"> <!-- porfolio-->
-	<div class="projectsBox">
+	<div class="portfolioBox">
 		<h2 id="portfolioText">Projects</h2>
 		<div class="projectsConteiner">
 

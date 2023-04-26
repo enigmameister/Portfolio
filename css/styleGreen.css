@@ -21,9 +21,6 @@ main h1, main h5, #skillsCol1,
   color: var(--textColorGreen);
 }
 
-
-
-
 .aboutBox h2, #aboutText2, #aboutText3
 {
   color: ghostwhite;
@@ -36,7 +33,6 @@ main h1, main h5, #skillsCol1,
   background: transparent;
   border: 3px solid cornsilk;
 }
-
 
 .borderBox {
   background: var(--greenColor);
@@ -115,11 +111,10 @@ header nav ul li a.active {
   transition: 1s;
 }
 
-.projectsBox {
+.portfolioBox {
   background: var(--greenColor);
   border: 3px solid var(--textColorGreen);
 }
-
 
 .project {
   border: 3px solid var(--textColorGreen);

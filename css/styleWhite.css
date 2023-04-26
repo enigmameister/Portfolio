@@ -16,7 +16,7 @@ body, .project, .toggleMenu.open span,
   background: #333;
 }
 
-#animText
+.animText
 {
     color: var(--textColorWhite);
 }

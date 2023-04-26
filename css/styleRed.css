@@ -81,7 +81,7 @@ main h5 {
   color: ghostwhite;
 }
 
-.aboutBox {
+.aboutBox, .portfolioBox, .contactBox {
   background: var(--blodyColor);
   border: 3px solid var(--textColor);
 }
@@ -120,11 +120,6 @@ main h5 {
   background: var(--bgColor);
 }
 
-.projectsBox {
-  background: var(--blodyColor);
-  border: 3px solid var(--textColor);
-}
-
 #portfolioText {
   color: var(--textColor);
 }
@@ -137,11 +132,6 @@ main h5 {
 
 .overlay {
   background: var(--crimsonColor);
-}
-
-.contactBox {
-  background: var(--blodyColor);
-  border: 3px solid var(--textColor);
 }
 
 .contact-box h1, p 
