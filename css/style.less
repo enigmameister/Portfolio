@@ -8,9 +8,9 @@ padding: 0;
 
 // LESS Variables
 @darkBlue: rgb(6, 6, 37);
-@gradient:linear-gradient(to right, #434343, #000000);
+@gradient:linear-gradient(to right, #300c30, @darkBlue);
 @text-color: ghostwhite;
-@theme-color: #005C97;
+@theme-color: #583580;
 
 // styleRed.css
 @gradientRed: linear-gradient(to right, #e73827, #f85032);  
@@ -67,15 +67,6 @@ body
     background: @gradient;
 	box-sizing: border-box;
 	font-family: sans-serif;
-}
-
-.animText
-{
-	color: @text-color;
-    display: inline-block;
-	font-family:'Jua', sans-serif;
-    font-size: 4.5vw;
-    text-align: left;
 }
 
 .scrollUp, .fas.fa-arrow-circle-up
@@ -270,7 +261,6 @@ body
 
 header
 {
-	
 	box-shadow: 0px 1px #434343;
     left:0;
 	position:fixed;
@@ -659,6 +649,25 @@ footer
 	width: 80vw;
 }
 
+.animBox
+{
+	height: 12vh;
+	width: 70vw;
+	background: @darkBlue;
+	border: 1px solid @theme-color;
+	border-radius: 20px;
+    display: inline-block;
+	padding: 20px;
+	margin: 0 auto;
+
+	.animText
+	{
+		color: @text-color;
+		font-family: 'Jua',sans-serif;
+		font-size: 4.2vw;
+		text-align: left;
+	}
+}
 .fas.fa-arrow-circle-up
     {
     display: inherit;
@@ -742,7 +751,7 @@ header
 
 header nav
 {
-    background: #111;
+    background: @darkBlue;
     height: 100vh;
     position:absolute;
     text-align: center;

@@ -1,4 +1,4 @@
-.borderBox, .aboutBox, .portfolioBox, #btnGo,
+.animBox, .borderBox, .aboutBox, .portfolioBox, #btnGo,
 .containerLogo, .toggleMenu span, .contactBox, footer {
   background: var(--textColorWhite);
 }
@@ -16,9 +16,14 @@ body, .project, .toggleMenu.open span,
   background: #333;
 }
 
+.animBox
+{
+  border-color: var(--textColorWhite);
+}
+
 .animText
 {
-    color: var(--textColorWhite);
+    color: var(--bgColorWhite);
 }
 
 .containerLogo {
@@ -189,6 +194,7 @@ footer
   border: 3px solid transparent
 }
 
+
   #btnGo {
     color: var(--bgColorWhite);
     border: 0px solid transparent;
@@ -196,4 +202,9 @@ footer
   #btnGo:hover {
     border: solid var(--textColorWhite);
   }
+
+  .aboutBox, .portfolioBox, .contact-box
+{
+  border: 1 px solid var(--bgColorWhite);
+}
 }

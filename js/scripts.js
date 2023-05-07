@@ -125,7 +125,7 @@ $('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDe
 
 
 // animimate text
-function writtingText(text, index, time) 
+function writtingText(text,index,time) 
 {
   if (index < text.length) 
   {

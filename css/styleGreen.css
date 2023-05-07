@@ -21,6 +21,11 @@ main h1, main h5, #skillsCol1,
   color: var(--textColorGreen);
 }
 
+.animBox
+{
+  background: var(--greenColor);
+  border: 3px solid cornsilk;
+}
 .aboutBox h2, #aboutText2, #aboutText3
 {
   color: ghostwhite;

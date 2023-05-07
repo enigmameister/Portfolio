@@ -18,7 +18,7 @@
 .borderBox {
   background: #060625;
   border-radius: 5px;
-  border: 1px solid #005C97;
+  border: 1px solid #583580;
   margin-top: 4rem;
 }
 .sectionValues {
@@ -28,16 +28,9 @@
   width: 100vw;
 }
 body {
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #300c30, #060625);
   box-sizing: border-box;
   font-family: sans-serif;
-}
-.animText {
-  color: ghostwhite;
-  display: inline-block;
-  font-family: 'Jua', sans-serif;
-  font-size: 4.5vw;
-  text-align: left;
 }
 .scrollUp,
 .fas.fa-arrow-circle-up {
@@ -53,8 +46,8 @@ body {
   width: 100vw;
 }
 .containerLogo {
-  background-color: #005C97;
-  border: 1px solid #005C97;
+  background-color: #583580;
+  border: 1px solid #583580;
   border-color: ghostwhite;
   border-radius: 5px;
   color: ghostwhite;
@@ -74,7 +67,7 @@ body {
 }
 .toggleLang,
 .toggleTheme {
-  color: #005C97;
+  color: #583580;
   float: left;
   font-size: 2rem;
   height: 35px;
@@ -107,7 +100,7 @@ body {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  background: #005C97;
+  background: #583580;
   border-radius: 10px;
   display: block;
   height: 5px;
@@ -178,14 +171,14 @@ body {
   background-color: #060625;
   border: 1.5px solid grey;
   border-radius: 50%;
-  color: #005C97;
+  color: #583580;
   font-weight: bold;
   font-size: 10px;
   height: 20px;
   width: 20px;
 }
 .themeDefault {
-  background-color: #005C97;
+  background-color: #583580;
 }
 .themeRed {
   background: linear-gradient(to right, #e73827, #f85032);
@@ -245,13 +238,13 @@ header nav ul li a {
   text-shadow: 2px 6px 4px #000000;
 }
 header nav ul li a:hover {
-  color: #005C97;
+  color: #583580;
   text-decoration: none;
   text-shadow: 2px 4px 6px #000000;
   transition: 0.3s;
 }
 header nav ul li a.active {
-  color: #005C97;
+  color: #583580;
 }
 main {
   height: 50%;
@@ -281,7 +274,7 @@ main h5 {
 }
 .aboutBox {
   background: #060625;
-  border: 1px solid #005C97;
+  border: 1px solid #583580;
   border-radius: 10px;
   color: ghostwhite;
   height: 80vh;
@@ -293,7 +286,7 @@ main h5 {
 .aboutBox h2,
 #aboutText3,
 #skillsText3 {
-  background: #005C97;
+  background: #583580;
   border-radius: 10px;
   width: 30vw;
   margin: 14px auto;
@@ -313,7 +306,7 @@ main h5 {
   text-align: center;
 }
 #aboutText2 {
-  background: #005C97;
+  background: #583580;
   box-shadow: 0 0 5px black;
   border-radius: 5px;
   font-family: 'Times New Roman', Times, serif;
@@ -350,7 +343,7 @@ main h5 {
   margin: 0 auto;
   width: 60vw;
   height: 10vh;
-  background: #005C97;
+  background: #583580;
   border-radius: 5px;
   box-shadow: 0 0 5px black;
   padding: 20px;
@@ -375,7 +368,7 @@ main h5 {
   text-decoration: none;
 }
 .iconContainer i:hover {
-  color: #005C97;
+  color: #583580;
   transition: 1s;
 }
 .boxInfo {
@@ -417,7 +410,7 @@ main h5 {
   text-align: center;
 }
 .project {
-  background: #005C97;
+  background: #583580;
   border: 2px solid ghostwhite;
   display: inline-block;
   height: 20vh;
@@ -500,7 +493,7 @@ input[type=submit] {
 input[type=submit]:active {
   border-color: transparent;
   background-color: ghostwhite;
-  color: #005C97;
+  color: #583580;
 }
 input[type=number] {
   margin-left: 10px;
@@ -515,7 +508,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 footer {
   background: #060625;
-  border: 1px solid #005C97;
+  border: 1px solid #583580;
   border-radius: 10px;
   padding: 10px;
   position: relative;
@@ -538,6 +531,22 @@ footer a {
     height: 100vh;
     margin: 0 auto;
     width: 80vw;
+  }
+  .animBox {
+    height: 12vh;
+    width: 70vw;
+    background: #060625;
+    border: 1px solid #583580;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .animBox .animText {
+    color: ghostwhite;
+    font-family: 'Jua', sans-serif;
+    font-size: 4.2vw;
+    text-align: left;
   }
   .fas.fa-arrow-circle-up {
     display: inherit;
@@ -571,7 +580,7 @@ footer a {
   }
   #btnGo {
     background-color: #060625;
-    border: 1px solid #005C97;
+    border: 1px solid #583580;
     border-radius: 30px;
     color: ghostwhite;
     cursor: pointer;
@@ -586,7 +595,7 @@ footer a {
   #btnGo:hover {
     background-color: ghostwhite;
     border: 1px solid ghostwhite;
-    color: #005C97;
+    color: #583580;
     transition: 0.6s;
   }
   main {
@@ -603,7 +612,7 @@ footer a {
     display: block;
   }
   header nav {
-    background: #111;
+    background: #060625;
     height: 100vh;
     position: absolute;
     text-align: center;
@@ -629,14 +638,14 @@ footer a {
   .aboutBox {
     background: #060625;
     border-radius: 5px;
-    border: 1px solid #005C97;
+    border: 1px solid #583580;
     margin-top: 4rem;
     height: 80vh;
     width: 90vw;
   }
   .aboutBox h2,
   #aboutText3 {
-    background: #005C97;
+    background: #583580;
     border-radius: 10px;
     box-shadow: 0 0 5px black;
     font-family: 'Jua', sans-serif;
@@ -648,7 +657,7 @@ footer a {
     width: 30vw;
   }
   #skillsText3 {
-    background: #005C97;
+    background: #583580;
     border-radius: 10px;
     bottom: 5vh;
     box-shadow: 0 0 5px black;
@@ -689,7 +698,7 @@ footer a {
   .portfolioBox {
     background: #060625;
     border-radius: 5px;
-    border: 1px solid #005C97;
+    border: 1px solid #583580;
     margin-top: 4rem;
     height: 80vh;
     width: 90vw;
@@ -736,7 +745,7 @@ footer a {
   .contactBox {
     background: #060625;
     border-radius: 5px;
-    border: 1px solid #005C97;
+    border: 1px solid #583580;
     margin-top: 4rem;
     height: 75vh;
     width: 75vw;
@@ -753,7 +762,7 @@ footer a {
   .contact input[type=email],
   .contact textarea,
   .contact input[type=text] {
-    background: #005C97;
+    background: #583580;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
@@ -782,7 +791,7 @@ footer a {
   .contact input[type=submit]:active {
     background-color: ghostwhite;
     border-color: transparent;
-    color: #005C97;
+    color: #583580;
   }
   .contact input[type=number] {
     margin-left: 10px;

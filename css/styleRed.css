@@ -4,6 +4,12 @@ background: #fff;
 background: var(--bgColor);
 }
 
+.animBox
+{
+  background: var(--blodyColor);
+  border: 3px solid cornsilk;
+}
+
 .borderBox {
   background: var(--blodyColor);
   border: 1px solid var(--crimsonColor);
