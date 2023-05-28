@@ -38,6 +38,12 @@ body, .project, .toggleMenu.open span,
   color: var(--textColorWhite);
 }
 
+.containerLogo.active
+{
+  color: var(--bgColorWhite);
+  border-color: var(--bgColorWhite);
+}
+
 .toggleLang,
 .toggleTheme
 {
@@ -45,7 +51,7 @@ body, .project, .toggleMenu.open span,
   text-shadow: 0.5px 0.5px var(--textColorWhite);
 }
 
-.toggleTheme.switch, .toggleLang.switch,
+.toggleTheme.active, .toggleLang.active,
 .toggleMenu.open span
 {
   color: cornsilk;
@@ -194,6 +200,10 @@ footer
   border: 3px solid transparent
 }
 
+header nav
+{
+  background-color: var(--textColorWhite);
+}
 
   #btnGo {
     color: var(--bgColorWhite);
