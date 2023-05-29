@@ -183,8 +183,12 @@ footer
   .fas.fa-arrow-circle-up {
     display: inherit;
   }
-  .scrollUp {
-    color: #111;
+
+  .scrollUp 
+  {
+    color: var(--bgColorWhite);
+    background: var(--textColorWhite);
+    border-color: transparent;
   }
 
   .animation span:nth-child(3n+1) {

@@ -214,7 +214,7 @@ main h5 {
   padding: 0px;
 }
 #btnGo {
-  display: none;
+  display: block;
 }
 .about {
   display: flex;
@@ -481,17 +481,16 @@ footer a {
     display: inherit;
   }
   .scrollUp {
-    color: ghostwhite;
+    border: 3px solid #583580;
+    border-radius: 15px;
+    color: #583580;
     display: none;
-    font-size: 3rem;
+    font-size: 1.5rem;
     position: fixed;
-    left: 80vw;
-    top: 85vh;
+    left: 85vw;
+    padding: 10px;
+    top: 90vh;
     z-index: 1;
-  }
-  .fa-arrow-circle-up:before {
-    border: 5px solid #333;
-    border-radius: 50%;
   }
   .contact-box h1,
   main h1 {

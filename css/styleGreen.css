@@ -10,7 +10,7 @@ background: var(--bgColorGreen);
 }
 
 main h1,
-.boxInfo, .scrollUp,
+.boxInfo,
 .containerLogo, header nav ul li a, 
 header nav ul li a:hover,
 main h1, main h5, .skillsCol1,
@@ -24,6 +24,11 @@ main h1, main h5, .skillsCol1,
   color: var(--textColorGreen);
 }
 
+.scrollUp
+{
+  border-color: var(--textColorGreen);
+  color: var(--textColorGreen);
+}
 .animBox
 {
   background: var(--greenColor);

@@ -277,7 +277,7 @@ main h5
 
 #btnGo
 {
-   display: none;
+   display: block;
 }
 
 .about
@@ -589,19 +589,16 @@ footer
 
 .scrollUp
 {
-	color: @text-color;
+	border: 3px solid @theme-color;
+	border-radius: 15px;
+	color: @theme-color;
 	display: none;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	position: fixed;
-	left: 80vw;
-	top: 85vh;
+	left: 85vw;
+	padding: 10px;
+	top: 90vh;
 	z-index: 1;
-}
-
-.fa-arrow-circle-up:before
-{
-    border: 5px solid #333;
-    border-radius: 50%;
 }
 
 .contact-box h1, main h1

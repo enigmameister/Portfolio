@@ -168,6 +168,7 @@ footer {
 
   .scrollUp {
     color: var(--textColor);
+    border-color: var(--textColor);
   }
 
   .fa-arrow-circle-up:before {

@@ -50,6 +50,7 @@ $(document).ready(function()
   function closeMenu()
   {
     $('.toggleMenu').removeClass('open');
+    $('nav, .toggleTheme, .toggleLang, .containerLogo, .toggleMenu').removeClass('active');
     $('.h_nav').removeClass('menu');
     $('body').removeClass('menu-open');
   }
