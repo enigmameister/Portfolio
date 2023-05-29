@@ -481,15 +481,16 @@ footer a {
     display: inherit;
   }
   .scrollUp {
-    border: 3px solid #583580;
+    background: #300c30;
+    border: 3px solid ghostwhite;
     border-radius: 15px;
-    color: #583580;
+    color: ghostwhite;
     display: none;
     font-size: 1.5rem;
     position: fixed;
-    left: 85vw;
+    left: 75vw;
     padding: 10px;
-    top: 90vh;
+    top: 80vh;
     z-index: 1;
   }
   .contact-box h1,

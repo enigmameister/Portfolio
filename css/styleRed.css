@@ -166,7 +166,9 @@ footer {
 
 @media (max-width: 775px) {
 
-  .scrollUp {
+  .scrollUp 
+  {
+    background: rgb(53, 7, 7);
     color: var(--textColor);
     border-color: var(--textColor);
   }

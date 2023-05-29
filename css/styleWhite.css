@@ -186,9 +186,9 @@ footer
 
   .scrollUp 
   {
+    background: #1b1a10;
     color: var(--bgColorWhite);
-    background: var(--textColorWhite);
-    border-color: transparent;
+    border-color: var(--bgColorWhite);
   }
 
   .animation span:nth-child(3n+1) {

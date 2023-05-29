@@ -1,22 +1,22 @@
 <?php
 
-if(isset($_GET['mail']))
+if (isset($_POST['submit'])) 
 {
-    $email_to = "lukasz.jowik@onet.pl";
-    $email_subject = "Wiadomośc ze strony lukaszjowik.com";
-    $email_from = $_GET['mail'];
-    $email_message = "Szczególy wiadomości:\n\n";
-    $email_message .= "Imie ".$_GET['name']."\n";
-    $email_message .= "E-mail: ".$_GET['mail']."\n";
-    $email_message .= "Temat: ".$_GET['subject']."\n";
-    $email_message .= "Tresc wiadomosci:\n".$_GET['msg']."\n";
+    $name = $_POST['name'];
+    $email = $_POST['mail'];
+    $subject = $_POST['subject'];
+    $message = $_POST['msg'];
 
-    $headers = 'From: '.$email_from."\r\n".
-    'Reply-To: '.$email_from."\r\n".
-    'X-Mailer: PHP/' .phpversion();
+    $to = 'lukasz.jowik@onet.pl';
+    $headers = "From: $name <$email>" . "\r\n";
+    $headers .= "Reply-To: $email" . "\r\n";
+    $headers .= "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-    mail($email_to, $email_subject, $email_message, $headers);
+    $success = mail($to, $subject, $message, $headers);
 
-    echo "Wiadomosc została wysłana.";
+    if ($success) echo 'Wiadomość została wysłana';
+    else echo 'Wykryto bład w skrypcie ';
 }
+
 ?>
