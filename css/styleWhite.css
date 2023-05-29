@@ -51,6 +51,16 @@ body, .project, .toggleMenu.open span,
   text-shadow: 0.5px 0.5px var(--textColorWhite);
 }
 
+.toggleMenu
+{
+  border-color: var(--textColorWhite);
+}
+
+.toggleMenu.active
+{
+  border-color: var(--bgColorWhite);
+}
+
 .toggleTheme.active, .toggleLang.active,
 .toggleMenu.open span
 {
@@ -82,7 +92,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a.active, header nav ul li a:hover,
-.about, .aboutSkills p, #skillsCol1, #skillsCol2 {
+.about, .aboutSkills p, .skillsCol1, .skillsCol2 {
   color: cornsilk;
 }
 
@@ -91,21 +101,21 @@ header nav ul li a.active, header nav ul li a:hover,
   border: 1px solid var(--bgColorWhite);
 }
 
-.aboutBox, .aboutBox h2,
+.aboutBox,
 .iconContainer a,
 .iconContainer i, .portfolio h2
 {
   color: var(--bgColorWhite);
 }
 
-.aboutSkills, #skillsText3,
-.aboutBox h2, #aboutText2, #aboutText3
+.aboutSkills, .skillsText3,
+.aboutHeader1, .aboutHeader2
 {
   color: ghostwhite;
   background: #333;
   border: 3px solid transparent;
 }
-.animation,
+
 .contact-box h1,
 main h1, .projectsBox,
 #btnGo:hover, main h1, main h5
@@ -187,14 +197,15 @@ footer
     color:var(--bgColorWhite);
   }
 
-  .aboutBox h2, #aboutText2, #aboutText3
+.aboutHeader1,.aboutHeader2, .aboutHeader3,
+.aboutText, .portfolioHeader, .contactHeader
 {
   color: ghostwhite;
   background: #333;
   border: 3px solid transparent;
 }
 
-.aboutSkills, #skillsText3
+.aboutSkills
 {
   background: #333;
   border: 3px solid transparent
@@ -203,6 +214,7 @@ footer
 header nav
 {
   background-color: var(--textColorWhite);
+  border-bottom: 3px solid transparent;
 }
 
   #btnGo {

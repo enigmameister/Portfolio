@@ -15,15 +15,6 @@ background: var(--bgColor);
   border: 1px solid var(--crimsonColor);
 }
 
-.animation {
-  color: var(--textColor);
-}
-
-.animation span:nth-child(3n+1) {
-  color: ghostwhite;
-  text-shadow: 2px 2px black;
-}
-
 .containerLogo {
   border: 3px solid var(--textColor);
   background-color: var(--blodyColor);
@@ -38,6 +29,10 @@ background: var(--bgColor);
   text-shadow: 3px 3px #111;
 }
 
+.toggleMenu
+{
+  border-color: var(--textColor);
+}
 .toggleMenu span {
   background: var(--textColor);
 }
@@ -61,6 +56,7 @@ header.scroll
 
 header nav {
   background: transparent;
+  border-bottom: 3px solid var(--textColor);
 }
 
 header nav ul li a {
@@ -82,8 +78,8 @@ main h5 {
   color: ghostwhite;
 }
 
-#skillsCol1,
-#skillsCol2 {
+.skillsCol1,
+.skillsCol2 {
   color: ghostwhite;
 }
 
@@ -92,18 +88,19 @@ main h5 {
   border: 3px solid var(--textColor);
 }
 
-.aboutBox h2, #aboutText2, #aboutText3
+.aboutHeader1, .aboutHeader2, .aboutHeader3, .portfolioHeader, .contactHeader
 {
   color: ghostwhite;
   background: transparent;
   border: 3px solid var(--textColor);
 }
 
-.aboutSkills, #skillsText3
+.aboutText, .aboutSkills
 {
   background: transparent;
   border: 3px solid cornsilk;
 }
+
 .iconContainer a,
 .iconContainer i {
   text-decoration: none;
@@ -117,18 +114,11 @@ main h5 {
   color: whitesmoke;
 }
 
-.portfolio h2 {
-  color: ghostwhite;
-}
-
 .project {
   border: 3px solid var(--textColor);
   background: var(--bgColor);
 }
 
-#portfolioText {
-  color: var(--textColor);
-}
 .boxInfo {
   color: var(--textColor);
 }

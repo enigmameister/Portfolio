@@ -69,6 +69,24 @@ body
 	font-family: sans-serif;
 }
 
+body.menu-open
+{
+	overflow: hidden;
+}
+
+body.menu-open::before
+{
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	filter: blur(4px);
+	pointer-events: none;
+}
+
 .scrollUp, .fas.fa-arrow-circle-up
 {
 	display: none;
@@ -94,6 +112,7 @@ body
 	text-decoration: none;
 	text-shadow: 1px 3px 6px #000000;
 }
+
 .containerLogo:hover
 {
 	background-color: transparent;
@@ -102,6 +121,10 @@ body
     transition: 2s;
 }
 
+.toggleMenu
+{
+	display: none;
+}
 .toggleLang, .toggleTheme
 {
 	color: @theme-color;
@@ -112,96 +135,6 @@ body
 	padding: 8px;
 	text-shadow: 0px 1px @text-color;
 	width: 35px;
-}
-
-.toggleLang:hover, .toggleTheme:hover
-{
-	text-shadow: 0px 1px @theme-color;
-	transition: 0.2s;
-}
-
-.toggleMenu
-{
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	cursor: pointer;
-	display: none;
-	height: 35px;
-	margin: 16px;
-	position: absolute;
-	right: 0px;
-	transform: rotate(0deg);
-	transition: .5s ease-in-out;
-	width: 35px;
-}
-
-.toggleMenu span
-{
-	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	background: @theme-color;
-	border-radius: 10px;
-	display: block;
-	height: 5px;
-	left: 0;
-	opacity: 1;
-	position: absolute;
-	transition: .25s ease-in-out;
-	transform: rotate(0deg);
-	width: 100%;
-}
-
-.toggleMenu span:nth-child(1)
-{
-	top: 5px;
-	width: 100%;
-}
-.toggleMenu span:nth-child(2)
-{
-	top: 15px;
-	margin-left: 25%;
-	width: 75%;
-}
-.toggleMenu span:nth-child(3)
-{
-	top: 25px;
-	margin-left: 40%;
-	width: 60%;
-}
-.toggleMenu.open span:nth-child(1)
-{
-	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
-	-o-transform: rotate(135deg);
-	margin: 0;
-	transform: rotate(135deg);
-	top: 15px;
-	width: 100%;
-}
-.toggleMenu.open span:nth-child(2)
-{
-	margin: 0;
-	left: -70px;
-	opacity: 0;
-	width: 100%;
-}
-.toggleMenu.open span:nth-child(3)
-{
-	-webkit-transform: rotate(-135deg);
-	-moz-transform: rotate(-135deg);
-	-o-transform: rotate(-135deg);
-	margin: 0;
-	top: 15px;
-	transform: rotate(-135deg);
-	width: 100%;
 }
 
 // Theme and Lang pickers
@@ -312,6 +245,12 @@ header nav ul li a:hover
 
 header nav ul li a.active{color: @theme-color; }
 
+.h_nav.menu
+{
+	color: @text-color;
+	text-shadow: 1px 0px 4px white;
+	transition: 0.5s;
+}
 main
 {
 	height: 50%;
@@ -361,11 +300,11 @@ main h5
 	width: 70vw;
 }
 
-.aboutBox h2, #aboutText3, #skillsText3
+.aboutHeader1, .aboutHeader2, .aboutHeader3, .portfolioHeader, .contactHeader
 	{
 		background: @theme-color;
 		border-radius: 10px;
-		width: 30vw;
+		color: @text-color;
 		margin: 14px auto;
 		padding: 10px;
 		font-size: 22px;
@@ -373,22 +312,10 @@ main h5
 		text-align: center;
 		font-family: 'Jua', sans-serif;
 		font-weight: bold;
+		width: 30vw;
 	}
 
-
-.aboutBox p
-{
-    margin: 0 auto;
-	width: 90%;
-}
-
-#aboutText3
-{	
-	font-size: 2rem;
-	text-align: center;
-}
-
-.aboutText2
+.aboutText
 {
 	background: @theme-color;
 	box-shadow: 0 0 5px black;
@@ -401,7 +328,7 @@ main h5
 	word-wrap: break-word;
 }
 
-#skillsCol1, #skillsCol2
+.skillsCol1, .skillsCol2
 {	
 	color: @text-color;
 	display: inline-block;
@@ -435,13 +362,6 @@ main h5
 	border-radius: 5px;
 	box-shadow: 0 0 5px black;
 	padding: 20px;
-
-	p
-	{
-		font-size: 0.5rem;
-		text-align: center;
-	}
-
 }
 
 .iconContainer
@@ -466,7 +386,7 @@ main h5
 {
 	color: @theme-color;
 	transition: 1s;
-}
+}	
 
 .boxInfo
 {
@@ -490,13 +410,6 @@ main h5
     height: 50vh;
 	margin: 0 auto;
 	width: 90vw;
-}
-
-.portfolio h2
-{
-	color: @text-color;
-	font-size: 5vw;
-	text-align: center;
 }
 
 .project
@@ -571,12 +484,6 @@ main h5
 	height: 80%;
 	text-align: center;
 	width: 100%;
-}
-.contactBox h1, p
-{
-	color: @text-color;
-	font-family: 'Jua', sans-serif;
-	font-size: 1.1rem;
 }
 
 input[type=email], textarea
@@ -658,21 +565,21 @@ footer
 
 .animBox
 {
-	height: 12vh;
-	width: 70vw;
+	height: 15vh;
+	width: 75vw;
 	background: @darkBlue;
 	border: 1px solid @theme-color;
 	border-radius: 20px;
     display: inline-block;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 0 auto;	
 
 	.animText
 	{
 		color: @text-color;
 		font-family: 'Jua',sans-serif;
-		font-size: 4.2vw;
-		text-align: left;
+		font-size: 1.1em;
+		text-align: center;
 	}
 }
 .fas.fa-arrow-circle-up
@@ -759,7 +666,8 @@ header
 header nav
 {
     background: @darkBlue;
-    height: 100vh;
+	border-bottom: 3px solid @theme-color;
+    height: 65vh;
     position:absolute;
     text-align: center;
     top: -100vh;
@@ -784,18 +692,107 @@ header nav.active
 header nav ul
 {
     display: block;
-	margin-top: 4rem;
+	margin-top: 6rem;
     text-align: center;
+}
+
+.toggleMenu
+{
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	border: 3px solid @theme-color;
+	border-radius: 10px;
+	cursor: pointer;
+	display: block;
+	height: 35px;
+	margin: 12px 12px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	width: 35px;
+}
+
+.toggleMenu span
+{
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	background: @theme-color;
+	border-radius: 10px;
+	display: block;
+	height: 5px;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	transition: .25s ease-in-out;
+	transform: rotate(0deg);
+	width: 100%;
+}
+
+.toggleMenu span:nth-child(1)
+{
+	margin-left: 2.5px;
+	top: 5px;
+	width: 80%;
+}
+.toggleMenu span:nth-child(2)
+{
+	margin-left: 2.5px;
+	top: 15px;
+	width: 80%;
+}
+.toggleMenu span:nth-child(3)
+{
+	margin-left: 2.5px;
+	top: 25px;
+	width: 80%;
+}
+
+.toggleMenu.open span:nth-child(1)
+{
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	margin: 0;
+	transform: rotate(135deg);
+	top: 15px;
+	width: 100%;
+}
+.toggleMenu.open span:nth-child(2)
+{
+	margin: 0;
+	left: -70px;
+	opacity: 0;
+	width: 100%;
+}
+.toggleMenu.open span:nth-child(3)
+{
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	margin: 0;
+	top: 15px;
+	transform: rotate(-135deg);
+	width: 100%;
 }
 
 .aboutBox
 {
 	.borderBox;
-	height: 80vh;
+	height: 85vh;
 	width: 90vw;
 }
 
-.aboutBox h2, #aboutText3
+.aboutHeader1, .aboutHeader2, .aboutHeader3, .portfolioHeader, .contactHeader
 {
 	background: @theme-color;
 	border-radius: 10px;
@@ -809,42 +806,15 @@ header nav ul
 	width: 30vw;
 }
 
-#skillsText3
-{
-	background: @theme-color;
-	border-radius: 10px;
-	bottom: 5vh;
-	box-shadow: 0 0 5px black;
-	font-family: 'Jua', sans-serif;
-	font-size: 22px;
-	font-weight: bold;
-	left: 50vw;
-	position: absolute;
-	padding: 4px;
-	text-align: center;
-	transform: translateX(-20vw);
-	width: 30vw;
-}
-
-#skillsCol1, #skillsCol2
-{
-	font-size: 1rem;
-}
-
-.aboutText2
+.aboutText
 {
 	font-weight: normal;
+	margin: 0 auto;
 }
 
-#portfolioText
+.aboutSkills p
 {
-	color: @text-color;
-	font-family: 'Jua' , sans-serif;
-	font-size: 2rem;	
-	margin: 0 auto;
-	padding: 10px;
-	text-align: center;
-	width: 50%;
+	font-size: 0.8rem;
 }
 
 .boxInfo
@@ -925,12 +895,6 @@ header nav ul
     width: 100%;
 }
 
-.contact h1#contactText
-{
-	font-size: 2.0rem;
-	padding: 10px;
-}
-
 .contact input[type=email], .contact textarea, .contact input[type=text]
 {
 	background: @theme-color;
@@ -984,6 +948,7 @@ header nav ul
 footer 
 {
 	border-radius: 10px;
+	font-family: 'Jua', sans-serif;
 	left: 0;
 	margin: 1rem auto;
 	padding: 5px;

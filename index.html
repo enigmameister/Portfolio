@@ -52,10 +52,10 @@
 			</div>
 
             <nav><ul>	<!-- Main menu -->
-				<li><a class="active" id="h_nav">Home</a></li>
-				<li><a class="scrollBtn" data-scroll-to=".about" id="a_nav">About Me</a></li>
-				<li><a class="scrollBtn" data-scroll-to=".portfolio" id="p_nav">Portfolio</a></li>
-				<li><a class="scrollBtn" data-scroll-to=".contact" id="c_nav">Contact</a></li>
+				<li><a class="h_nav">Home</a></li>
+				<li><a class="a_nav" data-scroll-to=".about">About Me</a></li>
+				<li><a class="p_nav" data-scroll-to=".portfolio">Portfolio</a></li>
+				<li><a class="c_nav" data-scroll-to=".contact">Contact</a></li>
             </ul></nav> <!-- Main menu ends -->  
 			
          <div class="toggleMenu">
@@ -78,15 +78,16 @@
 
 <div class="about">
 <div class="aboutBox">
-<h2 class="aboutText">About Me</h2>
-<p class="aboutText2">My name is Łukasz and for several years I have been interested in web programming of websites as well as computer games.<br/>
+<h2 class="aboutHeader1">About Me</h2>
+<p class="aboutText">My name is Łukasz and for several years I have been interested in web programming of websites as well as computer games.<br/>
 	Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow. 
 	In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies.</br></br>
 	</p>
-	<p id="aboutText3">My skills</p>
+
+	<p class="aboutHeader2">My skills</p>
 		<div class="aboutSkills">
 			
-			<ul id="skillsCol1">
+			<ul class="skillsCol1">
 			<p class="skillsText1">Technologies</p>
 			<li>HTML</li>
 			<li>CSS</li>
@@ -94,7 +95,7 @@
 			<li>C#</li> 
 			</ul>
 			
-			<ul id="skillsCol2">
+			<ul class="skillsCol2">
 			<p class="skillsText2">Frameworks</p>
 			<li>LESS</li>
 			<li>jQuery</li>
@@ -102,7 +103,7 @@
 
 			</div>
 
-			<p id="skillsText3">Socials</p>
+			<p class="aboutHeader3">Socials</p>
 			<div class="iconContainer">          <!-- Icon + link-->
 				<a href="https://github.com/enigmameister" target="_blank"> 
 					<i class="fa-brands fa-github"></i>
@@ -126,7 +127,7 @@
 
 <div class="portfolio"> <!-- porfolio-->
 	<div class="portfolioBox">
-		<h2 id="portfolioText">Projects</h2>
+		<h2 class="portfolioHeader">Projects</h2>
 		<div class="projectsConteiner">
 
 	<div class="project"> <!-- project1-->
@@ -214,13 +215,13 @@
 <div class="contact">
 		<div class="contactBox">
 			<form action="email_send.php" method="post">
-				<h1 id="contactText">Contact</h1>
+				<h1 class="contactHeader">Contact</h1>
 
-				<input type="text" name="name" id="contactName" required placeholder="Your name" autocomplete="off">
-				<input type="email" name="mail" id="contactMail" required placeholder="Your email" autocomplete="off">
-				<input type="text" name="subject" id="contactSubject" required placeholder="Subject" autocomple="off">
-				<textarea name="msg" id="contactMsg" required placeholder="Your Messange" autocomplete="off"></textarea>
-				<p><input type="submit" id="contactSubmit" value="Submit"></p>
+				<input type="text" name="name" class="contactName" required placeholder="Your name" autocomplete="off">
+				<input type="email" name="mail" class="contactMail" required placeholder="Your email" autocomplete="off">
+				<input type="text" name="subject" class="contactSubject" required placeholder="Subject" autocomple="off">
+				<textarea name="msg" id="messange" class="contactMessange" required placeholder="Your Messange" autocomplete="off"></textarea>
+				<p><input type="submit" name="submit" class="contactSubmit" value="Submit"></p>
 			</form> 
 		</div>  <!-- contactBox end-->
 	

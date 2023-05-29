@@ -4,14 +4,17 @@ background: #fff;
 background: var(--bgColorGreen);
 }
 
-.contact-box h1, main h1, #portfolioText, 
-.contact h1#contactText,
-.boxInfo, .animation, .scrollUp,
+.h_nav.menu
+{
+  color: var(--textColorGreen);
+}
+
+main h1,
+.boxInfo, .scrollUp,
 .containerLogo, header nav ul li a, 
-header nav ul li a:hover, .aboutBox,
-.portfolio h2, .aboutBox h2,
-main h1, main h5, #skillsCol1,
-#skillsCol2, .iconContainer a,
+header nav ul li a:hover,
+main h1, main h5, .skillsCol1,
+.skillsCol2, .iconContainer a,
 .iconContainer i, .contact ::placeholder,
 #btnGo, footer, .contact input[type=submit],
 .contact input[type=email],
@@ -26,15 +29,10 @@ main h1, main h5, #skillsCol1,
   background: var(--greenColor);
   border: 3px solid cornsilk;
 }
-.aboutBox h2, #aboutText2, #aboutText3
+.aboutHeader1, .aboutHeader2, .aboutHeader3,
+.aboutText, .aboutSkills, .portfolioHeader, .contactHeader
 {
-  color: ghostwhite;
-  background: transparent;
-  border: 3px solid cornsilk;
-}
-
-.aboutSkills, #skillsText3
-{
+  color: cornsilk;
   background: transparent;
   border: 3px solid cornsilk;
 }
@@ -62,12 +60,18 @@ main h1, main h5, #skillsCol1,
 
 .toggleLang,
 .toggleTheme {
-  color: white;
+  color: var(--textColorGreen);
   text-shadow: 3px 3px #111;
 }
 
-.toggleMenu span {
-  background: whitesmoke;
+.toggleMenu
+{
+  border-color: var(--textColorGreen);
+}
+
+.toggleMenu span 
+{
+  background: var(--textColorGreen);
   box-shadow: 2px 2px #111;
 }
 
@@ -79,11 +83,12 @@ main h1, main h5, #skillsCol1,
 }
 
 header {
-  box-shadow: 0px 2px var(--textColorGreen);
+  box-shadow: 0px 1px var(--textColorGreen);
 }
 
 header nav {
   background: transparent;
+  border-bottom: 3px solid var(--textColorGreen);
 }
 
 header.scroll 

@@ -1,4 +1,4 @@
-$('.scrollBtn').on('click', function(event) {
+$('.scrollBtn, .a_nav, .p_nav, .c_nav').on('click', function(event) {
     event.preventDefault();
   
     const scrollTo = $(this).data('scroll-to');
@@ -25,7 +25,7 @@ $(document).ready(function()
 {
                   $('.toggleMenu').click(function()
                   {
-                    $('nav, .toggleTheme, .toggleLang, .containerLogo').toggleClass('active')
+                    $('nav, .toggleTheme, .toggleLang, .containerLogo, .toggleMenu').toggleClass('active')
                   })
         })
 
@@ -33,17 +33,46 @@ $(document).ready(function()
 {
                   $('nav ul li a').click(function()
                   {
-                    $('nav, .toggleTheme, .toggleLang, .containerLogo').removeClass('active')
+                    $('nav, .toggleTheme, .toggleLang, .containerLogo, .toggleMenu').removeClass('active')
                   })
  })
 
- $(document).ready(function() {
+ $(document).ready(function()
+  {
+  // Toggle nav menu
+  function toggleMenu() {
+    $('.toggleMenu').toggleClass('open');
+    $('.h_nav').toggleClass('menu');
+    $('body').toggleClass('menu-open');
+  }
+  
+  // Close menu function
+  function closeMenu()
+  {
+    $('.toggleMenu').removeClass('open');
+    $('.h_nav').removeClass('menu');
+    $('body').removeClass('menu-open');
+  }
+  
+  // Click outside menu 
   $(document).click(function(e) {
-    if (!$(e.target).is('.toggleMenu') && !$(e.target).parents().is('.toggleMenu')) {
-      $('.toggleMenu').removeClass('open');
-    } else {
-      $('.toggleMenu').toggleClass('open');
+    if (!$(e.target).is('.toggleMenu') && !$(e.target).parents().is('.toggleMenu')) 
+    {
+      $('nav').removeClass('active');
+      closeMenu();
     }
+  });
+  
+  // Click menu icon 
+  $('.toggleMenu').click(function()
+   {
+    toggleMenu();
+  });
+  
+  // Click in any a
+  $('nav ul li a').click(function() 
+  {
+    closeMenu();
   });
 });
 
@@ -154,6 +183,15 @@ function changeLanguage(lang)
     let translations = language[lang];
     Object.keys(translations).forEach((key) => {
         $(`.${key}`).text(translations[key]);
+
+        if(key.startsWith("contact"))
+          {
+            const fieldName = key.replace("contact", "").toLowerCase();
+            $(`input[name="${fieldName}"]`).attr("placeholder", translations[key]);
+          }
+
+        if(key === "contactSubmit")
+            $(".contactSubmit").val(translations[key]);
     });
 }
 
@@ -169,25 +207,30 @@ function changeLanguage(lang)
             p_nav: "Portfolio",
             c_nav: "Contact",
 
+            scrollBtn: "START",
+
             welcomeText: "Welcome",
-            aboutText:"About Me",
-            portfolioText:"Projects",
+            aboutHeader1:"About Me",
+            portfolioHeader:"Projects",
             contactText: "Contact",
 
-            aboutText2: "Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games."+
+            aboutText: "Hello, my name is Łukasz and for several years I have been interested in web programming of websites as well as computer games."+
                         "Currently, I am a third-year student of Computer Science and Econometrics with a specialization in game and VR application programming at the Frycz Modrzewski Academy in Krakow."+
                         "In free time, I actively practice martial arts and engage in various physical activities, as well as expand my knowledge of algorithms and technologies.",
                         
-            aboutText3: "My skills",
+            aboutHeader2: "My skills",
 
             skillsText1: "Technologies",
             skillsText2: "Frameworks",
 
+            aboutHeader3: "Socials",
+
+            contactHeader: "Contact",
             contactName: "Your name",
             contactMail: "Your e-mail",
             contactSubject: "Subject",
-           
-          // contactSubmit: "Submit",
+            contactMessange: "Your messange",
+            contactSubmit: "Submit",
         },
 
         pl: // polish translation
@@ -200,28 +243,29 @@ function changeLanguage(lang)
             p_nav: "Projekty",
             c_nav: "Kontakt",
 
-            aboutText: "O mnie",
-            portfolioText: "Projekty",
+            scrollBtn: "DALEJ",
+
+            aboutHeader1: "O mnie",
+            portfolioHeader: "Projekty",
             contactText: "Kontakt",
             welcomeText: "Witaj",
 
-            aboutText2: "Cześć, mam na imię Łukasz i od paru lat interesuje się programowaniem webowym stron internetowych, a także gier komputerowych."+ 
+            aboutText: "Cześć, mam na imię Łukasz i od paru lat interesuje się programowaniem webowym stron internetowych, a także gier komputerowych."+ 
                          "Obecnie jestem studentem III roku Informatyki i Ekonometrii ze specjalizacją projektowanie gier i aplikacji VR, na Krakowskiej Akademii Im.Frycza Modrzewskiego w Krakowie."+
                          "W wolnym czasie czynnie trenuje sztuki walki i wszelkiego rodzaju aktywność fizyczną, a także poszerzam swoją wiedzę z algorytmiki i technologii.",
                         
-            aboutText3: "Co potrafie",
+            aboutHeader2: "Co potrafie",
 
             skillsText1: "Technologie",
             skillsText2: "Frameworki",
+            aboutHeader3: "Sociale",
 
-            aboutSkillsKnowledge1: "Rozwiązywanie problemów",
-            aboutSkillsKnowledge2: "Znajomośc algorytmów",
-
-            contactName: "Imie",
+            contactHeader: "Kontakt",
+            contactName: "Twoje Imie",
             contactMail: "Adres e-mail",
-            contactSubject: "Temat wiadomosci",
-            
-           // contactSubmit: "Wyslij",
+            contactSubject: "Temat wiadomości",
+            contactMessange: "Treść wiadomosci",
+            contactSubject: "Wyślij",
         },
 
         ua: // ukrainian translation
@@ -234,27 +278,29 @@ function changeLanguage(lang)
             p_nav: "портфоліо",
             c_nav: "контакт",
 
+            scrollBtn: "Початок",
             welcomeText: "Привіт",
 
             goText: " старт",
-            aboutText:"про мене",
-            aboutText2: "Привіт!, мене звати Лукаш і я вже декілька років захоплююся веб-програмуванням сторінок та комп'ютерних ігор."+ 
+            aboutHeader1:"про мене",
+            aboutText: "Привіт!, мене звати Лукаш і я вже декілька років захоплююся веб-програмуванням сторінок та комп'ютерних ігор."+ 
                          "Наразі я є студентом третього курсу комп'ютерних наук та економіки зі спеціалізацією на розробці ігор та VR-додатків в Краківській Академії імені Анджей Фрич Моджевський в Кракові."+
                          "У вільний час я активно займаюся бойовими мистецтвами та різними фізичними активностями, а також поглиблюю свої знання з алгоритміки та технологій.",
                         
-            aboutText3: "що я знаю:",
+            aboutHeader2: "що я знаю:",
 
             skillsText1: "Технології",
             skillsText2: "Каркаси",
+            aboutHeader3: "Cоціальні",
+            portfolioHeader:"портфолі",
 
-            portfolioText:"портфолі",
-            contactText:"контакт",
+            contactHeader:"контакт",
 
             contactName: "твоє ім'я",
             contactMail: "ваша пошта",
             contactSubject: "тема",
-            
-           // contactSubmit: "відправити",
+            contactMessange: "Ваше повідомлення",
+            contactSubmit: "Надіслати",
         },
 
         de: // deutchland translation
@@ -267,25 +313,28 @@ function changeLanguage(lang)
             p_nav: "Portfolio",
             c_nav: "Kontakt",
 
+            scrollBtn: "Start",
+
             welcomeText: "Hallo",
-            aboutText:"Über mich",
-            aboutText2: "Hallo, mein Name ist Lukasz und seit einigen Jahren interessiere ich mich für das Web-Programmieren von Websites sowie Computerspielen."+ 
+            aboutHeader1:"Über mich",
+            aboutText: "Hallo, mein Name ist Lukasz und seit einigen Jahren interessiere ich mich für das Web-Programmieren von Websites sowie Computerspielen."+ 
                          "Derzeit bin ich ein Student im dritten Jahr Informatik und Econometrics mit einer Spezialisierung auf die Gestaltung von Spielen und VR-Anwendungen an der Andrzej Frycz Modrzewski Akademie in Krakau."+
                          "In meiner Freizeit trainiere ich aktiv Kampfkünste und betreibe verschiedene körperliche Aktivitäten, sowie erweitere mein Wissen über Algorithmen und Technologie.",
                          
-            aboutText3: "Fähigkeiten",
+            aboutHeader2: "Fähigkeiten",
 
             skillsText1: "Technologien",
             skillsText2: "Framework",
+            aboutHeader3: "Soziale",
 
-            portfolioText:"Portfolio",
-            contactText:"Kontakt",
+            portfolioHeader:"Portfolio",
+            contactHeader:"Kontakt",
 
             contactName: "Ihren Namen",
             contactMail: "E-mail Adresse",
             contactSubject: "Betreff der Nachricht",
-            
-           // contactSubmit: "Schicken",
+            contactMessange: "Ihre Nachricht",
+            contactSubmit: "Schicken",
         }
     };
 
