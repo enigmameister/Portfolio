@@ -1,3 +1,8 @@
+:root
+{
+  --navDesktop: rgb(68, 13, 13);
+}
+
 body
 {
 background: #fff;
@@ -7,22 +12,40 @@ background: var(--bgColor);
 .animBox
 {
   background: var(--blodyColor);
-  border: 3px solid cornsilk;
+  border: 3px solid var(--textColor);
 }
 
-.borderBox {
+.visitCounter
+{
+	background: var(--blodyColor);
+	border: 3px solid var(--textColor);
+}
+
+.visitText, .visitCount
+	{
+		color: var(--textColor);
+	}
+
+.borderBox 
+{
   background: var(--blodyColor);
   border: 1px solid var(--crimsonColor);
 }
 
-.containerLogo {
-  border: 3px solid var(--textColor);
-  background-color: var(--blodyColor);
-  border-color: ghostwhite;
-  color: ghostwhite;
+.containerLogo
+ {
+  background-color: rgb(110, 38, 38);
+  color: var(--textColor);
   text-shadow: 1px 3px 6px #000000;
 }
 
+.containerLogo.active
+{
+  background-color: var(--textColor);
+  color: var(--blodyColor);
+  text-shadow: none;
+  transition: 0.5s;
+}
 .toggleLang,
 .toggleTheme {
   color: var(--textColor);
@@ -46,7 +69,10 @@ background: var(--bgColor);
 
 header
 {
+  background: var(--blodyColor);
   box-shadow: 0px 1px var(--textColor);
+  border-bottom: 1px solid cornsilk;
+  
 }
 
 header.scroll 
@@ -56,7 +82,7 @@ header.scroll
 
 header nav {
   background: transparent;
-  border-bottom: 3px solid var(--textColor);
+  border-bottom-color: cornsilk;
 }
 
 header nav ul li a {
@@ -83,15 +109,16 @@ main h5 {
   color: ghostwhite;
 }
 
-.aboutBox, .portfolioBox, .contactBox {
+.aboutBox, .portfolioBox, .contactBox 
+{
   background: var(--blodyColor);
   border: 3px solid var(--textColor);
 }
 
-.aboutHeader1, .aboutHeader2, .aboutHeader3, .portfolioHeader, .contactHeader
+.aboutHeader1, .aboutHeader2, .portfolioHeader, .contactHeader
 {
   color: ghostwhite;
-  background: transparent;
+  background: rgb(53, 7, 7);
   border: 3px solid var(--textColor);
 }
 
@@ -106,7 +133,9 @@ main h5 {
   text-decoration: none;
   color: ghostwhite;
 }
-.iconContainer i:hover {
+
+.iconContainer i:hover 
+{
   color: var(--crimsonColor);
 }
 
@@ -114,20 +143,8 @@ main h5 {
   color: whitesmoke;
 }
 
-.project {
-  border: 3px solid var(--textColor);
-  background: var(--bgColor);
-}
-
 .boxInfo {
   color: var(--textColor);
-}
-.content {
-  color: #fff;
-}
-
-.overlay {
-  background: var(--crimsonColor);
 }
 
 .contact-box h1, p 
@@ -158,7 +175,27 @@ main h1 {
   color: var(--blodyColor);
 }
 
-footer {
+
+.mailSendBox
+{
+	background: var(--blodyColor);
+	border: 3px solid var(--textColor);
+}
+
+h1.msb_confirmed, h1.msb_refused
+{
+  border: 3px solid var(--textColor);
+}
+
+.msb_button
+{
+	background: var(--crimsonColor);
+	border: 3px solid var(--textColor);
+	color: var(--textColor);
+}
+
+footer
+{
   border: 3px solid var(--textColor);
   background: var(--blodyColor);
   color: ghostwhite;
@@ -180,6 +217,17 @@ footer {
   header nav
   {
     background-color: var(--blodyColor);
+  }
+
+  .swiper
+  {
+    border-color: var(--textColor);
+  }
+
+  .swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
+  {
+    background: var(--blodyColor);
+    border: 3px solid var(--textColor);
   }
 
   #btnGo {

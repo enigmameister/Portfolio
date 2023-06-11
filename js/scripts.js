@@ -1,24 +1,42 @@
-$('.scrollBtn, .a_nav, .p_nav, .c_nav').on('click', function(event) {
-    event.preventDefault();
+/* visits */
+
+$(document).ready(function() {
+  $.get("visits.php")
+    .done(function(response) {
+      var currentCount = parseInt(response);
+      var startCount = 999; // Początkowa wartość licznika
+      var duration = 1500; // Czas trwania animacji w milisekundach
+
+      $('.visitCount').text(startCount).animateNumber({
+        number: currentCount,
+        easing: 'swing',
+        numberStep: function(now, tween) {
+          var formattedValue = Math.floor(now);
+          $(tween.elem).text(formattedValue);
+        }
+      }, duration);
+    })
+    .fail(function(error) {
+      console.log('Błąd zapytania AJAX odnośnie odwiedzin:', error);
+    });
+});
+
+
+$('.scrollBtn, .h_nav, .a_nav, .p_nav, .c_nav, #btn-home').on('click', function(event) {
+  event.preventDefault();
+
+  const scrollTo = $(this).data('scroll-to');
   
-    const scrollTo = $(this).data('scroll-to');
-    
+  if (scrollTo === undefined)
+    $('html, body').animate({ scrollTop: 0 }, 0);
+
+   else 
+   {
     $('html, body').animate({
       scrollTop: $(scrollTo).offset().top
     }, 'slow');
-  });
-  
-  $(document).ready(function() {
-    $('#btn-home').click(function(event) {
-      event.preventDefault();
-      
-      $(".about").fadeTo(50, 0, function() {
-        $('html, body').animate({ scrollTop: 0 }, 0);
-        $(this).fadeTo(1000, 1);
-      });
-    });
-  });
-
+  }
+});
 
 // white theme toggle switch color
 $(document).ready(function()
@@ -77,41 +95,100 @@ $(document).ready(function()
   });
 });
 
-        $(document).ready(function()
-         {
-          $(window).scroll(function()
-           {
-            let scroll = $(window).scrollTop();
-            
-              if (scroll > 25 && screen.width > 776) // Desktop
-              { 
-                $("header").toggleClass("scroll");
-                $("header").css({"display": "block"});
-                $(".scrollUp").css({"display": "none"}); 
-              } 
-              else
-              { 
-                $("header").removeClass("scroll");
-                $("header").css({"background": "rgba(0, 0, 0, 0)", "display": "block"});
-                $(".scrollUp").css({"display": "none"});
-              }
-          
-            if(scroll > 25 && screen.width < 776) // Mobile
-            {
-              $("header").removeClass("scroll");
-              $("header").css({"display": "none"}); 
-              $(".scrollUp").css({"display": "block"}); 
-            }
-            else
-            {
-              $("header").css({"display": "block"});
-              $(".scrollUp").css({"display": "none"});  
-            }
-          });
-        });
-        
+$(document).ready(function() {
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    let isDesktop = screen.width > 776;
+    let isScrolled = scroll > 40;
 
+    if (isScrolled && isDesktop) {
+      setDesktopStyles();
+    } else if (!isScrolled && isDesktop) {
+      setPositionZeroDesktopStyles();
+    } else if (scroll > 25 && !isDesktop) {
+      setMobileStyles();
+    } else if (scroll < 25 && !isDesktop) {
+      setPositionZeroMobileStyles();
+    }
+  });
+});
 
+function setDesktopStyles()
+ {
+
+  $("header").css({
+    "background": "var(--navDesktop)",
+    "display": "block"
+  });
+
+  $(".toggleLang, .toggleTheme").css({
+    "opacity": "0%",
+    "transition": "all 0.5s ease 0s"
+  });
+
+  $("header nav").css({
+    "float":"none",
+    "top":"0",
+    "right":"0",
+    "position": "fixed",
+    "transition": "all 1s ease 0s",
+    "scale": "0.7"
+  });
+
+  $(".containerLogo").css({
+    "scale": "0.7",
+    "transition": "all 1s ease 0s"
+  });
+
+  $(".scrollUp").css({
+    "display": "none"
+  });
+}
+
+function setPositionZeroDesktopStyles() 
+{
+  $("header").css({
+    "background": "transparent",
+    "display": "block"
+  });
+  $(".toggleLang, .toggleTheme").css({
+    "opacity": "100%",
+    "transition": "all 0.5s ease 0s"
+  });
+
+  $("header nav").css({
+    "float":"right",
+    "transform": "translate(0vw)",
+    "transition": "all 1s ease 0s",
+    "scale": "1"
+  });
+  $(".containerLogo").css({
+    "scale": "1",
+    "transition": "all 1s ease 0s"
+  });
+  $(".scrollUp").css({
+    "display": "none"
+  });
+}
+
+function setMobileStyles() 
+{
+  $("header").css({
+    "display": "none"
+  });
+  $(".scrollUp").css({
+    "display": "block"
+  });
+}
+
+function setPositionZeroMobileStyles() {
+  $("header").css({
+    "display": "block"
+  });
+  $(".scrollUp").css({
+    "display": "none"
+  });
+}
 
 $(".scrollUp").on("click", function() 
 	{
@@ -119,7 +196,6 @@ $(".scrollUp").on("click", function()
         scrollTop: $('html').offset().top},
         500);
 	});
-
 
 /* toggle theme/lang */
 $('.themePicker').hide();
@@ -150,12 +226,14 @@ $('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDe
         localStorage.setItem("href", swapstylesheet);
     }
 
-    let loadbackground = function () 
-    {
-        document.getElementById('theme_css').setAttribute('href', localStorage.getItem('href'));
+    let loadbackground = function () {
+      const storedHref = localStorage.getItem('href');
+      if (storedHref) {
+        document.getElementById('theme_css').setAttribute('href', storedHref);
+      }
     }
-    window.onload = loadbackground();
-
+    
+    window.onload = loadbackground;
 
 // animating text
 function writtingText(text,index,time) 
@@ -200,9 +278,13 @@ function changeLanguage(lang)
     {
         en: // english translation
         {
-          animText: "This is my own portfolio website."+
-                  "If you want contact with me please move to About or Contact section.",
- 
+          animText: "This is my portfolio website."+
+          "If you want contact with me please move to About or Contact section."+
+          "For change theme click paint icon, for other language click alphabet icon."+
+          "Enjoy.",
+
+          visitText:"Visits:",
+
             h_nav: "Home",
             a_nav: "About me",
             p_nav: "Portfolio",
@@ -224,7 +306,6 @@ function changeLanguage(lang)
             skillsText1: "Technologies",
             skillsText2: "Frameworks",
 
-            aboutHeader3: "Socials",
 
             contactHeader: "Contact",
             contactName: "Your name",
@@ -237,9 +318,13 @@ function changeLanguage(lang)
         pl: // polish translation
         {
           animText: "To moja strona portfolio."+
-                    "Jeśli chcecie się skontaktować możecie przejśc do sekcji O mnie lub Kontakt.",
-      
-            h_nav: "Glowna",
+                    "Jeśli chcesz się skontaktować przejdź do sekcji O mnie lub Kontakt."+
+                    "Aby zmienić motyw strony, kliknij na ikonkę wypełnienia, dla zmiany języka wybierz ikone alfabetu."+
+                    "Dzięki!",
+
+          visitText:"Odwiedzin:",
+          
+            h_nav: "Główna",
             a_nav: "O mnie",
             p_nav: "Projekty",
             c_nav: "Kontakt",
@@ -259,21 +344,24 @@ function changeLanguage(lang)
 
             skillsText1: "Technologie",
             skillsText2: "Frameworki",
-            aboutHeader3: "Sociale",
+          
 
             contactHeader: "Kontakt",
             contactName: "Twoje Imie",
             contactMail: "Adres e-mail",
             contactSubject: "Temat wiadomości",
             contactMessange: "Treść wiadomosci",
-            contactSubject: "Wyślij",
+            contactSubmit: "Wyślij",
         },
 
         ua: // ukrainian translation
         {
           animText: "це мій веб-сайт із портфоліо."+ 
-                 "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти».",
-                
+                 "Якщо ви хочете зв’язатися зі мною, будь ласка, перейдіть до розділу «Про нас» або «Контакти»."+
+                 "Щоб змінити тему, клацніть значок малювання, для іншої мови клацніть значок алфавіту.",
+
+            visitText:"відвідування: ",
+      
             h_nav: "додому",
             a_nav: "про мене",
             p_nav: "портфоліо",
@@ -292,7 +380,7 @@ function changeLanguage(lang)
 
             skillsText1: "Технології",
             skillsText2: "Каркаси",
-            aboutHeader3: "Cоціальні",
+       
             portfolioHeader:"портфолі",
 
             contactHeader:"контакт",
@@ -308,7 +396,11 @@ function changeLanguage(lang)
         {
 
           animText: "Dies ist meine eigene Portfolio-Website."+ 
-                  "Wenn Sie Kontakt mit mir wünschen, wechseln Sie bitte zum Bereich „Über mich“ oder „Kontakt“.",
+                  "Wenn Sie Kontakt mit mir wünschen, wechseln Sie bitte zum Bereich „Über mich“ oder „Kontakt“."+
+                  "Um das Thema zu ändern, klicken Sie auf das Farbsymbol, für eine andere Sprache klicken Sie auf das Alphabet-Symbol.",
+    
+           visitText:"Besuche: ",
+
             h_nav: "Heim",
             a_nav: "Über mich",
             p_nav: "Portfolio",
@@ -326,7 +418,7 @@ function changeLanguage(lang)
 
             skillsText1: "Technologien",
             skillsText2: "Framework",
-            aboutHeader3: "Soziale",
+            
 
             portfolioHeader:"Portfolio",
             contactHeader:"Kontakt",
@@ -348,3 +440,113 @@ function changeLanguage(lang)
         $(".pl").click(() => changeLanguage("pl"));
         $(".ua").click(() => changeLanguage("ua"));
         $(".de").click(() => changeLanguage("de"));
+
+
+        function disableScroll()
+        {
+          $('body').addClass('no-scroll');
+        }
+
+        function enableScroll()
+        {
+          $('body').removeClass('no-scroll');
+        }
+        
+        /* Mail form received & display sendBox */
+        $(document).ready(function() {
+          console.log("Skrypt działa[1]");
+          $(".mailForm").on("submit", function(event) {
+            event.preventDefault();
+            disableScroll();
+            console.log("Submit działa[2]");
+        
+            var $form = $(this);
+        
+            var url = $form.attr("action");
+            var term = $form.serialize();
+            console.log($form, " działa[3]");
+        
+            // Wyślij dane za pomocą metody POST
+            var posting = $.post(url, term);
+        
+            posting.done(function(response) 
+            {
+              var jsonString = response.substring(response.indexOf("{")); // Usuń dodatkowe dane przed obiektem JSON
+              var obj = JSON.parse(jsonString); // Sparsuj oczyszczoną odpowiedź jako obiekt JSON
+
+              console.log("Obsługa .done działa[4a]- status: ", obj);
+              $('.mailSend').addClass('active');
+
+              if (obj.status === 'success') 
+              {
+                console.log("Status OK[6]");
+                $('.msb_confirmed').css('display', 'block');
+              } 
+
+              else 
+              {
+                console.log("Status failed[6]");
+                $('.msb_refused').css('display', 'block');
+              }
+              disableScroll();
+            });
+        
+            posting.fail(function()
+             {
+              console.log("Błąd zapytania AJAX[4b]");
+              $('.mailSend').addClass('active');
+              $('.msb_refused').css('display', 'block');
+              disableScroll();
+            });
+        
+            posting.always(function() {
+              console.log(posting, ": metoda POST działa");
+            });
+        
+          });
+        });
+        
+        
+          $('.msb_button').click(function()
+          {
+            $('.mailSend').removeClass('active');
+            $('#msbConfirmed').hide();
+            $('#msbRefused').hide();
+            enableScroll();
+          });
+
+          $('.mailSend').on('wheel',function(e)
+          {
+            e.preventDefault();
+          });
+        
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  observer: true,
+  observeParents: true,
+  parallax: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  direction: 'horizontal',
+  loop: true,
+
+  effect: 'fade',
+  
+  fadeEffect: 
+  {
+    crossFade: true
+  },
+
+  navigation: 
+  {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: 
+  {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  }
+
+});

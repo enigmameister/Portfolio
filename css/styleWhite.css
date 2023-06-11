@@ -1,9 +1,14 @@
+:root
+{
+  --navDesktop: rgb(201, 188, 146);
+}
 .animBox, .borderBox, .aboutBox, .portfolioBox, #btnGo,
-.containerLogo, .toggleMenu span, .contactBox, footer {
+.containerLogo, .toggleMenu span, .contactBox, footer 
+{
   background: var(--textColorWhite);
 }
 
-body, .project, .toggleMenu.open span,
+body, .toggleMenu.open span,
 #btnGo:hover
  {
   background: var(--bgColorWhite);
@@ -26,14 +31,23 @@ body, .project, .toggleMenu.open span,
     color: var(--bgColorWhite);
 }
 
+.visitCounter
+{
+	background: var(--textColorWhite);
+	border-color: var(--textColorWhite);
+}
+
+.visitText, .visitCount
+	{
+		color: var(--bgColorWhite);
+	}
+
 .containerLogo {
-  border: 1px solid var(--textColorWhite);
   color: ghostwhite;
   text-shadow: 1px 3px 6px #000000;
 }
 .containerLogo:hover {
   background-color: transparent;
-  border-color: 2px solid;
   text-shadow: 0px 0px 0px #000000;
   color: var(--textColorWhite);
 }
@@ -41,7 +55,6 @@ body, .project, .toggleMenu.open span,
 .containerLogo.active
 {
   color: var(--bgColorWhite);
-  border-color: var(--bgColorWhite);
 }
 
 .toggleLang,
@@ -77,6 +90,7 @@ body, .project, .toggleMenu.open span,
 header {
   background: rgba(12, 12, 12, 0.1);
   box-shadow: 0px 1px #434343;
+  border-bottom: 2px solid var(--textColorWhite);
 }
 
 header.scroll 
@@ -116,29 +130,20 @@ header nav ul li a.active, header nav ul li a:hover,
   border: 3px solid transparent;
 }
 
-.contact-box h1,
+.contactHeader,
 main h1, .projectsBox,
 #btnGo:hover, main h1, main h5
-  {  
+{  
   color: var(--textColorWhite);
-  }
+}
 
 .iconContainer i:hover {
   color: bisque;
 }
 
-.project {
-  border-color: var(--bgColorWhite);
-  background: var(--textColorWhite);
-}
-
-#portfolioText, .boxInfo, .content, .contactBox h1,
-p {
+.portfolioHeader, .boxInfo, .contactHeader p 
+{
   color: ghostwhite;
-}
-
-.overlay {
-  background: #333;
 }
 
 .contact input[type=email],
@@ -148,12 +153,13 @@ p {
   box-shadow: 0 0 5px black;
 }
 
-
-.contact::placeholder {
+.contact::placeholder 
+{
   color: var(--textColorWhite);
 }
 
-.contactBox {
+.contactBox 
+{
   border-color: var(--textColorWhite);
 }
 
@@ -169,8 +175,21 @@ p {
   color: var(--textColorWhite);
 }
 
+.mailSendBox, .msb_button
+{
+	background: var(--textColorWhite);
+	border: 3px solid var(--bgColorWhite);
+	color: var(--bgColorWhite);
+
+}
+
+h1.msb_confirmed, h1.msb_refused
+{
+  border: 3px solid var(--textColor);
+}
+
 footer
- {
+{
     border: 2px solid var(--textColorWhite);
     color: var(--textColorWhite);
 }
@@ -179,14 +198,12 @@ footer
 /*************** MOBILE ****************/
 /***************************************/
 
-@media (max-width: 775px) {
-  .fas.fa-arrow-circle-up {
-    display: inherit;
-  }
+@media (max-width: 775px) 
+{
 
   .scrollUp 
   {
-    background: #1b1a10;
+    background: #0e0e05e0;
     color: var(--bgColorWhite);
     border-color: var(--bgColorWhite);
   }
@@ -200,7 +217,7 @@ footer
   {
     color:var(--bgColorWhite);
   }
-
+.aboutSkills,
 .aboutHeader1,.aboutHeader2, .aboutHeader3,
 .aboutText, .portfolioHeader, .contactHeader
 {
@@ -209,28 +226,32 @@ footer
   border: 3px solid transparent;
 }
 
-.aboutSkills
-{
-  background: #333;
-  border: 3px solid transparent
-}
-
 header nav
 {
   background-color: var(--textColorWhite);
-  border-bottom: 3px solid transparent;
+  border-bottom-color: var(--bgColorWhite);
 }
 
-  #btnGo {
+#btnGo
+{
     color: var(--bgColorWhite);
     border: 0px solid transparent;
-  }
-  #btnGo:hover {
-    border: solid var(--textColorWhite);
-  }
-
-  .aboutBox, .portfolioBox, .contact-box
-{
-  border: 1 px solid var(--bgColorWhite);
 }
+
+#btnGo:hover 
+{
+    border: solid var(--textColorWhite);
+}
+
+.swiper
+{
+  border-color: var(--bgColorWhite);
+}
+
+.swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
+{
+  background: var(--textColorWhite);
+  border: 3px solid var(--bgColorWhite);
+}
+
 }

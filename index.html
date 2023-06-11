@@ -10,6 +10,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="" id="theme_css">
 
+<link rel="stylesheet" href="css/node_modules/swiper/swiper-bundle.min.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> 
 </head>
@@ -52,7 +54,7 @@
 			</div>
 
             <nav><ul>	<!-- Main menu -->
-				<li><a class="h_nav">Home</a></li>
+				<li><a class="h_nav" data-scroll-to=".container">Home</a></li>
 				<li><a class="a_nav" data-scroll-to=".about">About Me</a></li>
 				<li><a class="p_nav" data-scroll-to=".portfolio">Portfolio</a></li>
 				<li><a class="c_nav" data-scroll-to=".contact">Contact</a></li>
@@ -68,9 +70,16 @@
 	
 	    <main>
 		    <h1 class="welcomeText">Welcome</h1>
-<div class="animBox"><p class="animText">This is my portfolio website.
-	If you want contact with me please move to About or Contact section.</p></div>
+<div class="animBox"><p class="animText">
+	This is my portfolio website.
+	If you want contact with me please move to About or Contact section.</br>
+	For change theme click paint icon, for other language click alphabet icon.</br>
+	Enjoy.</p></div>
+
+<div class="visitCounter"><p class="visitText">Visits:</p><p class="visitCount">0</p></div>
 	    </main>
+
+		
 			<button type="button" class="scrollBtn" data-scroll-to=".about" id="btnGo">START</button>
 </div> <!-- conteiner ends-->
 
@@ -103,7 +112,7 @@
 
 			</div>
 
-			<p class="aboutHeader3">Socials</p>
+		
 			<div class="iconContainer">          <!-- Icon + link-->
 				<a href="https://github.com/enigmameister" target="_blank"> 
 					<i class="fa-brands fa-github"></i>
@@ -128,101 +137,72 @@
 <div class="portfolio"> <!-- porfolio-->
 	<div class="portfolioBox">
 		<h2 class="portfolioHeader">Projects</h2>
-		<div class="projectsConteiner">
-
-	<div class="project"> <!-- project1-->
-			<div class="overlay"><a href="www.lukaszjowik.pl">
-					<div class="content">
-							Portfolio <span><i class="fab fa-html5"></i>
-                			<i class="fab fa-css3-alt"></i>
-                		<i class="fab fa-js-square"></i></span>
-					</div>
-				</a>
+		
+		<!-- Slider main container -->
+<div class="swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+	  <!-- Slides -->
+	  <div class="swiper-slide">
+		<div class="swiper-slide-container">
+			<div class="swiper-slide-header">Portfolio</div>
+			<div class="swiper-slide-headerIcons">
+				<i class="fab fa-html5"></i>
+				<i class="fab fa-css3-alt"></i>
+				<i class="fab fa-js-square"></i>
+				<i class="fab fa-php"></i>
 			</div>
+			<img src="portfolio.png" alt="portfolioPhoto">
+		</div>
+	  </div> <!-- 1 slide-->
+
+	<div class="swiper-slide">
+	  <div class="swiper-slide-header"><p>R1SEN Game</p></div>
+	  <div class="swiper-slide-headerIcons">
+		<i class="fab fa-unity"></i>
+		<i class="fa-solid fa-c">#</i>
+	  </div>
+	  	<img src="risen.png" alt="risenPhoto">
+	  </div> <!-- 2 slide-->
+
+	  <div class="swiper-slide">
+		<div class="swiper-slide-header"><p>None</p></div>
+		<div class="swiper-slide-headerIcons">
+		</div>
+		</div> <!-- 3 slide-->
+	  ...
 	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+  
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  
+  </div>
 
-	<div class="project"> <!--project2-->
-		<div class="overlay"><a href="https://youtu.be/wF1GMU11w-4">
-				<div class="content">
-							R1SEN Demo<span><i class="fab fa-unity"></i>
-						<i class="fa-solid fa-c">#</i>
-                	</span>
-				</div>
-			</a>
-		</div>
-	</div>                
-
-	<div class="project"> <!--project3-->
-		<div class="overlay">
-			<div class="content">
-				Project .3 <span></span>
-			</div>
-		</div> 
-	</div>             
-
-	<div class="project"> <!--project4-->
-		<div class="overlay">
-			<div class="content">
-				Project.4 <span></span>
-			</div>
-		</div>        
-	</div> 
-
-	<div class="project"> <!-- project5-->
-		<div class="overlay">
-			<div class="content">
-				Project.5 <span></span>
-			</div>
-		</div>
-	</div>               
-
-	<div class="project"> <!--project6-->
-		<div class="overlay">
-			<div class="content">
-				Project.6 <span></span>
-			</div>
-		</div>
-	</div>               
-
-	<div class="project"> <!--project7-->
-		<div class="overlay">
-			<div class="content">
-				Project.7 <span></span>
-			</div>
-		</div> 
-	</div>                 
-
-	<div class="project"> <!--project8-->
-		<div class="overlay">
-			<div class="content">
-				Project.8 <span></span>
-			</div>
-		</div>     
-	</div>
-
-	<div class="project"> <!--project9-->
-		<div class="overlay">
-			<div class="content">
-				Project.9 <span></span>
-			</div>
-		</div> 
-	</div>  
-
-		</div> <!--porfolio-container-->
 	</div>	<!-- portfolio-box-->
 </div> <!-- portfolio end -->
 
 <div class="contact">
 		<div class="contactBox">
-			<form action="email_send.php" method="post">
+			<form action="email_send.php" method="post" class="mailForm">
 				<h1 class="contactHeader">Contact</h1>
 
-				<input type="text" name="name" class="contactName" required placeholder="Your name" autocomplete="off">
+				<input type="text" name="name" class="contactName" req`uired placeholder="Your name" autocomplete="off">
 				<input type="email" name="mail" class="contactMail" required placeholder="Your email" autocomplete="off">
 				<input type="text" name="subject" class="contactSubject" required placeholder="Subject" autocomple="off">
-				<textarea name="msg" id="messange" class="contactMessange" required placeholder="Your Messange" autocomplete="off"></textarea>
+				<textarea name="msg" class="contactMessange" required placeholder="Your Messange" autocomplete="off"></textarea>
 				<p><input type="submit" name="submit" class="contactSubmit" value="Submit"></p>
 			</form> 
+
+			<div class="mailSend">
+				<div class="mailSendBox">
+					<h1 class="msb_confirmed" id="msbConfirmed">Mail sent success</h1>
+					<h1 class="msb_refused" id="msbRefused">Something gone wrong</h1>
+					<div class="msb_button">Close</div>
+				</div>
+			</div>
 		</div>  <!-- contactBox end-->
 	
 		<footer>
@@ -230,8 +210,11 @@
 		</footer>
 
 </div> <!-- contact end-->
-<script src="js/jquery.js"></script><script src="js/scripts.js"></script>
 
-  
+<script src="js/jquery.js"></script> <!-- jQuery-->
+<script src="js/animateNumber/jquery.animateNumber.min.js"></script> <!-- Animate number-->
+<script src="css/node_modules/swiper/swiper-bundle.js"></script> <!-- Swiper-->
+<script src="js/scripts.js"></script> <!-- Scripts-->
+
 </body>
 </html>
