@@ -34,11 +34,15 @@ background: var(--bgColor);
 
 .containerLogo
  {
-  background-color: rgb(110, 38, 38);
+  background-color: #a50505;
   color: var(--textColor);
   text-shadow: 1px 3px 6px #000000;
 }
 
+.containerLogo:hover
+{
+  background-color: rgb(53, 7, 7);
+}
 .containerLogo.active
 {
   background-color: var(--textColor);
@@ -85,6 +89,11 @@ header nav {
   border-bottom-color: cornsilk;
 }
 
+.bgNavScrolling
+{
+  background-color: rgb(53, 7, 7);
+}
+
 header nav ul li a {
   color: ghostwhite;
 }
@@ -94,6 +103,11 @@ header nav ul li a:hover {
 }
 header nav ul li a.active {
   color: var(--textColor);
+}
+
+.navActive
+{
+  background-color: #a50505;
 }
 
 main h1 {
@@ -147,6 +161,18 @@ main h5 {
   color: var(--textColor);
 }
 
+
+.swiper
+{
+  border-color: var(--textColor);
+}
+
+.swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
+{
+  background: var(--blodyColor);
+  border: 3px solid var(--textColor);
+}
+
 .contact-box h1, p 
 main h1 {
   color: var(--textColor);
@@ -166,7 +192,7 @@ main h1 {
 .contact input[type=submit] {
   background-color: transparent;
   color: var(--textColor);
-  border: 2px solid ghostwhite;
+  border: 3px solid var(--textColor);
 }
 
 .contact input[type=submit]:active {
@@ -174,7 +200,6 @@ main h1 {
   background-color: cornsilk;
   color: var(--blodyColor);
 }
-
 
 .mailSendBox
 {
@@ -196,7 +221,7 @@ h1.msb_confirmed, h1.msb_refused
 
 footer
 {
-  border: 3px solid var(--textColor);
+  border-top: 3px solid var(--textColor);
   background: var(--blodyColor);
   color: ghostwhite;
 }
@@ -217,17 +242,6 @@ footer
   header nav
   {
     background-color: var(--blodyColor);
-  }
-
-  .swiper
-  {
-    border-color: var(--textColor);
-  }
-
-  .swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
-  {
-    background: var(--blodyColor);
-    border: 3px solid var(--textColor);
   }
 
   #btnGo {

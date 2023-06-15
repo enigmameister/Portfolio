@@ -55,6 +55,7 @@ body, .toggleMenu.open span,
 .containerLogo.active
 {
   color: var(--bgColorWhite);
+  background-color: #333;
 }
 
 .toggleLang,
@@ -93,6 +94,15 @@ header {
   border-bottom: 2px solid var(--textColorWhite);
 }
 
+.bgNavScrolling
+{
+  background-color: #333;
+}
+
+.navActive
+{
+  background-color: var(--textColorWhite);
+}
 header.scroll 
 {
 	background: cornsilk;
@@ -122,15 +132,15 @@ header nav ul li a.active, header nav ul li a:hover,
   color: var(--bgColorWhite);
 }
 
-.aboutSkills, .skillsText3,
-.aboutHeader1, .aboutHeader2
+.aboutSkills,
+.aboutHeader1,.aboutHeader2, .aboutHeader3,
+.aboutText, .portfolioHeader, .contactHeader
 {
   color: ghostwhite;
   background: #333;
   border: 3px solid transparent;
 }
 
-.contactHeader,
 main h1, .projectsBox,
 #btnGo:hover, main h1, main h5
 {  
@@ -144,6 +154,18 @@ main h1, .projectsBox,
 .portfolioHeader, .boxInfo, .contactHeader p 
 {
   color: ghostwhite;
+}
+
+.swiper
+{
+  border-color: var(--bgColorWhite);
+}
+
+.swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
+{
+  background: #333;
+  border: 3px solid var(--bgColorWhite);
+  color: var(--bgColorWhite);
 }
 
 .contact input[type=email],
@@ -164,9 +186,10 @@ main h1, .projectsBox,
 }
 
 .contact input[type=submit] {
-  background-color: transparent;
+  background-color: #333;
+  border-color: #333;
+  box-shadow: 0 0 5px black;
   color: var(--bgColorWhite);
-  border: 2px solid var(--bgColorWhite);
 }
 
 .contact input[type=submit]:active {
@@ -190,7 +213,7 @@ h1.msb_confirmed, h1.msb_refused
 
 footer
 {
-    border: 2px solid var(--textColorWhite);
+    border-top: 2px solid var(--textColorWhite);
     color: var(--textColorWhite);
 }
 
@@ -241,11 +264,6 @@ header nav
 #btnGo:hover 
 {
     border: solid var(--textColorWhite);
-}
-
-.swiper
-{
-  border-color: var(--bgColorWhite);
 }
 
 .swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction

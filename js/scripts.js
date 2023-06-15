@@ -1,28 +1,34 @@
 /* visits */
 
-$(document).ready(function() {
+$(document).ready(function()
+ {
   $.get("visits.php")
-    .done(function(response) {
+    .done(function(response) 
+    {
       var currentCount = parseInt(response);
       var startCount = 999; // Początkowa wartość licznika
       var duration = 1500; // Czas trwania animacji w milisekundach
 
-      $('.visitCount').text(startCount).animateNumber({
+      $('.visitCount').text(startCount).animateNumber(
+      {
         number: currentCount,
         easing: 'swing',
-        numberStep: function(now, tween) {
-          var formattedValue = Math.floor(now);
+        numberStep: function(now, tween) 
+        {
+          let formattedValue = Math.floor(now);
           $(tween.elem).text(formattedValue);
         }
       }, duration);
     })
-    .fail(function(error) {
-      console.log('Błąd zapytania AJAX odnośnie odwiedzin:', error);
+    .fail(function(error) 
+    {
+      console.log('Visits code error:', error);
     });
 });
 
 
-$('.scrollBtn, .h_nav, .a_nav, .p_nav, .c_nav, #btn-home').on('click', function(event) {
+$('.scrollBtn, .h_nav, .a_nav, .p_nav, .c_nav, #btn-home').on('click', function(event) 
+{
   event.preventDefault();
 
   const scrollTo = $(this).data('scroll-to');
@@ -32,13 +38,12 @@ $('.scrollBtn, .h_nav, .a_nav, .p_nav, .c_nav, #btn-home').on('click', function(
 
    else 
    {
-    $('html, body').animate({
-      scrollTop: $(scrollTo).offset().top
-    }, 'slow');
+    $('html, body').animate({scrollTop: $(scrollTo).offset().top}, 'slow');
   }
 });
 
-// white theme toggle switch color
+
+// toggleMenu .active class add
 $(document).ready(function()
 {
                   $('.toggleMenu').click(function()
@@ -95,101 +100,148 @@ $(document).ready(function()
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function() 
+{
+
+  function checkActiveSection() 
+  {
+    let scrollPosition = $(window).scrollTop();
+    let windowHeight = $(window).height();
+  
+    $('.container, .about, .portfolio, .contact').each(function() 
+    {
+      let section = $(this);
+      let sectionTop = section.offset().top;
+      let sectionHeight = section.height();
+  
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) 
+      {
+        let sectionClass = section.attr('class');
+        
+        if (window.innerWidth > 776) 
+        {
+          $('a[data-scroll-to=".' + sectionClass + '"]').addClass('navActive');
+        }
+      } 
+      
+      else 
+      {
+        let sectionClass= section.attr('class');
+        $('a[data-scroll-to=".' + sectionClass + '"]').removeClass('navActive');
+      }
+    });
+  }
+
   $(window).scroll(function() {
+    checkActiveSection();
+    updateScrollStyles();
+  });
+
+  checkActiveSection();
+
+  function updateScrollStyles() {
     let scroll = $(window).scrollTop();
-    let isDesktop = screen.width > 776;
+    let isDesktop = window.innerWidth > 776;
     let isScrolled = scroll > 40;
 
-    if (isScrolled && isDesktop) {
+    if (isScrolled && isDesktop) 
+    {
       setDesktopStyles();
-    } else if (!isScrolled && isDesktop) {
+    } 
+    
+    else if (!isScrolled && isDesktop) 
+    {
       setPositionZeroDesktopStyles();
-    } else if (scroll > 25 && !isDesktop) {
+    } 
+    
+    else if (scroll > 25 && !isDesktop) 
+    {
       setMobileStyles();
-    } else if (scroll < 25 && !isDesktop) {
+    } 
+    
+    else if (scroll < 25 && !isDesktop) 
+    {
       setPositionZeroMobileStyles();
     }
-  });
+  }
+
+  function setDesktopStyles() 
+  {
+
+    $("header").css({"display":"block"});
+    $("header").addClass("bgNavScrolling");
+    $(".toggleLang, .toggleTheme").css({
+      "opacity": "0%",
+      "transition": "all 0.5s ease 0s"
+    });
+
+    $("header nav").css({
+      "float": "none",
+      "top": "0",
+      "right": "0",
+      "position": "absolute",
+      "transform": "translateX(-50vw)",
+      "transition": "all 1s ease 0s",
+      "scale": "0.7"
+    });
+
+    $(".containerLogo").css({
+      "scale": "0.7",
+      "transition": "all 1s ease 0s"
+    });
+
+    $(".scrollUp").css({
+      "display": "none"
+    });
+  }
+
+  function setPositionZeroDesktopStyles() 
+  {
+    $("header").removeClass("bgNavScrolling");
+    $("header").css(
+      {
+      "display": "block",
+    });
+
+    $(".toggleLang, .toggleTheme").css({
+      "opacity": "100%",
+      "transition": "all 0.5s ease 0s"
+    });
+
+    $("header nav").css({
+      "float": "right",
+      "transform": "translate(0vw)",
+      "transition": "all 1s ease 0s",
+      "scale": "1"
+    });
+    $(".containerLogo").css({
+      "scale": "1",
+      "transition": "all 1s ease 0s"
+    });
+    $(".scrollUp").css({
+      "display": "none"
+    });
+  }
+
+  function setMobileStyles() {
+    $("header").css({
+      "display": "none"
+    });
+    $(".scrollUp").css({
+      "display": "block"
+    });
+  }
+
+  function setPositionZeroMobileStyles() {
+    $("header").css({
+      "display": "block"
+    });
+    $(".scrollUp").css({
+      "display": "none"
+    });
+  }
 });
-
-function setDesktopStyles()
- {
-
-  $("header").css({
-    "background": "var(--navDesktop)",
-    "display": "block"
-  });
-
-  $(".toggleLang, .toggleTheme").css({
-    "opacity": "0%",
-    "transition": "all 0.5s ease 0s"
-  });
-
-  $("header nav").css({
-    "float":"none",
-    "top":"0",
-    "right":"0",
-    "position": "fixed",
-    "transition": "all 1s ease 0s",
-    "scale": "0.7"
-  });
-
-  $(".containerLogo").css({
-    "scale": "0.7",
-    "transition": "all 1s ease 0s"
-  });
-
-  $(".scrollUp").css({
-    "display": "none"
-  });
-}
-
-function setPositionZeroDesktopStyles() 
-{
-  $("header").css({
-    "background": "transparent",
-    "display": "block"
-  });
-  $(".toggleLang, .toggleTheme").css({
-    "opacity": "100%",
-    "transition": "all 0.5s ease 0s"
-  });
-
-  $("header nav").css({
-    "float":"right",
-    "transform": "translate(0vw)",
-    "transition": "all 1s ease 0s",
-    "scale": "1"
-  });
-  $(".containerLogo").css({
-    "scale": "1",
-    "transition": "all 1s ease 0s"
-  });
-  $(".scrollUp").css({
-    "display": "none"
-  });
-}
-
-function setMobileStyles() 
-{
-  $("header").css({
-    "display": "none"
-  });
-  $(".scrollUp").css({
-    "display": "block"
-  });
-}
-
-function setPositionZeroMobileStyles() {
-  $("header").css({
-    "display": "block"
-  });
-  $(".scrollUp").css({
-    "display": "none"
-  });
-}
-
+  
 $(".scrollUp").on("click", function() 
 	{
     $('html,body').animate({
@@ -201,14 +253,14 @@ $(".scrollUp").on("click", function()
 $('.themePicker').hide();
 $('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDefault').click(function()
  {
-    $('.toggleTheme, .themePicker').toggle('1000')
+    $('.toggleTheme, .themePicker').toggle('100')
   });
 
 
   $('.langPicker').hide();
   $('.toggleLang, .langClosepicker, .langEn, .langPl, .langUa, .langDe').click(function() 
   {
-    $('.toggleLang, .langPicker').toggle('1000');
+    $('.toggleLang, .langPicker').toggle('100');
   });
 
 
@@ -452,67 +504,69 @@ function changeLanguage(lang)
           $('body').removeClass('no-scroll');
         }
         
+
+
         /* Mail form received & display sendBox */
-        $(document).ready(function() {
-          console.log("Skrypt działa[1]");
-          $(".mailForm").on("submit", function(event) {
+        $(document).ready(function() 
+        {
+          $(".mailForm").on("submit", function(event) 
+          {
             event.preventDefault();
             disableScroll();
-            console.log("Submit działa[2]");
+         
+            let $form = $(this);
         
-            var $form = $(this);
-        
-            var url = $form.attr("action");
-            var term = $form.serialize();
+            let url = $form.attr("action");
+            let term = $form.serialize();
             console.log($form, " działa[3]");
         
-            // Wyślij dane za pomocą metody POST
+            // POST Form Data
             var posting = $.post(url, term);
         
             posting.done(function(response) 
             {
-              var jsonString = response.substring(response.indexOf("{")); // Usuń dodatkowe dane przed obiektem JSON
-              var obj = JSON.parse(jsonString); // Sparsuj oczyszczoną odpowiedź jako obiekt JSON
-
-              console.log("Obsługa .done działa[4a]- status: ", obj);
+              let jsonString = response.substring(response.indexOf("{"));
+              let obj = JSON.parse(jsonString); 
               $('.mailSend').addClass('active');
 
               if (obj.status === 'success') 
-              {
-                console.log("Status OK[6]");
+              {   
                 $('.msb_confirmed').css('display', 'block');
-              } 
+                  location.reload();
+              }
 
               else 
               {
-                console.log("Status failed[6]");
                 $('.msb_refused').css('display', 'block');
+                location.reload();
               }
+
               disableScroll();
             });
         
             posting.fail(function()
              {
-              console.log("Błąd zapytania AJAX[4b]");
               $('.mailSend').addClass('active');
               $('.msb_refused').css('display', 'block');
               disableScroll();
             });
         
-            posting.always(function() {
-              console.log(posting, ": metoda POST działa");
+            posting.always(function() 
+            {
+              console.log(posting, ": POST Method done");
             });
         
           });
         });
         
-        
           $('.msb_button').click(function()
           {
+            $('.mailForm')[0].reset();
             $('.mailSend').removeClass('active');
             $('#msbConfirmed').hide();
             $('#msbRefused').hide();
             enableScroll();
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
           });
 
           $('.mailSend').on('wheel',function(e)
@@ -520,6 +574,7 @@ function changeLanguage(lang)
             e.preventDefault();
           });
         
+// Portfolio swiper plugin
 const swiper = new Swiper('.swiper', {
   speed: 400,
   observer: true,

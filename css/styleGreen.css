@@ -123,12 +123,22 @@ main h1, main h5, .skillsCol1,
 header {
   box-shadow: 0px 1px var(--textColorGreen);
   border-bottom: 2px solid var(--textColorGreen);
-  background: var(--greenColor);
+  background: transparent;
 }
 
 header nav {
   background: transparent;
   border-bottom-color: var(--textColorGreen);
+}
+
+.bgNavScrolling
+{
+  background-color: var(--greenColor);;
+}
+
+.navActive
+{
+  background-color: rgb(58, 146, 58);
 }
 
 header.scroll 
@@ -166,17 +176,16 @@ header nav ul li a.active {
   border: 3px solid var(--textColorGreen);
 }
 
-.project {
-  border: 3px solid var(--textColorGreen);
-  background: var(--bgColorGreen);
+.swiper
+{
+  border-color: var(--textColorGreen);
 }
 
-.content {
-  color: #fff;
-}
-
-.overlay {
+.swiper-slide-header, .swiper-slide-headerIcons, .swiper-pagination-fraction
+{
   background: var(--greenColor);
+  border: 3px solid var(--textColorGreen);
+  color: var(--textColorGreen);
 }
 
 .contactBox {
@@ -194,7 +203,8 @@ header nav ul li a.active {
 
 .contact input[type=submit] {
   background-color: transparent;
-  border: 2px solid var(--textColorGreen);;
+  border: 2px solid var(--textColorGreen);
+  box-shadow: 0 0 5px var(--textColorGreen);
 }
 .contact input[type=submit]:active {
   border-color: 3px solid var(--textColorGreen);
@@ -222,7 +232,7 @@ h1.msb_confirmed, h1.msb_refused
 
 
 footer {
-  border: 3px solid var(--textColorGreen);
+  border-top: 3px solid var(--textColorGreen);
   background: var(--greenColor);
 
 }

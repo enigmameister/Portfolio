@@ -29,9 +29,6 @@
 
 :root
 {
-	--navDesktop: rgb(25, 7, 31); // default nav color
-	--swiper-color: white;
-
 	// StyleRed.css
  	--bgColor: @gradientRed;
 	--blodyColor: @bloodyColor;
@@ -48,17 +45,9 @@
 	--textColorWhite: @textColorWhite;
 }
 
-.borderBox
-{
-	background: @darkBlue;
-    border-radius: 5px;
-	border: 1px solid @theme-color;
-	margin-top: 4rem;
-}
-
 .sectionValues // Desktop
 {
-	display: inline-block;
+	display: flex;
     height: 100vh;
     margin: 0 auto;
 	width: 90vw;
@@ -112,6 +101,13 @@ body.menu-open::before
 	text-shadow: 1px 3px 6px #000000;
 }
 
+.containerLogo.active
+{
+	background-color: @darkBlue;
+	color: @theme-color;
+	text-shadow: none;
+	transition: 0.5s linear;
+}
 .containerLogo:hover
 {
 	background-color: transparent;
@@ -195,9 +191,14 @@ body.menu-open::before
 	width: 20px;
 }
 
+.bgNavScrolling
+{
+	background-color: @darkBlue;
+}
+
 header
 {
-	background: @darkBlue;
+	background: transparent;
 	box-shadow: 0px 1px @theme-color;
     left:0;
 	position:fixed;
@@ -218,14 +219,14 @@ header nav ul{display: flex;}
 header nav ul li{list-style: none;}
 header nav ul li a
 {
+	align-items: center;
 	color: @text-color;
 	cursor: pointer;
-    display: block;
+    display: inline-flex;
 	font-family: 'Jua', sans-serif;
 	font-size: 1.6rem;
     height: 50px;
-    line-height: 50px;
-	padding: 10px 10px;
+	padding: 4px 8px;
 	text-decoration: none;
 	text-shadow: 2px 6px 4px #000000;
 }
@@ -247,25 +248,38 @@ header nav ul li a.active{color: @theme-color; }
 	transition: 0.5s;
 }
 
+.navActive // for current section style display + desktop
+{
+	align-items: center;
+	background-color: @theme-color;
+	border-radius: 10px;
+	color: @text-color;
+	transition: background-color 0.5s ease-in;
+}
+
+
 .animBox
 {
-	height: auto;
-	width: 75vw;
+	height: 20vh;
+	width: 40vw;
 	background: @darkBlue;
 	border: 1px solid @theme-color;
 	border-radius: 20px;
     display: flex;
 	padding: 5px;
 	margin: 0 auto;	
+}
 
-	.animText
+.animText
 	{
 		color: @text-color;
 		font-family: 'Jua',sans-serif;
 		font-size: 1.1em;
+		margin: auto;
+		padding: 5px;
 		text-align: center;
 	}
-}
+
 
 .visitCounter
 {
@@ -288,7 +302,6 @@ header nav ul li a.active{color: @theme-color; }
 		margin-right: 1px;
 	}
 }
-
 
 main
 {
@@ -319,13 +332,6 @@ main h5
    display: none;
 }
 
-.about
-{	
-	display: flex;
-    height: 100vh;
-	width: 100%;
-}
-
 .aboutBox
 {
 	background: @darkBlue;
@@ -333,13 +339,14 @@ main h5
 	border-radius: 10px;
 	color: @text-color;
 	height: 80vh;
-	margin: 5% auto;
+	margin: 5rem auto;
 	padding: 0px;
 	position: relative;
-	width: 70vw;
+	width: 60%;
 }
 
-.aboutHeader1, .aboutHeader2, .aboutHeader3, .portfolioHeader, .contactHeader
+.aboutHeader1, .aboutHeader2, .aboutHeader3,
+.portfolioHeader, .contactHeader
 	{
 		background: @theme-color;
 		border-radius: 10px;
@@ -352,7 +359,7 @@ main h5
 		text-align: center;
 		font-family: 'Jua', sans-serif;
 		font-weight: bold;
-		width: 30vw;
+		width: 40%;
 	}
 
 .aboutText
@@ -362,21 +369,18 @@ main h5
 	border-radius: 5px;
 	font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-    font-size: 0.75rem;
+    font-size: 1rem;
 	margin: 0 auto;
 	width: 70%;
-	padding: 0.5rem;
+	padding: 1.5rem;
 	word-wrap: break-word;
 }
 
-.skillsCol1, .skillsCol2
+.skillsCol1
 {	
 	color: @text-color;
-	display: inline-block;
 	font-size: 1.5rem;
-	height: 20%;
 	margin: 0 auto;
-	width: 50%;
 
 	p
 	{	
@@ -397,12 +401,12 @@ main h5
 {
 	display: flex;
 	margin: 0 auto;
-	width: 60vw;
-	height: 10vh;
+	width: 60%;
+	height: auto;
 	background: @theme-color;
 	border-radius: 5px;
 	box-shadow: 0 0 5px black;
-	padding: 20px;
+	padding: 1.5rem;
 }
 
 .iconContainer
@@ -429,12 +433,100 @@ main h5
 	transition: 1s;
 }	
 
-.boxInfo
+.portfolioBox
 {
-	font-family: 'Jua', sans-serif;
-    font-size: 2.5rem;
-    margin: 0 auto;    
-	width: 90%;
+    background: #060625;
+    border: 1px solid #583580;
+    border-radius: 10px;
+    color: ghostwhite;
+    height: 80vh;
+    margin: 5rem auto;
+    padding: 0px;
+    position: relative;
+    width: 60vw;
+}
+
+.swiper
+{
+	width: 80%;
+	height: 65vh;
+	margin: 0 auto;
+	z-index: 0 !important;
+}
+
+.swiper-slide, .swiper-slide p
+{
+	color: white;
+}
+
+.swiper-slide-header
+{
+    background: #583580;
+    border-radius: 20px;
+    box-shadow: 2px 1px 8px 2px black;
+	color: white;
+	font-size: 22px;
+    font-family: 'Jua',sans-serif;
+    left: 50%;
+    padding: 4px;
+	position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    z-index: 2;
+}
+
+.swiper-slide img
+{
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.swiper-slide:nth-child(3)
+{
+	background-color: rgb(16, 44, 16);
+}
+
+.swiper-pagination-fraction
+{
+	width: 20% !important;
+	left: 50% !important;
+	font-family: 'Jua',sans-serif;
+	transform: translateX(-50%) !important;
+	color:var(--textColor) !important;
+	background-color: @theme-color;	
+	border-radius: 10px;
+	padding: 4px;
+	box-shadow: 0 0 5px black;
+}
+
+.swiper-slide-headerIcons
+{
+    z-index: 2;
+	display: inline-flex;
+    position: fixed;
+    font-size: 1.5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #583580;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+}
+.swiper-slide-headerIcons i
+{
+	padding: 5px;
+}
+
+.swiper-button-next, .swiper-button-prev
+{
+	color: @text-color !important;
 }
 
 .fab.fa-html5{color: orangered;}
@@ -445,79 +537,73 @@ main h5
 .fab.fa-unity {color: black;}
 .fa-solid.fa-c {color:violet;}
 
-.portfolioBox
-{
-	background-color: @darkBlue;
-    height: 50vh;
-	margin: 0 auto;
-	width: 90vw;
-}
-
 .contactBox
 {
-	background: @darkBlue;
-	height: 75vh;
-	margin: 0 auto;
-	width: 75vh;
+	background: #060625;
+    border-radius: 5px;
+    border: 1px solid #583580;
+    margin: 5rem auto;
+    height: 75vh;
+    width: 40vw;
 }
 
 .contactBox form
-  {
+{
     height: 80%;
     text-align: center;
     width: 100%;
-  }
-
-.contactBox form
-{
-	height: 80%;
-	text-align: center;
-	width: 100%;
 }
 
-input[type=email], textarea
+.contact input[type=email], .contact textarea, .contact input[type=text]
 {
-	border: 2px inset @text-color;
+	background: @theme-color;
+	border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    color: @text-color;
+	margin: 5px;
+    padding: 5px;
     resize: none;
 	text-align: left;
 	width: 80%;
-
-}
-textarea
-{
-	height: 65%;
-	text-align: justify;
 }
 
-input[type=submit]
+.contact ::placeholder
 {
-	background-color: transparent;
 	color: @text-color;
-	border: 2px solid @text-color;
-    padding: 7px;
-	text-align: center;
-	width: 75px;
 }
-input[type=submit]:active
+
+.contact textarea{height: 55%;}
+.contact input[type=submit]
 {
-	border-color: transparent;
+	background-color: @theme-color;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+	color: @text-color;
+	height: 3rem;
+    padding: 2%;
+	text-align: center;
+	width: 6rem;
+}
+
+.contact input[type=submit]:active
+{
 	background-color: @text-color;
+	border-color: transparent;
 	color: @theme-color;
 }
 
-input[type=number]
+.contact input[type=number]
 {
     margin-left: 10px;
     width: 50px;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
+.contact textarea
 {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
+	height: 40%;
+	text-align: justify;
 }
 
 .mailSend
@@ -594,18 +680,23 @@ h1.msb_refused
 	text-align: center;
 	width: 50px;
 }
+
 footer 
 {
 	background: @darkBlue;
 	border-top: 1px solid @theme-color;
-	padding: 10px;
-	position: relative;
-	top: 20%;
-	width: 98vw;
+	bottom: -300vh;
+	height: 15px;
+	left: 0;
+	margin: 0 auto;
+	padding: 15px 0px;
+	position: absolute;
+	width: 100%;
 	
 	p,a
 	{
 		color: @text-color;
+		font-family: 'Jua',sans-serif;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -617,42 +708,24 @@ footer
 @media (max-width: 775px)
 {
 
+.borderBox
+{
+    border-radius: 5px;
+	height: 70vh;
+	margin-top: 4rem;
+	width: 85vw;
+}
+
 .no-scroll
 {
 	overflow: hidden;
 }
-.sectionValues
+
+
+.container, .about, .portfolio, .contact
 {
 	display: inline-block;
-    height: 100vh;
-    margin: 0 auto;
-	width: 80vw;
 }
-
-.animBox
-{
-	height: auto;
-	width: 75vw;
-	background: @darkBlue;
-	border: 1px solid @theme-color;
-	border-radius: 20px;
-    display: flex;
-	padding: 5px;
-	margin: 0 auto;	
-
-	.animText
-	{
-		color: @text-color;
-		font-family: 'Jua',sans-serif;
-		font-size: 1.1em;
-		text-align: center;
-	}
-}
-
-.fas.fa-arrow-circle-up
-    {
-    display: inherit;
-    }
 
 .containerLogo
 	{
@@ -660,27 +733,22 @@ footer
 		border-radius: 0;
 	}
 
+.animBox
+{
+	height: auto;
+	width: 75vw;
+}
+
+.fas.fa-arrow-circle-up
+{
+    display: inherit;
+}
 
 .visitCounter
 {
 	width: 25vw;
 	height: 5vh;
-	background: @darkBlue;
-	border: 1px solid @theme-color;
-	border-radius: 20px;
-	display: flex;
 	margin: 2rem auto;
-	padding: 10px;
-	align-items: center;
-	justify-content: center;
-
-	.visitText, .visitCount
-	{
-		color: @text-color;
-		font-family: 'Jua',sans-serif;
-		font-size: 1rem;
-		margin-right: 1px;
-	}
 }
 
 .scrollUp
@@ -724,7 +792,7 @@ footer
     font-size: 4vw;
 	padding: 1.2rem;
     height: auto;
-    margin: 1rem auto;
+    margin: 8rem auto;
     text-decoration: none;
     width: 30vw;
 }
@@ -880,22 +948,13 @@ header nav ul
 	width: 100%;
 }
 
-.aboutBox
+.aboutBox, .portfolioBox, .contactBox
 {
 	.borderBox;
-	height: 85vh;
-	width: 90vw;
 }
 
 .aboutHeader1, .aboutHeader2, .portfolioHeader, .contactHeader
 {
-	background: @theme-color;
-	border-radius: 10px;
-	box-shadow: 0 0 5px black;
-	font-family: 'Jua', sans-serif;
-	font-size: 22px;
-	font-weight: bold;
-	margin: 14px auto;
 	padding: 4px;
 	text-align: center;
 	width: 30vw;
@@ -904,7 +963,15 @@ header nav ul
 .aboutText
 {
 	font-weight: normal;
-	margin: 0 auto;
+	font-size: 0.75rem;
+	padding: 1rem;
+	width: 70%;
+}
+
+.aboutSkills
+{
+	width: 60vw;
+	padding: 20px;
 }
 
 .aboutSkills p
@@ -912,59 +979,17 @@ header nav ul
 	font-size: 0.8rem;
 }
 
-.boxInfo
-{
-    color: @text-color;
-    font-family: 'Jua', sans-serif;
-    font-size: 5.0rem;
-    margin: 0 auto;
-    text-align: center;
-    width: 70%;
-}
-
-.portfolioBox
-{
-	.borderBox;
-    height: 80vh;
-	width: 90vw;
-}
-
 .swiper
 {
-	width: 75vw;
-	height: 65vh;
+	width: 80%;
+	height: 85%;
 	border-radius: 20px;
 	border: 3px solid @theme-color;
-	margin: 0 auto;
-}
-
-.swiper-slide
-{
-	color: white;
-}
-
-.swiper-slide p
-{
-color: white;
-
 }
 
 .swiper-slide-header
 {
-	color: white;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 30vw;
-    padding: 4px;
-    font-size: 22px;
-    font-family: 'Jua',sans-serif;
-    background: #583580;
-    box-shadow: 2px 1px 8px 2px black;
-    border-radius: 20px;
-    text-align: center;
 }
 
 .swiper-slide img
@@ -973,201 +998,19 @@ color: white;
     width: 100%;
     height: auto;
     min-height: 70vh;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-}
-
-.swiper-slide:nth-child(3)
-{
-	background-color: rgb(16, 44, 16);
-}
-
-.swiper-pagination-fraction
-{
-	width: 20% !important;
-	left: 50% !important;
-	font-family: 'Jua',sans-serif;
-	transform: translateX(-50%) !important;
-	color:var(--textColor) !important;
-	background-color: @theme-color;	
-	border-radius: 10px;
-	padding: 4px;
-	box-shadow: 0 0 5px black;
-}
-
-.swiper-slide-headerIcons
-{
-    z-index: 2;
-	display: inline-flex;
-    position: fixed;
-    font-size: 1.5rem;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background: #583580;
-    padding: 5px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px black;
-}
-.swiper-slide-headerIcons i
-{
-	padding: 5px;
-}
-
-.swiper-button-next, .swiper-button-prev
-{
-	color: @text-color !important;
-}
-
-.contactBox
-{
-	.borderBox;
-    height: 75vh;
-    width: 75vw;
-}
-
-.contactBox form
-{
-    height: 80%;
-    text-align: center;
-    width: 100%;
-}
-
-.contact input[type=email], .contact textarea, .contact input[type=text]
-{
-	background: @theme-color;
-	border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px black;
-    color: @text-color;
-	margin: 5px;
-    padding: 5px;
-    resize: none;
-	text-align: left;
-	width: 80%;
-}
-
-.contact ::placeholder
-{
-	color: @text-color;
-}
-
-.contact textarea{height: 55%;}
-.contact input[type=submit]
-{
-	background-color: transparent;
-	border: 2px solid @text-color;
-	color: @text-color;
-	height: 3rem;
-    padding: 2%;
-	text-align: center;
-	width: 6rem;
-}
-
-.contact input[type=submit]:active
-{
-	background-color: @text-color;
-	border-color: transparent;
-	color: @theme-color;
-}
-
-.contact input[type=number]
-{
-    margin-left: 10px;
-    width: 50px;
-}
-
-.contact textarea
-{
-	height: 40%;
-	text-align: justify;
-}
-
-.mailSend
-{
-	display: none;
-	background: #000000c2;
-	height: 100vh;
-	left:0;
-	position:fixed;
-	top:0;
-	width: 100vw;
-	z-index: 2;
-}
-
-.mailSend.active
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.mailSendBox
-{
-	width: 75vw;
-	height: 35vh;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	background: @darkBlue;
-	border: 1px solid @theme-color;
-	border-radius: 10px;
-	position: inherit;
 }
 
 .msb_text
 {
-	width: 80%;
-	font-size: 1.2rem;
 	margin: 28px auto;
-	border-radius: 10px;
-	border: 1px solid;
-	text-align: center;
-	color: white;
-	font-family: 'Jua', sans-serif;
-}
-
-h1.msb_confirmed, h1.msb_refused
-{
-	.msb_text;
-}
-
-h1.msb_confirmed
-{
- display: none;
- color: #39b639;
- background: #00800080;
-}
-
-h1.msb_refused
-{
- display: none;
- color:rgb(230, 20, 20);
- background: rgba(66, 7, 7, 0.322);
-}
-
-.msb_button
-{
-	background: @theme-color;
-	border: 1px solid transparent;
-	border-radius: 10px;
-	color: @text-color;
-	font-weight: bold;
-	height: 25px;
-	margin: 20px auto;
-	padding: 10px 12px;
-	text-align: center;
-	width: 50px;
 }
 
 footer 
 {
 	border-radius: 10px;
-	font-family: 'Jua', sans-serif;
-	left: 0;
-	margin: 1rem auto;
-	padding: 5px;
+	bottom: 0;
+	padding: 12px;
+	position: relative;
 	transform: none;
 	top: 0;
 	width: 75vw;
