@@ -178,11 +178,10 @@ $(document).ready(function()
     $("header nav").css({
       "float": "none",
       "top": "0",
-      "right": "0",
+      "left": "50%",
       "position": "absolute",
-      "transform": "translateX(-50vw)",
-      "transition": "all 1s ease 0s",
-      "scale": "0.7"
+      "transform": "translateX(-50%) scale(0.7)",
+      "transition": "all 1s ease 0s"
     });
 
     $(".containerLogo").css({
@@ -210,9 +209,10 @@ $(document).ready(function()
 
     $("header nav").css({
       "float": "right",
-      "transform": "translate(0vw)",
+      "right":"0",
+      "left":"unset",
+      "transform": "none",
       "transition": "all 1s ease 0s",
-      "scale": "1"
     });
     $(".containerLogo").css({
       "scale": "1",
@@ -249,20 +249,19 @@ $(".scrollUp").on("click", function()
         500);
 	});
 
-/* toggle theme/lang */
-$('.themePicker').hide();
-$('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDefault').click(function()
- {
-    $('.toggleTheme, .themePicker').toggle('100')
-  });
 
 
-  $('.langPicker').hide();
-  $('.toggleLang, .langClosepicker, .langEn, .langPl, .langUa, .langDe').click(function() 
-  {
-    $('.toggleLang, .langPicker').toggle('100');
-  });
+  $('.themePicker').hide();
+  $('.toggleTheme, .themeClosepicker, .themeRed, .themeLime, .themeWhite, .themeDefault').click(function()
+   {
+      $('.toggleTheme, .themePicker').toggle('fast')
+    });
 
+    $('.langPicker').hide();
+    $('.toggleLang, .langClosepicker, .langEn, .langPl, .langUa, .langDe').click(function() 
+    {
+      $('.toggleLang, .langPicker').toggle('fast');
+    });
 
 /* theme change session */
 

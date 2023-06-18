@@ -241,7 +241,13 @@ footer
 
   header nav
   {
-    background-color: var(--blodyColor);
+    background-color: var(--navDesktop);
+  }
+
+header nav ul li a
+  { 
+    background-color: var(--crimsonColor);
+    border-color: var(--textColor);
   }
 
   #btnGo {
@@ -255,4 +261,6 @@ footer
     color: var(--blodyColor);
     border: 3px solid var(--blodyColor);
   }
+
+
 }

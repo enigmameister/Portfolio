@@ -85,8 +85,8 @@ main h1, main h5, .skillsCol1,
 
 .containerLogo.active
 {
-  background-color: var(--textColorGreen);
-  color: var(--greenColor);
+  background-color: rgb(58, 146, 58);
+  color: var(--textColorGreen);
   text-shadow: none;
   transition: 0.5s;
 }
@@ -237,8 +237,6 @@ footer {
 
 }
 
-/* Mobile version */
-
 @media (max-width: 775px)
  {
  
@@ -246,6 +244,12 @@ footer {
     background: var(--greenColor);
   }
 
+  header nav ul li a
+  {
+    background-color: rgb(58, 146, 58);
+    border-color: var(--textColorGreen);
+  }
+  
   #btnGo {
     background-color: var(--greenColor);
 	  border: 3px solid var(--textColorGreen);
